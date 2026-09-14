@@ -46,7 +46,8 @@ rationale. Check off each task as it lands.
 - [ ] Verify inferred author display names in `data/authors.yaml` (6 had none in WordPress)
 - [ ] Audit the 12 inferred legacy redirects in `config.mjs` (`LEGACY`)
 - [ ] Decide treatment for `get-involved` and `get-involved/mailing-lists` (groups.io form only)
-- [ ] Components for the 9 dropped embeds (3 SlideShare, 3 YouTube, Google Form, groups.io, landscape)
+- [x] Components built for the 9 dropped embeds
+- [ ] Reference those embed components from the 8 content files that lost them
 
 ## Phase 2 — Design system
 
@@ -65,7 +66,6 @@ rationale. Check off each task as it lands.
 
 - [x] `src/lib/content.ts` — fs + gray-matter loaders
 - [x] zod schemas for post and page frontmatter
-- [ ] `schemas/*.json` + `.vscode/settings.json` glob mapping
 - [x] MDX rendering via `next-mdx-remote/rsc`
 - [x] `/[...slug]` page route from `permalink`
 - [x] Posts routed through the same catch-all, driven by `permalink`
@@ -77,8 +77,8 @@ rationale. Check off each task as it lands.
 
 ## Phase 4 — Page templates and sections
 
-- [ ] Prose page template
-- [ ] Blog post template (byline, date, category, tags)
+- [x] Prose page template
+- [x] Blog post template (byline, date, category, tags)
 - [x] Embed components: `YouTube`, `SlideShare`, `GoogleForm`, `MemberLandscape`, `MailingListSignup`
 - [x] `membershipmembers` hand-authored, protected from the converter by the `generated` flag
 - [ ] `Hero`, `AnnouncementBar`, `CTA`
@@ -88,9 +88,11 @@ rationale. Check off each task as it lands.
 - [ ] `testimonials` composed + `data/testimonials.yaml`
 - [ ] `technical-developer-community` composed + `data/people.yaml`
 - [ ] `membershipjoin` composed
-- [ ] CFP template + `content/cfp/*.md`
-- [ ] `membershipmembers` index + `data/members.yaml`
-- [ ] `/events` pointing at events.openapis.org
+- [x] `content/cfp/*.md` converted (10 files)
+- [ ] Dedicated CFP template, currently rendered as prose
+- [x] `membershipmembers` page via `MemberLandscape`
+- [ ] `data/members.yaml` if the landscape embed is ever replaced by a local list
+- [x] `/events` and `/eventscalendar` redirect to events.openapis.org
 
 ## Phase 5 — CI/CD and PR preview
 
