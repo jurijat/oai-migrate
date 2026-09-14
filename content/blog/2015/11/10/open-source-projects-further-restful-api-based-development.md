@@ -4,6 +4,7 @@ date: "2015-11-10"
 author: openapi
 category: news
 permalink: /news/2015/11/10/open-source-projects-further-restful-api-based-development
+generated: true
 ---
 
 Open source projects are emerging to further software development practices based on RESTful APIs, which are becoming more instrumental in providing app back-end services and other functionality.

@@ -4,6 +4,7 @@ date: "2016-02-24"
 author: openapi
 category: news
 permalink: /news/2016/02/24/developers-apis-are-crucial-to-business-but-tough-to-get-right
+generated: true
 ---
 
 **A survey of API developers claims security, customer satisfaction, and speed of deployment are among the biggest challenges**

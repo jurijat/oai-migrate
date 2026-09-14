@@ -7,6 +7,7 @@ tags:
   - new-member
   - rapidapi
 permalink: /blog/2021/06/16/openapi-initiative-welcomes-rapidapi
+generated: true
 ---
 
 ![](https://lh4.googleusercontent.com/r6wLi3wk54CaZjTT465Cd6H4qIx49-Ji9m0CjPx3tuOVozj8rqFIQ_zsybuBAOL6qMTnqhFNOw9tUtjwTDdJ6ElhQwP3qV_2xDMFOLbpest3KUD1RyHaR5IUtR5vrozO7BGwd7Ww)

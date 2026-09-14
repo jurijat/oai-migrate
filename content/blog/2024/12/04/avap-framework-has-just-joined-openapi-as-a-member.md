@@ -4,6 +4,7 @@ date: "2024-12-04"
 author: openapi
 category: blog
 permalink: /blog/2024/12/04/avap-framework-has-just-joined-openapi-as-a-member
+generated: true
 ---
 
 AVAP Framework has just joined OpenAPI as a member!

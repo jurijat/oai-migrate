@@ -8,6 +8,7 @@ tags:
   - bitmovin
   - openapi-3-0-spec
 permalink: /blog/2019/09/04/from-bitmovin-our-openapi-journey
+generated: true
 ---
 
 _[This blog post](https://bitmovin.com/our-openapi-journey-with-standardizing-sdks/) was originally written by_ [_Sebastian Burgstaller_](https://bitmovin.com/author/sburgstaller/) _for the Bitmovin blog. Bitmovin is a member of the OpenAPI Initiative._

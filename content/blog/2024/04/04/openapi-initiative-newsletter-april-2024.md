@@ -6,6 +6,7 @@ category: blog
 tags:
   - newsletter
 permalink: /blog/2024/04/04/openapi-initiative-newsletter-april-2024
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative (OAI) April 2024 Newsletter! This is our new, regular round-up of the latest stories from across the OpenAPI landscape. We aim to keep you in touch with what’s going on with the development of the OpenAPI Specification, new specifications being created under the OpenAPI Initiative, and event-related news.

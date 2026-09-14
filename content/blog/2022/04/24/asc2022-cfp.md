@@ -7,6 +7,7 @@ tags:
   - asc-2022
   - asc22
 permalink: /blog/2022/04/24/asc2022-cfp
+generated: true
 ---
 
 After a fantastic inaugural event in 2019, successful virtual events in 2020 and 2021, the [API Specifications Conference](https://events.linuxfoundation.org/openapi-asc/) (ASC) is back **in-person** in 2022, from September 19th through September 21st. Mark your calendars!

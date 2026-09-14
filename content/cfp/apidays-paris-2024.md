@@ -2,6 +2,7 @@
 title: APIDAYS-Paris-2024-CFP
 permalink: /oai-at-apidays-3
 layout: cfp
+generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)

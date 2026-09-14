@@ -4,6 +4,7 @@ date: "2023-03-08"
 author: openapi
 category: blog
 permalink: /blog/2023/03/08/tools-that-support-openapi-specification
+generated: true
 ---
 
 Over the last 18 months we’ve been looking at how we can better capture data on the OpenAPI ecosystem with particular focus on tooling – what tool makers are doing, what versions of OpenAPI they support and so on. Tooling registries obviously already exist in the wild such as [openapi.tools](http://openapi.tools). The goal was not replicate the functionality of these registries, but to industrialize the data collection process using a mechanism that was eminently extensible and could be expanded with very limited modification.

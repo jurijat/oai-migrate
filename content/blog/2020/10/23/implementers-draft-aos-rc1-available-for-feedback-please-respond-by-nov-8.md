@@ -8,6 +8,7 @@ tags:
   - rc1
   - releasecandidate
 permalink: /blog/2020/10/23/implementers-draft-aos-rc1-available-for-feedback-please-respond-by-nov-8
+generated: true
 ---
 
 _Request to the community! Please review RC1, implement it, and share with us your feedback by November 8th. The final version should come shortly after that._

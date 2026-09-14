@@ -4,6 +4,7 @@ date: "2017-11-30"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/11/30/aapi-api-management-provider-joins-open-api-initiative
+generated: true
 ---
 
 API management provider aapi joins as the 30th member of the Open API Initiative to coincide with the debut of their API portal [announced](http://www.marketwired.com/press-release/aapi-debuts-new-portal-that-makes-apis-easy-with-unified-developer-api-platform-2241919.htm) on Nov. 28.![](/img/uploads/2017/11/final-aapi-logo.webp)

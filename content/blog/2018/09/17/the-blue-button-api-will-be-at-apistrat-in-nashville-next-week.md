@@ -4,6 +4,7 @@ date: "2018-09-17"
 author: kinlane
 category: announcement
 permalink: /blog/2018/09/17/the-blue-button-api-will-be-at-apistrat-in-nashville-next-week
+generated: true
 ---
 
 ![](/img/uploads/2018/09/blue-button-20-at-onc-interoperability-forum-1-638.webp)APIs are pushing forward the conversation in almost every business sector today, but one of the more important areas we are seeing across the landscape is coming out of the federal government with [the Blue Button API out of the Centers for Medicare and Medicaid Services (CMS)](https://bluebutton.cms.gov/). We’d like to invite you to Nashville next week to learn more about the API efforts coming out of CMS, and how they are making an impact on healthcare in this country with APIs.

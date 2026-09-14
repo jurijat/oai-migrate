@@ -4,6 +4,7 @@ date: "2017-06-18"
 author: robdolin
 category: blog
 permalink: /blog/2017/06/18/open-api-initiative-begins-openapi-spec-comment-period
+generated: true
 ---
 
 With this blog post, we open a two-week last call for comments period for the [OpenAPI Specification v3](https://github.com/OAI/OpenAPI-Specification/releases).

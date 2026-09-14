@@ -4,6 +4,7 @@ date: "2018-05-09"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/05/09/assertible-joins-the-openapi-initiative
+generated: true
 ---
 
 We’re proud to announce that [Assertible](https://assertible.com/) – API and website performance testing and uptime monitoring company – as the latest member to join to OpenAPI Initiative.

@@ -4,6 +4,7 @@ date: "2021-02-11"
 author: openapi
 category: announcement
 permalink: /blog/2021/02/11/openapi-welcomes-new-member-high-school-technology-services
+generated: true
 ---
 
 ![](https://lh6.googleusercontent.com/1GKwAuKWpz2GMD5OjMXJsPTqhb6y4W8mn46HK96pe-SbMhZ7SDUYYzp3Y5M4cSLafTZm6yNQkldj3432XhqGz8uq7kEg9i-M1pQYGsrQ-VRyIsYX43gkiDaURUGtfo6m-ExezaIZ)

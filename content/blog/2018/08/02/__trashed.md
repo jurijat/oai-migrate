@@ -8,6 +8,7 @@ tags:
   - apistrat-2018
   - nashville
 permalink: /blog/2018/08/02/__trashed
+generated: true
 ---
 
 We recently published [the schedule for APIStrat 2018 in Nashville, TN](https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/), and now [we’ve published the first batch of keynote speakers for the event](https://events.linuxfoundation.org/events/apistrat-2018/program/keynote_speakers/). We are pretty excited regarding the interest we’ve had in speaking at APIStrat this round, and the lineup we’ve managed to secure the main stage. Making for a pretty compelling set of voices for the 9th edition of APIStrat.

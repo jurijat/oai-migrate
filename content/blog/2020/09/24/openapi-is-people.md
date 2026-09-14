@@ -7,6 +7,7 @@ tags:
   - asc-2020
   - events
 permalink: /blog/2020/09/24/openapi-is-people
+generated: true
 ---
 
 _During the 2020 API Specifications Conference, influential members of the OpenAPI community gathered to discuss the people and processes that keep OpenAPI Initiative running smoothly._

@@ -4,6 +4,7 @@ date: "2019-05-08"
 author: openapi
 category: blog
 permalink: /blog/2019/05/08/introducing-asc-the-api-specifications-conference
+generated: true
 ---
 
 ## October 15-17th, 2019, Vancouver, Canada

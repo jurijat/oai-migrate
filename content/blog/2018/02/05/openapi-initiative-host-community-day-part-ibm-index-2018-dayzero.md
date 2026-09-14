@@ -4,6 +4,7 @@ date: "2018-02-05"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/02/05/openapi-initiative-host-community-day-part-ibm-index-2018-dayzero
+generated: true
 ---
 
 The Open API Initiative is partnering with founding member IBM to host a half day of OpenAPI Spec events at the 2018 IBM INDEX developer conference taking place Feb. 20-22.

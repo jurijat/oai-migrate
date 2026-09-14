@@ -8,6 +8,7 @@ tags:
   - new-member
   - optic
 permalink: /blog/2022/05/04/openapi-welcomes-new-member-optic
+generated: true
 ---
 
 ![](/img/uploads/2022/05/optic-logo.webp)

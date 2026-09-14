@@ -4,6 +4,7 @@ date: "2020-09-22"
 author: jesse
 category: blog
 permalink: /blog/2020/09/22/from-0-to-openapi-how-github-described-a-10-year-old-api
+generated: true
 ---
 
 _GitHub recently adjusted their extensive, old API in order to comply with current OpenAPI standards. At the API Specifications Conference we got the opportunity to hear how they accomplished this feat from leaders on the project._

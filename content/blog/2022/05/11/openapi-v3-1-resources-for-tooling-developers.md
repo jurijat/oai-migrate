@@ -4,6 +4,7 @@ date: "2022-05-11"
 author: openapi
 category: blog
 permalink: /blog/2022/05/11/openapi-v3-1-resources-for-tooling-developers
+generated: true
 ---
 
 _This post is authored by Phil Sturgeon, Green Tech consultant at Green Turtle, and Chairperson, Protect Earth. If you’d like to donate to Phil’s charity of choice, please see [Protect Earth](http://www.protect.earth/) which is reforesting the U.K. one field at a time._

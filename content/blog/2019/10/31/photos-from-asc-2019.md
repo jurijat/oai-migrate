@@ -7,6 +7,7 @@ tags:
   - asc-2019
   - events
 permalink: /blog/2019/10/31/photos-from-asc-2019
+generated: true
 ---
 
 ASC 2019 was a fantastic event! Thank you to everyone who came and participated. Great speakers, great interactions between sessions, and, wow, nice location! Vancouver is beautiful.

@@ -4,6 +4,7 @@ date: "2017-03-14"
 author: jernstfriedman
 category: events
 permalink: /events/2017/03/14/devsum17-openapi-v3-the-evolution-of-api-descriptions
+generated: true
 ---
 
 # DevSum17

@@ -8,6 +8,7 @@ tags:
   - erp
   - ifs
 permalink: /blog/2019/10/08/enterprise-software-pioneer-ifs-joins-the-openapi-initiative
+generated: true
 ---
 
 ![](https://lh4.googleusercontent.com/BZOv0IJ8nFjDg799aTW5PPgFsdeXa4uk13JTTRBXVeO3oTsPjFWb4qiTo9qOKJO701Oen0pPbL3IcpNiOrQXJRUe3AXMlqs0q4YvBlB-m-3bpuUVCyLuHQi1RAdkuvYNdUwxoZF2)

@@ -4,6 +4,7 @@ date: "2020-12-14"
 author: openapi
 category: announcement
 permalink: /blog/2020/12/14/band-protocol-becomes-first-blockchain-firm-to-join-openapi-initiative
+generated: true
 ---
 
 Press Release from Band Protocol:

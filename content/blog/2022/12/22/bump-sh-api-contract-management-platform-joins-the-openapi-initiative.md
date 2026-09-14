@@ -4,6 +4,7 @@ date: "2022-12-22"
 author: openapi
 category: blog
 permalink: /blog/2022/12/22/bump-sh-api-contract-management-platform-joins-the-openapi-initiative
+generated: true
 ---
 
 The OpenAPI Initiative, the consortium of forward-looking industry experts focused on evolving and implementing the OpenAPI Specification (OAS), is announcing that Bump.sh has joined as a new member. Welcome!

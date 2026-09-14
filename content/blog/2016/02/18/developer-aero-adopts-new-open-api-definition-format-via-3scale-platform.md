@@ -4,6 +4,7 @@ date: "2016-02-18"
 author: openapi
 category: news
 permalink: /news/2016/02/18/developer-aero-adopts-new-open-api-definition-format-via-3scale-platform
+generated: true
 ---
 
 We are delighted to be associated with the latest global API standards initiative which is being driven by a new organization, the OAI (Open API Initiative). This non profit organisation is aiming to create a new, more formal description format for Web APIs, provisionally called OADF (Open API Description Format).

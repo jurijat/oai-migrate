@@ -4,6 +4,7 @@ date: "2025-09-26"
 author: sensiblewood
 category: blog
 permalink: /blog/2025/09/26/the-openapi-initiative-welcomes-jentic
+generated: true
 ---
 
 We are pleased to welcome Jentic to the OpenAPI family! [Jentic](https://jentic.com/) joined the OpenAPI Initiative in early 2025, and is building the bridge between the AI World and the API World, providing agents with targeted, repeatable, and efficient workflows. Jentic agents are built on OpenAPI and Arazzo, making these specifications crucial building blocks in the Jentic platform.

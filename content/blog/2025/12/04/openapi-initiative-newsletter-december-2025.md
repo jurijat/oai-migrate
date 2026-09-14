@@ -10,6 +10,7 @@ tags:
   - openapi
   - overlay
 permalink: /blog/2025/12/04/openapi-initiative-newsletter-december-2025
+generated: true
 ---
 
 # OpenAPI Initiative Newsletter – December 2025

@@ -11,6 +11,7 @@ tags:
   - overlay
   - release
 permalink: /blog/2026/02/10/openapi-initiative-newsletter-february-2026
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative (OAI) February 2026 newsletter!

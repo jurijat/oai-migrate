@@ -2,6 +2,7 @@
 title: APIDAYS-Helsinki-2024-CFP
 permalink: /oai-at-apidays-4-3-2-2
 layout: cfp
+generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)

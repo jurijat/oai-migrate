@@ -4,6 +4,7 @@ date: "2016-09-26"
 author: openapi
 category: blog
 permalink: /blog/2016/09/26/open-api-initiative-9-months-and-counting-oai-meetup-2016-09-15
+generated: true
 ---
 
 At the OAI Meetup on Sept 15, Jeff Borek of IBM took the audience on the journey the Open API Iniative has taken over the last 9 months. Starting with a brief overview of the Open API Initiative, some background on the Swagger Project that it’s based upon, and ending on how many companies today are collaborating to enable open governance of the OAS 3.0 Spec – as it approaches completion later this year.

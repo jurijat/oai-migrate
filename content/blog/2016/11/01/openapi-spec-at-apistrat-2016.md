@@ -4,6 +4,7 @@ date: "2016-11-01"
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/01/openapi-spec-at-apistrat-2016
+generated: true
 ---
 
 The Open API Initiative (OAI) is focused on creating, evolving and promoting a vendor neutral API Description Format based on the Swagger Specification. As an open source project under the Linux Foundation, the OAI is committed to developing and promoting the OpenAPI Spec for use by all. We welcome contributions from members and non-members alike.

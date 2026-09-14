@@ -11,6 +11,7 @@ tags:
   - openapi
   - workflow
 permalink: /blog/2026/05/19/announcing-arazzo-specification-1-1
+generated: true
 ---
 
 We are proud to announce the release of Arazzo Specification v1.1.0!

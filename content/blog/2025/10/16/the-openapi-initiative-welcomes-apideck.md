@@ -4,6 +4,7 @@ date: "2025-10-16"
 author: sensiblewood
 category: blog
 permalink: /blog/2025/10/16/the-openapi-initiative-welcomes-apideck
+generated: true
 ---
 
 The OpenAPI Initiative (OAI) is proud to welcome Apideck as a new member!

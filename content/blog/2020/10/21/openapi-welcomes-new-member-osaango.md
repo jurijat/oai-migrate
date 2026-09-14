@@ -7,6 +7,7 @@ tags:
   - new-member
   - osaango
 permalink: /blog/2020/10/21/openapi-welcomes-new-member-osaango
+generated: true
 ---
 
 The OpenAPI Initiative, the consortium of forward-looking industry experts focused on creating, evolving, and promoting the OpenAPI Specification (OAS), a vendor-neutral, open description format for RESTful APIs, is announcing today that Osaango has joined as a new member.

@@ -8,6 +8,7 @@ tags:
   - new-member
   - saasops
 permalink: /announcement/2021/06/03/bettercloud-joins-openapi-initiative
+generated: true
 ---
 
 ![](https://lh6.googleusercontent.com/MqrN-c89sCwulXlVEW46wTHuso5o2WcjSZ_dIWmvsBg6rfjsDaVG1vGKigNN-IOcj5dmEUjdC0BN-msQGumrtdfyG_B7lTCaPr7Astp-jg9kkYHdgM6bXOEA7YHDlRwQta7nxfU8)

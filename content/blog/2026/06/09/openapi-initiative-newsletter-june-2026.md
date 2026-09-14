@@ -4,6 +4,7 @@ date: "2026-06-09"
 author: sensiblewood
 category: blog
 permalink: /blog/2026/06/09/openapi-initiative-newsletter-june-2026
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative (OAI) June 2026 newsletter!

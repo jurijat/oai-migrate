@@ -4,6 +4,7 @@ date: "2016-11-29"
 author: jernstfriedman
 category: events
 permalink: /events/2016/11/29/oscon-contract-first-api-development-using-the-openapi-specification
+generated: true
 ---
 
 Contract-First API Development Using The OpenAPI Specification (Swagger)

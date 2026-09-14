@@ -4,6 +4,7 @@ date: "2020-06-18"
 author: darrmi
 category: blog
 permalink: /blog/2020/06/18/openapi-3-1-0-rc0-its-here
+generated: true
 ---
 
 How time flies! It is approaching three years since we released OpenAPI 3.0.0. During this time we have made a number of patch releases that were mostly minor clarifications and corrections. Today, however, is different.

@@ -5,6 +5,7 @@ author: jernstfriedman
 category: blog
 permalink: >-
   /blog/2017/03/01/open-api-initiative-announces-the-release-of-the-openapi-spec-3-implementers-draft
+generated: true
 ---
 
 About a month ago, we committed to pushing out the first Implementer’s Draft of OpenAPI Specification (OAS), and now it’s arrived! Following our official versioning scheme, this version is known as 3.0.0-rc0. This is a major step toward releasing a final version of the spec.

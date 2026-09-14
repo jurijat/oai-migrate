@@ -4,6 +4,7 @@ date: "2016-09-19"
 author: openapi
 category: blog
 permalink: /blog/2016/09/19/zipping-through-the-openapi-with-capital-one-oai-meetup-2016-09-15
+generated: true
 ---
 
 Statically defined processing in your API stack is so last year. Learn about the the new and interesting ways Capital One is using the OpenAPI Specification to enable more flexible and open API development.

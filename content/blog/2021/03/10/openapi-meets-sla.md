@@ -4,6 +4,7 @@ date: "2021-03-10"
 author: abringaze
 category: blog
 permalink: /blog/2021/03/10/openapi-meets-sla
+generated: true
 ---
 
 _This post is authored by Dr. Pedro J. Molina, Founder at Metadev & Member at ISA Group, University of Seville_.

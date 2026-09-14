@@ -10,6 +10,7 @@ tags:
   - oas
   - openapi-spec
 permalink: /blog/2021/02/18/openapi-specification-3-1-released
+generated: true
 ---
 
 OpenAPI developer community and JSON Schema community work together to build upgrade that supports 100% compatibility with the latest draft of JSON Schema

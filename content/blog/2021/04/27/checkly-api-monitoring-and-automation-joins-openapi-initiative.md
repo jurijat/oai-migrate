@@ -9,6 +9,7 @@ tags:
   - monitoring
   - new-member
 permalink: /blog/2021/04/27/checkly-api-monitoring-and-automation-joins-openapi-initiative
+generated: true
 ---
 
 ![](/img/uploads/2021/04/checkly.webp)

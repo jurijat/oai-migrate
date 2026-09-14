@@ -4,6 +4,7 @@ date: "2016-05-11"
 author: openapi
 category: blog
 permalink: /blog/2016/05/11/grpc-with-rest-and-openapi-specification
+generated: true
 ---
 
 Our guest post today comes from Brandon Phillips of CoreOS. [CoreOS](https://coreos.com/) builds open source projects and products for Linux Containers. Their flagship products for consensus and discovery ([etcd](https://coreos.com/etcd/)) and their container engine [rkt](https://coreos.com/rkt/) are early adopters [gRPC](http://grpc.io/), an RPC framework based on protobufs and HTTP/2, that can make building and consuming APIs easier and more performant. Since many clients speak http/1.1 plus json, the interoperability with JSON and Open API is very important. For users who are more comfortable with HTTP/1.1+JSON-based APIs and the Open API Initiative Specs (formerly swagger) APIs they are using a combination of open source libraries to make their gRPC services available in that form as well. They have built API multiplexers to give users the best of both worlds. Let’s dive into the details and find out how they did it!

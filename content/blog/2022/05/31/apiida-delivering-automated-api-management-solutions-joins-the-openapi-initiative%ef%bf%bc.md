@@ -5,6 +5,7 @@ author: openapi
 category: blog
 permalink: >-
   /blog/2022/05/31/apiida-delivering-automated-api-management-solutions-joins-the-openapi-initiative%ef%bf%bc
+generated: true
 ---
 
 ![](https://lh4.googleusercontent.com/Pg8Fpk_4CvKA0TVLvqLqh4m6SwJSmqj-9hufFj1qs69DiJbzNA5I32VUfqn_WidfJ82jztG42RqYpZkdZm1zsbdZuxbC5tAlOMqScA1yvZfuPrt1KTKGdCx_OEP9NIokKQ1Fg3kA3b8aGbfAjg)

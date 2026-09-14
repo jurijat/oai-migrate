@@ -4,6 +4,7 @@ date: "2024-12-05"
 author: openapi
 category: blog
 permalink: /blog/2024/12/05/evolving-openapi-multi-specification-initative
+generated: true
 ---
 
 When people say “OpenAPI”, they are usually referring to the OpenAPI Specification, the API description language that helps us publish and consume APIs. The OpenAPI Specification is at the center of how the API community describes the shape of an API, allowing it to be readily understood.

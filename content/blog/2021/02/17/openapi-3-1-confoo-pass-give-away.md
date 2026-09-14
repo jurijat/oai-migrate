@@ -4,6 +4,7 @@ date: "2021-02-17"
 author: abringaze
 category: blog
 permalink: /blog/2021/02/17/openapi-3-1-confoo-pass-give-away
+generated: true
 ---
 
 ### **Coming Soon to An API Near You – OpenAPI Specification (OAS) 3.1.0!**

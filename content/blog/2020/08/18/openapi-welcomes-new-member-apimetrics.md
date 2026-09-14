@@ -7,6 +7,7 @@ tags:
   - apimetrics
   - new-member
 permalink: /blog/2020/08/18/openapi-welcomes-new-member-apimetrics
+generated: true
 ---
 
 ![](/img/uploads/2020/08/APIMetrics_logo_100.webp)

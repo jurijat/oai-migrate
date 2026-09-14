@@ -9,6 +9,7 @@ tags:
   - arazzo
   - openapi
 permalink: /blog/2025/01/24/announcing-arazzo-specification-version-1-0-1
+generated: true
 ---
 
 In 2024, the OpenAPI Initiative set a high bar for activity with the release of new specifications like Arazzo 1.0.0 and Overlay 1.0.0, along with two important patch versions of the OpenAPI Specification: 3.1.1 and 3.0.4. Today, we’re excited to kick off 2025 on a strong note by announcing the release of **Arazzo Specification [_version 1.0.1_](https://spec.openapis.org/arazzo/v1.0.1.html)**!

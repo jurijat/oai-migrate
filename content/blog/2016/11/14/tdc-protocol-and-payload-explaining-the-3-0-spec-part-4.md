@@ -4,6 +4,7 @@ date: "2016-11-14"
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4
+generated: true
 ---
 
 _With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how from the perspective the Technical Developer Community (TDC). The first post described the_ [_background and rationale behind the next evolution of the spec_](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how)_, the second covered_ [_Structural Changes_](/news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2)_, and the third discussed_ [_request parameters_](/news/blogs/2016/10/tdc-request-parameters-explaining-30-spec-part-3)_._

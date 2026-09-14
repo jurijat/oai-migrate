@@ -4,6 +4,7 @@ date: "2022-12-20"
 author: openapi
 category: blog
 permalink: /blog/2022/12/20/asc-2022-in-san-francisco
+generated: true
 ---
 
 This year’s API Specifications Conference (ASC), organized by the OpenAPI Initiative, set a record for submissions for talks, won the CHAOSS Gold badge for Diversity and Inclusion, was rated excellent or above by 95% of the attendees, and was an excellent networking opportunity and… was just plain a lot of fun!

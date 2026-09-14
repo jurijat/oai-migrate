@@ -4,6 +4,7 @@ date: "2022-12-06"
 author: openapi
 category: blog
 permalink: /blog/2022/12/06/first-time-ever-openapi-track-at-apidays-paris-join-us
+generated: true
 ---
 
 The OpenAPI Initiative is hosting an OpenAPI track at [APIDays Paris](https://www.apidays.global/paris/) on December 14, 2022.

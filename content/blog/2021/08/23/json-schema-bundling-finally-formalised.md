@@ -7,6 +7,7 @@ tags:
   - json
   - json-schema
 permalink: /blog/2021/08/23/json-schema-bundling-finally-formalised
+generated: true
 ---
 
 This article was first published on the JSON Schema Blog and is canonically located at [https://json-schema.org/blog/posts/bundling-json-schema-compound-documents](https://json-schema.org/blog/posts/bundling-json-schema-compound-documents)

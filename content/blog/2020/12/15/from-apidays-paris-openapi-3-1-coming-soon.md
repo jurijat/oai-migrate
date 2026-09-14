@@ -7,6 +7,7 @@ tags:
   - oas
   - openapi-spec
 permalink: /blog/2020/12/15/from-apidays-paris-openapi-3-1-coming-soon
+generated: true
 ---
 
 _[Originally posted in the LORNAJANE Blog](https://lornajane.net/posts/2020/whats-new-in-openapi-3-1) – Thank you, Lorna!_

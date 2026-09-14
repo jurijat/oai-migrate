@@ -4,6 +4,7 @@ date: "2017-01-24"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/01/24/a-new-year-a-new-specification
+generated: true
 ---
 
 It has been an exciting journey, and we’re happy to announce that the OpenAPI Specification version 3.0 is coming into view!

@@ -4,6 +4,7 @@ date: "2017-10-26"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/10/26/meet-ibms-sai-vennam-at-apistrat-2017
+generated: true
 ---
 
 The [API Strategy & Practice Conference](http://events.linuxfoundation.org/events/apistrat) is approaching – it’s taking place in Portland on Oct 31- Nov 2. I’m thrilled to get to go to another API Strategy conference, my last one being in Austin 2015. This time around, I’ll be speaking!

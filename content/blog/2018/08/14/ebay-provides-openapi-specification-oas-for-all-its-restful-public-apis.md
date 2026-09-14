@@ -4,6 +4,7 @@ date: "2018-08-14"
 author: openapi
 category: blog
 permalink: /blog/2018/08/14/ebay-provides-openapi-specification-oas-for-all-its-restful-public-apis
+generated: true
 ---
 
 Today, [eBay announced](https://www.ebayinc.com/stories/news/ebay-announces-new-apis-and-ai-capabilities-for-the-developer-community/) that they are leveraging the [OpenAPI Specification](/?utm_source=Release&utm_medium=email&utm_campaign=ebayannouncement) (OAS) for all of its RESTful public APIs. With OpenAPI, developers can download an eBay OpenAPI contract, generate code and successfully call an eBay API in minutes. APIs play a critical role in eBay’s Developer Ecosystem helping the company build and deliver the best experiences to its buyers and sellers.

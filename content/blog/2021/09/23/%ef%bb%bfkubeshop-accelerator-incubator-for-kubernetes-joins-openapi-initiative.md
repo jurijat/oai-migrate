@@ -7,6 +7,7 @@ tags:
   - kubernetes
   - new-member
 permalink: /blog/2021/09/23/%ef%bb%bfkubeshop-accelerator-incubator-for-kubernetes-joins-openapi-initiative
+generated: true
 ---
 
 ![](/img/uploads/2021/09/kubeshop-logo.webp)

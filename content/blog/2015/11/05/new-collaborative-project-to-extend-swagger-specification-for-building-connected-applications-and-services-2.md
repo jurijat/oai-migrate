@@ -7,6 +7,7 @@ author: openapi
 category: news
 permalink: >-
   /news/2015/11/05/new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services-2
+generated: true
 ---
 
 SAN FRANCISCO, CA–(Marketwired – Nov 5, 2015) – The Linux Foundation, the nonprofit organization dedicated to accelerating the growth of Linux and collaborative development, today is announcing the Open API Initiative. Founding members of the Open API Initiative include 3Scale, Apigee, Capital One, Google, IBM, Intuit, Microsoft, PayPal, Restlet and SmartBear.

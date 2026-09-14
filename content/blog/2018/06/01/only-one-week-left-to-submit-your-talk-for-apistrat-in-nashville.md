@@ -7,6 +7,7 @@ tags:
   - cfp
   - conference
 permalink: /blog/2018/06/01/only-one-week-left-to-submit-your-talk-for-apistrat-in-nashville
+generated: true
 ---
 
 We are fast approaching [the CFP deadline for APIStrat in Nashville, TN](https://events.linuxfoundation.org/events/apistrat-2018/cfp/). The CFP form will close next Friday, June 8, 2018 at 11:59 PM PST, leaving a little over a week to share you story with the program committee for possible inclusion in the lineup.

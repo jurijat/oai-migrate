@@ -4,6 +4,7 @@ date: "2016-01-09"
 author: openapi
 category: blog
 permalink: /blog/2016/01/09/next-steps-for-the-oai-an-exciting-2016-looms-ahead
+generated: true
 ---
 
 Amidst the general ongoing end-of-year activities, the OAI has been busy getting all the initial pieces into place for 2016. The meetings we’ve had within the group during last December have resulted in the following:
@@ -39,10 +40,10 @@ The OAI charter designates 3 entities that form its governing structure:
 
 The formation for the TDC and TOB is still in progress; as for now the following persons have been elected:
 
--   TDC members: <still in progress>
+-   TDC members: &lt;still in progress>
 -   TOB members:
     -   Elected by OAI members: Tony Tam, Ron Ratovsky, Jason Harmon
-    -   Elected by TDC members: <still in progress>
+    -   Elected by TDC members: &lt;still in progress>
 -   OAI Chairman: Ole Lensmar
 
 **Next Steps**

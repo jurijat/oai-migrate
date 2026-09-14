@@ -9,6 +9,7 @@ tags:
   - openapi-hero
   - openapi-spec
 permalink: /blog/2024/06/05/openapi-community-heroes-henry-andrews
+generated: true
 ---
 
 This is the first in our series of features on people we consider OpenAPI community heroes. These people go above and beyond to contribute to the OpenAPI Specification (OAS), Special Interest Groups (SIG), or across the OpenAPI Initiative.

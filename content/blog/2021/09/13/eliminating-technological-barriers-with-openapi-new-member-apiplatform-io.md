@@ -7,6 +7,7 @@ tags:
   - apiplatform-io
   - new-member
 permalink: /blog/2021/09/13/eliminating-technological-barriers-with-openapi-new-member-apiplatform-io
+generated: true
 ---
 
 The OpenAPI Initiative welcomes [apiplatform.io](https://apiplatform.io/), a productivity management platform that allows users to build and manage backend applications with no code. With apiplatform.io, users can create and host fully functional workflows and APIs to move legacy databases to the cloud.

@@ -9,6 +9,7 @@ tags:
   - sig
   - special-interest-group
 permalink: /blog/2021/11/03/announcing-open-finance-a-new-openapi-special-interest-group
+generated: true
 ---
 
 OpenAPI has formed a Special Interest Group (SIG) for the purpose of identifying the API use cases and behaviors to empower Open Finance solutions in the near future.

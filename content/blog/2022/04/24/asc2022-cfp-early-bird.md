@@ -6,6 +6,7 @@ category: blog
 tags:
   - asc22
 permalink: /blog/2022/04/24/asc2022-cfp-early-bird
+generated: true
 ---
 
 The fourth [API Specifications Conference](https://events.linuxfoundation.org/openapi-asc/) (ASC) will take place from September 19th through September 21st. We’re delighted to be back in-person this year after two years of having a virtual-only event! As part of the call for proposals we’re accepting and announcing five talks early. To have your talk considered, please have your submission completed by May 6th , 11:59 PM PDT.

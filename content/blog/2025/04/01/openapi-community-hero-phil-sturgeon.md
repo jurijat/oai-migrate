@@ -8,6 +8,7 @@ tags:
   - hero
   - openapi
 permalink: /blog/2025/04/01/openapi-community-hero-phil-sturgeon
+generated: true
 ---
 
 _It time for our next Community Hero, and this time we talk to Leviathan of the API world [Phil Sturgeon](https://github.com/philsturgeon)._

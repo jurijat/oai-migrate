@@ -4,6 +4,7 @@ date: "2019-02-08"
 author: openapi
 category: blog
 permalink: /blog/2019/02/08/ably-realtime-joins-openapi-initiative-to-share-streaming-data-expertise
+generated: true
 ---
 
 [Ably Realtime](https://www.ably.io/dsx), the creators of the cloud-based real time streaming data platform, recently announced its membership of the OpenAPI Initiative (OAI). Ably’s membership in OIA will help users of Ably’s platform participate more easily in the real time data supply chain, while enabling the wider OAI community to benefit from Ably’s expertise and lessons learned from its broad customer base, which spans technology, logistics, sport and more.

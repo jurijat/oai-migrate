@@ -4,6 +4,7 @@ date: "2020-09-01"
 author: abringaze
 category: blog
 permalink: /blog/2020/09/01/reasons-to-register-asc-2020-keynote-panel-deep-with-real-world-api-experience
+generated: true
 ---
 
 APIs are essential in many scenarios today but are still just interfaces at the end of the day. So what gives an API meaning? How does an API remain usable and useful? Learn how to look past the interface for a deeper perspective on API products at OpenAPI’s ASC 2020.

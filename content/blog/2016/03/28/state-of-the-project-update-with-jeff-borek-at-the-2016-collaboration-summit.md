@@ -4,6 +4,7 @@ date: "2016-03-28"
 author: openapi
 category: blog
 permalink: /blog/2016/03/28/state-of-the-project-update-with-jeff-borek-at-the-2016-collaboration-summit
+generated: true
 ---
 
 The Linux Foundation asked me to do a [lighting talk at the Linux Collab Summit](https://www.youtube.com/watch?v=kATMZ_1MHfc&index=7&list=PLGeM09tlguZQ17kXq679jthIhf12Tkat9&start=920&end=1290) at Lake Tahoe earlier this year. I was pleased to speak on behalf of The Open API Initiative and talk about the growing interest in open APIs and the future of the Swagger Project. It’s meaningful that the specification is now under the guidance of this Linux Foundation working group, and we at IBM are excited about the future evolution of the spec and related code base as we work with the project founder Tony Tam and the larger community promoting open API technologies.

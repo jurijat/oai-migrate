@@ -4,6 +4,7 @@ date: "2017-03-09"
 author: jernstfriedman
 category: blog
 permalink: /uncategorized/2017/03/09/api-craft-sf-meetup-open-api-specification-3-0
+generated: true
 ---
 
 Check out the deck from the 3/9 APICraft SF Meetup

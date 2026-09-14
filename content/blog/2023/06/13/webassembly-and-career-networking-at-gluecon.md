@@ -4,6 +4,7 @@ date: "2023-06-13"
 author: openapi
 category: blog
 permalink: /blog/2023/06/13/webassembly-and-career-networking-at-gluecon
+generated: true
 ---
 
 ![](/img/uploads/2023/06/tony_profile_pic.webp)

@@ -4,6 +4,7 @@ date: "2018-08-03"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/08/03/join-kate-oneill-at-apistrat-2018
+generated: true
 ---
 
 [![](/img/uploads/2018/07/APIStrat_PromoGraphics_Email.webp)](https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/)

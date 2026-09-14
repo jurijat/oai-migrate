@@ -7,6 +7,7 @@ tags:
   - apidays
   - events
 permalink: /blog/2023/11/06/apidays-paris-2023-with-an-openapi-track-is-coming-this-december
+generated: true
 ---
 
 ![](https://lh7-us.googleusercontent.com/zeYmDnvYXU4jdx6teaOB3O_RieQ6Lv-TxQ3EerIxXcHe-zhk42CoapIz2w7A1S1HupQZtGasKRjXWUvkOM4ShIPTeWrXt1uFDxIYksrMqyMN6fC3wuslnp9l2SajLhsccRnniGMXkKvijYS79suSNbU)

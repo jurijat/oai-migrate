@@ -7,6 +7,7 @@ author: openapi
 category: news
 permalink: >-
   /news/2015/11/05/smartbear-launches-open-api-initiative-with-key-industry-leaders-including-google-ibm-and-microsoft
+generated: true
 ---
 
 _New Initiative under The Linux Foundation to Create Open Approach to Governing the Evolution of Swagger Specification_

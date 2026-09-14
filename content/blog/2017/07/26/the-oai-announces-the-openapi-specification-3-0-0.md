@@ -4,6 +4,7 @@ date: "2017-07-26"
 author: openapi
 category: blog
 permalink: /blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0
+generated: true
 ---
 
 The Open API Initiative (OAI), a Linux Foundation project created to advance API technology, announced the 3.0.0 release of the OpenAPI Specification. The OAI provides a foundation for developing interoperability of APIs and other technologies.

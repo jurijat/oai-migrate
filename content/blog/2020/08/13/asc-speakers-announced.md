@@ -4,6 +4,7 @@ date: "2020-08-13"
 author: abringaze
 category: blog
 permalink: /blog/2020/08/13/asc-speakers-announced
+generated: true
 ---
 
 The 2020 speakers have been announced, and their talks cover the spectrum of expert technologists, business professionals, open source contributors, and more! Learn from companies and organizations like GitHub, Google, Microsoft, MuleSoft, OpenTravel Alliance, Postman, SmartBear, TravelPort, Vonage, and others. Some highlights include:

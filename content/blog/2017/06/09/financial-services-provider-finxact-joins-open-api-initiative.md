@@ -4,6 +4,7 @@ date: "2017-06-09"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/06/09/financial-services-provider-finxact-joins-open-api-initiative
+generated: true
 ---
 
 This week [Finxact](http://finxact.com/) announced it has become an official member to the Open API Initiative. Finxact collaborates with the banking industry on an Open Banking API.

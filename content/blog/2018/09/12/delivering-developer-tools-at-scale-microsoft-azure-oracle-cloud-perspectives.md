@@ -4,6 +4,7 @@ date: "2018-09-12"
 author: joelevy
 category: blog
 permalink: /blog/2018/09/12/delivering-developer-tools-at-scale-microsoft-azure-oracle-cloud-perspectives
+generated: true
 ---
 
 With APIStrat coming up in just under two weeks, I have been focusing on how the power of open source technologies can bridge disparate programming languages, and how the emergence – actual dominance – of the cloud has made it a requirement.

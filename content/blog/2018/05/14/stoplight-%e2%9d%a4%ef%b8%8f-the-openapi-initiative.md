@@ -4,6 +4,7 @@ date: "2018-05-14"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/05/14/stoplight-%e2%9d%a4%ef%b8%8f-the-openapi-initiative
+generated: true
 ---
 
 The OpenAPI Initiative is proud announce our partnership with [Stoplight](http://stoplight.io) as a part of the latest class of new members.

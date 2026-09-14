@@ -4,6 +4,7 @@ date: "2016-11-18"
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/18/denver-based-cloud-elements-latest-member-to-join-open-api-initiative
+generated: true
 ---
 
 The Open API Initiative is pleased to welcome Cloud Elements, a unified platform for API integration and management out of Denver Colorado as the latest company to join the OAI. Here is what our newest members had to say about the benefits of joining the OAI and why they contribute to the OpenAPI Specification.

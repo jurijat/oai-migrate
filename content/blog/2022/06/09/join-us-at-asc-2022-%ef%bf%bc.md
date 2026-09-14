@@ -4,6 +4,7 @@ date: "2022-06-09"
 author: openapi
 category: announcement
 permalink: /blog/2022/06/09/join-us-at-asc-2022-%ef%bf%bc
+generated: true
 ---
 
 The API Specification Conference – ASC 2022 – is being held in person from September 19 – 21 in South San Francisco! OpenAPI Initiative’s API Specifications Conference (ASC) is a place for API practitioners and enthusiasts to come together and discuss the evolution of API technologies. The OpenAPI Specification, RAML, Blueprint, gRPC, OData, JSON Schema, GraphQL, AsyncAPI, and other formats will all be topics, enabling attendees to get familiar with these formats and discuss how to use them in practice.

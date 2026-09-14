@@ -9,6 +9,7 @@ tags:
   - new-member
 permalink: >-
   /blog/2022/05/24/karate-labs-testing-automation-framework-is-joining-the-openapi-initiative%ef%bf%bc
+generated: true
 ---
 
 ![](https://lh4.googleusercontent.com/NC_eQJVoKHaB0vhi6N7DZ1eIV8hKt4tRX31Qb0ml3SXFkdrJfz9Qm84ZuXWZRnAVK9gkCv5Azl2KRDB0y3G1hLDiQyXsgGDiiZ6x3jhTrgVWzqp5nB-J1pYV1hoMDeEZAmSttKeWebMWK8tS-Q)

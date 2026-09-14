@@ -7,6 +7,7 @@ tags:
   - apistrat-2018
   - committees
 permalink: /blog/2018/05/31/a-shout-out-to-the-apistrat-steering-and-program-committees
+generated: true
 ---
 
 We are getting ready to close the APIStrat call for papers next week and we wanted to take a moment to give a shout out to the amazing lineup we’ve assembled as part of the [steering committee](https://events.linuxfoundation.org/events/apistrat-2018/event-committee/), who are helping guide the event. As well as the folks on the [program committee](https://events.linuxfoundation.org/events/apistrat-2018/event-committee/) who will be helping review the talks submitted as part of the CFP process, and ultimately craft the program. These are the people who will help set the tone for the conversation that occurs at APIStrat in Nashville, and we are very pleased to have them helping out.

@@ -4,6 +4,7 @@ date: "2018-02-16"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/02/16/openapi-initiative-community-day-schedule-ibm-index
+generated: true
 ---
 
 ## Schedule

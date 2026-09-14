@@ -7,6 +7,7 @@ tags:
   - member
   - openapi
 permalink: /blog/2025/03/20/gitbook-joins-the-openapi-initiative
+generated: true
 ---
 
 The OpenAPI Initiative has a new member! We are pleased to welcome [GitBook](https://gitbook.com) to the OpenAPI family. GitBook provides tools for building great documentation that developers love, and leverages the OpenAPI Specification in the documentation pipeline. OpenAPI descriptions can be automatically imported by GitBook to provide the backbone of published documentation.

@@ -7,6 +7,7 @@ tags:
   - new-member
   - wiremock
 permalink: /blog/2023/07/13/wiremock-joins-openapi-initiative
+generated: true
 ---
 
 ![](https://lh5.googleusercontent.com/FDvZRJW5HsZUgynpaWzhGWTsMJps2fE9ritNKl9e25yu2NKE0VustOaVdcEF6xlB3uug9JjIHL_2NnGj9PvR32HYSrfsCmqkAPpvapDdswbRA3ybCYIOtHJMCcyvOl0sRUVXvtswBavpebhjHfCAY5E)

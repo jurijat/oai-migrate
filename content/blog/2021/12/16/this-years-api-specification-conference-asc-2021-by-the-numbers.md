@@ -6,6 +6,7 @@ category: blog
 tags:
   - asc-2021
 permalink: /blog/2021/12/16/this-years-api-specification-conference-asc-2021-by-the-numbers
+generated: true
 ---
 
 ![](https://lh6.googleusercontent.com/x-20nF3LUo94DGP8NbIAaPN_K_r0IgXPWKdJfvoObCifumyHA8IZppxTKkaLpX6WrPb039wCKl9UzL7Epz4nF9or_Qfz1U26M9ioV_JlM5yPZeJ5k7y9mOfsIqDfyBf2fXMRYC6H)

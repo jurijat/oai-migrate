@@ -7,6 +7,7 @@ tags:
   - new-member
   - openapi-3-0-spec
 permalink: /blog/2021/03/11/openapi-initiative-welcomes-level-250-as-newest-member
+generated: true
 ---
 
 ![](https://lh4.googleusercontent.com/iMB2l57ShbbkOwIoYvFiOKog1l7oHNF2rEr1XDGoLRgBdk5L5KWhU3xySTOyZahjS7lLj2lplwOrUdxb3m0Nw2sgjGnZLOA2vEkN6gU4CiKEcmKWn9GxCBRYBqkodMbaNtP4wxUz)

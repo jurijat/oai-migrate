@@ -4,6 +4,7 @@ date: "2016-11-29"
 author: jernstfriedman
 category: presentation
 permalink: /blog/presentation/2016/11/29/openapi-trek-api-days-london-2016
+generated: true
 ---
 
 _[Arnaud Lauret](https://twitter.com/apihandyman) (aka the [API Handyman](http://apihandyman.io/)) of AXA Banque_

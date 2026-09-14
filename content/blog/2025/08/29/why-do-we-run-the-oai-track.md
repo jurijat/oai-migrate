@@ -4,6 +4,7 @@ date: "2025-08-29"
 author: sensiblewood
 category: blog
 permalink: /blog/2025/08/29/why-do-we-run-the-oai-track
+generated: true
 ---
 
 Summer is nearly over in the northern hemisphere, we are three-quarters of the way through 2025, and already we’ve had great attendance at our OpenAPI Initiative (OAI) Track at Apidays New York, Helsinki, Munich, and DeveloperWeek San Francisco. We still have [API:World Santa Clara](/events/apiworld-santa-clara-2025), and Apidays [London](/events/apidays-london-2025), and [Paris](/events/apidays-paris-2025) to come this year, with our dedicated stage and all day track at API:World!

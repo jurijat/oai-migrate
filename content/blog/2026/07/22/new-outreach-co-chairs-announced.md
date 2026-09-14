@@ -9,6 +9,7 @@ tags:
   - outreach
   - overlay
 permalink: /blog/2026/07/22/new-outreach-co-chairs-announced
+generated: true
 ---
 
 The OpenAPI Initiative is pleased to announce the appointment of two new co-Chairs of the Outreach Committee. [Chris Wood](https://www.linkedin.com/in/sensiblewood/) and [Pavel Kornev](https://www.linkedin.com/in/pavelkornev/) have been nominated to assume the role from [Stu Waldron](https://www.linkedin.com/in/stu-waldron-b550a61/), who stands down after 5 years in the role.We’d like to thank Stu for all his hard work and dedication, and wish him well for the future.

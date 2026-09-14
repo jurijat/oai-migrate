@@ -6,6 +6,7 @@ category: announcement
 tags:
   - asc-2020
 permalink: /events/2020/06/12/the-api-specifications-conference-asc-2020-hold-the-dates-sept-9th-10th
+generated: true
 ---
 
 Mark your calendar for the return of this year’s API Specifications Conference (ASC)! This year we will be holding an all-digital event on September 9th and 10th, 9 am – 2 pm Pacific time. Join from the comfort of your own home—no hotels, no airfare, no line for the restroom.

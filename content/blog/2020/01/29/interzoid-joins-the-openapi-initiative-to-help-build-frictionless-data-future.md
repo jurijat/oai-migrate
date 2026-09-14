@@ -6,6 +6,7 @@ category: announcement
 tags:
   - interzoid
 permalink: /blog/2020/01/29/interzoid-joins-the-openapi-initiative-to-help-build-frictionless-data-future
+generated: true
 ---
 
 OpenAPI welcomes Interzoid as a new OpenAPI member!

@@ -1,4 +1,4 @@
-import { readFile, rm, writeFile } from 'node:fs/promises';
+import { readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import yaml from 'js-yaml';
 import TurndownService from 'turndown';
@@ -105,7 +105,7 @@ export function escapeStrayTags(markdown) {
 }
 
 function tidy(markdown) {
-  return `${markdown
+  return `${escapeStrayTags(markdown)
     .replace(/ /g, ' ')
     .replace(/[ \t]+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
@@ -136,6 +136,7 @@ function postFrontmatter(record) {
     category: record.category,
     ...(record.tags.length ? { tags: record.tags } : {}),
     permalink: record.permalink,
+    generated: true,
   };
 }
 
@@ -145,7 +146,36 @@ function pageFrontmatter(record) {
     permalink: record.permalink,
     layout: record.pageKind === 'composed' ? 'composed' : record.pageKind,
     ...(record.pageKind === 'composed' ? { draft: true } : {}),
+    generated: true,
   };
+}
+
+async function walk(dir) {
+  const out = [];
+  let items;
+  try {
+    items = await readdir(dir, { withFileTypes: true });
+  } catch {
+    return out;
+  }
+  for (const item of items) {
+    const full = join(dir, item.name);
+    if (item.isDirectory()) out.push(...(await walk(full)));
+    else if (/\.mdx?$/.test(item.name)) out.push(full);
+  }
+  return out;
+}
+
+async function clearGenerated(dirs) {
+  const kept = [];
+  for (const dir of dirs) {
+    for (const file of await walk(dir)) {
+      const head = (await readFile(file, 'utf8')).slice(0, 600);
+      if (/^generated:\s*true\s*$/m.test(head)) await rm(file);
+      else kept.push(file);
+    }
+  }
+  return kept;
 }
 
 async function mergeAuthors(discovered) {
@@ -171,9 +201,8 @@ async function mergeAuthors(discovered) {
 
 async function main() {
   const entries = await readJson(URLS_FILE);
-  await rm('content/blog', { recursive: true, force: true });
-  await rm('content/pages', { recursive: true, force: true });
-  await rm('content/cfp', { recursive: true, force: true });
+  const handAuthored = await clearGenerated(['content/blog', 'content/pages', 'content/cfp']);
+  const protectedFiles = new Set(handAuthored);
 
   const assets = new Map();
   const authors = new Map();
@@ -194,6 +223,10 @@ async function main() {
 
     const data = record.kind === 'post' ? postFrontmatter(record) : pageFrontmatter(record);
     const file = outputFor(record);
+    if (protectedFiles.has(file)) {
+      manifest.push({ url: entry.url, slug: entry.slug, kind, status: 'hand-authored', file });
+      continue;
+    }
     await ensureDir(file);
     await writeFile(file, frontmatter(data) + markdown);
 
@@ -233,7 +266,9 @@ async function main() {
   const authorList = await mergeAuthors(authors);
 
   const converted = manifest.filter((m) => m.status === 'converted');
+  const preserved = manifest.filter((m) => m.status === 'hand-authored');
   console.log(`converted ${converted.length}, skipped ${manifest.length - converted.length}`);
+  if (preserved.length) console.log(`preserved hand-authored: ${preserved.length}`);
   console.log(`assets referenced: ${assets.size}`);
   console.log(`authors: ${authorList.length}`);
 }

@@ -4,6 +4,7 @@ date: "2026-03-05"
 author: sensiblewood
 category: blog
 permalink: /blog/2026/03/05/openapi-community-hero-vincent-biret
+generated: true
 ---
 
 _Welcome to our next Community Hero! After his recent efforts in contributing to Overlay v1.1.0, we spoke to Vincent Biret._

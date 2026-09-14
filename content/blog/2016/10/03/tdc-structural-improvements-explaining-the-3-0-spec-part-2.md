@@ -4,6 +4,7 @@ date: "2016-10-03"
 author: openapi
 category: blog
 permalink: /blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2
+generated: true
 ---
 
 With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how. The [first post](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how) described the background and rationale behind the next evolution of the spec, and the next few posts will address the progress made by the Technical Developer Community (TDC) so far.

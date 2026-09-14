@@ -5,6 +5,7 @@ author: openapi
 category: blog
 permalink: >-
   /blog/2021/04/13/leveraging-the-openapi-specification-in-financial-services-the-story-of-plaids-openapi-journey
+generated: true
 ---
 
 ![](https://docs.google.com/drawings/u/2/d/sMN5wlKU409dE3hvct0l67g/image?w=342&h=239&rev=247&ac=1&parent=1Gf_gbr6SA-uCZKmrsRRQFurfVHzRGWulFG8aX6HALA4)

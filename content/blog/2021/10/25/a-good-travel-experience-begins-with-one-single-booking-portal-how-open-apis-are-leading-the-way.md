@@ -10,6 +10,7 @@ tags:
   - travelsig
 permalink: >-
   /blog/2021/10/25/a-good-travel-experience-begins-with-one-single-booking-portal-how-open-apis-are-leading-the-way
+generated: true
 ---
 
 ![](/img/uploads/2021/10/travel-icon.webp)

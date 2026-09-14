@@ -4,6 +4,7 @@ date: "2016-02-23"
 author: openapi
 category: blog
 permalink: /blog/2016/02/23/oai-update-new-members-openapi-spec-3-0-progress-and-more
+generated: true
 ---
 
 Here comes a quick update on the ongoings within the OAI:

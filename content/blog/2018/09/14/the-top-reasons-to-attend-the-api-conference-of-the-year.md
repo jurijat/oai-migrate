@@ -4,6 +4,7 @@ date: "2018-09-14"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/09/14/the-top-reasons-to-attend-the-api-conference-of-the-year
+generated: true
 ---
 
 [The API Strategy & Practice Conference](https://events.linuxfoundation.org/events/apistrat-2018/), known as APIStrat, is a conference focused on the API economy, and brings together experts, leaders, and members of the community to discuss what we each see on the ground every day. Happening September 24 – 26 in Nashville, Tennessee this is a conference you don’t want to miss.

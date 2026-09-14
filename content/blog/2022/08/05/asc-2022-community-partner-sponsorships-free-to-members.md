@@ -4,6 +4,7 @@ date: "2022-08-05"
 author: openapi
 category: blog
 permalink: /blog/2022/08/05/asc-2022-community-partner-sponsorships-free-to-members
+generated: true
 ---
 
 [![](/img/uploads/2022/08/ASC-Sponsor-2.webp)](/membership/join)

@@ -6,6 +6,7 @@ category: blog
 tags:
   - apistrat-2018
 permalink: /blog/2018/08/28/convincing-your-boss-to-send-you-to-apistrat
+generated: true
 ---
 
 At API Strategy and Practice – better known as APIStrat – \*brings together everyone – from the API curious to today’s leaders – to discuss opportunities and challenges in the API space. APIStrat sparks conversations between API providers and API consumers, startups and enterprise, developers and architects, and all types of integrators.\* The event covers a broad spectrum of the API lifecycle as well as best practices around progressive web apps, the offline-first approach, and stories from end-users. This conference hosted by the OpenAPI Initiative, curators of the de facto standard in API design: OpenAPI Specification includes talks on Kubernetes, GraphQL, RPC, JSON, Microservices, Hypermedia and how best to implement them.

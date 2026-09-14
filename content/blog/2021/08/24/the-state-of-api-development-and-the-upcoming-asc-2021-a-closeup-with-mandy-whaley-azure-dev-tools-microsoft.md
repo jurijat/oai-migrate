@@ -11,6 +11,7 @@ tags:
   - microsoft
 permalink: >-
   /blog/2021/08/24/the-state-of-api-development-and-the-upcoming-asc-2021-a-closeup-with-mandy-whaley-azure-dev-tools-microsoft
+generated: true
 ---
 
 ![](/img/uploads/2021/08/mandy-microsoft-openapi.webp)

@@ -8,6 +8,7 @@ tags:
   - opentravel-alliance
   - travel
 permalink: /blog/2020/06/23/openapi-welcomes-the-opentravel-alliance-as-new-member
+generated: true
 ---
 
 ![](https://lh5.googleusercontent.com/ThQ2HZyYLXK37s7mXRo9kNoFtJpgRmbfepQdjAj9sU6oLUca-BKzkKT6ZRtfecFwYADWOq4A-OoEUAF77lVBEol9Mpr2iRYkG4T2XtnDyYnEeJnVCU543Q5zYZ4evE9y8X3WcjpA)

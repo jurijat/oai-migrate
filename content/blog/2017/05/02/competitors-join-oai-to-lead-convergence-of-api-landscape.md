@@ -4,6 +4,7 @@ date: "2017-05-02"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/05/02/competitors-join-oai-to-lead-convergence-of-api-landscape
+generated: true
 ---
 
 With the recent addition of Mulesoft — founders of RAML; joining Apiary — founders of API Blueprint; and SmartBear — stewards of Swagger, each as  members of the Open API Initiative, Jerome Louvel of Restlet took the opportunity to revisit the history of the OAI and API Specifications.

@@ -10,6 +10,7 @@ tags:
   - orchestration
   - workflow
 permalink: /blog/2024/05/29/a-new-specification-from-openapi-arazzo
+generated: true
 ---
 
 **Today we are delighted to announce the release of Arazzo, a new OpenAPI Initiative specification designed to describe sequences of API calls to meet the orchestration needs of API providers and consumers.**

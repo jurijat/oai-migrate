@@ -7,6 +7,7 @@ tags:
   - bloomberg
   - finance
 permalink: /blog/2020/04/14/openapi-initiative-welcomes-bloomberg-as-newest-member
+generated: true
 ---
 
 _OpenAPI Initiative continues fast pace of membership growth; Bloomberg joins 38 current members that include Atlassian, eBay, Google, Microsoft, Red Hat, SmartBear, and many more_

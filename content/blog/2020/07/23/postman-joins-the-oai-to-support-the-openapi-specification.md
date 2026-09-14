@@ -7,6 +7,7 @@ tags:
   - new-member
   - postman
 permalink: /blog/2020/07/23/postman-joins-the-oai-to-support-the-openapi-specification
+generated: true
 ---
 
 _This blog post was contributed by Kin Lane, Chief Evangelist, Postman_

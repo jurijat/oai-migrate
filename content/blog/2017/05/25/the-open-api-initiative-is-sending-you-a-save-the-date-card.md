@@ -4,6 +4,7 @@ date: "2017-05-25"
 author: robdolin
 category: blog
 permalink: /blog/2017/05/25/the-open-api-initiative-is-sending-you-a-save-the-date-card
+generated: true
 ---
 
 We’re getting close to OpenAPI Spec v3.0.0 final. If you’ve been waiting to start kicking the tires on the OpenAPI Specification (OAS) v3.0.0 (f.k.a. Swagger), now is the time to be prototyping or coding. **Mark your calendar for a two-week last comment period from Monday, 19 June to Friday, 30 June**, and watch for a final release in July.

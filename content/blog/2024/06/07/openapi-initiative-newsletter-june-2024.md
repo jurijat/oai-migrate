@@ -6,6 +6,7 @@ category: blog
 tags:
   - newsletter
 permalink: /blog/2024/06/07/openapi-initiative-newsletter-june-2024
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative June 2024 Newsletter, our regular round-up of the latest stories from across the OpenAPI landscape.

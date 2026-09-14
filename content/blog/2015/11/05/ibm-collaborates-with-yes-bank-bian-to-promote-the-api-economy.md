@@ -4,6 +4,7 @@ date: "2015-11-05"
 author: openapi
 category: news
 permalink: /news/2015/11/05/ibm-collaborates-with-yes-bank-bian-to-promote-the-api-economy
+generated: true
 ---
 
 IBM (NYSE: IBM) today announced API Harmony an intelligent cloud-based API matchmaking technology for developers as part of a series of technology, product and services announcements to advance the growing API Economy.

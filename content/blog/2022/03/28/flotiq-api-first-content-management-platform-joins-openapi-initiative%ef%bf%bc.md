@@ -7,6 +7,7 @@ tags:
   - flotiq
   - new-member
 permalink: /blog/2022/03/28/flotiq-api-first-content-management-platform-joins-openapi-initiative%ef%bf%bc
+generated: true
 ---
 
 ![](https://lh6.googleusercontent.com/yYR9onInL778BWwuGt-Cku4NReOH7yqJslRBqsm_EtH0qzkdEFSkLFMY7ructi4nkK5xcP7nxB4NsxBYUC-FIb91HWLinVtzgsPChR15jo3iLDobkxlUOOLtjyyQzDLrbXCQfsxC)

@@ -4,6 +4,7 @@ date: "2016-01-07"
 author: openapi
 category: news
 permalink: /news/2016/01/07/interview-with-tony-tam-on-the-open-api-initiative-and-latest-swagger-news
+generated: true
 ---
 
 After the Linux Foundation announced the formation of the Open API Initiative (OAI) in the beginning of November with an impressive list of founding members, API developers had questions about the role OAI would play driving consensus around standards.

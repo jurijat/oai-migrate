@@ -4,6 +4,7 @@ date: "2016-07-11"
 author: marshg
 category: blog
 permalink: /blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how
+generated: true
 ---
 
 How is the OpenAPI Specification evolving? What’s the process? How can you get involved? Today we’ll try to answer those questions and shine a light on:

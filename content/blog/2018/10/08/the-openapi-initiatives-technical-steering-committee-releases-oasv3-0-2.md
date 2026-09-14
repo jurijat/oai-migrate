@@ -4,6 +4,7 @@ date: "2018-10-08"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/10/08/the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2
+generated: true
 ---
 
 The members of the OpenAPI Initiative [Technical Steering Committee](https://github.com/OAI/OpenAPI-Specification/blob/master/GOVERNANCE.md) have announced the latest release of OpenAPI Specification 3.0.2. Note: This release is a patch release and none of these modifications change the behavior of the spec.

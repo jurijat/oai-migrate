@@ -9,6 +9,7 @@ tags:
   - interview
   - openapi
 permalink: /blog/2024/09/17/openapi-community-heroes-lorna-mitchell
+generated: true
 ---
 
 Welcome to the next installment of our series of posts on people we consider to be heroes of the OpenAPI community. These people go above and beyond to contribute to the OpenAPI Specification (OAS), Special Interest Groups (SIG), or across the OpenAPI Initiative.

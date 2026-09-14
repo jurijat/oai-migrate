@@ -4,6 +4,7 @@ date: "2017-05-05"
 author: jernstfriedman
 category: uncategorized
 permalink: /uncategorized/2017/05/05/the-open-api-initiative-launches-openapi-spec-ambassador-program
+generated: true
 ---
 
 The Open API Initiative is pleased to announce the creation of the OAS Ambassador program.

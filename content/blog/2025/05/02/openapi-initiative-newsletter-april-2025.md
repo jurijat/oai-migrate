@@ -8,6 +8,7 @@ tags:
   - newsletter
   - openapi
 permalink: /blog/2025/05/02/openapi-initiative-newsletter-april-2025
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative (OAI) April 2025 newsletter! Our newsletter brings you initiative news, details of new versions of our specifications, and information on events and educational resources.

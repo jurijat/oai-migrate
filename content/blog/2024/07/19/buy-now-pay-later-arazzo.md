@@ -4,6 +4,7 @@ date: "2024-07-19"
 author: sensiblewood
 category: blog
 permalink: /blog/2024/07/19/buy-now-pay-later-arazzo
+generated: true
 ---
 
 # Buy-now, Pay-later – An Example Use Case for the Arazzo Specification

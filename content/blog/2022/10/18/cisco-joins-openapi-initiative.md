@@ -4,6 +4,7 @@ date: "2022-10-18"
 author: openapi
 category: blog
 permalink: /blog/2022/10/18/cisco-joins-openapi-initiative
+generated: true
 ---
 
 _OpenAPI Initiative continues strong pace of membership growth; 45 current members include Atlassian, Bloomberg, eBay, Google, IBM, Microsoft, Oracle, Postman, SAP, SmartBear, and many more_

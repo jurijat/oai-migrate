@@ -6,6 +6,7 @@ category: blog
 tags:
   - apidays
 permalink: /blog/2023/09/07/join-us-at-apidays-australia-2023-for-a-full-day-oai-track
+generated: true
 ---
 
 ![](/img/uploads/2023/09/melbourne-1000x562-1.webp)

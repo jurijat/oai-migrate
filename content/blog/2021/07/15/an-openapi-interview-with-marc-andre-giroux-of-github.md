@@ -4,6 +4,7 @@ date: "2021-07-15"
 author: kinlane
 category: blog
 permalink: /blog/2021/07/15/an-openapi-interview-with-marc-andre-giroux-of-github
+generated: true
 ---
 
 _By Kin Lane, Chief Evangelist at Postman, and Co-Chair of the OpenAPI Initiative (OAI) Business Governance Board (BGB)_

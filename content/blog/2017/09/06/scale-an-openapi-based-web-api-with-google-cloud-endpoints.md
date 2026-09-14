@@ -4,6 +4,7 @@ date: "2017-09-06"
 author: glaforge
 category: blog
 permalink: /blog/2017/09/06/scale-an-openapi-based-web-api-with-google-cloud-endpoints
+generated: true
 ---
 
 With the recent announcement of [OpenAPI Specification v3](/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0), it’s the right moment to pause and think for a moment about the benefits of using an API contract to describe your Web API. With an open and freely accessible, computer-friendly format, it opens up very important perspectives around tooling, compatibility, or team collaboration, as well as foster a fruitful ecosystem.

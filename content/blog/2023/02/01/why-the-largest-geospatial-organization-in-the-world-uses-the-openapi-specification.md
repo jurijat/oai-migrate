@@ -5,6 +5,7 @@ author: openapi
 category: blog
 permalink: >-
   /blog/2023/02/01/why-the-largest-geospatial-organization-in-the-world-uses-the-openapi-specification
+generated: true
 ---
 
 The Open Geospatial Consortium ([OGC](https://www.ogc.org/)) recently announced that [OGC API – Tiles](https://www.ogc.org/standards/ogcapi-tiles) was adopted as an official OGC Standard. The OGC is a collective problem-solving community of experts from more than 500 businesses, government agencies, research organizations, and universities representing hundreds of thousands of geospatial professionals driven to make geospatial (location) information and services FAIR – Findable, Accessible, Interoperable, and Reusable.

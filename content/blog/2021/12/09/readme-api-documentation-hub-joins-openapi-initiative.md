@@ -7,6 +7,7 @@ tags:
   - new-member
   - readme
 permalink: /blog/2021/12/09/readme-api-documentation-hub-joins-openapi-initiative
+generated: true
 ---
 
 ![](/img/uploads/2021/12/readme-blue.webp)

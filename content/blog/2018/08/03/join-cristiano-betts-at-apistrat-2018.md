@@ -7,6 +7,7 @@ tags:
   - apistrat-2018
   - apistrat-keynote
 permalink: /blog/2018/08/03/join-cristiano-betts-at-apistrat-2018
+generated: true
 ---
 
 ![](/img/uploads/2018/07/APIStrat_PromoGraphics_Twitter.webp)Join the OpenAPI Initiative and hundreds of API developers, strategist and thought leaders for _[APIStrat 2018](https://events.linuxfoundation.org/events/apistrat-2018/)_ on Sept. 24-26 in Music City.

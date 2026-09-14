@@ -4,6 +4,7 @@ date: "2025-02-05"
 author: marshg
 category: blog
 permalink: /blog/2025/02/05/moonwalk-2025-update
+generated: true
 ---
 
 Just over a year ago, we established a Special Interest Group (SIG) to explore how to evolve the OpenAPI Specification. We called this effort "Moonwalk," and we began by declaring our intentions in an initial [Moonwalk blog post](/blog/2023/12/06/openapi-moonwalk-2024). Since then, a group of committed contributors have met on [Tuesdays at 9am Pacific](https://github.com/OAI/sig-moonwalk/discussions/categories/announcements) to discuss these topics.

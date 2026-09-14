@@ -4,6 +4,7 @@ date: "2016-06-17"
 author: openapi
 category: blog
 permalink: /blog/2016/06/17/gluecon-wrap-up-living-up-to-the-hype-for-a-first-timer
+generated: true
 ---
 
 Last year, I was disappointed to miss out on Gluecon. My colleagues spoke very highly of it — informative, state-of-the-art, and very non-commercial. I was glad that it worked with my schedule this year, and I was absolutely not disappointed. Eric Norlin ([@defrag](https://twitter.com/defrag)) does a fantastic job of ensuring that his speakers are immensely varied but have one thing in common: extremely high in quality.

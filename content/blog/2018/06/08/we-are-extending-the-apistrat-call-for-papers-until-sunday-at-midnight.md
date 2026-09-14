@@ -7,6 +7,7 @@ tags:
   - apistrat
   - call-for-papers
 permalink: /blog/2018/06/08/we-are-extending-the-apistrat-call-for-papers-until-sunday-at-midnight
+generated: true
 ---
 
 [![](https://s3.amazonaws.com/kinlane-productions/midnight_clock.jpg)](https://events.linuxfoundation.org/events/apistrat-2018/cfp/)We have gotten the usual rush of last minute folks worried if they’ll make the deadline for [submitting their talk for APIStrat in Nashville, TN this September](https://events.linuxfoundation.org/events/apistrat-2018/cfp/). We fully understand that people are business, and the deadline may have snuck up on them, so we are going to extend it until the end of the weekend, to give folks more time to slow down a bit and think more about their talk Saturday and Sunday.

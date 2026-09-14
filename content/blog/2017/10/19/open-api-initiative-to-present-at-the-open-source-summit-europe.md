@@ -4,6 +4,7 @@ date: "2017-10-19"
 author: jernstfriedman
 category: announcement
 permalink: /uncategorized/2017/10/19/open-api-initiative-to-present-at-the-open-source-summit-europe
+generated: true
 ---
 
 IBM and SmartBear, two founding members of the Open API Initiative will join SAP, one of [our newest members](/blog/2017/10/19/open-api-initiative-fostering-ecosystem-driven-innovation-welcomes-sap-as-a-new-member), on stage at the Open Source Summit – Europe for a panel discussion: [If APIs are like Snowflakes, How Do You Make them More “Standardized” – or Do You](http://sched.co/CYCO)?

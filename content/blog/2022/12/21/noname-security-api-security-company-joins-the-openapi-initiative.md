@@ -4,6 +4,7 @@ date: "2022-12-21"
 author: openapi
 category: blog
 permalink: /blog/2022/12/21/noname-security-api-security-company-joins-the-openapi-initiative
+generated: true
 ---
 
 The OpenAPI Initiative is announcing today that Noname Security has joined as a new member. Welcome!

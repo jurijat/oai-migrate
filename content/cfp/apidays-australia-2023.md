@@ -2,6 +2,7 @@
 title: APIDAYS-Australia-2023-CFP
 permalink: /oai-at-apidays-4-2
 layout: cfp
+generated: true
 ---
 
 # **Call for Proposals: OAI Track at [API Days Australia](https://www.apidays.global/australia/)**

@@ -6,6 +6,7 @@ category: blog
 tags:
   - v3
 permalink: /blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3
+generated: true
 ---
 
 _With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how from the perspective the Technical Developer Community (TDC). The first post described the_ [_background and rationale behind the next evolution of the spec_](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how)_, the second covered_ [_Structural Changes_](/news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2)_, and the next few posts will address Protocol, Documentation, and other remaining open items._

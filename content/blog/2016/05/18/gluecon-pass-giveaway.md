@@ -4,6 +4,7 @@ date: "2016-05-18"
 author: openapi
 category: blog
 permalink: /blog/2016/05/18/gluecon-pass-giveaway
+generated: true
 ---
 
 [Gluecon](http://gluecon.com/) is just around the corner, and the Open API Initiative is giving a way a free pass. To qualify:

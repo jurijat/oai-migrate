@@ -6,6 +6,7 @@ category: blog
 tags:
   - apistrat-2018
 permalink: /blog/2018/08/24/something-for-everyone-at-apistrat-2018
+generated: true
 ---
 
 [![](/img/uploads/2018/07/APIStrat_PromoGraphics_Twitter.webp)](https://events.linuxfoundation.org/events/apistrat-2018/attend/convince-your-boss/)APIStrat 2018 is just a month away and I could not be more excited for the lineup we have this year! The program committee did another exceptional job in bringing in a wide range of topics and speakers, opening up opportunities for practitioners across not only the entirety of the API lifecycle but all levels of technical expertise as well. Register before September 14 and save $200 off your conference fee. Come on down to Nashville for the premier API event of the year.

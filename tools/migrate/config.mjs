@@ -31,7 +31,7 @@ export const DROPPED = {
   'membershipjoin-2': 'duplicate of membershipjoin',
 };
 
-export const GENERATED = new Set(['blog', 'membershipmembers']);
+export const GENERATED = new Set(['blog']);
 
 export const MOVED = {
   eventscalendar: 'https://events.openapis.org',

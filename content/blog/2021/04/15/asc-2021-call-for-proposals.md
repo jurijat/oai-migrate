@@ -4,6 +4,7 @@ date: "2021-04-15"
 author: abringaze
 category: blog
 permalink: /blog/2021/04/15/asc-2021-call-for-proposals
+generated: true
 ---
 
 After a successful virtual event last year, we are back again this fall. Mark your calendar for the return of the [API Specifications Conference (ASC)](https://events.linuxfoundation.org/openapi-asc/), this year as an all-digital event on September 28th and 29th, 9:00 am – 3:00 pm PDT.

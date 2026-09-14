@@ -8,6 +8,7 @@ tags:
   - openapi
   - specification
 permalink: /blog/2024/10/30/openapi-initiative-newsletter-october-2024
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative October 2024 Newsletter, our regular round-up of the latest stories from across the OpenAPI landscape.

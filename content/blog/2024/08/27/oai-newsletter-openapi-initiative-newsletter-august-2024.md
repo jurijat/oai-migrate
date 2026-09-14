@@ -9,6 +9,7 @@ tags:
   - newsletter
   - openapi
 permalink: /blog/2024/08/27/oai-newsletter-openapi-initiative-newsletter-august-2024
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative August 2024 Newsletter, our regular round-up of the latest stories from across the OpenAPI landscape. It’s vacation season in the northern hemisphere, but there is plenty of news to share!

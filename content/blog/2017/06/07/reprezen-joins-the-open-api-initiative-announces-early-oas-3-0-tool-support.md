@@ -4,6 +4,7 @@ date: "2017-06-07"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/06/07/reprezen-joins-the-open-api-initiative-announces-early-oas-3-0-tool-support
+generated: true
 ---
 
 The OpenAPI Specification (OAS) version 2.0, formerly known as the Swagger specification, is the current industry standard for API descriptions, supported by thousands of open source projects and all major API technology vendors. And OAS version 3.0, [planned for release](/blog/2017/05/25/the-open-api-initiative-is-sending-you-a-save-the-date-card) in July 2017, is the first major update to the specification.

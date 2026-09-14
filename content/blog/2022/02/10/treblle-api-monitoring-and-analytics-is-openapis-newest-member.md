@@ -9,6 +9,7 @@ tags:
   - new-member
   - treblle
 permalink: /blog/2022/02/10/treblle-api-monitoring-and-analytics-is-openapis-newest-member
+generated: true
 ---
 
 ![](https://lh3.googleusercontent.com/1kBbyBvvutKFNd2h3bNChWRSl3BWgdLfuGcpW8h49U_5VLPnP9-HtS47rKM9GdnoZIvWw8NsWYgPqQQeK_L9aradWuLdVWCS76nx4KMya3MfR2osMYnBfsUU4SsxNoDSz8K3tX_L)

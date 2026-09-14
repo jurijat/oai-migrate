@@ -8,6 +8,7 @@ tags:
   - hero
   - openapi
 permalink: /blog/2025/02/20/openapi-community-heroes-erik-wilde
+generated: true
 ---
 
 Welcome to the next installment of our series of posts on people we consider to be heroes of the OpenAPI community. These people go above and beyond to contribute to the OpenAPI Initiative specifications, Special Interest Groups (SIG), or across the OpenAPI Initiative (OAI).

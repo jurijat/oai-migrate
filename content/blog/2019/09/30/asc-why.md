@@ -4,6 +4,7 @@ date: "2019-09-30"
 author: abringaze
 category: blog
 permalink: /blog/2019/09/30/asc-why
+generated: true
 ---
 
 # ASC why!

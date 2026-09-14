@@ -8,6 +8,7 @@ tags:
   - microservices
   - new-member
 permalink: /blog/2021/02/16/openapi-initiative-welcomes-ambassador-labs-as-newest-member
+generated: true
 ---
 
 ![](/img/uploads/2021/02/edgy-ambassador-labs-logo.webp)

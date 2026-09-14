@@ -7,6 +7,7 @@ tags:
   - member
 permalink: >-
   /blog/2017/11/07/open-api-initiative-welcomes-api-testing-monitoring-company-api-fortress-newest-member
+generated: true
 ---
 
 The Open API Initiative is pleased to welcome [API Fortress,](http://apifortress.com/) an automated API testing and monitoring platform, as the latest company to join the OAI.

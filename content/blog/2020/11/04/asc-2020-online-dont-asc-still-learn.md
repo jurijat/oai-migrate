@@ -4,6 +4,7 @@ date: "2020-11-04"
 author: abringaze
 category: blog
 permalink: /blog/2020/11/04/asc-2020-online-dont-asc-still-learn
+generated: true
 ---
 
 The OpenAPI Initiative held its 2nd annual API Specifications Conference (ASC) online, September 9 – 10, 2020. A reimagined version of the famous APIStrat Conference, ASC continues to evolve and become a must-attend destination for folks interested in API specifications of all sorts. OpenAPI Specifications, RAML, Blueprint, gRPC, OData, JSON Schema, GraphQL, AsyncAPI, and other formats were all topics, enabling attendees to get familiar with these formats and discuss how to use them in practice.

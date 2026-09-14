@@ -7,6 +7,10 @@ const config = [
   ...nextCoreWebVitals,
   ...nextTypescript,
   prettier,
+  {
+    files: ['src/components/Mdx/**'],
+    rules: { '@next/next/no-img-element': 'off' },
+  },
 ];
 
 export default config;

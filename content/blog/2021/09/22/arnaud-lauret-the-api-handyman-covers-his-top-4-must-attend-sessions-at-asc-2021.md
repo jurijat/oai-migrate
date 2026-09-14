@@ -8,6 +8,7 @@ tags:
   - arnaud-lauret
   - asc-2021
 permalink: /blog/2021/09/22/arnaud-lauret-the-api-handyman-covers-his-top-4-must-attend-sessions-at-asc-2021
+generated: true
 ---
 
 ![](https://lh6.googleusercontent.com/-6xfknluoajJkjaVR3CoAXC7rRCrIPn4EBSUx4Hq18QSbeH53NFJz1nWjzCQZ9Q2ykLpMa1EwR6nzp12Ha1UmpvscmlCcTTV_j6wvnU8h32iVuGtTiG1a9qyUm8f1EqJaA6VdYnm=s0)

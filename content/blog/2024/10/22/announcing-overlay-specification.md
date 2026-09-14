@@ -9,6 +9,7 @@ tags:
   - overlay
   - specification
 permalink: /blog/2024/10/22/announcing-overlay-specification
+generated: true
 ---
 
 The OpenAPI Initiative is proud to announce the publication of the [OpenAPI Overlay Specification version 1.0.0](https://github.com/OAI/Overlay-Specification/blob/main/versions/1.0.0.md).

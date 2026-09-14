@@ -4,6 +4,7 @@ date: "2018-09-13"
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/09/13/advanced-openapi-specification-technical-overview-workshop-at-apistrat-2018
+generated: true
 ---
 
 Please join us for an advanced hands-on workshop on OpenAPI 3.0. Be sure to bring your own laptop to participate. This will be an OpenAPI Specification Technical Overview/Workshop.

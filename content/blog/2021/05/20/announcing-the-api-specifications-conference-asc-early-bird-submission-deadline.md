@@ -4,6 +4,7 @@ date: "2021-05-20"
 author: abringaze
 category: blog
 permalink: /blog/2021/05/20/announcing-the-api-specifications-conference-asc-early-bird-submission-deadline
+generated: true
 ---
 
 The third API Specifications Conference (ASC) will take place on September 28th and 29th. This year as part of the [call for proposals](/blog/2021/04/15/asc-2021-call-for-proposals) we’re going to be accepting and announcing five talks early. In order to have your talk considered, you need to have your submission in by May 28th, 11:59pm PDT.

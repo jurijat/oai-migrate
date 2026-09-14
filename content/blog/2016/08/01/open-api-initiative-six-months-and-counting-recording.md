@@ -4,6 +4,7 @@ date: "2016-08-01"
 author: openapi
 category: blog
 permalink: /blog/2016/08/01/open-api-initiative-six-months-and-counting-recording
+generated: true
 ---
 
 Watch a recording of IBM developerWorks Open where OAI Board member Jeff Borek ([@jeffborek](https://twitter.com/jeffborek)) moderates a discussion with fellow OAI members Capital One’s Dennis Brennan ([@dennis\_brennan](https://twitter.com/dennis_brennan)), Apigee’s Marsh Gardiner ([@earth2marsh](https://twitter.com/earth2marsh)) and Tony Tam ([@fehguy](https://twitter.com/fehguy)) of SmartBear Software along with Raymond Feng ([@cyberfeng](https://twitter.com/cyberfeng)) of StrongLoop.

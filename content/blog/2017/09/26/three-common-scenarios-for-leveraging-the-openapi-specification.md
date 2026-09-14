@@ -7,6 +7,7 @@ tags:
   - openapi-spec
   - tutorial
 permalink: /blog/2017/09/26/three-common-scenarios-for-leveraging-the-openapi-specification
+generated: true
 ---
 
 #### _This article is a short preview of the forthcoming talk “Designing APIs with the OpenAPI Specification” to be delivered at [Codemotion conference](https://2017.codemotion.es/), Madrid, Spain on November, 24th._

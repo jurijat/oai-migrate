@@ -4,6 +4,7 @@ date: "2021-02-09"
 author: openapi
 category: announcement
 permalink: /blog/2021/02/09/vonage-joins-openapi-initiative
+generated: true
 ---
 
 _Press release from Vonage_

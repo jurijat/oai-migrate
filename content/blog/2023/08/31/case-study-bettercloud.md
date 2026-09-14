@@ -6,6 +6,7 @@ date: "2023-08-31"
 author: openapi
 category: blog
 permalink: /blog/2023/08/31/case-study-bettercloud
+generated: true
 ---
 
 _Guest blog post by_ [_Donald Atha, Software Architect, BetterCloud_](https://www.linkedin.com/in/donald-atha-41813323/)

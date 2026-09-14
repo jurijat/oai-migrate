@@ -7,6 +7,7 @@ author: openapi
 category: announcement
 permalink: >-
   /announcement/2015/11/05/new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services
+generated: true
 ---
 
 **The Linux Foundation will host new Open API Initiative with initial contributions from SmartBear and founding members 3Scale, Apigee, Capital One, Google, IBM, Intuit, Microsoft, PayPal and Restlet**

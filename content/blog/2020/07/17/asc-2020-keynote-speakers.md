@@ -4,6 +4,7 @@ date: "2020-07-17"
 author: darrmi
 category: blog
 permalink: /blog/2020/07/17/asc-2020-keynote-speakers
+generated: true
 ---
 
 We are thrilled to announce two of our keynote speakers for ASC 2020 coming to your couch virtually, September 9-10.

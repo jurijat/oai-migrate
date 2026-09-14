@@ -7,6 +7,7 @@ tags:
   - apiaddicts
   - new-member
 permalink: /blog/2021/07/22/apiaddicts-joins-openapi-initiative
+generated: true
 ---
 
 ![](/img/uploads/2021/07/APIAddicts-logo.webp)

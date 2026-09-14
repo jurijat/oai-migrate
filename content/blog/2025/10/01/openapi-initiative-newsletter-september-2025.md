@@ -9,6 +9,7 @@ tags:
   - openapi
   - overlay
 permalink: /blog/2025/10/01/openapi-initiative-newsletter-september-2025
+generated: true
 ---
 
 Welcome to the OpenAPI Initiative (OAI) September 2025 newsletter! We’ve had a break over the vacation season in the northern hemisphere, but are back to bring you initiative news, information on events and educational resources, and this time round, news of our v3.2 OpenAPI release!

@@ -4,6 +4,7 @@ date: "2017-03-08"
 author: jernstfriedman
 category: presentation
 permalink: /blog/presentation/2017/03/08/api-design-and-whats-new-with-open-api-google-cloud-next-17
+generated: true
 ---
 
 \[embedyt\] http://www.youtube.com/watch?v=4lBMQteMd6Y\[/embedyt\]

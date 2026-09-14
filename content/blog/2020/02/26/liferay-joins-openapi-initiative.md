@@ -7,6 +7,7 @@ tags:
   - liferay
   - member
 permalink: /blog/2020/02/26/liferay-joins-openapi-initiative
+generated: true
 ---
 
 ![](https://lh6.googleusercontent.com/IWGLtQMyN_n2Tap8vJjRoV2PpOFOOdPz9m8nIGAhekVX3YD1lTKg4XLGZ2yyvtDqVrK9S5eS-Vy-gsn82U7IfBSUcydt2u61D6GL1_OqLBZ_o9SbOB0s4xGJT3FABjKza3Z_ZqYU)

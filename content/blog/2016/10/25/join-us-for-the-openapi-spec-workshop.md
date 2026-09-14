@@ -4,6 +4,7 @@ date: "2016-10-25"
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/10/25/join-us-for-the-openapi-spec-workshop
+generated: true
 ---
 
 The Open API Initiative and Capital One are co-hosting a OpenAPI Spec Crash Course as part of the 2016 APISTRAT Conference.

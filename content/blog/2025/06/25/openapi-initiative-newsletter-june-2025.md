@@ -4,6 +4,7 @@ date: "2025-06-25"
 author: sensiblewood
 category: blog
 permalink: /blog/2025/06/25/openapi-initiative-newsletter-june-2025
+generated: true
 ---
 
 Welcome to the June 2025 edition of the OpenAPI Initiative (OAI) newsletter! The newsletter aims to keep you in touch with what’s happening in the world of the OpenAPI, Arazzo, and Overlay specifications and our community.

@@ -4,6 +4,7 @@ date: "2025-09-23"
 author: sensiblewood
 category: blog
 permalink: /blog/2025/09/23/announcing-openapi-v3-2
+generated: true
 ---
 
 We are delighted and proud to announce the release of v3.2.0 of the OpenAPI Specification!

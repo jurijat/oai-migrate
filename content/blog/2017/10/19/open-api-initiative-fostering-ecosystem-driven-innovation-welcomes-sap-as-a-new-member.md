@@ -8,6 +8,7 @@ tags:
   - sap
 permalink: >-
   /blog/2017/10/19/open-api-initiative-fostering-ecosystem-driven-innovation-welcomes-sap-as-a-new-member
+generated: true
 ---
 
 The Open API Initiative (OAI) project is pleased to announce that SAP has joined as our newest member. The OAI community is working to establish an open source foundation for developing interoperability of APIs. SAP joins 28 current members in promoting a vendor-neutral description format. OAI is hosted by The Linux Foundation, the nonprofit advancing professional open source management for mass collaboration.

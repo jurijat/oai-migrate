@@ -4,6 +4,7 @@ date: "2017-04-13"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/04/13/the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17
+generated: true
 ---
 
 The Open API Initiative along with 3scale by Red Hat and the API Evangelist [are pleased to announce](https://www.linuxfoundation.org/announcements/apistrat-becomes-a-linux-foundation-and-open-api-initiative-event) that APIStrat has become a Linux Foundation event.

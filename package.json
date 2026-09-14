@@ -23,7 +23,8 @@
     "predev": "npm run assets",
     "prebuild": "npm run assets",
     "migrate:publish": "node tools/publish-assets.mjs",
-    "migrate:redirects": "node tools/migrate/redirects.mjs"
+    "migrate:redirects": "node tools/migrate/redirects.mjs",
+    "postbuild": "node tools/postbuild.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -54,6 +55,9 @@
     "postcss": "^8.5.26",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.7.3",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
     "sharp": "^0.35.3",
     "tailwindcss": "^3.4.19",
     "turndown": "^7.2.0",

@@ -4,6 +4,7 @@ date: "2016-09-19"
 author: openapi
 category: blog
 permalink: /blog/2016/09/19/openapi-spec-at-google-oai-meetup-2016-09-15
+generated: true
 ---
 
 Before the precursor to the OpenAPI Spec – the Swagger Specification – was created in 2010, Google had already published 150 public APIs, leveraged by hundreds of thousands of developers and handled many, many billions of calls … every day.

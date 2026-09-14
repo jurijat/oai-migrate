@@ -4,6 +4,7 @@ date: "2017-08-17"
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/08/17/ebay-joins-the-open-api-initiative
+generated: true
 ---
 
 _The partnership makes it easier for eBay developers to integrate with our RESTful public APIs and evolve their buying and selling experiences on our platforms._

@@ -4,6 +4,7 @@ date: "2021-07-21"
 author: abringaze
 category: announcement
 permalink: /blog/2021/07/21/oai-additional-leadership-job-posting
+generated: true
 ---
 
 The OpenAPI Initiative (OAI) is looking for three individuals to fill three separate year-long contracts to help lead the conversation around the leading API specification. We are looking for three self-starting individuals who are familiar with the OpenAPI Specification (OAS), and will help roll up their sleeves and help move a handful of projects forward.

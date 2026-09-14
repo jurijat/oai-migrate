@@ -2,6 +2,7 @@
 title: APIDAYS-Events-2023
 permalink: /oai-at-apidays
 layout: cfp
+generated: true
 ---
 
 # **Event: [API Days London](https://www.apidays.global/london/)**

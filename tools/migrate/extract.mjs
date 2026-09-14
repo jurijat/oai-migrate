@@ -67,6 +67,18 @@ function prepare(html) {
   return $;
 }
 
+const KEEP_ATTRS = new Set(['href', 'src', 'alt', 'title', 'colspan', 'rowspan', 'datetime']);
+
+function stripPresentation($, root) {
+  if (!root.length) return;
+  root.find('*').each((_, el) => {
+    const attribs = el.attribs ?? {};
+    for (const name of Object.keys(attribs)) {
+      if (!KEEP_ATTRS.has(name.toLowerCase())) $(el).removeAttr(name);
+    }
+  });
+}
+
 function interactive($, root) {
   if (!root.length) return [];
   const found = [];
@@ -114,6 +126,7 @@ export function extractPost(html, entry) {
   if (!body.length) warnings.push('no .content-inner');
   const codeBlocks = normalizeCode($, body);
   const dropped = interactive($, body);
+  stripPresentation($, body);
 
   return {
     kind: 'post',
@@ -147,6 +160,7 @@ export function extractPage(html, entry) {
 
   const codeBlocks = normalizeCode($, body);
   const dropped = interactive($, body);
+  stripPresentation($, body);
 
   return {
     kind: 'page',

@@ -8,6 +8,7 @@ tags:
   - migration
   - oas
 permalink: /blog/2021/02/16/migrating-from-openapi-3-0-to-3-1-0
+generated: true
 ---
 
 _This post is authored by Phil Sturgeon, product manager, Stoplight, and Chairperson, Protect Earth. If you’d like to donate to Phil’s charity of choice, please see [Protect Earth](http://www.protect.earth) which is reforesting the U.K. one field at a time._

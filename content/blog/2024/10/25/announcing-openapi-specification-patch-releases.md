@@ -8,6 +8,7 @@ tags:
   - openapi
   - specification
 permalink: /blog/2024/10/25/announcing-openapi-specification-patch-releases
+generated: true
 ---
 
 Hot on the heels of our Overlay 1.0.0 announcement, the OpenAPI Initiative is pleased to announce a patch release of the 3.0 and 3.1 OpenAPI Specifications!

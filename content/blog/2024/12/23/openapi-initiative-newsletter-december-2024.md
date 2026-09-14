@@ -4,6 +4,7 @@ date: "2024-12-23"
 author: sensiblewood
 category: blog
 permalink: /blog/2024/12/23/openapi-initiative-newsletter-december-2024
+generated: true
 ---
 
 Welcome to our December 2024 newsletter, the final OpenAPI Initiative roundup of the year! Our newsletter brings you initiative news, details of new versions of our specifications, and information on events and educational resources.
