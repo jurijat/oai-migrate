@@ -94,13 +94,13 @@ rationale. Check off each task as it lands.
 
 ## Phase 5 — CI/CD and PR preview
 
-- [ ] `ci.yml` — lint → typecheck → schema validation → build → Playwright
-- [ ] `ajv-cli` frontmatter + data validation wired into CI
-- [ ] `deploy.yml` — GitHub Pages on `push: main`
-- [ ] `preview-build.yml` — `pull_request`, builds and uploads artifact, no secrets
-- [ ] `preview-deploy.yml` — `workflow_run`, deploys to Cloudflare Pages, sticky comment
+- [x] `ci.yml` — lint → typecheck → format:check → build → Playwright
+- [x] Frontmatter validated in CI by zod at build time (`ajv` kept for editor schemas)
+- [x] `deploy.yml` — GitHub Pages on `push: main`
+- [x] `preview-build.yml` — `pull_request`, builds and uploads artifact, no secrets
+- [x] `preview-deploy.yml` — `workflow_run`, deploys to Cloudflare Pages, sticky comment
 - [ ] Cloudflare project created, `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` set
-- [ ] `PULL_REQUEST_TEMPLATE.md`, `CODEOWNERS`
+- [x] `PULL_REQUEST_TEMPLATE.md`, `CODEOWNERS`
 - [ ] Issue forms: propose a blog post, fix a page
 - [ ] `CONVENTIONS.md` (Markdown house style, after `OAI-Tracks`)
 
@@ -110,15 +110,22 @@ rationale. Check off each task as it lands.
 - [x] Static redirect stub generation (meta-refresh + canonical)
 - [x] Cloudflare `_redirects` generation
 - [x] URL parity check fails the build on a missing permalink
-- [ ] Open Graph + canonical tags per page
+- [x] Open Graph + canonical tags per page
 - [ ] `CNAME` for the production domain
+
+### Phase 5 follow-ups
+
+- [ ] Create the Cloudflare Pages project `openapis-org`
+- [ ] Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets
+- [ ] Verify the preview comment on a throwaway PR (workflows cannot be tested before they are on `main`)
 
 ## Phase 7 — QA and cutover
 
 - [ ] Content parity diff across all 214 migrated URLs
 - [ ] Full internal link check against the crawl
 - [ ] Lighthouse pass (perf, a11y, SEO)
-- [ ] Playwright suite green on CI matrix
+- [x] Playwright smoke suite green locally (7 tests)
+- [ ] Playwright suite green on CI
 - [ ] Preview verified on a throwaway PR
 - [ ] Transfer repo to the `OAI` org
 - [ ] DNS cutover

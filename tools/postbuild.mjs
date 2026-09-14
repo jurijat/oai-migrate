@@ -4,7 +4,7 @@ import yaml from 'js-yaml';
 
 const OUT = 'out';
 const REDIRECTS = 'data/redirects.yaml';
-const URLS = '.cache/urls.json';
+const URLS = 'data/source-urls.json';
 
 function stub(target) {
   const escaped = target.replace(/"/g, '&quot;');

@@ -1,8 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import type { NavItem } from '@/lib/content';
 
@@ -36,10 +37,10 @@ function ItemLink({
 }
 
 export function Navbar({ nav }: { nav: NavItem[] }) {
-  const [open, setOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => setOpen(false), [pathname]);
+  const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const open = openedAt === pathname;
+  const close = () => setOpenedAt(null);
 
   return (
     <header className="bg-brand-bg/90 sticky top-0 z-50 border-b border-brand-separator backdrop-blur">
@@ -48,7 +49,14 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
         className="mx-auto flex max-w-content items-center justify-between gap-6 px-6 py-4"
       >
         <Link href="/" className="shrink-0" aria-label="OpenAPI Initiative home">
-          <img src="/brand/openapi-logo.svg" alt="OpenAPI Initiative" className="h-9 w-auto" />
+          <Image
+            src="/brand/openapi-logo.svg"
+            alt="OpenAPI Initiative"
+            width={248}
+            height={56}
+            priority
+            className="h-9 w-auto"
+          />
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -91,7 +99,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
           <ThemeToggle />
           <button
             type="button"
-            onClick={() => setOpen((value) => !value)}
+            onClick={() => setOpenedAt(open ? null : pathname)}
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label="Toggle navigation"
@@ -111,7 +119,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
                   href={item.href}
                   label={item.label}
                   className="block py-2 font-medium"
-                  onNavigate={() => setOpen(false)}
+                  onNavigate={close}
                 />
               ) : (
                 <p className="py-2 font-medium">{item.label}</p>
@@ -124,7 +132,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
                         href={child.href}
                         label={child.label}
                         className="block py-1.5 text-sm text-brand-muted"
-                        onNavigate={() => setOpen(false)}
+                        onNavigate={close}
                       />
                     </li>
                   ))}

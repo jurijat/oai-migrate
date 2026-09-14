@@ -1,0 +1,1412 @@
+[
+  {
+    "url": "https://www.openapis.org/announcement/2015/11/05/new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services",
+    "type": "post",
+    "slug": "announcement/2015/11/05/new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services",
+    "key": "announcement__2015__11__05__new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services"
+  },
+  {
+    "url": "https://www.openapis.org/news/2016/02/24/developers-apis-are-crucial-to-business-but-tough-to-get-right",
+    "type": "post",
+    "slug": "news/2016/02/24/developers-apis-are-crucial-to-business-but-tough-to-get-right",
+    "key": "news__2016__02__24__developers-apis-are-crucial-to-business-but-tough-to-get-right"
+  },
+  {
+    "url": "https://www.openapis.org/news/2016/02/18/developer-aero-adopts-new-open-api-definition-format-via-3scale-platform",
+    "type": "post",
+    "slug": "news/2016/02/18/developer-aero-adopts-new-open-api-definition-format-via-3scale-platform",
+    "key": "news__2016__02__18__developer-aero-adopts-new-open-api-definition-format-via-3scale-platform"
+  },
+  {
+    "url": "https://www.openapis.org/news/2016/01/07/interview-with-tony-tam-on-the-open-api-initiative-and-latest-swagger-news",
+    "type": "post",
+    "slug": "news/2016/01/07/interview-with-tony-tam-on-the-open-api-initiative-and-latest-swagger-news",
+    "key": "news__2016__01__07__interview-with-tony-tam-on-the-open-api-initiative-and-latest-swagger-news"
+  },
+  {
+    "url": "https://www.openapis.org/news/2015/11/10/open-source-projects-further-restful-api-based-development",
+    "type": "post",
+    "slug": "news/2015/11/10/open-source-projects-further-restful-api-based-development",
+    "key": "news__2015__11__10__open-source-projects-further-restful-api-based-development"
+  },
+  {
+    "url": "https://www.openapis.org/news/2015/11/05/smartbear-launches-open-api-initiative-with-key-industry-leaders-including-google-ibm-and-microsoft",
+    "type": "post",
+    "slug": "news/2015/11/05/smartbear-launches-open-api-initiative-with-key-industry-leaders-including-google-ibm-and-microsoft",
+    "key": "news__2015__11__05__smartbear-launches-open-api-initiative-with-key-industry-leaders-including-google-ibm-and-microsoft"
+  },
+  {
+    "url": "https://www.openapis.org/news/2015/11/05/new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services-2",
+    "type": "post",
+    "slug": "news/2015/11/05/new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services-2",
+    "key": "news__2015__11__05__new-collaborative-project-to-extend-swagger-specification-for-building-connected-applications-and-services-2"
+  },
+  {
+    "url": "https://www.openapis.org/news/2015/11/05/ibm-collaborates-with-yes-bank-bian-to-promote-the-api-economy",
+    "type": "post",
+    "slug": "news/2015/11/05/ibm-collaborates-with-yes-bank-bian-to-promote-the-api-economy",
+    "key": "news__2015__11__05__ibm-collaborates-with-yes-bank-bian-to-promote-the-api-economy"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2",
+    "type": "post",
+    "slug": "blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2",
+    "key": "blog__2016__10__03__tdc-structural-improvements-explaining-the-3-0-spec-part-2"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/09/26/open-api-initiative-9-months-and-counting-oai-meetup-2016-09-15",
+    "type": "post",
+    "slug": "blog/2016/09/26/open-api-initiative-9-months-and-counting-oai-meetup-2016-09-15",
+    "key": "blog__2016__09__26__open-api-initiative-9-months-and-counting-oai-meetup-2016-09-15"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/09/19/zipping-through-the-openapi-with-capital-one-oai-meetup-2016-09-15",
+    "type": "post",
+    "slug": "blog/2016/09/19/zipping-through-the-openapi-with-capital-one-oai-meetup-2016-09-15",
+    "key": "blog__2016__09__19__zipping-through-the-openapi-with-capital-one-oai-meetup-2016-09-15"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/09/19/openapi-spec-at-google-oai-meetup-2016-09-15",
+    "type": "post",
+    "slug": "blog/2016/09/19/openapi-spec-at-google-oai-meetup-2016-09-15",
+    "key": "blog__2016__09__19__openapi-spec-at-google-oai-meetup-2016-09-15"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/08/01/open-api-initiative-six-months-and-counting-recording",
+    "type": "post",
+    "slug": "blog/2016/08/01/open-api-initiative-six-months-and-counting-recording",
+    "key": "blog__2016__08__01__open-api-initiative-six-months-and-counting-recording"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how",
+    "type": "post",
+    "slug": "blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how",
+    "key": "blog__2016__07__11__you-can-get-involved-in-creating-the-openapi-specification-and-heres-how"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/06/17/gluecon-wrap-up-living-up-to-the-hype-for-a-first-timer",
+    "type": "post",
+    "slug": "blog/2016/06/17/gluecon-wrap-up-living-up-to-the-hype-for-a-first-timer",
+    "key": "blog__2016__06__17__gluecon-wrap-up-living-up-to-the-hype-for-a-first-timer"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/05/18/gluecon-pass-giveaway",
+    "type": "post",
+    "slug": "blog/2016/05/18/gluecon-pass-giveaway",
+    "key": "blog__2016__05__18__gluecon-pass-giveaway"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/05/11/grpc-with-rest-and-openapi-specification",
+    "type": "post",
+    "slug": "blog/2016/05/11/grpc-with-rest-and-openapi-specification",
+    "key": "blog__2016__05__11__grpc-with-rest-and-openapi-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/03/28/state-of-the-project-update-with-jeff-borek-at-the-2016-collaboration-summit",
+    "type": "post",
+    "slug": "blog/2016/03/28/state-of-the-project-update-with-jeff-borek-at-the-2016-collaboration-summit",
+    "key": "blog__2016__03__28__state-of-the-project-update-with-jeff-borek-at-the-2016-collaboration-summit"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/02/23/oai-update-new-members-openapi-spec-3-0-progress-and-more",
+    "type": "post",
+    "slug": "blog/2016/02/23/oai-update-new-members-openapi-spec-3-0-progress-and-more",
+    "key": "blog__2016__02__23__oai-update-new-members-openapi-spec-3-0-progress-and-more"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/01/09/next-steps-for-the-oai-an-exciting-2016-looms-ahead",
+    "type": "post",
+    "slug": "blog/2016/01/09/next-steps-for-the-oai-an-exciting-2016-looms-ahead",
+    "key": "blog__2016__01__09__next-steps-for-the-oai-an-exciting-2016-looms-ahead"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3",
+    "type": "post",
+    "slug": "blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3",
+    "key": "blog__2016__10__14__request-parameters-explaining-the-3-0-spec-part-3"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/11/01/openapi-spec-at-apistrat-2016",
+    "type": "post",
+    "slug": "blog/2016/11/01/openapi-spec-at-apistrat-2016",
+    "key": "blog__2016__11__01__openapi-spec-at-apistrat-2016"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/10/25/join-us-for-the-openapi-spec-workshop",
+    "type": "post",
+    "slug": "blog/2016/10/25/join-us-for-the-openapi-spec-workshop",
+    "key": "blog__2016__10__25__join-us-for-the-openapi-spec-workshop"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4",
+    "type": "post",
+    "slug": "blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4",
+    "key": "blog__2016__11__14__tdc-protocol-and-payload-explaining-the-3-0-spec-part-4"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5",
+    "type": "post",
+    "slug": "blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5",
+    "key": "blog__2016__11__17__tdc-documentation-explaining-the-3-0-spec-part-5"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2016/11/18/denver-based-cloud-elements-latest-member-to-join-open-api-initiative",
+    "type": "post",
+    "slug": "blog/2016/11/18/denver-based-cloud-elements-latest-member-to-join-open-api-initiative",
+    "key": "blog__2016__11__18__denver-based-cloud-elements-latest-member-to-join-open-api-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/events/2016/11/29/oscon-contract-first-api-development-using-the-openapi-specification",
+    "type": "post",
+    "slug": "events/2016/11/29/oscon-contract-first-api-development-using-the-openapi-specification",
+    "key": "events__2016__11__29__oscon-contract-first-api-development-using-the-openapi-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentation/2016/11/19/openapi-trek-into-fastness-nordic-apis-summit-2016",
+    "type": "post",
+    "slug": "blog/presentation/2016/11/19/openapi-trek-into-fastness-nordic-apis-summit-2016",
+    "key": "blog__presentation__2016__11__19__openapi-trek-into-fastness-nordic-apis-summit-2016"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentation/2016/11/28/openapi-trek-beyond-api-documentation-apistrat-2016",
+    "type": "post",
+    "slug": "blog/presentation/2016/11/28/openapi-trek-beyond-api-documentation-apistrat-2016",
+    "key": "blog__presentation__2016__11__28__openapi-trek-beyond-api-documentation-apistrat-2016"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentation/2016/11/29/openapi-trek-api-days-london-2016",
+    "type": "post",
+    "slug": "blog/presentation/2016/11/29/openapi-trek-api-days-london-2016",
+    "key": "blog__presentation__2016__11__29__openapi-trek-api-days-london-2016"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentation/2016/07/27/the-open-api-initiative-6-months-and-counting-ibm-developerworks-open",
+    "type": "post",
+    "slug": "blog/presentation/2016/07/27/the-open-api-initiative-6-months-and-counting-ibm-developerworks-open",
+    "key": "blog__presentation__2016__07__27__the-open-api-initiative-6-months-and-counting-ibm-developerworks-open"
+  },
+  {
+    "url": "https://www.openapis.org/uncategorized/2016/03/07/tony-tam-recounts-the-history-of-swagger-and-the-open-api-initiative-developerworks-tv",
+    "type": "post",
+    "slug": "uncategorized/2016/03/07/tony-tam-recounts-the-history-of-swagger-and-the-open-api-initiative-developerworks-tv",
+    "key": "uncategorized__2016__03__07__tony-tam-recounts-the-history-of-swagger-and-the-open-api-initiative-developerworks-tv"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentation/2016/11/18/open-api-initiative-meetup-atlassian-microsoft-google-meetup",
+    "type": "post",
+    "slug": "blog/presentation/2016/11/18/open-api-initiative-meetup-atlassian-microsoft-google-meetup",
+    "key": "blog__presentation__2016__11__18__open-api-initiative-meetup-atlassian-microsoft-google-meetup"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/01/24/a-new-year-a-new-specification",
+    "type": "post",
+    "slug": "blog/2017/01/24/a-new-year-a-new-specification",
+    "key": "blog__2017__01__24__a-new-year-a-new-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/01/23/join-the-open-api-initiative-linkedin-group",
+    "type": "post",
+    "slug": "blog/2017/01/23/join-the-open-api-initiative-linkedin-group",
+    "key": "blog__2017__01__23__join-the-open-api-initiative-linkedin-group"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/03/01/open-api-initiative-announces-the-release-of-the-openapi-spec-3-implementers-draft",
+    "type": "post",
+    "slug": "blog/2017/03/01/open-api-initiative-announces-the-release-of-the-openapi-spec-3-implementers-draft",
+    "key": "blog__2017__03__01__open-api-initiative-announces-the-release-of-the-openapi-spec-3-implementers-draft"
+  },
+  {
+    "url": "https://www.openapis.org/uncategorized/2017/05/05/the-open-api-initiative-launches-openapi-spec-ambassador-program",
+    "type": "post",
+    "slug": "uncategorized/2017/05/05/the-open-api-initiative-launches-openapi-spec-ambassador-program",
+    "key": "uncategorized__2017__05__05__the-open-api-initiative-launches-openapi-spec-ambassador-program"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentation/2017/03/08/api-design-and-whats-new-with-open-api-google-cloud-next-17",
+    "type": "post",
+    "slug": "blog/presentation/2017/03/08/api-design-and-whats-new-with-open-api-google-cloud-next-17",
+    "key": "blog__presentation__2017__03__08__api-design-and-whats-new-with-open-api-google-cloud-next-17"
+  },
+  {
+    "url": "https://www.openapis.org/events/2017/03/14/devsum17-openapi-v3-the-evolution-of-api-descriptions",
+    "type": "post",
+    "slug": "events/2017/03/14/devsum17-openapi-v3-the-evolution-of-api-descriptions",
+    "key": "events__2017__03__14__devsum17-openapi-v3-the-evolution-of-api-descriptions"
+  },
+  {
+    "url": "https://www.openapis.org/uncategorized/2017/03/09/api-craft-sf-meetup-open-api-specification-3-0",
+    "type": "post",
+    "slug": "uncategorized/2017/03/09/api-craft-sf-meetup-open-api-specification-3-0",
+    "key": "uncategorized__2017__03__09__api-craft-sf-meetup-open-api-specification-3-0"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/04/13/the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17",
+    "type": "post",
+    "slug": "blog/2017/04/13/the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17",
+    "key": "blog__2017__04__13__the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/05/02/competitors-join-oai-to-lead-convergence-of-api-landscape",
+    "type": "post",
+    "slug": "blog/2017/05/02/competitors-join-oai-to-lead-convergence-of-api-landscape",
+    "key": "blog__2017__05__02__competitors-join-oai-to-lead-convergence-of-api-landscape"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/05/25/the-open-api-initiative-is-sending-you-a-save-the-date-card",
+    "type": "post",
+    "slug": "blog/2017/05/25/the-open-api-initiative-is-sending-you-a-save-the-date-card",
+    "key": "blog__2017__05__25__the-open-api-initiative-is-sending-you-a-save-the-date-card"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/06/07/reprezen-joins-the-open-api-initiative-announces-early-oas-3-0-tool-support",
+    "type": "post",
+    "slug": "blog/2017/06/07/reprezen-joins-the-open-api-initiative-announces-early-oas-3-0-tool-support",
+    "key": "blog__2017__06__07__reprezen-joins-the-open-api-initiative-announces-early-oas-3-0-tool-support"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/06/09/financial-services-provider-finxact-joins-open-api-initiative",
+    "type": "post",
+    "slug": "blog/2017/06/09/financial-services-provider-finxact-joins-open-api-initiative",
+    "key": "blog__2017__06__09__financial-services-provider-finxact-joins-open-api-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/06/18/open-api-initiative-begins-openapi-spec-comment-period",
+    "type": "post",
+    "slug": "blog/2017/06/18/open-api-initiative-begins-openapi-spec-comment-period",
+    "key": "blog__2017__06__18__open-api-initiative-begins-openapi-spec-comment-period"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0",
+    "type": "post",
+    "slug": "blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0",
+    "key": "blog__2017__07__26__the-oai-announces-the-openapi-specification-3-0-0"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/08/17/ebay-joins-the-open-api-initiative",
+    "type": "post",
+    "slug": "blog/2017/08/17/ebay-joins-the-open-api-initiative",
+    "key": "blog__2017__08__17__ebay-joins-the-open-api-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/09/06/scale-an-openapi-based-web-api-with-google-cloud-endpoints",
+    "type": "post",
+    "slug": "blog/2017/09/06/scale-an-openapi-based-web-api-with-google-cloud-endpoints",
+    "key": "blog__2017__09__06__scale-an-openapi-based-web-api-with-google-cloud-endpoints"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/09/26/three-common-scenarios-for-leveraging-the-openapi-specification",
+    "type": "post",
+    "slug": "blog/2017/09/26/three-common-scenarios-for-leveraging-the-openapi-specification",
+    "key": "blog__2017__09__26__three-common-scenarios-for-leveraging-the-openapi-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/10/19/open-api-initiative-fostering-ecosystem-driven-innovation-welcomes-sap-as-a-new-member",
+    "type": "post",
+    "slug": "blog/2017/10/19/open-api-initiative-fostering-ecosystem-driven-innovation-welcomes-sap-as-a-new-member",
+    "key": "blog__2017__10__19__open-api-initiative-fostering-ecosystem-driven-innovation-welcomes-sap-as-a-new-member"
+  },
+  {
+    "url": "https://www.openapis.org/uncategorized/2017/10/19/open-api-initiative-to-present-at-the-open-source-summit-europe",
+    "type": "post",
+    "slug": "uncategorized/2017/10/19/open-api-initiative-to-present-at-the-open-source-summit-europe",
+    "key": "uncategorized__2017__10__19__open-api-initiative-to-present-at-the-open-source-summit-europe"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/10/26/meet-ibms-sai-vennam-at-apistrat-2017",
+    "type": "post",
+    "slug": "blog/2017/10/26/meet-ibms-sai-vennam-at-apistrat-2017",
+    "key": "blog__2017__10__26__meet-ibms-sai-vennam-at-apistrat-2017"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/11/07/open-api-initiative-welcomes-api-testing-monitoring-company-api-fortress-newest-member",
+    "type": "post",
+    "slug": "blog/2017/11/07/open-api-initiative-welcomes-api-testing-monitoring-company-api-fortress-newest-member",
+    "key": "blog__2017__11__07__open-api-initiative-welcomes-api-testing-monitoring-company-api-fortress-newest-member"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2017/11/30/aapi-api-management-provider-joins-open-api-initiative",
+    "type": "post",
+    "slug": "blog/2017/11/30/aapi-api-management-provider-joins-open-api-initiative",
+    "key": "blog__2017__11__30__aapi-api-management-provider-joins-open-api-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/02/05/openapi-initiative-host-community-day-part-ibm-index-2018-dayzero",
+    "type": "post",
+    "slug": "blog/2018/02/05/openapi-initiative-host-community-day-part-ibm-index-2018-dayzero",
+    "key": "blog__2018__02__05__openapi-initiative-host-community-day-part-ibm-index-2018-dayzero"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/02/16/openapi-initiative-community-day-schedule-ibm-index",
+    "type": "post",
+    "slug": "blog/2018/02/16/openapi-initiative-community-day-schedule-ibm-index",
+    "key": "blog__2018__02__16__openapi-initiative-community-day-schedule-ibm-index"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/05/09/assertible-joins-the-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2018/05/09/assertible-joins-the-openapi-initiative",
+    "key": "blog__2018__05__09__assertible-joins-the-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/05/14/stoplight-%e2%9d%a4%ef%b8%8f-the-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2018/05/14/stoplight-%e2%9d%a4%ef%b8%8f-the-openapi-initiative",
+    "key": "blog__2018__05__14__stoplight-%e2%9d%a4%ef%b8%8f-the-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/06/01/only-one-week-left-to-submit-your-talk-for-apistrat-in-nashville",
+    "type": "post",
+    "slug": "blog/2018/06/01/only-one-week-left-to-submit-your-talk-for-apistrat-in-nashville",
+    "key": "blog__2018__06__01__only-one-week-left-to-submit-your-talk-for-apistrat-in-nashville"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/05/31/a-shout-out-to-the-apistrat-steering-and-program-committees",
+    "type": "post",
+    "slug": "blog/2018/05/31/a-shout-out-to-the-apistrat-steering-and-program-committees",
+    "key": "blog__2018__05__31__a-shout-out-to-the-apistrat-steering-and-program-committees"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/06/08/we-are-extending-the-apistrat-call-for-papers-until-sunday-at-midnight",
+    "type": "post",
+    "slug": "blog/2018/06/08/we-are-extending-the-apistrat-call-for-papers-until-sunday-at-midnight",
+    "key": "blog__2018__06__08__we-are-extending-the-apistrat-call-for-papers-until-sunday-at-midnight"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/02/__trashed",
+    "type": "post",
+    "slug": "blog/2018/08/02/__trashed",
+    "key": "blog__2018__08__02____trashed"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/03/join-kate-oneill-at-apistrat-2018",
+    "type": "post",
+    "slug": "blog/2018/08/03/join-kate-oneill-at-apistrat-2018",
+    "key": "blog__2018__08__03__join-kate-oneill-at-apistrat-2018"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/03/join-virginia-eubanks-at-apistrat-2018",
+    "type": "post",
+    "slug": "blog/2018/08/03/join-virginia-eubanks-at-apistrat-2018",
+    "key": "blog__2018__08__03__join-virginia-eubanks-at-apistrat-2018"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/03/join-cristiano-betts-at-apistrat-2018",
+    "type": "post",
+    "slug": "blog/2018/08/03/join-cristiano-betts-at-apistrat-2018",
+    "key": "blog__2018__08__03__join-cristiano-betts-at-apistrat-2018"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/03/890",
+    "type": "post",
+    "slug": "blog/2018/08/03/890",
+    "key": "blog__2018__08__03__890"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/14/ebay-provides-openapi-specification-oas-for-all-its-restful-public-apis",
+    "type": "post",
+    "slug": "blog/2018/08/14/ebay-provides-openapi-specification-oas-for-all-its-restful-public-apis",
+    "key": "blog__2018__08__14__ebay-provides-openapi-specification-oas-for-all-its-restful-public-apis"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/24/something-for-everyone-at-apistrat-2018",
+    "type": "post",
+    "slug": "blog/2018/08/24/something-for-everyone-at-apistrat-2018",
+    "key": "blog__2018__08__24__something-for-everyone-at-apistrat-2018"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/08/28/convincing-your-boss-to-send-you-to-apistrat",
+    "type": "post",
+    "slug": "blog/2018/08/28/convincing-your-boss-to-send-you-to-apistrat",
+    "key": "blog__2018__08__28__convincing-your-boss-to-send-you-to-apistrat"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/09/12/delivering-developer-tools-at-scale-microsoft-azure-oracle-cloud-perspectives",
+    "type": "post",
+    "slug": "blog/2018/09/12/delivering-developer-tools-at-scale-microsoft-azure-oracle-cloud-perspectives",
+    "key": "blog__2018__09__12__delivering-developer-tools-at-scale-microsoft-azure-oracle-cloud-perspectives"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/09/13/openapi-specification-technical-overview-workshop-at-apistrat-2018",
+    "type": "post",
+    "slug": "blog/2018/09/13/openapi-specification-technical-overview-workshop-at-apistrat-2018",
+    "key": "blog__2018__09__13__openapi-specification-technical-overview-workshop-at-apistrat-2018"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/09/13/advanced-openapi-specification-technical-overview-workshop-at-apistrat-2018",
+    "type": "post",
+    "slug": "blog/2018/09/13/advanced-openapi-specification-technical-overview-workshop-at-apistrat-2018",
+    "key": "blog__2018__09__13__advanced-openapi-specification-technical-overview-workshop-at-apistrat-2018"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/09/14/the-top-reasons-to-attend-the-api-conference-of-the-year",
+    "type": "post",
+    "slug": "blog/2018/09/14/the-top-reasons-to-attend-the-api-conference-of-the-year",
+    "key": "blog__2018__09__14__the-top-reasons-to-attend-the-api-conference-of-the-year"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/09/17/the-blue-button-api-will-be-at-apistrat-in-nashville-next-week",
+    "type": "post",
+    "slug": "blog/2018/09/17/the-blue-button-api-will-be-at-apistrat-in-nashville-next-week",
+    "key": "blog__2018__09__17__the-blue-button-api-will-be-at-apistrat-in-nashville-next-week"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2018/10/08/the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2",
+    "type": "post",
+    "slug": "blog/2018/10/08/the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2",
+    "key": "blog__2018__10__08__the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2019/02/08/ably-realtime-joins-openapi-initiative-to-share-streaming-data-expertise",
+    "type": "post",
+    "slug": "blog/2019/02/08/ably-realtime-joins-openapi-initiative-to-share-streaming-data-expertise",
+    "key": "blog__2019__02__08__ably-realtime-joins-openapi-initiative-to-share-streaming-data-expertise"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2019/05/08/introducing-asc-the-api-specifications-conference",
+    "type": "post",
+    "slug": "blog/2019/05/08/introducing-asc-the-api-specifications-conference",
+    "key": "blog__2019__05__08__introducing-asc-the-api-specifications-conference"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2019/09/04/from-bitmovin-our-openapi-journey",
+    "type": "post",
+    "slug": "blog/2019/09/04/from-bitmovin-our-openapi-journey",
+    "key": "blog__2019__09__04__from-bitmovin-our-openapi-journey"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2019/09/30/asc-why",
+    "type": "post",
+    "slug": "blog/2019/09/30/asc-why",
+    "key": "blog__2019__09__30__asc-why"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2019/10/08/enterprise-software-pioneer-ifs-joins-the-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2019/10/08/enterprise-software-pioneer-ifs-joins-the-openapi-initiative",
+    "key": "blog__2019__10__08__enterprise-software-pioneer-ifs-joins-the-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2019/10/31/photos-from-asc-2019",
+    "type": "post",
+    "slug": "blog/2019/10/31/photos-from-asc-2019",
+    "key": "blog__2019__10__31__photos-from-asc-2019"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/01/29/interzoid-joins-the-openapi-initiative-to-help-build-frictionless-data-future",
+    "type": "post",
+    "slug": "blog/2020/01/29/interzoid-joins-the-openapi-initiative-to-help-build-frictionless-data-future",
+    "key": "blog__2020__01__29__interzoid-joins-the-openapi-initiative-to-help-build-frictionless-data-future"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/02/26/liferay-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2020/02/26/liferay-joins-openapi-initiative",
+    "key": "blog__2020__02__26__liferay-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/04/14/openapi-initiative-welcomes-bloomberg-as-newest-member",
+    "type": "post",
+    "slug": "blog/2020/04/14/openapi-initiative-welcomes-bloomberg-as-newest-member",
+    "key": "blog__2020__04__14__openapi-initiative-welcomes-bloomberg-as-newest-member"
+  },
+  {
+    "url": "https://www.openapis.org/events/2020/06/12/the-api-specifications-conference-asc-2020-hold-the-dates-sept-9th-10th",
+    "type": "post",
+    "slug": "events/2020/06/12/the-api-specifications-conference-asc-2020-hold-the-dates-sept-9th-10th",
+    "key": "events__2020__06__12__the-api-specifications-conference-asc-2020-hold-the-dates-sept-9th-10th"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/06/18/openapi-3-1-0-rc0-its-here",
+    "type": "post",
+    "slug": "blog/2020/06/18/openapi-3-1-0-rc0-its-here",
+    "key": "blog__2020__06__18__openapi-3-1-0-rc0-its-here"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/06/23/openapi-welcomes-the-opentravel-alliance-as-new-member",
+    "type": "post",
+    "slug": "blog/2020/06/23/openapi-welcomes-the-opentravel-alliance-as-new-member",
+    "key": "blog__2020__06__23__openapi-welcomes-the-opentravel-alliance-as-new-member"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/07/17/asc-2020-keynote-speakers",
+    "type": "post",
+    "slug": "blog/2020/07/17/asc-2020-keynote-speakers",
+    "key": "blog__2020__07__17__asc-2020-keynote-speakers"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/07/20/announcing-the-new-openapi-initiative-special-interest-group-for-travel",
+    "type": "post",
+    "slug": "blog/2020/07/20/announcing-the-new-openapi-initiative-special-interest-group-for-travel",
+    "key": "blog__2020__07__20__announcing-the-new-openapi-initiative-special-interest-group-for-travel"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/07/23/postman-joins-the-oai-to-support-the-openapi-specification",
+    "type": "post",
+    "slug": "blog/2020/07/23/postman-joins-the-oai-to-support-the-openapi-specification",
+    "key": "blog__2020__07__23__postman-joins-the-oai-to-support-the-openapi-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/08/13/asc-speakers-announced",
+    "type": "post",
+    "slug": "blog/2020/08/13/asc-speakers-announced",
+    "key": "blog__2020__08__13__asc-speakers-announced"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/08/18/openapi-welcomes-new-member-apimetrics",
+    "type": "post",
+    "slug": "blog/2020/08/18/openapi-welcomes-new-member-apimetrics",
+    "key": "blog__2020__08__18__openapi-welcomes-new-member-apimetrics"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/09/01/reasons-to-register-asc-2020-keynote-panel-deep-with-real-world-api-experience",
+    "type": "post",
+    "slug": "blog/2020/09/01/reasons-to-register-asc-2020-keynote-panel-deep-with-real-world-api-experience",
+    "key": "blog__2020__09__01__reasons-to-register-asc-2020-keynote-panel-deep-with-real-world-api-experience"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/09/22/from-0-to-openapi-how-github-described-a-10-year-old-api",
+    "type": "post",
+    "slug": "blog/2020/09/22/from-0-to-openapi-how-github-described-a-10-year-old-api",
+    "key": "blog__2020__09__22__from-0-to-openapi-how-github-described-a-10-year-old-api"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/09/24/openapi-is-people",
+    "type": "post",
+    "slug": "blog/2020/09/24/openapi-is-people",
+    "key": "blog__2020__09__24__openapi-is-people"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/10/21/openapi-welcomes-new-member-osaango",
+    "type": "post",
+    "slug": "blog/2020/10/21/openapi-welcomes-new-member-osaango",
+    "key": "blog__2020__10__21__openapi-welcomes-new-member-osaango"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/10/23/implementers-draft-aos-rc1-available-for-feedback-please-respond-by-nov-8",
+    "type": "post",
+    "slug": "blog/2020/10/23/implementers-draft-aos-rc1-available-for-feedback-please-respond-by-nov-8",
+    "key": "blog__2020__10__23__implementers-draft-aos-rc1-available-for-feedback-please-respond-by-nov-8"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/11/04/asc-2020-online-dont-asc-still-learn",
+    "type": "post",
+    "slug": "blog/2020/11/04/asc-2020-online-dont-asc-still-learn",
+    "key": "blog__2020__11__04__asc-2020-online-dont-asc-still-learn"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/12/14/band-protocol-becomes-first-blockchain-firm-to-join-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2020/12/14/band-protocol-becomes-first-blockchain-firm-to-join-openapi-initiative",
+    "key": "blog__2020__12__14__band-protocol-becomes-first-blockchain-firm-to-join-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2020/12/15/from-apidays-paris-openapi-3-1-coming-soon",
+    "type": "post",
+    "slug": "blog/2020/12/15/from-apidays-paris-openapi-3-1-coming-soon",
+    "key": "blog__2020__12__15__from-apidays-paris-openapi-3-1-coming-soon"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/02/09/vonage-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2021/02/09/vonage-joins-openapi-initiative",
+    "key": "blog__2021__02__09__vonage-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/02/11/openapi-welcomes-new-member-high-school-technology-services",
+    "type": "post",
+    "slug": "blog/2021/02/11/openapi-welcomes-new-member-high-school-technology-services",
+    "key": "blog__2021__02__11__openapi-welcomes-new-member-high-school-technology-services"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/02/16/openapi-initiative-welcomes-ambassador-labs-as-newest-member",
+    "type": "post",
+    "slug": "blog/2021/02/16/openapi-initiative-welcomes-ambassador-labs-as-newest-member",
+    "key": "blog__2021__02__16__openapi-initiative-welcomes-ambassador-labs-as-newest-member"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/02/16/migrating-from-openapi-3-0-to-3-1-0",
+    "type": "post",
+    "slug": "blog/2021/02/16/migrating-from-openapi-3-0-to-3-1-0",
+    "key": "blog__2021__02__16__migrating-from-openapi-3-0-to-3-1-0"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/02/18/openapi-specification-3-1-released",
+    "type": "post",
+    "slug": "blog/2021/02/18/openapi-specification-3-1-released",
+    "key": "blog__2021__02__18__openapi-specification-3-1-released"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/02/17/openapi-3-1-confoo-pass-give-away",
+    "type": "post",
+    "slug": "blog/2021/02/17/openapi-3-1-confoo-pass-give-away",
+    "key": "blog__2021__02__17__openapi-3-1-confoo-pass-give-away"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/03/10/openapi-meets-sla",
+    "type": "post",
+    "slug": "blog/2021/03/10/openapi-meets-sla",
+    "key": "blog__2021__03__10__openapi-meets-sla"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/03/11/openapi-initiative-welcomes-level-250-as-newest-member",
+    "type": "post",
+    "slug": "blog/2021/03/11/openapi-initiative-welcomes-level-250-as-newest-member",
+    "key": "blog__2021__03__11__openapi-initiative-welcomes-level-250-as-newest-member"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/04/13/leveraging-the-openapi-specification-in-financial-services-the-story-of-plaids-openapi-journey",
+    "type": "post",
+    "slug": "blog/2021/04/13/leveraging-the-openapi-specification-in-financial-services-the-story-of-plaids-openapi-journey",
+    "key": "blog__2021__04__13__leveraging-the-openapi-specification-in-financial-services-the-story-of-plaids-openapi-journey"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/04/15/asc-2021-call-for-proposals",
+    "type": "post",
+    "slug": "blog/2021/04/15/asc-2021-call-for-proposals",
+    "key": "blog__2021__04__15__asc-2021-call-for-proposals"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/04/27/checkly-api-monitoring-and-automation-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2021/04/27/checkly-api-monitoring-and-automation-joins-openapi-initiative",
+    "key": "blog__2021__04__27__checkly-api-monitoring-and-automation-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/05/20/announcing-the-api-specifications-conference-asc-early-bird-submission-deadline",
+    "type": "post",
+    "slug": "blog/2021/05/20/announcing-the-api-specifications-conference-asc-early-bird-submission-deadline",
+    "key": "blog__2021__05__20__announcing-the-api-specifications-conference-asc-early-bird-submission-deadline"
+  },
+  {
+    "url": "https://www.openapis.org/announcement/2021/06/03/bettercloud-joins-openapi-initiative",
+    "type": "post",
+    "slug": "announcement/2021/06/03/bettercloud-joins-openapi-initiative",
+    "key": "announcement__2021__06__03__bettercloud-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/06/16/openapi-initiative-welcomes-rapidapi",
+    "type": "post",
+    "slug": "blog/2021/06/16/openapi-initiative-welcomes-rapidapi",
+    "key": "blog__2021__06__16__openapi-initiative-welcomes-rapidapi"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/07/15/an-openapi-interview-with-marc-andre-giroux-of-github",
+    "type": "post",
+    "slug": "blog/2021/07/15/an-openapi-interview-with-marc-andre-giroux-of-github",
+    "key": "blog__2021__07__15__an-openapi-interview-with-marc-andre-giroux-of-github"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/07/21/oai-additional-leadership-job-posting",
+    "type": "post",
+    "slug": "blog/2021/07/21/oai-additional-leadership-job-posting",
+    "key": "blog__2021__07__21__oai-additional-leadership-job-posting"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/07/22/apiaddicts-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2021/07/22/apiaddicts-joins-openapi-initiative",
+    "key": "blog__2021__07__22__apiaddicts-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/08/23/json-schema-bundling-finally-formalised",
+    "type": "post",
+    "slug": "blog/2021/08/23/json-schema-bundling-finally-formalised",
+    "key": "blog__2021__08__23__json-schema-bundling-finally-formalised"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/08/24/the-state-of-api-development-and-the-upcoming-asc-2021-a-closeup-with-mandy-whaley-azure-dev-tools-microsoft",
+    "type": "post",
+    "slug": "blog/2021/08/24/the-state-of-api-development-and-the-upcoming-asc-2021-a-closeup-with-mandy-whaley-azure-dev-tools-microsoft",
+    "key": "blog__2021__08__24__the-state-of-api-development-and-the-upcoming-asc-2021-a-closeup-with-mandy-whaley-azure-dev-tools-microsoft"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/09/13/eliminating-technological-barriers-with-openapi-new-member-apiplatform-io",
+    "type": "post",
+    "slug": "blog/2021/09/13/eliminating-technological-barriers-with-openapi-new-member-apiplatform-io",
+    "key": "blog__2021__09__13__eliminating-technological-barriers-with-openapi-new-member-apiplatform-io"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/09/23/%ef%bb%bfkubeshop-accelerator-incubator-for-kubernetes-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2021/09/23/%ef%bb%bfkubeshop-accelerator-incubator-for-kubernetes-joins-openapi-initiative",
+    "key": "blog__2021__09__23__%ef%bb%bfkubeshop-accelerator-incubator-for-kubernetes-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/09/22/arnaud-lauret-the-api-handyman-covers-his-top-4-must-attend-sessions-at-asc-2021",
+    "type": "post",
+    "slug": "blog/2021/09/22/arnaud-lauret-the-api-handyman-covers-his-top-4-must-attend-sessions-at-asc-2021",
+    "key": "blog__2021__09__22__arnaud-lauret-the-api-handyman-covers-his-top-4-must-attend-sessions-at-asc-2021"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/10/25/a-good-travel-experience-begins-with-one-single-booking-portal-how-open-apis-are-leading-the-way",
+    "type": "post",
+    "slug": "blog/2021/10/25/a-good-travel-experience-begins-with-one-single-booking-portal-how-open-apis-are-leading-the-way",
+    "key": "blog__2021__10__25__a-good-travel-experience-begins-with-one-single-booking-portal-how-open-apis-are-leading-the-way"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/11/03/announcing-open-finance-a-new-openapi-special-interest-group",
+    "type": "post",
+    "slug": "blog/2021/11/03/announcing-open-finance-a-new-openapi-special-interest-group",
+    "key": "blog__2021__11__03__announcing-open-finance-a-new-openapi-special-interest-group"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/12/09/readme-api-documentation-hub-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2021/12/09/readme-api-documentation-hub-joins-openapi-initiative",
+    "key": "blog__2021__12__09__readme-api-documentation-hub-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2021/12/16/this-years-api-specification-conference-asc-2021-by-the-numbers",
+    "type": "post",
+    "slug": "blog/2021/12/16/this-years-api-specification-conference-asc-2021-by-the-numbers",
+    "key": "blog__2021__12__16__this-years-api-specification-conference-asc-2021-by-the-numbers"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/02/10/treblle-api-monitoring-and-analytics-is-openapis-newest-member",
+    "type": "post",
+    "slug": "blog/2022/02/10/treblle-api-monitoring-and-analytics-is-openapis-newest-member",
+    "key": "blog__2022__02__10__treblle-api-monitoring-and-analytics-is-openapis-newest-member"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/03/28/flotiq-api-first-content-management-platform-joins-openapi-initiative%ef%bf%bc",
+    "type": "post",
+    "slug": "blog/2022/03/28/flotiq-api-first-content-management-platform-joins-openapi-initiative%ef%bf%bc",
+    "key": "blog__2022__03__28__flotiq-api-first-content-management-platform-joins-openapi-initiative%ef%bf%bc"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/04/24/asc2022-cfp",
+    "type": "post",
+    "slug": "blog/2022/04/24/asc2022-cfp",
+    "key": "blog__2022__04__24__asc2022-cfp"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/04/24/asc2022-cfp-early-bird",
+    "type": "post",
+    "slug": "blog/2022/04/24/asc2022-cfp-early-bird",
+    "key": "blog__2022__04__24__asc2022-cfp-early-bird"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/05/04/openapi-welcomes-new-member-optic",
+    "type": "post",
+    "slug": "blog/2022/05/04/openapi-welcomes-new-member-optic",
+    "key": "blog__2022__05__04__openapi-welcomes-new-member-optic"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/05/11/openapi-v3-1-resources-for-tooling-developers",
+    "type": "post",
+    "slug": "blog/2022/05/11/openapi-v3-1-resources-for-tooling-developers",
+    "key": "blog__2022__05__11__openapi-v3-1-resources-for-tooling-developers"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/05/24/karate-labs-testing-automation-framework-is-joining-the-openapi-initiative%ef%bf%bc",
+    "type": "post",
+    "slug": "blog/2022/05/24/karate-labs-testing-automation-framework-is-joining-the-openapi-initiative%ef%bf%bc",
+    "key": "blog__2022__05__24__karate-labs-testing-automation-framework-is-joining-the-openapi-initiative%ef%bf%bc"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/05/31/apiida-delivering-automated-api-management-solutions-joins-the-openapi-initiative%ef%bf%bc",
+    "type": "post",
+    "slug": "blog/2022/05/31/apiida-delivering-automated-api-management-solutions-joins-the-openapi-initiative%ef%bf%bc",
+    "key": "blog__2022__05__31__apiida-delivering-automated-api-management-solutions-joins-the-openapi-initiative%ef%bf%bc"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/06/09/join-us-at-asc-2022-%ef%bf%bc",
+    "type": "post",
+    "slug": "blog/2022/06/09/join-us-at-asc-2022-%ef%bf%bc",
+    "key": "blog__2022__06__09__join-us-at-asc-2022-%ef%bf%bc"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/08/05/asc-2022-community-partner-sponsorships-free-to-members",
+    "type": "post",
+    "slug": "blog/2022/08/05/asc-2022-community-partner-sponsorships-free-to-members",
+    "key": "blog__2022__08__05__asc-2022-community-partner-sponsorships-free-to-members"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/10/18/cisco-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2022/10/18/cisco-joins-openapi-initiative",
+    "key": "blog__2022__10__18__cisco-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/12/22/bump-sh-api-contract-management-platform-joins-the-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2022/12/22/bump-sh-api-contract-management-platform-joins-the-openapi-initiative",
+    "key": "blog__2022__12__22__bump-sh-api-contract-management-platform-joins-the-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/12/06/first-time-ever-openapi-track-at-apidays-paris-join-us",
+    "type": "post",
+    "slug": "blog/2022/12/06/first-time-ever-openapi-track-at-apidays-paris-join-us",
+    "key": "blog__2022__12__06__first-time-ever-openapi-track-at-apidays-paris-join-us"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/12/21/noname-security-api-security-company-joins-the-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2022/12/21/noname-security-api-security-company-joins-the-openapi-initiative",
+    "key": "blog__2022__12__21__noname-security-api-security-company-joins-the-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2022/12/20/asc-2022-in-san-francisco",
+    "type": "post",
+    "slug": "blog/2022/12/20/asc-2022-in-san-francisco",
+    "key": "blog__2022__12__20__asc-2022-in-san-francisco"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/02/01/why-the-largest-geospatial-organization-in-the-world-uses-the-openapi-specification",
+    "type": "post",
+    "slug": "blog/2023/02/01/why-the-largest-geospatial-organization-in-the-world-uses-the-openapi-specification",
+    "key": "blog__2023__02__01__why-the-largest-geospatial-organization-in-the-world-uses-the-openapi-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/03/08/tools-that-support-openapi-specification",
+    "type": "post",
+    "slug": "blog/2023/03/08/tools-that-support-openapi-specification",
+    "key": "blog__2023__03__08__tools-that-support-openapi-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/06/13/webassembly-and-career-networking-at-gluecon",
+    "type": "post",
+    "slug": "blog/2023/06/13/webassembly-and-career-networking-at-gluecon",
+    "key": "blog__2023__06__13__webassembly-and-career-networking-at-gluecon"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/07/13/wiremock-joins-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2023/07/13/wiremock-joins-openapi-initiative",
+    "key": "blog__2023__07__13__wiremock-joins-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/08/31/case-study-bettercloud",
+    "type": "post",
+    "slug": "blog/2023/08/31/case-study-bettercloud",
+    "key": "blog__2023__08__31__case-study-bettercloud"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/09/07/join-us-at-apidays-australia-2023-for-a-full-day-oai-track",
+    "type": "post",
+    "slug": "blog/2023/09/07/join-us-at-apidays-australia-2023-for-a-full-day-oai-track",
+    "key": "blog__2023__09__07__join-us-at-apidays-australia-2023-for-a-full-day-oai-track"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/11/06/apidays-paris-2023-with-an-openapi-track-is-coming-this-december",
+    "type": "post",
+    "slug": "blog/2023/11/06/apidays-paris-2023-with-an-openapi-track-is-coming-this-december",
+    "key": "blog__2023__11__06__apidays-paris-2023-with-an-openapi-track-is-coming-this-december"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2023/12/04/openapi-moonwalk-2024",
+    "type": "post",
+    "slug": "blog/2023/12/04/openapi-moonwalk-2024",
+    "key": "blog__2023__12__04__openapi-moonwalk-2024"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/04/04/openapi-initiative-newsletter-april-2024",
+    "type": "post",
+    "slug": "blog/2024/04/04/openapi-initiative-newsletter-april-2024",
+    "key": "blog__2024__04__04__openapi-initiative-newsletter-april-2024"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/05/29/a-new-specification-from-openapi-arazzo",
+    "type": "post",
+    "slug": "blog/2024/05/29/a-new-specification-from-openapi-arazzo",
+    "key": "blog__2024__05__29__a-new-specification-from-openapi-arazzo"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/06/05/openapi-community-heroes-henry-andrews",
+    "type": "post",
+    "slug": "blog/2024/06/05/openapi-community-heroes-henry-andrews",
+    "key": "blog__2024__06__05__openapi-community-heroes-henry-andrews"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/06/07/openapi-initiative-newsletter-june-2024",
+    "type": "post",
+    "slug": "blog/2024/06/07/openapi-initiative-newsletter-june-2024",
+    "key": "blog__2024__06__07__openapi-initiative-newsletter-june-2024"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/07/19/buy-now-pay-later-arazzo",
+    "type": "post",
+    "slug": "blog/2024/07/19/buy-now-pay-later-arazzo",
+    "key": "blog__2024__07__19__buy-now-pay-later-arazzo"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/07/25/openapi-community-heroes-frank-kilcommins",
+    "type": "post",
+    "slug": "blog/2024/07/25/openapi-community-heroes-frank-kilcommins",
+    "key": "blog__2024__07__25__openapi-community-heroes-frank-kilcommins"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/08/27/oai-newsletter-openapi-initiative-newsletter-august-2024",
+    "type": "post",
+    "slug": "blog/2024/08/27/oai-newsletter-openapi-initiative-newsletter-august-2024",
+    "key": "blog__2024__08__27__oai-newsletter-openapi-initiative-newsletter-august-2024"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/09/17/openapi-community-heroes-lorna-mitchell",
+    "type": "post",
+    "slug": "blog/2024/09/17/openapi-community-heroes-lorna-mitchell",
+    "key": "blog__2024__09__17__openapi-community-heroes-lorna-mitchell"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/10/25/announcing-openapi-specification-patch-releases",
+    "type": "post",
+    "slug": "blog/2024/10/25/announcing-openapi-specification-patch-releases",
+    "key": "blog__2024__10__25__announcing-openapi-specification-patch-releases"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/12/05/evolving-openapi-multi-specification-initative",
+    "type": "post",
+    "slug": "blog/2024/12/05/evolving-openapi-multi-specification-initative",
+    "key": "blog__2024__12__05__evolving-openapi-multi-specification-initative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/10/22/announcing-overlay-specification",
+    "type": "post",
+    "slug": "blog/2024/10/22/announcing-overlay-specification",
+    "key": "blog__2024__10__22__announcing-overlay-specification"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/10/30/openapi-initiative-newsletter-october-2024",
+    "type": "post",
+    "slug": "blog/2024/10/30/openapi-initiative-newsletter-october-2024",
+    "key": "blog__2024__10__30__openapi-initiative-newsletter-october-2024"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/12/04/avap-framework-has-just-joined-openapi-as-a-member",
+    "type": "post",
+    "slug": "blog/2024/12/04/avap-framework-has-just-joined-openapi-as-a-member",
+    "key": "blog__2024__12__04__avap-framework-has-just-joined-openapi-as-a-member"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/11/29/openapi-community-heroes-karen-etheridge",
+    "type": "post",
+    "slug": "blog/2024/11/29/openapi-community-heroes-karen-etheridge",
+    "key": "blog__2024__11__29__openapi-community-heroes-karen-etheridge"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2024/12/23/openapi-initiative-newsletter-december-2024",
+    "type": "post",
+    "slug": "blog/2024/12/23/openapi-initiative-newsletter-december-2024",
+    "key": "blog__2024__12__23__openapi-initiative-newsletter-december-2024"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/01/24/announcing-arazzo-specification-version-1-0-1",
+    "type": "post",
+    "slug": "blog/2025/01/24/announcing-arazzo-specification-version-1-0-1",
+    "key": "blog__2025__01__24__announcing-arazzo-specification-version-1-0-1"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/02/05/moonwalk-2025-update",
+    "type": "post",
+    "slug": "blog/2025/02/05/moonwalk-2025-update",
+    "key": "blog__2025__02__05__moonwalk-2025-update"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/02/20/openapi-community-heroes-erik-wilde",
+    "type": "post",
+    "slug": "blog/2025/02/20/openapi-community-heroes-erik-wilde",
+    "key": "blog__2025__02__20__openapi-community-heroes-erik-wilde"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/02/28/openapi-initiative-newsletter-february-2025",
+    "type": "post",
+    "slug": "blog/2025/02/28/openapi-initiative-newsletter-february-2025",
+    "key": "blog__2025__02__28__openapi-initiative-newsletter-february-2025"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/03/20/gitbook-joins-the-openapi-initiative",
+    "type": "post",
+    "slug": "blog/2025/03/20/gitbook-joins-the-openapi-initiative",
+    "key": "blog__2025__03__20__gitbook-joins-the-openapi-initiative"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/04/01/openapi-community-hero-phil-sturgeon",
+    "type": "post",
+    "slug": "blog/2025/04/01/openapi-community-hero-phil-sturgeon",
+    "key": "blog__2025__04__01__openapi-community-hero-phil-sturgeon"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/05/02/openapi-initiative-newsletter-april-2025",
+    "type": "post",
+    "slug": "blog/2025/05/02/openapi-initiative-newsletter-april-2025",
+    "key": "blog__2025__05__02__openapi-initiative-newsletter-april-2025"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/06/25/openapi-initiative-newsletter-june-2025",
+    "type": "post",
+    "slug": "blog/2025/06/25/openapi-initiative-newsletter-june-2025",
+    "key": "blog__2025__06__25__openapi-initiative-newsletter-june-2025"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/08/29/why-do-we-run-the-oai-track",
+    "type": "post",
+    "slug": "blog/2025/08/29/why-do-we-run-the-oai-track",
+    "key": "blog__2025__08__29__why-do-we-run-the-oai-track"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/09/23/announcing-openapi-v3-2",
+    "type": "post",
+    "slug": "blog/2025/09/23/announcing-openapi-v3-2",
+    "key": "blog__2025__09__23__announcing-openapi-v3-2"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/09/26/the-openapi-initiative-welcomes-jentic",
+    "type": "post",
+    "slug": "blog/2025/09/26/the-openapi-initiative-welcomes-jentic",
+    "key": "blog__2025__09__26__the-openapi-initiative-welcomes-jentic"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/10/01/openapi-initiative-newsletter-september-2025",
+    "type": "post",
+    "slug": "blog/2025/10/01/openapi-initiative-newsletter-september-2025",
+    "key": "blog__2025__10__01__openapi-initiative-newsletter-september-2025"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/10/16/the-openapi-initiative-welcomes-apideck",
+    "type": "post",
+    "slug": "blog/2025/10/16/the-openapi-initiative-welcomes-apideck",
+    "key": "blog__2025__10__16__the-openapi-initiative-welcomes-apideck"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2025/12/04/openapi-initiative-newsletter-december-2025",
+    "type": "post",
+    "slug": "blog/2025/12/04/openapi-initiative-newsletter-december-2025",
+    "key": "blog__2025__12__04__openapi-initiative-newsletter-december-2025"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2026/02/10/openapi-initiative-newsletter-february-2026",
+    "type": "post",
+    "slug": "blog/2026/02/10/openapi-initiative-newsletter-february-2026",
+    "key": "blog__2026__02__10__openapi-initiative-newsletter-february-2026"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2026/03/05/openapi-community-hero-vincent-biret",
+    "type": "post",
+    "slug": "blog/2026/03/05/openapi-community-hero-vincent-biret",
+    "key": "blog__2026__03__05__openapi-community-hero-vincent-biret"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2026/05/19/announcing-arazzo-specification-1-1",
+    "type": "post",
+    "slug": "blog/2026/05/19/announcing-arazzo-specification-1-1",
+    "key": "blog__2026__05__19__announcing-arazzo-specification-1-1"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2026/06/09/openapi-initiative-newsletter-june-2026",
+    "type": "post",
+    "slug": "blog/2026/06/09/openapi-initiative-newsletter-june-2026",
+    "key": "blog__2026__06__09__openapi-initiative-newsletter-june-2026"
+  },
+  {
+    "url": "https://www.openapis.org/blog/2026/07/22/new-outreach-co-chairs-announced",
+    "type": "post",
+    "slug": "blog/2026/07/22/new-outreach-co-chairs-announced",
+    "key": "blog__2026__07__22__new-outreach-co-chairs-announced"
+  },
+  {
+    "url": "https://www.openapis.org/membershipmembers",
+    "type": "page",
+    "slug": "membershipmembers",
+    "key": "membershipmembers"
+  },
+  {
+    "url": "https://www.openapis.org/membershipjoin",
+    "type": "page",
+    "slug": "membershipjoin",
+    "key": "membershipjoin"
+  },
+  {
+    "url": "https://www.openapis.org/blog",
+    "type": "page",
+    "slug": "blog",
+    "key": "blog"
+  },
+  {
+    "url": "https://www.openapis.org/eventscalendar",
+    "type": "page",
+    "slug": "eventscalendar",
+    "key": "eventscalendar"
+  },
+  {
+    "url": "https://www.openapis.org/home-2",
+    "type": "page",
+    "slug": "home-2",
+    "key": "home-2"
+  },
+  {
+    "url": "https://www.openapis.org/specificationrepo",
+    "type": "page",
+    "slug": "specificationrepo",
+    "key": "specificationrepo"
+  },
+  {
+    "url": "https://www.openapis.org/participatehow-to-contribute",
+    "type": "page",
+    "slug": "participatehow-to-contribute",
+    "key": "participatehow-to-contribute"
+  },
+  {
+    "url": "https://www.openapis.org/style-guide",
+    "type": "page",
+    "slug": "style-guide",
+    "key": "style-guide"
+  },
+  {
+    "url": "https://www.openapis.org/faq",
+    "type": "page",
+    "slug": "faq",
+    "key": "faq"
+  },
+  {
+    "url": "https://www.openapis.org/testimonials",
+    "type": "page",
+    "slug": "testimonials",
+    "key": "testimonials"
+  },
+  {
+    "url": "https://www.openapis.org/about",
+    "type": "page",
+    "slug": "about",
+    "key": "about"
+  },
+  {
+    "url": "https://www.openapis.org/participatehow-to-contribute/join-the-technical-community",
+    "type": "page",
+    "slug": "participatehow-to-contribute/join-the-technical-community",
+    "key": "participatehow-to-contribute__join-the-technical-community"
+  },
+  {
+    "url": "https://www.openapis.org/blog/presentations",
+    "type": "page",
+    "slug": "blog/presentations",
+    "key": "blog__presentations"
+  },
+  {
+    "url": "https://www.openapis.org/specificationrepo/evolution-of-the-openapi-spec-v3",
+    "type": "page",
+    "slug": "specificationrepo/evolution-of-the-openapi-spec-v3",
+    "key": "specificationrepo__evolution-of-the-openapi-spec-v3"
+  },
+  {
+    "url": "https://www.openapis.org/specificationrepo/share-your-oas-implementations",
+    "type": "page",
+    "slug": "specificationrepo/share-your-oas-implementations",
+    "key": "specificationrepo__share-your-oas-implementations"
+  },
+  {
+    "url": "https://www.openapis.org/about/technical-developer-community",
+    "type": "page",
+    "slug": "about/technical-developer-community",
+    "key": "about__technical-developer-community"
+  },
+  {
+    "url": "https://www.openapis.org/participatehow-to-contribute/governance",
+    "type": "page",
+    "slug": "participatehow-to-contribute/governance",
+    "key": "participatehow-to-contribute__governance"
+  },
+  {
+    "url": "https://www.openapis.org/get-involved",
+    "type": "page",
+    "slug": "get-involved",
+    "key": "get-involved"
+  },
+  {
+    "url": "https://www.openapis.org/get-involved/mailing-lists",
+    "type": "page",
+    "slug": "get-involved/mailing-lists",
+    "key": "get-involved__mailing-lists"
+  },
+  {
+    "url": "https://www.openapis.org/user",
+    "type": "page",
+    "slug": "user",
+    "key": "user"
+  },
+  {
+    "url": "https://www.openapis.org/login",
+    "type": "page",
+    "slug": "login",
+    "key": "login"
+  },
+  {
+    "url": "https://www.openapis.org/register",
+    "type": "page",
+    "slug": "register",
+    "key": "register"
+  },
+  {
+    "url": "https://www.openapis.org/members",
+    "type": "page",
+    "slug": "members",
+    "key": "members"
+  },
+  {
+    "url": "https://www.openapis.org/logout",
+    "type": "page",
+    "slug": "logout",
+    "key": "logout"
+  },
+  {
+    "url": "https://www.openapis.org/account",
+    "type": "page",
+    "slug": "account",
+    "key": "account"
+  },
+  {
+    "url": "https://www.openapis.org/password-reset",
+    "type": "page",
+    "slug": "password-reset",
+    "key": "password-reset"
+  },
+  {
+    "url": "https://www.openapis.org/gluecon-unconference",
+    "type": "page",
+    "slug": "gluecon-unconference",
+    "key": "gluecon-unconference"
+  },
+  {
+    "url": "https://www.openapis.org/travel-expense-reimbursement-policy",
+    "type": "page",
+    "slug": "travel-expense-reimbursement-policy",
+    "key": "travel-expense-reimbursement-policy"
+  },
+  {
+    "url": "https://www.openapis.org/get-involved/mailing-lists-2",
+    "type": "page",
+    "slug": "get-involved/mailing-lists-2",
+    "key": "get-involved__mailing-lists-2"
+  },
+  {
+    "url": "https://www.openapis.org/membershipjoin-2",
+    "type": "page",
+    "slug": "membershipjoin-2",
+    "key": "membershipjoin-2"
+  },
+  {
+    "url": "https://www.openapis.org/openapi-blog-guidelines",
+    "type": "page",
+    "slug": "openapi-blog-guidelines",
+    "key": "openapi-blog-guidelines"
+  },
+  {
+    "url": "https://www.openapis.org/get-involved/about",
+    "type": "page",
+    "slug": "get-involved/about",
+    "key": "get-involved__about"
+  },
+  {
+    "url": "https://www.openapis.org/what-is-openapi",
+    "type": "page",
+    "slug": "what-is-openapi",
+    "key": "what-is-openapi"
+  },
+  {
+    "url": "https://www.openapis.org/under-construction",
+    "type": "page",
+    "slug": "under-construction",
+    "key": "under-construction"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4",
+    "type": "page",
+    "slug": "oai-at-apidays-4",
+    "key": "oai-at-apidays-4"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-3",
+    "type": "page",
+    "slug": "oai-at-apidays-3",
+    "key": "oai-at-apidays-3"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays",
+    "type": "page",
+    "slug": "oai-at-apidays",
+    "key": "oai-at-apidays"
+  },
+  {
+    "url": "https://www.openapis.org/home-2-2",
+    "type": "page",
+    "slug": "home-2-2",
+    "key": "home-2-2"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-2",
+    "type": "page",
+    "slug": "oai-at-apidays-4-2",
+    "key": "oai-at-apidays-4-2"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-3",
+    "type": "page",
+    "slug": "oai-at-apidays-4-3",
+    "key": "oai-at-apidays-4-3"
+  },
+  {
+    "url": "https://www.openapis.org/events",
+    "type": "page",
+    "slug": "events",
+    "key": "events"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-3-2-3",
+    "type": "page",
+    "slug": "oai-at-apidays-4-3-2-3",
+    "key": "oai-at-apidays-4-3-2-3"
+  },
+  {
+    "url": "https://www.openapis.org/",
+    "type": "page",
+    "slug": "",
+    "key": "__home"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-3-2-2",
+    "type": "page",
+    "slug": "oai-at-apidays-4-3-2-2",
+    "key": "oai-at-apidays-4-3-2-2"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-3-2-2-2",
+    "type": "page",
+    "slug": "oai-at-apidays-4-3-2-2-2",
+    "key": "oai-at-apidays-4-3-2-2-2"
+  },
+  {
+    "url": "https://www.openapis.org/education",
+    "type": "page",
+    "slug": "education",
+    "key": "education"
+  },
+  {
+    "url": "https://www.openapis.org/arazzo-specification",
+    "type": "page",
+    "slug": "arazzo-specification",
+    "key": "arazzo-specification"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-2-2",
+    "type": "page",
+    "slug": "oai-at-apidays-4-2-2",
+    "key": "oai-at-apidays-4-2-2"
+  },
+  {
+    "url": "https://www.openapis.org/oai-at-apidays-4-4",
+    "type": "page",
+    "slug": "oai-at-apidays-4-4",
+    "key": "oai-at-apidays-4-4"
+  },
+  {
+    "url": "https://www.openapis.org/code-of-conduct-transparency-report",
+    "type": "page",
+    "slug": "code-of-conduct-transparency-report",
+    "key": "code-of-conduct-transparency-report"
+  },
+  {
+    "url": "https://www.openapis.org/membership-benefits",
+    "type": "page",
+    "slug": "membership-benefits",
+    "key": "membership-benefits"
+  }
+]

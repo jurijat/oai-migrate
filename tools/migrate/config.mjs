@@ -10,7 +10,7 @@ export const USER_AGENT =
 
 export const CACHE_DIR = '.cache';
 export const HTML_DIR = `${CACHE_DIR}/html`;
-export const URLS_FILE = `${CACHE_DIR}/urls.json`;
+export const URLS_FILE = 'data/source-urls.json';
 export const MANIFEST_FILE = `${CACHE_DIR}/manifest.json`;
 
 export const CONCURRENCY = 5;
