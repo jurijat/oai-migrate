@@ -1,6 +1,7 @@
 import typography from '@tailwindcss/typography';
 
 const config = {
+  darkMode: ['class', '[data-theme="dark"]'],
   content: ['./src/**/*.{js,ts,jsx,tsx}', './content/**/*.{md,mdx}'],
   theme: {
     screens: {
@@ -38,6 +39,45 @@ const config = {
       maxWidth: {
         content: '1425px',
         prose: '72ch',
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': 'var(--brand-fg)',
+            '--tw-prose-headings': 'var(--brand-fg)',
+            '--tw-prose-lead': 'var(--brand-muted)',
+            '--tw-prose-links': '#65D100',
+            '--tw-prose-bold': 'var(--brand-fg)',
+            '--tw-prose-counters': 'var(--brand-muted)',
+            '--tw-prose-bullets': 'var(--brand-muted)',
+            '--tw-prose-hr': 'var(--brand-separator)',
+            '--tw-prose-quotes': 'var(--brand-fg)',
+            '--tw-prose-quote-borders': '#65D100',
+            '--tw-prose-captions': 'var(--brand-muted)',
+            '--tw-prose-code': 'var(--brand-fg)',
+            '--tw-prose-pre-code': 'var(--brand-fg)',
+            '--tw-prose-pre-bg': 'var(--brand-card)',
+            '--tw-prose-th-borders': 'var(--brand-separator)',
+            '--tw-prose-td-borders': 'var(--brand-separator)',
+            maxWidth: 'none',
+            a: { textDecoration: 'none', fontWeight: '500' },
+            'a:hover': { textDecoration: 'underline' },
+            'h1 a, h2 a, h3 a, h4 a, h5 a, h6 a': {
+              color: 'inherit',
+              fontWeight: 'inherit',
+              textDecoration: 'none',
+            },
+            'code::before': { content: '""' },
+            'code::after': { content: '""' },
+            code: {
+              backgroundColor: 'var(--brand-card)',
+              borderRadius: '0.25rem',
+              padding: '0.15em 0.35em',
+              fontWeight: '400',
+            },
+            pre: { border: '1px solid var(--brand-separator)' },
+          },
+        },
       },
     },
   },

@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
 import { Onest } from 'next/font/google';
 import type { ReactNode } from 'react';
+import { Footer } from '@/components/Footer';
+import { LfBar } from '@/components/LfBar';
+import { Navbar } from '@/components/Navbar';
 import { Providers } from '@/app/providers';
+import { getNav } from '@/lib/content';
 import '@/app/globals.css';
 
 const onest = Onest({
@@ -21,11 +25,18 @@ export const metadata: Metadata = {
     'The OpenAPI Initiative provides an open source, technical community within which industry participants may easily contribute to building a vendor-neutral, portable and open specification for providing technical metadata for REST APIs.',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const nav = await getNav();
+
   return (
     <html lang="en" className={onest.variable} suppressHydrationWarning>
-      <body>
-        <Providers>{children}</Providers>
+      <body className="flex min-h-screen flex-col">
+        <Providers>
+          <LfBar />
+          <Navbar nav={nav} />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

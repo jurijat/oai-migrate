@@ -133,3 +133,17 @@ export async function getTaxonomy() {
   }
   return { categories, tags, authors };
 }
+
+const navSchema = z.array(
+  z.object({
+    label: z.string(),
+    href: z.string().optional(),
+    children: z.array(z.object({ label: z.string(), href: z.string() })).optional(),
+  }),
+);
+
+export type NavItem = z.infer<typeof navSchema>[number];
+
+export async function getNav(): Promise<NavItem[]> {
+  return navSchema.parse(yaml.load(await readFile('data/nav.yaml', 'utf8')));
+}

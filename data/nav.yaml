@@ -1,0 +1,74 @@
+- label: About
+  children:
+    - label: About
+      href: /about
+    - label: Technical Steering Committee
+      href: /about/technical-developer-community
+    - label: Code of Conduct Transparency Report
+      href: /code-of-conduct-transparency-report
+- label: Specifications
+  children:
+    - label: OpenAPI Publications
+      href: https://spec.openapis.org/
+    - label: Latest OpenAPI Spec (OAS)
+      href: https://spec.openapis.org/oas/latest.html
+    - label: Latest Arazzo News
+      href: /arazzo-specification
+    - label: Latest Overlay Spec
+      href: https://spec.openapis.org/overlay/latest.html
+    - label: Registries
+      href: https://spec.openapis.org/registry/
+    - label: Learn about the OAI Spec
+      href: https://learn.openapis.org
+    - label: Share your OAS Implementations!
+      href: /specificationrepo/share-your-oas-implementations
+- label: Participate
+  children:
+    - label: How To Contribute
+      href: /participatehow-to-contribute
+    - label: How to Participate on GitHub
+      href: https://github.com/OAI/OpenAPI-Specification/blob/master/README.md#participation
+    - label: Join Us on Slack
+      href: https://join.slack.com/t/open-api/shared_invite/zt-45hwx39lu-L5kfOMIyFc4qt0v~FPGaXQ
+    - label: Calendar
+      href: https://events.openapis.org
+- label: Governance
+  children:
+    - label: Project Charter
+      href: /participatehow-to-contribute/governance
+    - label: Technical Steering Committee
+      href: https://github.com/OAI/OpenAPI-Specification/blob/master/MAINTAINERS.md
+    - label: Technical Oversight Board
+      href: https://github.com/OAI/OpenAPI-Specification/blob/master/TOB.md
+    - label: Code of Conduct
+      href: https://github.com/OAI/.github/blob/main/.github/CODE_OF_CONDUCT.md
+    - label: Travel Expense Reimbursement Policy
+      href: /travel-expense-reimbursement-policy
+- label: Membership
+  children:
+    - label: Current Members
+      href: /membershipmembers
+    - label: Learn about Membership
+      href: /membershipjoin
+    - label: Join Now
+      href: https://joinnow.platform.linuxfoundation.org/?project=openapi
+    - label: Testimonials
+      href: /testimonials
+    - label: Member Support
+      href: https://members.openapis.org
+- label: Blog
+  href: /blog
+- label: FAQ
+  children:
+    - label: FAQ
+      href: /faq
+    - label: The OpenAPI Initiative Style Guide
+      href: https://github.com/OAI/OpenAPI-Style-Guide
+    - label: OpenAPI Blog Guidelines
+      href: /openapi-blog-guidelines
+    - label: Presentations
+      href: /blog/presentations
+- label: What is OpenAPI?
+  href: /what-is-openapi
+- label: Events
+  href: https://events.openapis.org

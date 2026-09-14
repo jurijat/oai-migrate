@@ -32,7 +32,7 @@ export default async function DocumentPage({ params }: { params: Promise<Params>
       ) : (
         <h1 className="mb-8 text-4xl font-semibold tracking-oai">{doc.title}</h1>
       )}
-      <div className="prose prose-lg max-w-none dark:prose-invert">
+      <div className="prose prose-lg max-w-none">
         <Mdx source={doc.body} format={doc.file.endsWith('.mdx') ? 'mdx' : 'md'} />
       </div>
     </article>

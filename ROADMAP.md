@@ -50,34 +50,37 @@ rationale. Check off each task as it lands.
 
 ## Phase 2 — Design system
 
-- [ ] Port tokens from `oai-events` `globals.css` (`#65D100`, `#ececed` / `#15191c`)
-- [ ] Port `tailwind.config.js` theme extension (brand colors, `tracking-oai`, radii)
-- [ ] Onest via `next/font/google`
-- [ ] `next-themes` provider, `data-theme` attribute, light default
-- [ ] Port `MaskIcon`
-- [ ] Port + adapt `Navbar` (openapis.org IA, submenus)
-- [ ] Port + adapt `OaiFooter` (LF legal links)
-- [ ] Linux Foundation Projects bar
+- [x] Port tokens from `oai-events` `globals.css` (`#65D100`, `#ececed` / `#15191c`)
+- [x] Port `tailwind.config.js` theme extension (brand colors, `tracking-oai`, radii)
+- [x] Onest via `next/font/google`
+- [x] `next-themes` provider, `data-theme` attribute, light default
+- [x] Tailwind `darkMode` bound to `[data-theme="dark"]` so the toggle drives `dark:`, not the OS
+- [x] Port + adapt `Navbar` (openapis.org IA, submenus)
+- [x] Port + adapt `OaiFooter` (LF legal links)
+- [x] Linux Foundation Projects bar
 - [ ] LFX Segment analytics + cookie consent
 - [ ] HubSpot newsletter embed component
 
 ## Phase 3 — Content model and routing
 
-- [ ] `src/lib/content.ts` — fs + gray-matter loaders
-- [ ] zod schemas for post and page frontmatter
+- [x] `src/lib/content.ts` — fs + gray-matter loaders
+- [x] zod schemas for post and page frontmatter
 - [ ] `schemas/*.json` + `.vscode/settings.json` glob mapping
-- [ ] MDX rendering via `next-mdx-remote/rsc`
-- [ ] `/[...slug]` page route from `permalink`
-- [ ] `/blog/[year]/[month]/[day]/[slug]` post route from `permalink`
-- [ ] `/blog` paginated index
-- [ ] `/category/[category]`, `/tag/[tag]`, `/author/[author]`
+- [x] MDX rendering via `next-mdx-remote/rsc`
+- [x] `/[...slug]` page route from `permalink`
+- [x] Posts routed through the same catch-all, driven by `permalink`
+- [x] `/blog` index, grouped by year
+- [x] `/category/[category]`, `/tag/[tag]`, `/author/[author]`
 - [ ] Build-time search index + client search modal
-- [ ] `sitemap.xml` + `robots.txt` generation
+- [ ] `schemas/*.json` + `.vscode/settings.json` glob mapping (zod covers build; editor help still missing)
+- [x] `sitemap.xml` + `robots.txt` generation
 
 ## Phase 4 — Page templates and sections
 
 - [ ] Prose page template
 - [ ] Blog post template (byline, date, category, tags)
+- [x] Embed components: `YouTube`, `SlideShare`, `GoogleForm`, `MemberLandscape`, `MailingListSignup`
+- [x] `membershipmembers` hand-authored, protected from the converter by the `generated` flag
 - [ ] `Hero`, `AnnouncementBar`, `CTA`
 - [ ] `BenefitGrid`, `LogoWall`, `TestimonialGrid`, `PersonGrid`
 - [ ] Home page composed in MDX
@@ -103,10 +106,10 @@ rationale. Check off each task as it lands.
 
 ## Phase 6 — URLs, redirects, SEO
 
-- [ ] `data/redirects.yaml` populated
-- [ ] Static redirect stub generation (meta-refresh + canonical)
-- [ ] Cloudflare `_redirects` generation
-- [ ] URL parity check fails the build on a missing permalink
+- [x] `data/redirects.yaml` populated
+- [x] Static redirect stub generation (meta-refresh + canonical)
+- [x] Cloudflare `_redirects` generation
+- [x] URL parity check fails the build on a missing permalink
 - [ ] Open Graph + canonical tags per page
 - [ ] `CNAME` for the production domain
 
