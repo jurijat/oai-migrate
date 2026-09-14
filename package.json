@@ -1,0 +1,61 @@
+{
+  "name": "openapis-org",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "migrate": "node tools/migrate/run.mjs",
+    "migrate:fetch": "node tools/migrate/fetch.mjs",
+    "migrate:convert": "node tools/migrate/convert.mjs",
+    "migrate:assets": "node tools/migrate/assets.mjs",
+    "migrate:report": "node tools/migrate/report.mjs",
+    "validate": "node tools/validate.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1",
+    "next": "^16.3.0",
+    "next-mdx-remote": "^6.0.0",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "@types/turndown": "^5.0.5",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "autoprefixer": "^10.4.27",
+    "cheerio": "^1.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.4",
+    "eslint-config-prettier": "^10.1.8",
+    "postcss": "^8.5.26",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.7.3",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^3.4.19",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
