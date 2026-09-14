@@ -18,7 +18,12 @@
     "migrate:convert": "node tools/migrate/convert.mjs",
     "migrate:assets": "node tools/migrate/assets.mjs",
     "migrate:report": "node tools/migrate/report.mjs",
-    "validate": "node tools/validate.mjs"
+    "validate": "node tools/validate.mjs",
+    "assets": "node tools/publish-assets.mjs",
+    "predev": "npm run assets",
+    "prebuild": "npm run assets",
+    "migrate:publish": "node tools/publish-assets.mjs",
+    "migrate:redirects": "node tools/migrate/redirects.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

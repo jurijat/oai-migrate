@@ -1,0 +1,102 @@
+- from: /about/technical-steering-committee
+  to: /about/technical-developer-community
+  reason: legacy url, 404 on WordPress
+- from: /account
+  to: /
+  reason: WordPress auth stub
+- from: /announcement/2024/05/29/a-new-specification-from-openapi-arazzo
+  to: /blog/2024/05/29/a-new-specification-from-openapi-arazzo
+  reason: legacy url, 404 on WordPress
+- from: /blog/2017/03/01/openapi-spec-3-implementers-draft-released
+  to: /blog/2017/03/01/open-api-initiative-announces-the-release-of-the-openapi-spec-3-implementers-draft
+  reason: legacy url, 404 on WordPress
+- from: /blog/2023/12/06/openapi-moonwalk-2024
+  to: /blog/2023/12/04/openapi-moonwalk-2024
+  reason: legacy url, 404 on WordPress
+- from: /calendar
+  to: https://events.openapis.org
+  reason: legacy url, 404 on WordPress
+- from: /contact
+  to: /
+  reason: legacy url, 404 on WordPress
+- from: /events
+  to: https://events.openapis.org
+  reason: moved to events.openapis.org
+- from: /events/*
+  to: https://events.openapis.org
+  reason: legacy event pages
+- from: /eventscalendar
+  to: https://events.openapis.org
+  reason: moved to events.openapis.org
+- from: /get-involved/about
+  to: https://events.openapis.org
+  reason: moved to events.openapis.org
+- from: /get-involved/mailing-lists-2
+  to: /
+  reason: duplicate of get-involved/mailing-lists
+- from: /governance
+  to: /participatehow-to-contribute/governance
+  reason: legacy url, 404 on WordPress
+- from: /home-2
+  to: /
+  reason: duplicate homepage draft
+- from: /home-2-2
+  to: /
+  reason: duplicate homepage draft
+- from: /join
+  to: /membershipjoin
+  reason: legacy url, 404 on WordPress
+- from: /login
+  to: /
+  reason: WordPress auth stub
+- from: /logout
+  to: /
+  reason: WordPress auth stub
+- from: /members
+  to: /
+  reason: WordPress auth stub
+- from: /membership/join
+  to: /membershipjoin
+  reason: legacy url, 404 on WordPress
+- from: /membership/members
+  to: /membershipmembers
+  reason: legacy url, 404 on WordPress
+- from: /membershipjoin-2
+  to: /
+  reason: duplicate of membershipjoin
+- from: /news/blogs/2016/01/next-steps-oai-exciting-2016-looms-ahead
+  to: /blog/2016/01/09/next-steps-for-the-oai-an-exciting-2016-looms-ahead
+  reason: legacy url, 404 on WordPress
+- from: /news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how
+  to: /blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how
+  reason: legacy url, 404 on WordPress
+- from: /news/blogs/2016/10/tdc-request-parameters-explaining-30-spec-part-3
+  to: /blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3
+  reason: legacy url, 404 on WordPress
+- from: /news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2
+  to: /blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2
+  reason: legacy url, 404 on WordPress
+- from: /participate/how-to-contribute
+  to: /participatehow-to-contribute
+  reason: legacy url, 404 on WordPress
+- from: /participate/how-to-contribute/governance
+  to: /participatehow-to-contribute/governance
+  reason: legacy url, 404 on WordPress
+- from: /password-reset
+  to: /
+  reason: WordPress auth stub
+- from: /register
+  to: /
+  reason: WordPress auth stub
+- from: /specification/v3implementations-form
+  to: /specificationrepo/share-your-oas-implementations
+  reason: legacy url, 404 on WordPress
+- from: /specification/v3insights
+  to: /specificationrepo
+  reason: legacy url, 404 on WordPress
+- from: /under-construction
+  to: /
+  reason: placeholder page
+- from: /user
+  to: /
+  reason: WordPress auth stub

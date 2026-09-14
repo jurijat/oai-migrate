@@ -1,0 +1,241 @@
+import { readFile, rm, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import yaml from 'js-yaml';
+import TurndownService from 'turndown';
+import { gfm } from 'turndown-plugin-gfm';
+import { CFP, HTML_DIR, MANIFEST_FILE, URLS_FILE, classifyPage } from './config.mjs';
+import { ensureDir, readJson, stripSizeSuffix, toRelative, writeJson } from './lib.mjs';
+import { extract } from './extract.mjs';
+
+const UPLOADS = /\/wp-content\/uploads\/sites\/31\/(.+)$/;
+const RASTER = /\.(png|jpe?g|gif|webp)$/i;
+
+export function localAssetPath(src) {
+  const match = UPLOADS.exec(stripSizeSuffix(src.split('?')[0]));
+  if (!match) return null;
+  const rest = match[1];
+  return `/img/uploads/${RASTER.test(rest) ? rest.replace(RASTER, '.webp') : rest}`;
+}
+
+function createTurndown(collected) {
+  const service = new TurndownService({
+    headingStyle: 'atx',
+    bulletListMarker: '-',
+    codeBlockStyle: 'fenced',
+    emDelimiter: '_',
+  });
+  service.use(gfm);
+
+  service.remove(['iframe', 'form', 'input', 'button', 'svg']);
+
+  service.addRule('link', {
+    filter: (node) => node.nodeName === 'A' && node.getAttribute('href'),
+    replacement: (content, node) => {
+      const href = toRelative(node.getAttribute('href'));
+      if (href.startsWith('/')) collected.internalLinks.add(href);
+      const text = content.replace(/\s+/g, ' ').trim();
+      if (!text) return '';
+      return `[${text}](${href})`;
+    },
+  });
+
+  service.addRule('image', {
+    filter: 'img',
+    replacement: (_content, node) => {
+      const src = node.getAttribute('src') ?? '';
+      const alt = (node.getAttribute('alt') ?? '').replace(/\s+/g, ' ').trim();
+      const local = localAssetPath(src);
+      if (local) collected.assets.set(stripSizeSuffix(src.split('?')[0]), local);
+      return `![${alt}](${local ?? src})`;
+    },
+  });
+
+  service.addRule('figure', {
+    filter: 'figure',
+    replacement: (content) => `\n\n${content.replace(/\s+/g, ' ').trim()}\n\n`,
+  });
+
+  service.addRule('figcaption', {
+    filter: 'figcaption',
+    replacement: (content) => {
+      const text = content.replace(/\s+/g, ' ').trim();
+      return text ? `\n\n_${text}_\n\n` : '';
+    },
+  });
+
+  return service;
+}
+
+const ALLOWED_HTML = new Set([
+  'a',
+  'b',
+  'br',
+  'code',
+  'div',
+  'em',
+  'figcaption',
+  'figure',
+  'hr',
+  'i',
+  'img',
+  'li',
+  'mark',
+  'ol',
+  'pre',
+  's',
+  'span',
+  'strong',
+  'sub',
+  'sup',
+  'table',
+  'tbody',
+  'td',
+  'th',
+  'thead',
+  'tr',
+  'ul',
+]);
+
+const TAG = /<(\/?)([a-zA-Z][a-zA-Z0-9-]*)((?:\s[^<>]*)?)(\/?)>/g;
+
+export function escapeStrayTags(markdown) {
+  return markdown.replace(TAG, (match, _close, name) =>
+    ALLOWED_HTML.has(name.toLowerCase()) ? match : match.replace('<', '&lt;'),
+  );
+}
+
+function tidy(markdown) {
+  return `${markdown
+    .replace(/ /g, ' ')
+    .replace(/[ \t]+$/gm, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()}\n`;
+}
+
+function frontmatter(data) {
+  const body = yaml.dump(data, { lineWidth: 100, noRefs: true, quotingType: '"' });
+  return `---\n${body}---\n\n`;
+}
+
+function outputFor(record) {
+  if (record.kind === 'post') {
+    const [year, month, day] = record.date.split('-');
+    const slug = record.slug.split('/').pop();
+    return join('content/blog', year, month, day, `${slug}.md`);
+  }
+  if (record.pageKind === 'cfp') return join('content/cfp', `${CFP[record.slug]}.md`);
+  const name = record.slug === '' ? 'index' : record.slug;
+  return join('content/pages', `${name}.mdx`);
+}
+
+function postFrontmatter(record) {
+  return {
+    title: record.title,
+    date: record.date,
+    author: record.author,
+    category: record.category,
+    ...(record.tags.length ? { tags: record.tags } : {}),
+    permalink: record.permalink,
+  };
+}
+
+function pageFrontmatter(record) {
+  return {
+    title: record.title,
+    permalink: record.permalink,
+    layout: record.pageKind === 'composed' ? 'composed' : record.pageKind,
+    ...(record.pageKind === 'composed' ? { draft: true } : {}),
+  };
+}
+
+async function mergeAuthors(discovered) {
+  let existing = [];
+  try {
+    existing = yaml.load(await readFile('data/authors.yaml', 'utf8')) ?? [];
+  } catch {
+    existing = [];
+  }
+
+  const merged = new Map();
+  for (const entry of existing) merged.set(entry.slug, entry);
+  for (const [slug, name] of discovered) {
+    if (merged.has(slug)) continue;
+    merged.set(slug, { slug, name });
+  }
+
+  const list = [...merged.values()].sort((a, b) => a.slug.localeCompare(b.slug));
+  await ensureDir('data/authors.yaml');
+  await writeFile('data/authors.yaml', yaml.dump(list, { lineWidth: 100, quotingType: '"' }));
+  return list;
+}
+
+async function main() {
+  const entries = await readJson(URLS_FILE);
+  await rm('content/blog', { recursive: true, force: true });
+  await rm('content/pages', { recursive: true, force: true });
+  await rm('content/cfp', { recursive: true, force: true });
+
+  const assets = new Map();
+  const authors = new Map();
+  const manifest = [];
+
+  for (const entry of entries) {
+    const kind = entry.type === 'page' ? classifyPage(entry.slug) : 'post';
+    if (kind === 'dropped' || kind === 'generated' || kind === 'moved') {
+      manifest.push({ url: entry.url, slug: entry.slug, kind, status: 'skipped' });
+      continue;
+    }
+
+    const html = await readFile(join(HTML_DIR, `${entry.key}.html`), 'utf8');
+    const record = extract(html, entry);
+    const collected = { assets: new Map(), internalLinks: new Set() };
+    const service = createTurndown(collected);
+    const markdown = tidy(service.turndown(record.bodyHtml));
+
+    const data = record.kind === 'post' ? postFrontmatter(record) : pageFrontmatter(record);
+    const file = outputFor(record);
+    await ensureDir(file);
+    await writeFile(file, frontmatter(data) + markdown);
+
+    for (const [remote, local] of collected.assets) assets.set(remote, local);
+    if (record.author && record.authorName) authors.set(record.author, record.authorName);
+
+    manifest.push({
+      url: entry.url,
+      slug: entry.slug,
+      kind: record.kind === 'post' ? 'post' : record.pageKind,
+      status: 'converted',
+      permalink: record.permalink,
+      title: record.title,
+      file,
+      chars: markdown.length,
+      codeBlocks: record.codeBlocks ?? 0,
+      dropped: record.dropped ?? [],
+      leftoverHtml: [
+        ...new Set(
+          [...markdown.matchAll(TAG)]
+            .map((m) => m[2].toLowerCase())
+            .filter((t) => ALLOWED_HTML.has(t)),
+        ),
+      ],
+      warnings: record.warnings,
+      internalLinks: [...collected.internalLinks],
+      assets: [...collected.assets.keys()],
+    });
+  }
+
+  await writeJson(MANIFEST_FILE, {
+    generatedAt: new Date().toISOString(),
+    entries: manifest,
+    assets: Object.fromEntries(assets),
+  });
+
+  const authorList = await mergeAuthors(authors);
+
+  const converted = manifest.filter((m) => m.status === 'converted');
+  console.log(`converted ${converted.length}, skipped ${manifest.length - converted.length}`);
+  console.log(`assets referenced: ${assets.size}`);
+  console.log(`authors: ${authorList.length}`);
+}
+
+await main();

@@ -17,23 +17,36 @@ rationale. Check off each task as it lands.
 - [x] `AGENTS.md` / `CLAUDE.md` with repo conventions
 - [x] `npm install` clean
 - [x] Minimal `src/app/layout.tsx` + `page.tsx` build to `out/`
-- [ ] Initial commit pushed
+- [x] Initial commit pushed
 
 ## Phase 1 — Migration toolchain (`tools/migrate/`)
 
-- [ ] `lib/paths.mjs` — shared path/slug/permalink helpers
-- [ ] `fetch.mjs` — sitemap-driven crawl into `.cache/html/`, resumable, throttled
-- [ ] `extract.mjs` — cheerio extraction of metadata + body for posts and pages
-- [ ] `convert.mjs` — turndown + GFM, WPBakery/Gutenberg unwrapping, link and image rewriting
-- [ ] `assets.mjs` — download uploads, strip `-WxH` suffixes, sharp → WebP
-- [ ] `report.mjs` — per-URL status, unrecognised constructs, broken internal links
-- [ ] `run.mjs` — orchestrator (`npm run migrate`)
-- [ ] Full crawl executed, 235/235 URLs cached
-- [ ] 184 posts converted to `content/blog/`
-- [ ] ~30 pages converted to `content/pages/`
-- [ ] Cruft pages excluded and recorded in `data/redirects.yaml`
-- [ ] Media downloaded and converted into `public/img/`
-- [ ] Report clean: zero unrecognised constructs, zero broken internal links
+- [x] `config.mjs` — origin, sitemaps, page classification (dropped / generated / moved / cfp / composed / prose)
+- [x] `lib.mjs` — path, slug, permalink, protocol-relative and WP size-suffix helpers
+- [x] `fetch.mjs` — sitemap-driven crawl into `.cache/html/`, resumable, throttled, retry with backoff
+- [x] `extract.mjs` — cheerio extraction of metadata + body for posts and pages
+- [x] `extract.mjs` — monospace-span code recovery (`<pre>` does not exist in the source) + texturize repair
+- [x] `extract.mjs` — records every dropped form/iframe so interactive content cannot vanish silently
+- [x] `convert.mjs` — turndown + GFM, link and image rewriting, stray-tag escaping for MDX safety
+- [x] `convert.mjs` — generates `data/authors.yaml`, merge-preserving so manual edits survive re-runs
+- [x] `redirects.mjs` — generates `data/redirects.yaml` from dropped/moved/legacy rules
+- [x] `assets.mjs` — downloads originals to `assets/uploads/` (committed, keeps builds hermetic)
+- [x] `tools/publish-assets.mjs` — `assets/uploads/` → `public/img/uploads/` as WebP, wired to `prebuild`
+- [x] `report.mjs` — per-URL status, residual HTML, dropped embeds, thin output, unresolved links
+- [x] `run.mjs` — orchestrator (`npm run migrate`)
+- [x] Full crawl executed, 235/235 URLs cached
+- [x] 184 posts converted to `content/blog/`
+- [x] 24 pages + 10 CFP pages converted
+- [x] 17 cruft/moved pages excluded and recorded in `data/redirects.yaml`
+- [x] 126 assets downloaded and published (15 MB originals → 4.7 MB WebP)
+- [x] Report clean: 0 extraction warnings, 0 unresolved internal links
+
+### Phase 1 follow-ups
+
+- [ ] Verify inferred author display names in `data/authors.yaml` (6 had none in WordPress)
+- [ ] Audit the 12 inferred legacy redirects in `config.mjs` (`LEGACY`)
+- [ ] Decide treatment for `get-involved` and `get-involved/mailing-lists` (groups.io form only)
+- [ ] Components for the 9 dropped embeds (3 SlideShare, 3 YouTube, Google Form, groups.io, landscape)
 
 ## Phase 2 — Design system
 
