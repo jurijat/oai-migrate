@@ -107,3 +107,9 @@ test('percent-encoded permalink resolves', async ({ page }) => {
   expect(response?.status()).toBe(200);
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Stoplight');
 });
+
+test('an html comment in an mdx page does not break the build', async ({ page }) => {
+  await page.goto('/about/');
+  await expect(page.getByRole('heading', { level: 1, name: 'About' })).toBeVisible();
+  expect(await page.content()).not.toContain('Editors: HTML comments are safe');
+});

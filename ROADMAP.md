@@ -161,7 +161,9 @@ Everything else is done. These cannot be completed from inside the repo.
 - [ ] Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets
 - [ ] Confirm the preview bot comment appears on a pull request
 
-`preview-build.yml` is verified working; only the deploy half is waiting on credentials.
+Verified on PR #1: `ci.yml` and `preview-build.yml` both run on `pull_request` and the build
+artifact is produced. `preview-deploy.yml` correctly skips while the secrets are absent, so only
+the deploy half is waiting on credentials.
 
 ### Needs human verification
 
