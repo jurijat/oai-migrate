@@ -43,8 +43,6 @@ rationale. Check off each task as it lands.
 
 ### Phase 1 follow-ups
 
-- [ ] Verify inferred author display names in `data/authors.yaml` (6 had none in WordPress)
-- [ ] Audit the 12 inferred legacy redirects in `config.mjs` (`LEGACY`)
 - [x] Decide treatment for `get-involved` and `get-involved/mailing-lists` (groups.io form only)
 - [x] Components built for the 9 dropped embeds
 - [x] `MemberLandscape` and `Newsletter` wired into the composed pages
@@ -92,7 +90,6 @@ rationale. Check off each task as it lands.
 - [x] `content/cfp/*.md` converted (10 files)
 - [x] Dedicated CFP template, currently rendered as prose
 - [x] `membershipmembers` page via `MemberLandscape`
-- [ ] `data/members.yaml` if the landscape embed is ever replaced by a local list
 - [x] `/events` and `/eventscalendar` redirect to events.openapis.org
 
 ### Phase 4 follow-ups
@@ -110,7 +107,6 @@ rationale. Check off each task as it lands.
 - [x] `deploy.yml` — GitHub Pages on `push: main`
 - [x] `preview-build.yml` — `pull_request`, builds and uploads artifact, no secrets
 - [x] `preview-deploy.yml` — `workflow_run`, deploys to Cloudflare Pages, sticky comment
-- [ ] Cloudflare project created, `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` set
 - [x] `PULL_REQUEST_TEMPLATE.md`, `CODEOWNERS`
 - [x] Issue forms: propose a blog post, fix a page
 - [x] `CONVENTIONS.md` (Markdown house style, after `OAI-Tracks`)
@@ -122,16 +118,11 @@ rationale. Check off each task as it lands.
 - [x] Cloudflare `_redirects` generation
 - [x] URL parity check fails the build on a missing permalink
 - [x] Open Graph + canonical tags per page
-- [ ] `CNAME` for the production domain
 
 - [x] `basePath` supported via `NEXT_PUBLIC_BASE_PATH`, supplied by `configure-pages`
 - [x] `check:basepath` CI job fails the build on root-absolute references
 
 ### Phase 5 follow-ups
-
-- [ ] Create the Cloudflare Pages project `openapis-org`
-- [ ] Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets
-- [ ] Verify the preview comment on a throwaway PR (workflows cannot be tested before they are on `main`)
 
 ### Accessibility fixes found by Lighthouse
 
@@ -157,6 +148,46 @@ rationale. Check off each task as it lands.
 - [x] Lighthouse: 100 accessibility / best practices / SEO on desktop post and mobile home
 - [x] Playwright smoke suite green locally (7 tests)
 - [x] Playwright suite green on CI
-- [ ] Preview verified on a throwaway PR
-- [ ] Transfer repo to the `OAI` org
+
+---
+
+## Blocked: needs your account or judgement
+
+Everything else is done. These cannot be completed from inside the repo.
+
+### Needs a Cloudflare account
+
+- [ ] Create the Cloudflare Pages project `openapis-org`
+- [ ] Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets
+- [ ] Confirm the preview bot comment appears on a pull request
+
+`preview-build.yml` is verified working; only the deploy half is waiting on credentials.
+
+### Needs human verification
+
+- [ ] Author display names in `data/authors.yaml`. WordPress had none for six accounts, so
+      `abringaze`, `glaforge`, `kinlane`, `pjmolina`, `swaldron` and `jesse` were inferred from
+      their slugs. These are real people — confirm before launch.
+- [ ] The twelve inferred legacy redirects in `tools/migrate/config.mjs` (`LEGACY`). Each was
+      matched by slug similarity against a real post; all twelve already 404 on WordPress, so they
+      are an improvement either way, but the targets are a judgement call.
+
+### Needs a decision from OAI
+
+- [ ] `CNAME` for the production domain
+- [ ] Transfer the repository to the `OAI` organisation
 - [ ] DNS cutover
+- [ ] `data/members.yaml`, only if the landscape.openapis.org embed is ever replaced by a local list
+
+## Running the checks
+
+| Command                                       | What it guards                                                         |
+| --------------------------------------------- | ---------------------------------------------------------------------- |
+| `npm run lint` / `typecheck` / `format:check` | Code health                                                            |
+| `npm run validate`                            | `data/*.yaml` against `schemas/*.json`                                 |
+| `npm run build`                               | Static export, plus the URL parity gate                                |
+| `npm run check:render`                        | Empty pages, 404 stubs, raw markdown, broken links                     |
+| `npm run check:basepath`                      | Root-absolute references under a base path                             |
+| `npm run check:parity`                        | Every page against the cached WordPress source (needs `migrate:fetch`) |
+| `npm run migrate:report`                      | Conversion coverage and unresolved links                               |
+| `npm run test:e2e`                            | 14 Playwright tests                                                    |
