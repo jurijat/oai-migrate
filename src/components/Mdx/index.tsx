@@ -68,10 +68,16 @@ const components = {
   TestimonialGrid,
 };
 
+const HTML_COMMENT = /<!--([\s\S]*?)-->/g;
+
+function forMdx(source: string) {
+  return source.replace(HTML_COMMENT, (_match, body: string) => `{/*${body}*/}`);
+}
+
 export function Mdx({ source, format = 'md' }: { source: string; format?: 'md' | 'mdx' }) {
   return (
     <MDXRemote
-      source={source}
+      source={format === 'mdx' ? forMdx(source) : source}
       components={components}
       options={{
         mdxOptions: {
