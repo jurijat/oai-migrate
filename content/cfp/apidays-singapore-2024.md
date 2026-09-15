@@ -1,13 +1,11 @@
 ---
-title: APIDAYS-Singapore-2024-CFP
+title: "Call for Proposals: API Days Singapore 2024"
 permalink: /oai-at-apidays-4-3-2-3
 layout: cfp
 generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)
-
-# **Call for Proposals: OAI Track at [API Days Singapore](https://www.apidays.global/singapore/)**
 
 # **Date: April 17-18, 2024**
 

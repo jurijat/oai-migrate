@@ -1,5 +1,5 @@
 ---
-title: APIDAYS-Events-2023
+title: "Call for Proposals: API Days 2023"
 permalink: /oai-at-apidays
 layout: cfp
 generated: true

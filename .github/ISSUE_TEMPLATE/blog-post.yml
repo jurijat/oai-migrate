@@ -1,0 +1,34 @@
+name: Propose a blog post
+description: Suggest a post for the OpenAPI Initiative blog
+labels: [blog]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read the [blog guidelines](https://www.openapis.org/openapi-blog-guidelines) first.
+  - type: input
+    id: title
+    attributes:
+      label: Working title
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What is the post about?
+      description: A short summary, and who it is for.
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author name and affiliation
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This is not a product pitch, and it follows the blog guidelines
+          required: true

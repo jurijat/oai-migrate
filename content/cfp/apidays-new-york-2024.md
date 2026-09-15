@@ -1,13 +1,11 @@
 ---
-title: APIDAYS-New-York-2024-CFP
+title: "Call for Proposals: API Days New York 2024"
 permalink: /oai-at-apidays-4-3-2-2-2
 layout: cfp
 generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)
-
-# **Call for Proposals: OAI Track at [API Days New York](https://www.apidays.global/new-york/)**
 
 # **Date: April 30 – May 1, 2024**
 

@@ -95,6 +95,19 @@ export const CFP = {
   'oai-at-apidays-4-4': 'apidays-london-2024',
 };
 
+export const CFP_TITLES = {
+  'apidays-events-2023': 'API Days 2023',
+  'apidays-paris-2024': 'API Days Paris 2024',
+  'apidays-london-2023': 'API Days London 2023',
+  'apidays-australia-2023': 'API Days Australia 2023',
+  'apidays-australia-2024': 'API Days Australia 2024',
+  'apidays-paris-2023': 'API Days Paris 2023',
+  'apidays-helsinki-2024': 'API Days Helsinki 2024',
+  'apidays-new-york-2024': 'API Days New York 2024',
+  'apidays-singapore-2024': 'API Days Singapore 2024',
+  'apidays-london-2024': 'API Days London 2024',
+};
+
 export function classifyPage(slug) {
   if (slug in DROPPED) return 'dropped';
   if (GENERATED.has(slug)) return 'generated';

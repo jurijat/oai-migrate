@@ -13,6 +13,8 @@ export function DocumentView({ doc }: { doc: Post | Page }) {
     );
   }
 
+  const archived = !isPost(doc) && doc.layout === 'cfp';
+
   return (
     <article className="mx-auto max-w-prose px-6 py-16">
       {isPost(doc) ? (
@@ -20,6 +22,15 @@ export function DocumentView({ doc }: { doc: Post | Page }) {
       ) : (
         <h1 className="mb-8 text-4xl font-semibold tracking-oai">{doc.title}</h1>
       )}
+      {archived ? (
+        <p className="mb-10 rounded-4xl bg-brand-card px-6 py-4 text-brand-muted">
+          This call for proposals has closed and is kept for reference. Current events are listed on{' '}
+          <a href="https://events.openapis.org" className="text-brand-green hover:underline">
+            events.openapis.org
+          </a>
+          .
+        </p>
+      ) : null}
       <div className="prose prose-lg max-w-none">
         <Mdx source={doc.body} format={format} />
       </div>

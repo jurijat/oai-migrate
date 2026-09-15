@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Redirects",
+  "description": "Generates static redirect stubs for GitHub Pages and a _redirects file for Cloudflare.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["from", "to"],
+    "properties": {
+      "from": {
+        "type": "string",
+        "pattern": "^/.*$",
+        "description": "Source path. A trailing * makes it a prefix rule; prefix rules only become stubs for paths actually linked from the site."
+      },
+      "to": {
+        "type": "string",
+        "description": "Absolute URL, or a site-relative path beginning with /."
+      },
+      "reason": { "type": "string" }
+    }
+  }
+}

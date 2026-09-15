@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import { Onest } from 'next/font/google';
 import type { ReactNode } from 'react';
+import { Analytics } from '@/components/Analytics';
 import { Footer } from '@/components/Footer';
 import { LfBar } from '@/components/LfBar';
 import { Navbar } from '@/components/Navbar';
 import { Providers } from '@/app/providers';
 import { getNav } from '@/lib/content';
-import { siteUrl } from '@/lib/site';
+import { isProduction, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
 
 const onest = Onest({
@@ -38,6 +39,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
           <div className="flex-1">{children}</div>
           <Footer />
         </Providers>
+        <Analytics enabled={isProduction} />
       </body>
     </html>
   );

@@ -20,15 +20,16 @@
     "migrate:report": "node tools/migrate/report.mjs",
     "validate": "node tools/validate.mjs",
     "assets": "node tools/publish-assets.mjs",
-    "predev": "npm run assets",
-    "prebuild": "npm run assets",
+    "predev": "npm run assets && npm run search:index",
+    "prebuild": "npm run assets && npm run search:index",
     "migrate:publish": "node tools/publish-assets.mjs",
     "migrate:redirects": "node tools/migrate/redirects.mjs",
     "postbuild": "node tools/postbuild.mjs",
     "check:basepath": "node tools/check-basepath.mjs",
     "migrate:structured": "node tools/migrate/extract-structured.mjs",
     "check:parity": "node tools/check-parity.mjs",
-    "check:render": "node tools/check-render.mjs"
+    "check:render": "node tools/check-render.mjs",
+    "search:index": "node tools/build-search-index.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -1,13 +1,11 @@
 ---
-title: APIDAYS-Australia-2024-CFP
+title: "Call for Proposals: API Days Australia 2024"
 permalink: /oai-at-apidays-4-2-2
 layout: cfp
 generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)
-
-# **Call for Proposals: OAI Track at [API Days Australia](https://www.apidays.global/australia/)**
 
 # **Date: October 16-17, 2024**
 

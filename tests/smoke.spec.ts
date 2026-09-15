@@ -81,3 +81,29 @@ test('membership tables converted to markdown, not raw html', async ({ page }) =
   );
   expect(await page.locator('table tbody tr').count()).toBeGreaterThan(6);
 });
+
+test('search finds a post by title', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Search' }).click();
+  const dialog = page.getByRole('dialog', { name: 'Search' });
+  await expect(dialog).toBeVisible();
+  await dialog.getByPlaceholder('Search posts and pages').fill('arazzo');
+  await expect(dialog.getByRole('link').first()).toBeVisible();
+  await dialog.getByRole('link').first().click();
+  await expect(page).toHaveURL(/arazzo/i);
+});
+
+test('embedded video is upgraded to an iframe', async ({ page }) => {
+  await page.goto(
+    '/blog/2023/11/06/apidays-paris-2023-with-an-openapi-track-is-coming-this-december/',
+  );
+  await expect(page.locator('iframe[src*="youtube-nocookie"]')).toBeVisible();
+});
+
+test('percent-encoded permalink resolves', async ({ page }) => {
+  const response = await page.goto(
+    '/blog/2018/05/14/stoplight-%e2%9d%a4%ef%b8%8f-the-openapi-initiative/',
+  );
+  expect(response?.status()).toBe(200);
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Stoplight');
+});

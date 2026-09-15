@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Member testimonials",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["slug", "logo", "quote"],
+    "properties": {
+      "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+      "logo": { "type": "string", "pattern": "^/img/" },
+      "logoAlt": { "type": "string" },
+      "quote": { "type": "string", "minLength": 1 }
+    }
+  }
+}

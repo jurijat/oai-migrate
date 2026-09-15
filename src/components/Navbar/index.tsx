@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { Search } from '@/components/Search';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import type { NavItem } from '@/lib/content';
 import { withBasePath } from '@/lib/site';
@@ -97,6 +98,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
         </ul>
 
         <div className="flex items-center gap-2">
+          <Search />
           <ThemeToggle />
           <button
             type="button"

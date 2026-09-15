@@ -1,0 +1,11 @@
+{
+  "yaml.schemas": {
+    "./schemas/authors.schema.json": ["data/authors.yaml"],
+    "./schemas/redirects.schema.json": ["data/redirects.yaml"],
+    "./schemas/nav.schema.json": ["data/nav.yaml"],
+    "./schemas/people.schema.json": ["data/people.yaml"],
+    "./schemas/testimonials.schema.json": ["data/testimonials.yaml"]
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

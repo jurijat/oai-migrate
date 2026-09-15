@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Blog authors",
+  "description": "Maps the WordPress author slug found in post frontmatter to a display name.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["slug", "name"],
+    "properties": {
+      "slug": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$",
+        "description": "The slug as it appears in a post's `author` field, taken from /author/<slug> on WordPress."
+      },
+      "name": { "type": "string", "minLength": 1 }
+    }
+  }
+}

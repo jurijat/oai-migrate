@@ -1,11 +1,9 @@
 ---
-title: APIDAYS-Australia-2023-CFP
+title: "Call for Proposals: API Days Australia 2023"
 permalink: /oai-at-apidays-4-2
 layout: cfp
 generated: true
 ---
-
-# **Call for Proposals: OAI Track at [API Days Australia](https://www.apidays.global/australia/)**
 
 # **Date: October 11-12, 2023**
 

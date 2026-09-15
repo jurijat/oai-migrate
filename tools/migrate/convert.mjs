@@ -3,7 +3,7 @@ import { join } from 'node:path';
 import yaml from 'js-yaml';
 import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
-import { CFP, HTML_DIR, MANIFEST_FILE, URLS_FILE, classifyPage } from './config.mjs';
+import { CFP, CFP_TITLES, HTML_DIR, MANIFEST_FILE, URLS_FILE, classifyPage } from './config.mjs';
 import {
   ensureDir,
   localAssetPath,
@@ -192,9 +192,15 @@ function postFrontmatter(record) {
   };
 }
 
+function pageTitle(record) {
+  if (record.pageKind !== 'cfp') return record.title;
+  const event = CFP_TITLES[CFP[record.slug]];
+  return event ? `Call for Proposals: ${event}` : record.title;
+}
+
 function pageFrontmatter(record) {
   return {
-    title: record.title,
+    title: pageTitle(record),
     permalink: record.permalink,
     layout: record.pageKind === 'composed' ? 'composed' : record.pageKind,
     ...(record.pageKind === 'composed' ? { draft: true } : {}),

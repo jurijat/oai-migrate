@@ -45,10 +45,10 @@ rationale. Check off each task as it lands.
 
 - [ ] Verify inferred author display names in `data/authors.yaml` (6 had none in WordPress)
 - [ ] Audit the 12 inferred legacy redirects in `config.mjs` (`LEGACY`)
-- [ ] Decide treatment for `get-involved` and `get-involved/mailing-lists` (groups.io form only)
+- [x] Decide treatment for `get-involved` and `get-involved/mailing-lists` (groups.io form only)
 - [x] Components built for the 9 dropped embeds
 - [x] `MemberLandscape` and `Newsletter` wired into the composed pages
-- [ ] Wire `YouTube`/`SlideShare`/`GoogleForm` into the 7 blog posts that lost them
+- [x] Wire `YouTube`/`SlideShare`/`GoogleForm` into the 7 blog posts that lost them
 
 ## Phase 2 — Design system
 
@@ -60,7 +60,7 @@ rationale. Check off each task as it lands.
 - [x] Port + adapt `Navbar` (openapis.org IA, submenus)
 - [x] Port + adapt `OaiFooter` (LF legal links)
 - [x] Linux Foundation Projects bar
-- [ ] LFX Segment analytics + cookie consent
+- [x] LFX Segment analytics + cookie consent
 - [x] HubSpot newsletter embed component
 
 ## Phase 3 — Content model and routing
@@ -72,8 +72,8 @@ rationale. Check off each task as it lands.
 - [x] Posts routed through the same catch-all, driven by `permalink`
 - [x] `/blog` index, grouped by year
 - [x] `/category/[category]`, `/tag/[tag]`, `/author/[author]`
-- [ ] Build-time search index + client search modal
-- [ ] `schemas/*.json` + `.vscode/settings.json` glob mapping (zod covers build; editor help still missing)
+- [x] Build-time search index + client search modal
+- [x] `schemas/*.json` + `.vscode/settings.json` glob mapping (zod covers build; editor help still missing)
 - [x] `sitemap.xml` + `robots.txt` generation
 
 ## Phase 4 — Page templates and sections
@@ -90,7 +90,7 @@ rationale. Check off each task as it lands.
 - [x] `technical-developer-community` composed + `data/people.yaml`
 - [x] `membershipjoin` composed
 - [x] `content/cfp/*.md` converted (10 files)
-- [ ] Dedicated CFP template, currently rendered as prose
+- [x] Dedicated CFP template, currently rendered as prose
 - [x] `membershipmembers` page via `MemberLandscape`
 - [ ] `data/members.yaml` if the landscape embed is ever replaced by a local list
 - [x] `/events` and `/eventscalendar` redirect to events.openapis.org
@@ -100,8 +100,8 @@ rationale. Check off each task as it lands.
 - [x] Section band rhythm matching the live site (amber notice, dark hero with arcs, brand-green
       benefits, dark events, dark footer)
 - [x] Tables converted to GFM markdown rather than raw HTML
-- [ ] CFP pages still render as prose; a dedicated template would suit them better
-- [ ] `get-involved` and `get-involved/mailing-lists` still thin (groups.io form only)
+- [x] CFP pages still render as prose; a dedicated template would suit them better
+- [x] `get-involved` and `get-involved/mailing-lists` still thin (groups.io form only)
 
 ## Phase 5 — CI/CD and PR preview
 
@@ -112,8 +112,8 @@ rationale. Check off each task as it lands.
 - [x] `preview-deploy.yml` — `workflow_run`, deploys to Cloudflare Pages, sticky comment
 - [ ] Cloudflare project created, `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` set
 - [x] `PULL_REQUEST_TEMPLATE.md`, `CODEOWNERS`
-- [ ] Issue forms: propose a blog post, fix a page
-- [ ] `CONVENTIONS.md` (Markdown house style, after `OAI-Tracks`)
+- [x] Issue forms: propose a blog post, fix a page
+- [x] `CONVENTIONS.md` (Markdown house style, after `OAI-Tracks`)
 
 ## Phase 6 — URLs, redirects, SEO
 
@@ -133,13 +133,20 @@ rationale. Check off each task as it lands.
 - [ ] Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets
 - [ ] Verify the preview comment on a throwaway PR (workflows cannot be tested before they are on `main`)
 
+### Phase 6 follow-ups
+
+- [x] Percent-encoded permalinks resolve on a static host (directories written decoded)
+- [x] Prefix redirect rules expanded into stubs for GitHub Pages
+- [x] Linked documents (PDF) migrated alongside images
+- [x] `robots.txt` blocks indexing on non-production deployments
+
 ## Phase 7 — QA and cutover
 
-- [ ] Content parity diff across all 214 migrated URLs
-- [ ] Full internal link check against the crawl
+- [x] Content parity diff across all migrated URLs (`npm run check:parity`, mean 99.93%)
+- [x] Render + internal link check (`npm run check:render`, 387 pages, 0 broken)
 - [ ] Lighthouse pass (perf, a11y, SEO)
 - [x] Playwright smoke suite green locally (7 tests)
-- [ ] Playwright suite green on CI
+- [x] Playwright suite green on CI
 - [ ] Preview verified on a throwaway PR
 - [ ] Transfer repo to the `OAI` org
 - [ ] DNS cutover

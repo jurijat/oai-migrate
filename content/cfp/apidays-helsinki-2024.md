@@ -1,13 +1,11 @@
 ---
-title: APIDAYS-Helsinki-2024-CFP
+title: "Call for Proposals: API Days Helsinki 2024"
 permalink: /oai-at-apidays-4-3-2-2
 layout: cfp
 generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)
-
-# **Call for Proposals: OAI Track at [API Days Helsinki](https://www.apidays.global/helsinki_and_north/)**
 
 # **Date: May 28-29, 2024**
 

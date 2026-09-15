@@ -1,11 +1,9 @@
 ---
-title: APIDAYS-Paris-2023-CFP
+title: "Call for Proposals: API Days Paris 2023"
 permalink: /oai-at-apidays-4-3
 layout: cfp
 generated: true
 ---
-
-# **Call for Proposals: OAI Track at [API Days Paris](https://www.apidays.global/paris/)**
 
 # **Date: December 6-8, 2023**
 

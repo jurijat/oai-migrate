@@ -1,13 +1,11 @@
 ---
-title: APIDAYS-London-2024-CFP
+title: "Call for Proposals: API Days London 2024"
 permalink: /oai-at-apidays-4-4
 layout: cfp
 generated: true
 ---
 
 ![](/img/uploads/2023/12/ASC-symbol-cropped.webp)
-
-# **Call for Proposals: OAI Track at [API Days London](https://www.apidays.global/london/)**
 
 ## **Date: September 18-19, 2024**
 

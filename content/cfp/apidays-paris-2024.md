@@ -1,5 +1,5 @@
 ---
-title: APIDAYS-Paris-2024-CFP
+title: "Call for Proposals: API Days Paris 2024"
 permalink: /oai-at-apidays-3
 layout: cfp
 generated: true

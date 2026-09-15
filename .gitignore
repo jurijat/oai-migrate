@@ -11,3 +11,4 @@ test-results
 playwright-report
 public/img
 tests/**/error-context.md
+public/search-index.json

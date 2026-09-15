@@ -224,7 +224,10 @@ export function extractPage(html, entry) {
   if (!body.length) warnings.push('no .container.main-content');
 
   const heading = body.find('h1').first();
-  if (heading.length && heading.text().replace(/\s+/g, ' ').trim() === title) heading.remove();
+  if (heading.length) {
+    const text = heading.text().replace(/\s+/g, ' ').trim();
+    if (text === title || /^call for proposals/i.test(text)) heading.remove();
+  }
 
   const codeBlocks = normalizeCode($, body);
   normalizeTables($, body);

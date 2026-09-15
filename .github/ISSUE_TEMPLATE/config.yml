@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Specification issues
+    url: https://github.com/OAI/OpenAPI-Specification/issues
+    about: Questions or proposals about the OpenAPI Specification itself
+  - name: Community Slack
+    url: https://join.slack.com/t/open-api/shared_invite/zt-45hwx39lu-L5kfOMIyFc4qt0v~FPGaXQ
+    about: Ask the community
