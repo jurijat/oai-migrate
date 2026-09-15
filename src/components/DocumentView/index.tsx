@@ -34,7 +34,7 @@ export function DocumentView({ doc }: { doc: Post | Page }) {
           .
         </p>
       ) : null}
-      <div className="prose prose-lg max-w-none">
+      <div className="prose max-w-none md:prose-lg">
         <Mdx source={doc.body} format={format} />
       </div>
     </article>

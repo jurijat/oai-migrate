@@ -59,6 +59,42 @@ body {
 }
 
 @layer components {
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    margin-block: 1.5rem;
+  }
+
+  .table-scroll > table {
+    margin-block: 0;
+  }
+
+  .prose a,
+  .prose code,
+  .prose li,
+  .prose p {
+    overflow-wrap: break-word;
+  }
+
+  .prose td,
+  .prose th {
+    overflow-wrap: normal;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding-block: 0.6rem;
+  }
+
+  .table-scroll > table {
+    min-width: 34rem;
+  }
+
+  @media (min-width: 1024px) {
+    .table-scroll > table {
+      min-width: 0;
+    }
+  }
+
   .band-dark {
     background-color: var(--band-dark-bg);
     color: var(--band-dark-fg);

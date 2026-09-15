@@ -49,9 +49,6 @@ In line with JSON Schema, the \`type\` keyword can now define multiple types for
 # OpenAPI v3.0
 type: string
 nullable: true
-```
-
-```
 
 # OpenAPI v3.1
 type:
@@ -70,9 +67,7 @@ These two keywords used to take a boolean value, which would modify the meaning 
 # OpenAPI v3.0
 minimum: 7
 exclusiveMinimum: true
-```
 
-```
 # OpenAPI v3.1
 exclusiveMinimum: 7
 ```
@@ -91,9 +86,7 @@ This might need an visualisation, which I will defer to [Lorna Mitchell](https:/
 # OpenAPI v3.0
 type: string
 example: fedora
-```
 
-```
 # OpenAPI v3.1
 type: string
 examples:
@@ -147,9 +140,7 @@ requestBody:
       schema:
         type: string
         format: base64
-```
 
-```
 # OpenAPI v3.1
 requestBody:
   content:
@@ -174,9 +165,7 @@ requestBody:
         fileName:
           type: string
           format: binary
-```
 
-```
 # OpenAPI v3.1
 requestBody:
   content:

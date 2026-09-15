@@ -103,9 +103,7 @@ The Parameter Object gains a `querystring` option for the `in` fixed field, trea
 - name: searchParams
   in: querystring
   value: "filter=active&sort=desc&limit=50"
-```
 
-```
 - name: fullQuery
   in: querystring
   value: "category={$inputs.category}&minPrice={$inputs.minPrice}&inStock=true"

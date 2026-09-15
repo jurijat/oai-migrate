@@ -22,16 +22,12 @@ One of the most significant changes, particularly for rendering a graphical view
 ```
 tags:
   # Only used for rendering
-```
 
-```
   - name: products
     summary: Products
     description: All product operations
     kind: nav
-```
 
-```
   - name: books
     summary: Books & Literature
     description: Book catalog and recommendations

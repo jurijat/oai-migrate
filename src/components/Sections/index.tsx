@@ -88,7 +88,7 @@ export function Section({
   ) : null;
 
   const body = children ? (
-    <div className={prose ? 'prose prose-lg max-w-none' : ''}>{children}</div>
+    <div className={prose ? 'prose max-w-none md:prose-lg' : ''}>{children}</div>
   ) : null;
 
   if (split) {

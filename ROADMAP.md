@@ -143,6 +143,16 @@ rationale. Check off each task as it lands.
 - [x] `Section` gained a `split` layout so "What is OpenAPI?" no longer leaves half the row empty
 - [x] HubSpot form fields styled to the design system
 
+### Mobile
+
+- [x] Swept every page type at 390px for horizontal scrolling
+- [x] Wide tables wrapped in a scroll container (`rehypeTableScroll`) instead of pushing the page
+- [x] Long URLs used as link text now break rather than overflowing
+- [x] Body copy is `prose` on mobile and `prose-lg` from `md` up; table cells set smaller
+- [x] Adjacent fenced code blocks merged — the source split single YAML examples across
+      consecutive monospace paragraphs, rendering as three boxes
+- [x] 15 mobile regression tests, including table scroll and the mobile nav
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)

@@ -135,6 +135,16 @@ export function escapeStrayTags(markdown) {
   );
 }
 
+export function mergeAdjacentCode(markdown) {
+  let previous;
+  let current = markdown;
+  do {
+    previous = current;
+    current = current.replace(/```\n\n```\n/g, '\n');
+  } while (current !== previous);
+  return current;
+}
+
 export function balanceEmphasis(markdown) {
   let fenced = false;
 
@@ -157,7 +167,9 @@ export function balanceEmphasis(markdown) {
 }
 
 function tidy(markdown) {
-  return `${balanceEmphasis(escapeStrayTags(markdown).replace(/\*\*\s*\*\*/g, ''))
+  return `${mergeAdjacentCode(
+    balanceEmphasis(escapeStrayTags(markdown).replace(/\*\*\s*\*\*/g, '')),
+  )
     .replace(/ /g, ' ')
     .replace(/[ \t]+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
