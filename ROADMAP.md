@@ -162,8 +162,9 @@ Everything else is done. These cannot be completed from inside the repo.
 - [ ] Confirm the preview bot comment appears on a pull request
 
 Verified on PR #1: `ci.yml` and `preview-build.yml` both run on `pull_request` and the build
-artifact is produced. `preview-deploy.yml` correctly skips while the secrets are absent, so only
-the deploy half is waiting on credentials.
+artifact is produced. `preview-deploy.yml` now skips with a notice while the secrets are absent
+rather than failing, and turns itself on as soon as they are set. Confirm the bot comment on the
+first PR after that.
 
 ### Needs human verification
 

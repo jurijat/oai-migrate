@@ -21,9 +21,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: echo "${{ github.event.number }}" > out/.pr-number
+      - run: echo "${{ github.event.number }}" > out/pr-number.txt
       - uses: actions/upload-artifact@v7
         with:
           name: preview-site
           path: out
           retention-days: 3
+          include-hidden-files: true
