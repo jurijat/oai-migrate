@@ -147,3 +147,35 @@ export type NavItem = z.infer<typeof navSchema>[number];
 export async function getNav(): Promise<NavItem[]> {
   return navSchema.parse(yaml.load(await readFile('data/nav.yaml', 'utf8')));
 }
+
+const testimonialSchema = z.array(
+  z.object({
+    slug: z.string(),
+    logo: z.string(),
+    logoAlt: z.string().optional(),
+    quote: z.string(),
+  }),
+);
+
+const peopleSchema = z.object({
+  current: z.array(
+    z.object({
+      slug: z.string(),
+      name: z.string(),
+      term: z.string().optional(),
+      photo: z.string(),
+    }),
+  ),
+  former: z.array(z.object({ slug: z.string(), name: z.string(), term: z.string() })),
+});
+
+export type Testimonial = z.infer<typeof testimonialSchema>[number];
+export type People = z.infer<typeof peopleSchema>;
+
+export async function getTestimonials(): Promise<Testimonial[]> {
+  return testimonialSchema.parse(yaml.load(await readFile('data/testimonials.yaml', 'utf8')));
+}
+
+export async function getPeople(): Promise<People> {
+  return peopleSchema.parse(yaml.load(await readFile('data/people.yaml', 'utf8')));
+}

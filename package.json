@@ -25,7 +25,8 @@
     "migrate:publish": "node tools/publish-assets.mjs",
     "migrate:redirects": "node tools/migrate/redirects.mjs",
     "postbuild": "node tools/postbuild.mjs",
-    "check:basepath": "node tools/check-basepath.mjs"
+    "check:basepath": "node tools/check-basepath.mjs",
+    "migrate:structured": "node tools/migrate/extract-structured.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

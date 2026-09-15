@@ -39,6 +39,16 @@ export function stripSizeSuffix(url) {
   return url.replace(/-(\d+)x(\d+)(\.[a-zA-Z0-9]+)(?=$|\?)/, '$3');
 }
 
+const UPLOADS = /\/wp-content\/uploads\/sites\/31\/(.+)$/;
+const RASTER = /\.(png|jpe?g|gif|webp)$/i;
+
+export function localAssetPath(src) {
+  const match = UPLOADS.exec(stripSizeSuffix(src.split('?')[0]));
+  if (!match) return null;
+  const rest = match[1];
+  return `/img/uploads/${RASTER.test(rest) ? rest.replace(RASTER, '.webp') : rest}`;
+}
+
 export async function ensureDir(file) {
   await mkdir(dirname(file), { recursive: true });
 }

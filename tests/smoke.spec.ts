@@ -50,3 +50,34 @@ test('theme toggle drives data-theme', async ({ page }) => {
   await page.getByRole('button', { name: 'Toggle colour theme' }).click();
   await expect(html).toHaveAttribute('data-theme', 'dark');
 });
+
+test('home page renders composed sections in the site rhythm', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    "The world's most widely used API description standard",
+  );
+  await expect(page.locator('[data-section="hero"].band-dark')).toBeVisible();
+  await expect(page.locator('.band-brand')).toBeVisible();
+  await expect(page.getByRole('heading', { name: '3 Benefits of OpenAPI' })).toBeVisible();
+  expect(await page.locator('.btn-green, .btn-outline').count()).toBeGreaterThan(4);
+});
+
+test('testimonials render from data', async ({ page }) => {
+  await page.goto('/testimonials/');
+  expect(await page.locator('blockquote').count()).toBe(21);
+});
+
+test('technical steering committee renders from data', async ({ page }) => {
+  await page.goto('/about/technical-developer-community/');
+  await expect(page.getByText('Darrell Miller')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Former members' })).toBeVisible();
+});
+
+test('membership tables converted to markdown, not raw html', async ({ page }) => {
+  await page.goto('/membershipjoin/');
+  await expect(page.locator('table thead th').first()).toHaveText('Participation Level *');
+  await expect(page.locator('table').nth(1).locator('thead th').first()).toHaveText(
+    'Employees at Company',
+  );
+  expect(await page.locator('table tbody tr').count()).toBeGreaterThan(6);
+});

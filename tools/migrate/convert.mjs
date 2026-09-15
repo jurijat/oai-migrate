@@ -4,18 +4,15 @@ import yaml from 'js-yaml';
 import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 import { CFP, HTML_DIR, MANIFEST_FILE, URLS_FILE, classifyPage } from './config.mjs';
-import { ensureDir, readJson, stripSizeSuffix, toRelative, writeJson } from './lib.mjs';
+import {
+  ensureDir,
+  localAssetPath,
+  readJson,
+  stripSizeSuffix,
+  toRelative,
+  writeJson,
+} from './lib.mjs';
 import { extract } from './extract.mjs';
-
-const UPLOADS = /\/wp-content\/uploads\/sites\/31\/(.+)$/;
-const RASTER = /\.(png|jpe?g|gif|webp)$/i;
-
-export function localAssetPath(src) {
-  const match = UPLOADS.exec(stripSizeSuffix(src.split('?')[0]));
-  if (!match) return null;
-  const rest = match[1];
-  return `/img/uploads/${RASTER.test(rest) ? rest.replace(RASTER, '.webp') : rest}`;
-}
 
 function createTurndown(collected) {
   const service = new TurndownService({
@@ -48,6 +45,11 @@ function createTurndown(collected) {
       if (local) collected.assets.set(stripSizeSuffix(src.split('?')[0]), local);
       return `![${alt}](${local ?? src})`;
     },
+  });
+
+  service.addRule('cellBreak', {
+    filter: (node) => node.nodeName === 'BR' && !!node.closest?.('td, th'),
+    replacement: () => '<br />',
   });
 
   service.addRule('figure', {
@@ -221,6 +223,9 @@ async function main() {
     const service = createTurndown(collected);
     const markdown = tidy(service.turndown(record.bodyHtml));
 
+    for (const [remote, local] of collected.assets) assets.set(remote, local);
+    if (record.author && record.authorName) authors.set(record.author, record.authorName);
+
     const data = record.kind === 'post' ? postFrontmatter(record) : pageFrontmatter(record);
     const file = outputFor(record);
     if (protectedFiles.has(file)) {
@@ -229,9 +234,6 @@ async function main() {
     }
     await ensureDir(file);
     await writeFile(file, frontmatter(data) + markdown);
-
-    for (const [remote, local] of collected.assets) assets.set(remote, local);
-    if (record.author && record.authorName) authors.set(record.author, record.authorName);
 
     manifest.push({
       url: entry.url,

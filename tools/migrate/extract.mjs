@@ -53,6 +53,10 @@ function normalizeCode($, root) {
   return blocks;
 }
 
+function clean(value) {
+  return value.replace(/\s+/g, ' ').trim();
+}
+
 function cleanTitle($) {
   return $('title')
     .text()
@@ -76,6 +80,51 @@ function stripPresentation($, root) {
     for (const name of Object.keys(attribs)) {
       if (!KEEP_ATTRS.has(name.toLowerCase())) $(el).removeAttr(name);
     }
+  });
+}
+
+function normalizeTables($, root) {
+  if (!root.length) return;
+
+  root.find('table').each((_, el) => {
+    const table = $(el);
+
+    table.find('td, th').each((_i, cell) => {
+      const node = $(cell);
+      node.find('ul, ol').each((_j, list) => {
+        const items = $(list)
+          .find('li')
+          .map((_k, li) => clean($(li).html() ?? ''))
+          .get()
+          .filter(Boolean);
+        $(list).replaceWith(items.join('<br>'));
+      });
+    });
+
+    if (table.find('thead').length) return;
+    const first = table.find('tr').first();
+    if (!first.length) return;
+
+    const cells = first.find('td').toArray();
+    const allBold =
+      cells.length > 0 &&
+      cells.every((cell) => {
+        const node = $(cell);
+        return clean(node.text()) === clean(node.find('strong, b').text());
+      });
+
+    if (allBold) {
+      for (const cell of cells) {
+        const node = $(cell);
+        node.replaceWith($('<th>').html((node.html() ?? '').replace(/<\/?strong>/g, '')));
+      }
+      $('<thead>').append(first).prependTo(table);
+      return;
+    }
+
+    const blank = $('<tr>');
+    for (let i = 0; i < cells.length; i += 1) blank.append($('<th>'));
+    $('<thead>').append(blank).prependTo(table);
   });
 }
 
@@ -125,6 +174,7 @@ export function extractPost(html, entry) {
   const body = $('.content-inner').first();
   if (!body.length) warnings.push('no .content-inner');
   const codeBlocks = normalizeCode($, body);
+  normalizeTables($, body);
   const dropped = interactive($, body);
   stripPresentation($, body);
 
@@ -159,6 +209,7 @@ export function extractPage(html, entry) {
   if (heading.length && heading.text().replace(/\s+/g, ' ').trim() === title) heading.remove();
 
   const codeBlocks = normalizeCode($, body);
+  normalizeTables($, body);
   const dropped = interactive($, body);
   stripPresentation($, body);
 

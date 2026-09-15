@@ -3,6 +3,7 @@ import { spawn } from 'node:child_process';
 const STEPS = [
   ['fetch', 'tools/migrate/fetch.mjs'],
   ['convert', 'tools/migrate/convert.mjs'],
+  ['structured', 'tools/migrate/extract-structured.mjs'],
   ['redirects', 'tools/migrate/redirects.mjs'],
   ['assets', 'tools/migrate/assets.mjs'],
   ['publish', 'tools/publish-assets.mjs'],

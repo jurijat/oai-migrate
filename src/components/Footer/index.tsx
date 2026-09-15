@@ -32,13 +32,13 @@ export async function Footer() {
   const columns = nav.filter((item) => item.children?.length).slice(0, 4);
 
   return (
-    <footer className="mt-24 bg-brand-footer-bg">
+    <footer className="band-dark mt-24">
       <div className="mx-auto max-w-content px-6 py-16">
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
           {columns.map((column) => (
             <div key={column.label}>
               <h2 className="mb-3 font-semibold tracking-oai">{column.label}</h2>
-              <ul className="space-y-2 text-sm text-brand-muted">
+              <ul className="band-muted space-y-2 text-sm">
                 {column.children?.map((child) => (
                   <li key={`${child.label}-${child.href}`}>
                     <NavLink href={child.href} label={child.label} />
@@ -49,7 +49,7 @@ export async function Footer() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-t border-brand-separator pt-8 text-sm text-brand-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="band-muted mt-12 flex flex-col gap-4 border-t border-white/15 pt-8 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p>
             Copyright &copy; {new Date().getFullYear()} the Linux Foundation. The OpenAPI Initiative
             is a Linux Foundation project.

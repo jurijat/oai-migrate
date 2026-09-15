@@ -42,9 +42,17 @@ async function download(url) {
   throw new Error(`${lastError?.message ?? lastError}`);
 }
 
+async function extraAssets() {
+  try {
+    return await readJson('data/structured-assets.json');
+  } catch {
+    return {};
+  }
+}
+
 async function main() {
   const { assets } = await readJson(MANIFEST_FILE);
-  const remotes = Object.keys(assets);
+  const remotes = [...new Set([...Object.keys(assets), ...Object.keys(await extraAssets())])];
 
   let saved = 0;
   let cached = 0;

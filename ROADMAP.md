@@ -47,7 +47,8 @@ rationale. Check off each task as it lands.
 - [ ] Audit the 12 inferred legacy redirects in `config.mjs` (`LEGACY`)
 - [ ] Decide treatment for `get-involved` and `get-involved/mailing-lists` (groups.io form only)
 - [x] Components built for the 9 dropped embeds
-- [ ] Reference those embed components from the 8 content files that lost them
+- [x] `MemberLandscape` and `Newsletter` wired into the composed pages
+- [ ] Wire `YouTube`/`SlideShare`/`GoogleForm` into the 7 blog posts that lost them
 
 ## Phase 2 — Design system
 
@@ -60,7 +61,7 @@ rationale. Check off each task as it lands.
 - [x] Port + adapt `OaiFooter` (LF legal links)
 - [x] Linux Foundation Projects bar
 - [ ] LFX Segment analytics + cookie consent
-- [ ] HubSpot newsletter embed component
+- [x] HubSpot newsletter embed component
 
 ## Phase 3 — Content model and routing
 
@@ -81,18 +82,26 @@ rationale. Check off each task as it lands.
 - [x] Blog post template (byline, date, category, tags)
 - [x] Embed components: `YouTube`, `SlideShare`, `GoogleForm`, `MemberLandscape`, `MailingListSignup`
 - [x] `membershipmembers` hand-authored, protected from the converter by the `generated` flag
-- [ ] `Hero`, `AnnouncementBar`, `CTA`
-- [ ] `BenefitGrid`, `LogoWall`, `TestimonialGrid`, `PersonGrid`
-- [ ] Home page composed in MDX
-- [ ] `membership-benefits` composed
-- [ ] `testimonials` composed + `data/testimonials.yaml`
-- [ ] `technical-developer-community` composed + `data/people.yaml`
-- [ ] `membershipjoin` composed
+- [x] `Hero`, `AnnouncementBar`, `CTA`
+- [x] `BenefitGrid`/`Benefit`, `TestimonialGrid`, `PeopleGrid`, `Action`, `Section` tones
+- [x] Home page composed in MDX
+- [x] `membership-benefits` composed
+- [x] `testimonials` composed + `data/testimonials.yaml`
+- [x] `technical-developer-community` composed + `data/people.yaml`
+- [x] `membershipjoin` composed
 - [x] `content/cfp/*.md` converted (10 files)
 - [ ] Dedicated CFP template, currently rendered as prose
 - [x] `membershipmembers` page via `MemberLandscape`
 - [ ] `data/members.yaml` if the landscape embed is ever replaced by a local list
 - [x] `/events` and `/eventscalendar` redirect to events.openapis.org
+
+### Phase 4 follow-ups
+
+- [x] Section band rhythm matching the live site (amber notice, dark hero with arcs, brand-green
+      benefits, dark events, dark footer)
+- [x] Tables converted to GFM markdown rather than raw HTML
+- [ ] CFP pages still render as prose; a dedicated template would suit them better
+- [ ] `get-involved` and `get-involved/mailing-lists` still thin (groups.io form only)
 
 ## Phase 5 — CI/CD and PR preview
 

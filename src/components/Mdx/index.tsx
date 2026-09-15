@@ -12,6 +12,18 @@ import {
   SlideShare,
   YouTube,
 } from '@/components/Embeds';
+import { Newsletter } from '@/components/Newsletter';
+import {
+  Action,
+  AnnouncementBar,
+  Benefit,
+  BenefitGrid,
+  CTA,
+  Hero,
+  PeopleGrid,
+  Section,
+  TestimonialGrid,
+} from '@/components/Sections';
 
 function MdxLink({ href = '', children, ...rest }: AnchorHTMLAttributes<HTMLAnchorElement>) {
   if (href.startsWith('/')) {
@@ -43,6 +55,16 @@ const components = {
   MemberLandscape,
   SlideShare,
   YouTube,
+  Action,
+  AnnouncementBar,
+  Benefit,
+  BenefitGrid,
+  CTA,
+  Hero,
+  Newsletter,
+  PeopleGrid,
+  Section,
+  TestimonialGrid,
 };
 
 export function Mdx({ source, format = 'md' }: { source: string; format?: 'md' | 'mdx' }) {
