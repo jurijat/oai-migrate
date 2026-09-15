@@ -20,5 +20,3 @@ The Open API Initiative (OAI) came together over two years ago to seek to create
 On August 7, the OAI announced the release of the [OpenAPI Spec v3](/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0), completing a 7 month community effort. Born out of the world’s most popular framework for APIs, the prior version has over 18K daily downloads, over 3k know public GitHub repos, and 44 targets in codegen from over 250 contributors.
 
 ## Meet the Panelists
-
-\[tmm name=”osseu17″\]

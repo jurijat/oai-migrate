@@ -20,5 +20,3 @@ In our talk at APIStrat, myself and David will discuss how to leverage the OpenA
 Have I caught your attention? If so, come learn how the Developer Experience teams at Oracle Cloud and Microsoft Azure deliver high-quality SDKs and documentation in real-time for Java, .NET, Python, Go, JavaScript, and Ruby, without breaking a sweat, at APIStrat. Looking forward to seeing you there!
 
 _This post was written by Joe Levy of Oracle Cloud_
-
-\[tmm name=”levyjustice\_apistrat2018″\]

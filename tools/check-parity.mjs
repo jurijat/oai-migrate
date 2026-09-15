@@ -22,9 +22,11 @@ const STRIP = [
   '.meta-comment-count',
 ];
 
+const SHORTCODE = /\[\/?[a-z][a-z0-9_]*(?=[\s\]])[^\]\n]*\]/g;
+
 function textOf(node) {
   const spaced = (node.html() ?? '').replace(/<[^>]+>/g, ' ');
-  return cheerio.load(`<body>${spaced}</body>`)('body').text();
+  return cheerio.load(`<body>${spaced}</body>`)('body').text().replace(SHORTCODE, ' ');
 }
 
 function words(text) {

@@ -124,3 +124,10 @@ test('logo has a light and a dark variant', async ({ page }) => {
   await expect(dark).toBeVisible();
   await expect(light).toBeHidden();
 });
+
+test('wordpress shortcodes do not reach the page', async ({ page }) => {
+  await page.goto('/participatehow-to-contribute/');
+  const text = await page.locator('article').innerText();
+  expect(text).not.toMatch(/\[icon\b|\[tmm\b|\[gravityform\b/);
+  await expect(page.getByText('Evolve the Spec', { exact: true })).toBeVisible();
+});

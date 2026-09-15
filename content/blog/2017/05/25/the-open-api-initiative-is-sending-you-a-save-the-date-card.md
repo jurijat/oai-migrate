@@ -34,5 +34,3 @@ In case you’re not getting push notifications to your mobile device for every 
 As mentioned above, **if you’re not already doing so, now is a great time to review the latest OpenAPI Spec v3.0.0**, consider how your systems and tools can take advantage of the [new functionality](/blog/2017/01/24/a-new-year-a-new-specification), and consider if anything could be improved before v3.0.0 final release.
 
 Lastly, if you’re writing any kind of tool that uses the 3.0 draft spec in any way, please let us know by completing this [very short survey](/specification/v3implementations-form), because only through implementing code against the draft spec can we gain confidence in its readiness!
-
-\[tmm name=”technical-developer-community”\]

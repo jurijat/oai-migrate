@@ -16,5 +16,3 @@ Read the full article on the [Restlet blog](http://restlet.com/company/blog/2017
 * * *
 
 Note: _Restlet is a founding member of the OAI and has recently joined the RAML workgroup._
-
-\[tmm name=”jlouvel”\]

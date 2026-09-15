@@ -59,5 +59,3 @@ To get started, just [register for the free trial](http://www.reprezen.com/trial
 [KaiZen OpenAPI Editor](https://github.com/RepreZen/KaiZen-OpenAPI-Editor) is RepreZen’s open source, Eclipse-based editor for the industry-standard OpenAPI Specification language. This is the same full-featured editor, formerly known as SwagEdit, used by RepreZen API Studio.  KaiZen OpenAPI Editor is our core editing component for OpenAPI 2.0 and 3.0.
 
 You can try it out today by installing from [Eclipse Marketplace](https://marketplace.eclipse.org/content/kaizen-openapi-editor) into [Eclipse Desktop IDE](https://www.eclipse.org/downloads/), Mars.2 release or later. Once you’ve installed, see the [Getting Started Guide](https://github.com/RepreZen/KaiZen-OpenAPI-Editor/blob/master/GETTING_STARTED.md) for quick overview.
-
-\[tmm name=”ted-epstein”\]

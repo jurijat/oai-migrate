@@ -35,7 +35,7 @@ I spoke about the topic a few times, as web APIs is a topic I enjoy, at Nordic A
 
 You can also have a look at the slide deck embedded below:
 
-\[iframe src=”https://docs.google.com/presentation/d/1dej1xz15C0vXo-XV\_wwj5Qxp28sR\_Hl3JNOf38OoKvQ/embed?start=false&loop=false&delayms=3000″ frameborder=”0″ width=”960″ height=”569″ allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”\]
+[Open the embedded content](https://docs.google.com/presentation/d/1dej1xz15C0vXo-XV_wwj5Qxp28sR_Hl3JNOf38OoKvQ/embed?start=false&loop=false&delayms=3000)
 In my presentation and demo, I decided to use Cloud Endpoints to manage my API, and to host the business logic of my API implementation on the Google Cloud Platform. GCP (for short) provides various “compute” solutions for your projects:
 
 -   [Google App Engine](https://cloud.google.com/appengine/) (Platform-as-a-Service): you deploy your code, and all the scaling is done transparently for you by the platform,

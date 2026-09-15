@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { CloseIcon, MenuIcon } from '@/components/Icons';
 import { Search } from '@/components/Search';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import type { NavItem } from '@/lib/content';
@@ -114,7 +115,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
             aria-label="Toggle navigation"
             className="grid h-10 w-10 place-items-center rounded-full border border-brand-separator md:hidden"
           >
-            <span aria-hidden="true">{open ? '✕' : '☰'}</span>
+            {open ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
       </nav>

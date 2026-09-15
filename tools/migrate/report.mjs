@@ -57,6 +57,11 @@ async function main() {
   heading(`Embedded content, preserved as links and upgraded at render (${dropped.length})`);
   for (const e of dropped) console.log(`  ${e.slug}\n      ${e.dropped.join('\n      ')}`);
 
+  const shortcoded = converted.filter((e) => (e.shortcodes ?? []).length);
+  const shortcodeTotal = shortcoded.reduce((sum, e) => sum + e.shortcodes.length, 0);
+  heading(`WordPress shortcodes removed (${shortcodeTotal} in ${shortcoded.length} file(s))`);
+  for (const e of shortcoded) console.log(`  ${e.slug}: ${e.shortcodes.join(', ')}`);
+
   const thin = converted.filter((e) => (e.chars ?? 999) < 200);
   heading(`Thin output, under 200 chars (${thin.length})`);
   for (const e of thin) console.log(`  ${e.file} (${e.chars})`);

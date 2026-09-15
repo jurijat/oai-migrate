@@ -19,5 +19,3 @@ You will learn about:
 4.  Links and Callbacks
 5.  Security Schemes
 6.  XmlExample
-
-\[tmm name=”oaiworkshopapistrat”\]

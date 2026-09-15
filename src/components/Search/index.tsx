@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { SearchIcon } from '@/components/Icons';
 import { withBasePath } from '@/lib/site';
 
 type Entry = {
@@ -84,7 +85,7 @@ export function Search() {
         aria-label="Search"
         className="grid h-10 w-10 place-items-center rounded-full border border-brand-separator transition-colors hover:border-brand-green"
       >
-        <span aria-hidden="true">{'⌕'}</span>
+        <SearchIcon />
       </button>
 
       {open ? (

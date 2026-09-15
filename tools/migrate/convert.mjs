@@ -135,6 +135,31 @@ export function escapeStrayTags(markdown) {
   );
 }
 
+const SHORTCODE = /\\?\[(\/?[a-z][a-z0-9_]*)(?=[\s\]])([^\]\n]*?)\\?\](?!\()/g;
+
+function unescapeAttr(value) {
+  return value
+    .replace(/\\([_*[\]()])/g, '$1')
+    .replace(/[\u201c\u201d\u2033]/g, '"')
+    .replace(/[\u2018\u2019\u2032]/g, "'");
+}
+
+export function stripShortcodes(markdown) {
+  const removed = [];
+
+  const cleaned = markdown.replace(SHORTCODE, (match, name, attrs) => {
+    const source = /src=["']([^"']+)["']/.exec(unescapeAttr(attrs));
+    if (source) {
+      removed.push(`${name} -> ${source[1]}`);
+      return `[Open the embedded content](${source[1]})`;
+    }
+    removed.push(name);
+    return '';
+  });
+
+  return { markdown: cleaned, removed };
+}
+
 export function mergeAdjacentCode(markdown) {
   let previous;
   let current = markdown;
@@ -171,6 +196,7 @@ function tidy(markdown) {
     balanceEmphasis(escapeStrayTags(markdown).replace(/\*\*\s*\*\*/g, '')),
   )
     .replace(/ /g, ' ')
+    .replace(/^[ \t]*\\[ \t]*$/gm, '')
     .replace(/[ \t]+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
     .trim()}\n`;
@@ -293,7 +319,8 @@ async function main() {
       unhandledEmbeds: new Set(),
     };
     const service = createTurndown(collected);
-    const markdown = tidy(service.turndown(record.bodyHtml));
+    const stripped = stripShortcodes(service.turndown(record.bodyHtml));
+    const markdown = tidy(stripped.markdown);
 
     for (const [remote, local] of collected.assets) assets.set(remote, local);
     if (record.author && record.authorName) authors.set(record.author, record.authorName);
@@ -326,6 +353,7 @@ async function main() {
       chars: markdown.length,
       codeBlocks: record.codeBlocks ?? 0,
       dropped: record.dropped ?? [],
+      shortcodes: stripped.removed,
       leftoverHtml: [
         ...new Set(
           [...markdown.matchAll(TAG)]

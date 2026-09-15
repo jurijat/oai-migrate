@@ -22,5 +22,3 @@ You will learn:
 7.  Documentation with markdown
 
 * * *
-
-\[tmm name=”oaiworkshopapistrat”\]

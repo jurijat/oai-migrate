@@ -26,5 +26,3 @@ We hope to see you in Portland! Be sure to come by the IBM booth.
 Learn more about IBM Cloud : [https://www.ibm.com/cloud-computing/bluemix/](https://www.ibm.com/cloud-computing/bluemix/).
 
 ## About the Author
-
-\[tmm name=”saivennam\_ibm”\]

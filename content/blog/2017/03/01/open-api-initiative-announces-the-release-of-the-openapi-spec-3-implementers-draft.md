@@ -45,5 +45,3 @@ As before, we may end up asking for contributions or feedback on specific ticket
 Thank you to everyone who has contributed to this substantial step forward and onward to a final OpenAPI Specification version 3.0.0 release.
 
 #### Technical Developer Community
-
-\[tmm name=”technical-developer-community”\]

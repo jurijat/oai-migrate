@@ -18,5 +18,3 @@ As a member of OAI, we are continuing to tap into our developer ecosystem and gr
 This partnership and our new APIs make it simpler for our developers and sellers to quickly integrate with eBay and onboard all their inventory—part of our promise to deliver the most powerful commerce platform to our seller and developer partners so they can build sophisticated integrations to manage all end-to-end selling operations on eBay and easily scale their business.
 
 * * *
-
-\[tmm name=”gail-frederick-ebay”\]

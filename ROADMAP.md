@@ -153,6 +153,15 @@ rationale. Check off each task as it lands.
       consecutive monospace paragraphs, rendering as three boxes
 - [x] 15 mobile regression tests, including table scroll and the mobile nav
 
+### Icons and leftover WordPress markup
+
+- [x] Navbar icons replaced with stroke SVGs using `currentColor`; they were Unicode glyphs
+      (`⌕`, `☾`, `☀`, `☰`, `✕`) that rendered thin and inconsistently sized
+- [x] Leftover WordPress shortcodes stripped — 16 across 14 files, leaking as literal text on the
+      live site too because texturize had mangled their quotes
+- [x] `[iframe src=…]` preserved as a link rather than dropped (a Google Slides deck)
+- [x] `check:render` and an e2e test now fail on shortcode leakage
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)
