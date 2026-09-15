@@ -15,7 +15,7 @@ jobs:
     if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: preview-site
           path: out
@@ -28,7 +28,7 @@ jobs:
           rm out/.pr-number
           echo "number=$number" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v7
         with:
           node-version-file: .node-version
 
@@ -45,7 +45,7 @@ jobs:
             | grep -oE 'https://[a-z0-9.-]+\.pages\.dev' | tail -1)
           echo "url=$url" >> "$GITHUB_OUTPUT"
 
-      - uses: marocchino/sticky-pull-request-comment@v2
+      - uses: marocchino/sticky-pull-request-comment@v3
         with:
           number: ${{ steps.pr.outputs.number }}
           header: preview

@@ -1,9 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { getPages, getPosts, getTaxonomy } from '@/lib/content';
+import { siteUrl } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
-const BASE = 'https://www.openapis.org';
+const BASE = siteUrl;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [posts, pages, taxonomy] = await Promise.all([getPosts(), getPages(), getTaxonomy()]);

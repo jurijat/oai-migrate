@@ -4,6 +4,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import type { AnchorHTMLAttributes, ImgHTMLAttributes } from 'react';
+import { withBasePath } from '@/lib/site';
 import {
   GoogleForm,
   MailingListSignup,
@@ -29,7 +30,9 @@ function MdxLink({ href = '', children, ...rest }: AnchorHTMLAttributes<HTMLAnch
 }
 
 function MdxImage({ src = '', alt = '', ...rest }: ImgHTMLAttributes<HTMLImageElement>) {
-  return <img src={String(src)} alt={alt} loading="lazy" decoding="async" {...rest} />;
+  return (
+    <img src={withBasePath(String(src))} alt={alt} loading="lazy" decoding="async" {...rest} />
+  );
 }
 
 const components = {

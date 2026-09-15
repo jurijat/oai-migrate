@@ -6,6 +6,7 @@ import { LfBar } from '@/components/LfBar';
 import { Navbar } from '@/components/Navbar';
 import { Providers } from '@/app/providers';
 import { getNav } from '@/lib/content';
+import { siteUrl } from '@/lib/site';
 import '@/app/globals.css';
 
 const onest = Onest({
@@ -16,7 +17,7 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.openapis.org'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'OpenAPI Initiative',
     template: '%s – OpenAPI Initiative',

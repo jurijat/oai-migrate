@@ -115,6 +115,9 @@ rationale. Check off each task as it lands.
 - [x] Open Graph + canonical tags per page
 - [ ] `CNAME` for the production domain
 
+- [x] `basePath` supported via `NEXT_PUBLIC_BASE_PATH`, supplied by `configure-pages`
+- [x] `check:basepath` CI job fails the build on root-absolute references
+
 ### Phase 5 follow-ups
 
 - [ ] Create the Cloudflare Pages project `openapis-org`

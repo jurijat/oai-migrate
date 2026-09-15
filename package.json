@@ -24,7 +24,8 @@
     "prebuild": "npm run assets",
     "migrate:publish": "node tools/publish-assets.mjs",
     "migrate:redirects": "node tools/migrate/redirects.mjs",
-    "postbuild": "node tools/postbuild.mjs"
+    "postbuild": "node tools/postbuild.mjs",
+    "check:basepath": "node tools/check-basepath.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

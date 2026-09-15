@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import type { NavItem } from '@/lib/content';
+import { withBasePath } from '@/lib/site';
 
 function isExternal(href: string) {
   return /^https?:\/\//.test(href);
@@ -50,7 +51,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
       >
         <Link href="/" className="shrink-0" aria-label="OpenAPI Initiative home">
           <Image
-            src="/brand/openapi-logo.svg"
+            src={withBasePath('/brand/openapi-logo.svg')}
             alt="OpenAPI Initiative"
             width={248}
             height={56}

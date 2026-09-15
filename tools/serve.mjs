@@ -5,6 +5,7 @@ import { extname, join, normalize } from 'node:path';
 
 const ROOT = 'out';
 const PORT = Number(process.env.PORT ?? 4173);
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? '').replace(/\/+$/, '');
 
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -40,7 +41,9 @@ async function resolve(pathname) {
 }
 
 createServer(async (req, res) => {
-  const pathname = new URL(req.url ?? '/', 'http://localhost').pathname;
+  const raw = new URL(req.url ?? '/', 'http://localhost').pathname;
+  const pathname =
+    BASE_PATH && raw.startsWith(BASE_PATH) ? raw.slice(BASE_PATH.length) || '/' : raw;
   const file = await resolve(pathname);
 
   if (!file) {

@@ -5,25 +5,42 @@ import yaml from 'js-yaml';
 const OUT = 'out';
 const REDIRECTS = 'data/redirects.yaml';
 const URLS = 'data/source-urls.json';
+const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH ?? '').replace(/\/+$/, '');
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.openapis.org').replace(
+  /\/+$/,
+  '',
+);
 
-function stub(target) {
-  const escaped = target.replace(/"/g, '&quot;');
+function escapeHtml(value) {
+  return value.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+function stub(target, canonical) {
+  const href = escapeHtml(target);
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Redirecting</title>
-<link rel="canonical" href="${escaped}">
+<link rel="canonical" href="${escapeHtml(canonical)}">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=${escaped}">
+<meta http-equiv="refresh" content="0; url=${href}">
 </head>
-<body><p>This page has moved to <a href="${escaped}">${escaped}</a>.</p></body>
+<body><p>This page has moved to <a href="${href}">${href}</a>.</p></body>
 </html>
 `;
 }
 
-function absolute(to) {
-  return /^https?:\/\//.test(to) ? to : `https://www.openapis.org${to}`;
+function isExternal(to) {
+  return /^https?:\/\//.test(to);
+}
+
+function deployed(to) {
+  return isExternal(to) ? to : `${BASE_PATH}${to}`;
+}
+
+function canonical(to) {
+  return isExternal(to) ? to : `${SITE_URL}${to}`;
 }
 
 async function exists(path) {
@@ -43,10 +60,10 @@ async function main() {
   for (const rule of exact) {
     const dir = join(OUT, rule.from.replace(/^\//, ''));
     await mkdir(dir, { recursive: true });
-    await writeFile(join(dir, 'index.html'), stub(absolute(rule.to)));
+    await writeFile(join(dir, 'index.html'), stub(deployed(rule.to), canonical(rule.to)));
   }
 
-  const lines = rules.map((rule) => `${rule.from}  ${absolute(rule.to)}  301`);
+  const lines = rules.map((rule) => `${rule.from}  ${deployed(rule.to)}  301`);
   await writeFile(join(OUT, '_redirects'), `${lines.join('\n')}\n`);
   console.log(`redirect stubs: ${exact.length}, _redirects rules: ${rules.length}`);
 
