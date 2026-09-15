@@ -8,7 +8,7 @@ const config = [
   ...nextTypescript,
   prettier,
   {
-    files: ['src/components/Mdx/**'],
+    files: ['src/components/Mdx/**', 'src/components/Navbar/**', 'src/components/Sections/**'],
     rules: { '@next/next/no-img-element': 'off' },
   },
 ];

@@ -113,3 +113,14 @@ test('an html comment in an mdx page does not break the build', async ({ page })
   await expect(page.getByRole('heading', { level: 1, name: 'About' })).toBeVisible();
   expect(await page.content()).not.toContain('Editors: HTML comments are safe');
 });
+
+test('logo has a light and a dark variant', async ({ page }) => {
+  await page.goto('/');
+  const light = page.locator('img[src*="openapi-logo.webp"]');
+  const dark = page.locator('img[src*="openapi-logo-dark.webp"]');
+  await expect(light).toBeVisible();
+  await expect(dark).toBeHidden();
+  await page.getByRole('button', { name: 'Toggle colour theme' }).click();
+  await expect(dark).toBeVisible();
+  await expect(light).toBeHidden();
+});

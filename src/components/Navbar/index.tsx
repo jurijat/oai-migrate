@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -51,13 +50,20 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
         className="mx-auto flex max-w-content items-center justify-between gap-6 px-6 py-4"
       >
         <Link href="/" className="shrink-0" aria-label="OpenAPI Initiative home">
-          <Image
-            src={withBasePath('/brand/openapi-logo.svg')}
+          <img
+            src={withBasePath('/brand/openapi-logo.webp')}
             alt="OpenAPI Initiative"
-            width={248}
-            height={56}
-            priority
-            className="h-9 w-auto"
+            width={560}
+            height={152}
+            className="h-9 w-auto dark:hidden"
+          />
+          <img
+            src={withBasePath('/brand/openapi-logo-dark.webp')}
+            alt=""
+            aria-hidden="true"
+            width={560}
+            height={152}
+            className="hidden h-9 w-auto dark:block"
           />
         </Link>
 

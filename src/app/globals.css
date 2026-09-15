@@ -98,13 +98,21 @@ body {
   .hero-arcs::before {
     content: '';
     position: absolute;
-    inset: 0;
+    inset: -40% -10%;
     z-index: -1;
     background-image: url('/brand/background1.svg');
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 1728px 1830px;
-    opacity: 0.28;
+    background-position: center left;
+    background-size: cover;
+    opacity: 0.1;
+  }
+
+  .hero-arcs::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(70% 120% at 50% 0%, rgba(101, 209, 0, 0.14), transparent 70%);
   }
 
   .btn-green {

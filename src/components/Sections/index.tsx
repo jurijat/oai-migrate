@@ -42,12 +42,12 @@ export function AnnouncementBar({ href, children }: { href: string; children: Re
 export function Hero({ title, children }: { title: string; children?: ReactNode }) {
   return (
     <section data-section="hero" className="band-dark hero-arcs">
-      <div className="mx-auto max-w-content px-6 py-28 text-center">
-        <h1 className="mx-auto max-w-4xl text-5xl font-semibold leading-tight tracking-oai md:text-6xl">
+      <div className="mx-auto max-w-content px-6 py-20 text-center md:py-24">
+        <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-[1.1] tracking-oai sm:text-5xl md:text-[3.5rem]">
           {title}
         </h1>
         {children ? (
-          <div className="mt-10 flex flex-wrap justify-center gap-4">{children}</div>
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">{children}</div>
         ) : null}
       </div>
     </section>
@@ -66,6 +66,7 @@ export function Section({
   tone = 'default',
   center = false,
   prose = false,
+  split = false,
   children,
 }: {
   title?: string;
@@ -73,24 +74,45 @@ export function Section({
   tone?: keyof typeof TONES;
   center?: boolean;
   prose?: boolean;
+  split?: boolean;
   children?: ReactNode;
 }) {
   const muted = tone === 'default' ? 'text-brand-muted' : 'band-muted';
 
+  const heading = title ? (
+    <h2 className="mb-4 text-3xl font-semibold tracking-oai md:text-4xl">{title}</h2>
+  ) : null;
+
+  const intro = lead ? (
+    <p className={`text-lg ${muted} ${center ? 'mx-auto max-w-3xl' : 'max-w-2xl'}`}>{lead}</p>
+  ) : null;
+
+  const body = children ? (
+    <div className={prose ? 'prose prose-lg max-w-none' : ''}>{children}</div>
+  ) : null;
+
+  if (split) {
+    return (
+      <section className={TONES[tone]}>
+        <div className="mx-auto grid max-w-content items-center gap-12 px-6 py-20 md:grid-cols-2">
+          <div>
+            {heading}
+            {intro}
+          </div>
+          <div className="[&_img]:mx-auto [&_img]:max-h-[30rem] [&_img]:w-auto [&_p]:m-0">
+            {body}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className={TONES[tone]}>
       <div className={`mx-auto max-w-content px-6 py-20 ${center ? 'text-center' : ''}`.trimEnd()}>
-        {title ? (
-          <h2 className="mb-4 text-3xl font-semibold tracking-oai md:text-4xl">{title}</h2>
-        ) : null}
-        {lead ? (
-          <p className={`max-w-3xl text-lg ${muted} ${center ? 'mx-auto' : ''}`.trimEnd()}>
-            {lead}
-          </p>
-        ) : null}
-        {children ? (
-          <div className={prose ? 'prose prose-lg mt-10 max-w-none' : 'mt-10'}>{children}</div>
-        ) : null}
+        {heading}
+        {intro}
+        {body ? <div className="mt-10">{body}</div> : null}
       </div>
     </section>
   );

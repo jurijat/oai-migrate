@@ -20,8 +20,8 @@
     "migrate:report": "node tools/migrate/report.mjs",
     "validate": "node tools/validate.mjs",
     "assets": "node tools/publish-assets.mjs",
-    "predev": "npm run assets && npm run search:index",
-    "prebuild": "npm run assets && npm run search:index",
+    "predev": "npm run brand && npm run assets && npm run search:index",
+    "prebuild": "npm run brand && npm run assets && npm run search:index",
     "migrate:publish": "node tools/publish-assets.mjs",
     "migrate:redirects": "node tools/migrate/redirects.mjs",
     "postbuild": "node tools/postbuild.mjs",
@@ -29,7 +29,8 @@
     "migrate:structured": "node tools/migrate/extract-structured.mjs",
     "check:parity": "node tools/check-parity.mjs",
     "check:render": "node tools/check-render.mjs",
-    "search:index": "node tools/build-search-index.mjs"
+    "search:index": "node tools/build-search-index.mjs",
+    "brand": "node tools/publish-brand.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

@@ -134,6 +134,15 @@ rationale. Check off each task as it lands.
 - [x] HubSpot form styled to the design system, and loaded only when scrolled into view so its
       third-party cookies are not set for every visitor
 
+### Landing page and brand fixes
+
+- [x] Replaced the approximated logo SVG with the official `OpenAPI_Logo_Pantone-1.png`
+- [x] Generated a dark-mode logo variant: greys knocked out to light, brand greens preserved
+- [x] Hero retuned — action row uses the full content width, all five buttons fit on one line
+- [x] Hero decoration replaced with a soft radial wash; the old arcs read as stray scratches
+- [x] `Section` gained a `split` layout so "What is OpenAPI?" no longer leaves half the row empty
+- [x] HubSpot form fields styled to the design system
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)
