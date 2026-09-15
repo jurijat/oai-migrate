@@ -19,7 +19,7 @@ Interzoid was founded in 2019 and has built their software stack on open source 
 
 List of Interzoid APIs Available: [https://www.interzoid.com/services](https://www.interzoid.com/services)
 
-#### OpenAPI Resources
+## OpenAPI Resources
 
 To learn more about participate in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
 

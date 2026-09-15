@@ -18,7 +18,7 @@ We are proud to announce the release of Arazzo Specification v1.1.0!
 
 The headline addition is AsyncAPI support — for the first time, Arazzo workflows can declaratively describe sequences of calls that span both synchronous and asynchronous APIs. A workflow can now call an HTTP endpoint, publish to an event bus, wait for an acknowledgment, and chain the result into the next step — all described in a single, machine-readable document. Beyond that, version 1.1 brings workflow composition improvements, precise data selection, and a set of clarification improvements that address real questions from practitioners who’ve been putting the specification to work. Here’s a quick rundown of the headline features.
 
-### AsyncAPI Support
+## AsyncAPI Support
 
 Arazzo 1.0 was built around OpenAPI. Version 1.1 opens the door to event-driven architectures by extending `sourceDescriptions` to include `asyncapi` documents alongside `openapi` and `arazzo` types:
 
@@ -45,7 +45,7 @@ Async steps reference operations or channels from the referenced AsyncAPI docume
 
 Steps can also declare explicit ordering via `dependsOn` — a list of steps that must complete before the current step executes. `dependsOn` establishes prerequisite relationships; it does not trigger execution of the referenced steps.
 
-### Chained Workflow Execution
+## Chained Workflow Execution
 
 Action Objects now fully support calling other workflows, with input mapping via the `parameters` fixed field. This enables clean composition of common patterns — token refresh being the canonical example — across larger workflow sequences:
 
@@ -67,7 +67,7 @@ criteria:
     type: regex
 ```
 
-### Advanced Selector Support
+## Advanced Selector Support
 
 The new **Selector Object** enables precise, fine-grained data extraction from structured data using `jsonpath`, `xpath`, or `jsonpointer`. `context` sets the root node, `selector` contains the expression, and `type` indicates the syntax:
 
@@ -95,7 +95,7 @@ Supported values are follows:
 -   `xpath`: `xpath-31`, `xpath-30`, `xpath-20`, and `xpath-10`, defaulting `xpath-31` .
 -   `jsonpointer`: `rfc6901`.
 
-### OpenAPI 3.2 Alignment
+## OpenAPI 3.2 Alignment
 
 The Parameter Object gains a `querystring` option for the `in` fixed field, treating the entire URL query string as a single value. This aligns with the `querystring` feature introduced in OpenAPI 3.2 and allows complex query structures to be passed as a single mapped value:
 
@@ -111,7 +111,7 @@ The Parameter Object gains a `querystring` option for the `in` fixed field, trea
   value: "category={$inputs.category}&minPrice={$inputs.minPrice}&inStock=true"
 ```
 
-### Identity-based Referencing
+## Identity-based Referencing
 
 To ensure unambiguous document resolution, Arazzo descriptions can now declare a `$self` URI at the root level. When referencing an Arazzo description by URI, implementations MUST use the target document’s `$self` value if present:
 
@@ -129,7 +129,7 @@ info:
 
 This makes cross-document references portable and removes ambiguity in multi-workflow systems.
 
-### Clarification Improvements
+## Clarification Improvements
 
 Version 1.1 also tightens several areas that generated questions in the 1.0 cycle:
 
@@ -137,11 +137,11 @@ Version 1.1 also tightens several areas that generated questions in the 1.0 cycl
 -   **Source Description resolution ordering** is now formally defined
 -   **Truthy/Falsy evaluation semantics** for success criteria conditions are explicitly specified
 
-### A Growing Ecosystem
+## A Growing Ecosystem
 
 The Arazzo tooling ecosystem has expanded significantly since 1.0. Editors, validators, parsers, resolvers, generators, and standalone workflow execution engines are all available and listed in the [Arazzo repository README](https://github.com/OAI/Arazzo-Specification). This complements the work being done on the [openapi.tools](https://openapi.tools/) website, who have also recently added the ability to list tools supporting the Arazzo Specification.
 
-### What’s Next
+## What’s Next
 
 The roadmap beyond 1.1 includes:
 
@@ -150,7 +150,7 @@ The roadmap beyond 1.1 includes:
 -   Transformer and function support
 -   Loops
 
-### Get Started
+## Get Started
 
 Please checkout the following resources if you are new to Arazzo:
 

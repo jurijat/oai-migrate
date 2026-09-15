@@ -18,13 +18,13 @@ export async function PostHeader({ post }: { post: Post }) {
       <h1 className="mb-4 text-4xl font-semibold tracking-oai">{post.title}</h1>
       <p className="text-brand-muted">
         By{' '}
-        <Link href={`/author/${post.author}`} className="hover:text-brand-green">
+        <Link href={`/author/${post.author}`} className="hover:text-[color:var(--brand-link)]">
           {author}
         </Link>
         {' · '}
         <time dateTime={post.date}>{formatDate(post.date)}</time>
         {' · '}
-        <Link href={`/category/${post.category}`} className="hover:text-brand-green">
+        <Link href={`/category/${post.category}`} className="hover:text-[color:var(--brand-link)]">
           {post.category}
         </Link>
       </p>

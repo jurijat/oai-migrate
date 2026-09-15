@@ -12,7 +12,7 @@ generated: true
 
 Welcome to the OpenAPI Initiative (OAI) February 2025 newsletter, the first of this year! Our newsletter brings you initiative news, details of new versions of our specifications, and information on events and educational resources.
 
-#### Initiative News
+## Initiative News
 
 2025 got off to a great start with the release of [version 1.0.1](https://spec.openapis.org/arazzo/v1.0.1.html) of Arazzo. If you don’t know about Arazzo, it’s a specification designed to describe complex, multi-step workflows that invoke multiple API operations and is aimed at simplifying integrations in our multi-cloud, multi-platform world. Version 1.0.1 is aimed at providing important clarifications without altering core functionality, ensuring greater clarity, improved examples for implementers, and corrections of minor inaccuracies. You can read more about the release, including the proposed 2025 release schedule for Arazzo in our [blog](/blog/2025/01/24/announcing-arazzo-specification-version-1-0-1).
 
@@ -25,7 +25,7 @@ Version 4, codename Moonwalk, will also continue to evolve in 2025. Insights fro
 
 One final note is that our OpenAPI [specification page](https://spec.openapis.org/oas/latest.html) now supports dark mode! We are dedicated to ensuring usability for our specifications, so this is an important feature to add to our specification website. Please head over there to check it out.
 
-#### Events News
+## Events News
 
 2025 also saw the early appearance of the OAI Track at [DeveloperWeek 2025](https://www.developerweek.com/), an industry-leading developer event that hosted the [OAI Summit](https://www.developerweek.com/conference/openapi-summit/). The Summit provided two workshops on OpenAPI, hosted by [Erik Wilde](https://www.linkedin.com/in/erikwilde/) and [Frank Kilcommins](https://www.linkedin.com/in/frank-kilcommins) followed by 11 sessions covering topics including Arazzo, Overlays, API Governance, and the intersection between APIs and AI. Our thanks go to all who participated in the Summit and helped bring many aspects of the OpenAPI Initiative world to life for conference attendees.
 
@@ -33,7 +33,7 @@ The end of February also saw Leap 2.0, held by OpenAPI member [Tyk](https://tyk.
 
 The event’s roster for 2025 is constantly updated, so please stay in touch with our [Events page](/events) to see where you can get together with OpenAPI community members for in-person and virtual events.
 
-#### Outreach Initiatives
+## Outreach Initiatives
 
 The Outreach committee focuses on community engagement and marketing for OAI. We have some goals we’d like to achieve in 2025, and the newsletter provides a great opportunity to publicize these.
 
@@ -43,7 +43,7 @@ We are also looking to expand our training and certification offering to help pr
 
 Lastly, we are introducing a new feature on our LinkedIn page called #happyfriday, where we post articles brought to us from the community. If you’d like to contribute to this, please follow the instructions below to get in touch.
 
-#### Finally…
+## Finally…
 
 Thank you for reading our newsletter. As always, we welcome suggestions on how we can improve it or bring you information that can help make the most of how you use specifications published by the OpenAPI Initiative. Please get in touch on the [Outreach channel](https://open-api.slack.com/archives/C0KM0KXU6) on Slack if you would like to work with us to tell your story, or get involved with any of the initiatives described above.
 

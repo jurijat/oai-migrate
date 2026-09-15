@@ -20,7 +20,7 @@ Importantly, tooling built for Arazzo 1.0.0 will remain fully compatible with 1.
 
 If you’re starting a new project or have the flexibility to upgrade, we highly recommend targeting Arazzo 1.0.1 as your version of choice!
 
-### Summary of changes
+## Summary of changes
 
 The 1.0.1 release brings important clarifications, improved and corrected examples, and addresses minor inaccuracies in the initial 1.0.0 release. In addition, we’ve introduced a **non-authoritative JSON Schema representation** of the Arazzo Specification, making it easier for implementers to validate documents programmatically.
 
@@ -35,13 +35,13 @@ Here’s a quick summary of the notable changes in Arazzo 1.0.1:
 -   Fixed inaccuracies and typos in field descriptions within the **Step Object** and **Parameter Object**.
 -   Removed redundant references to event-based message properties from the **Runtime Expressions**.
 
-### Upgrade process
+## Upgrade process
 
 For most users and tool vendors, no action is required—this patch release introduces only wording changes, clarifications, and corrections, with no structural changes to the specification.
 
 That said, if you publish Arazzo tools or maintain workflows that rely on the specification, we recommend reviewing the [release notes on GitHub](https://github.com/OAI/Arazzo-Specification/releases/tag/1.0.1) to ensure everything aligns with your expectations. While the update should be seamless, it’s always a good idea to double-check for any changes relevant to your implementation.
 
-### Looking ahead
+## Looking ahead
 
 As noted earlier, we anticipate relatively frequent updates to the Arazzo specification. To ensure smooth adoption, we recommend that tooling makers avoid locking into a specific patch version of the specification, as all patch releases will remain backward compatible.
 
@@ -51,7 +51,7 @@ Looking ahead, we’re already making significant progress on the upcoming Arazz
 
 **Timeline of Arazzo Specification Releases**
 
-### Acknowledgements
+## Acknowledgements
 
 This release would not have been possible without the contributions of our vibrant, community-driven ecosystem. The active engagement and stewardship shown by our contributors continue to inspire and drive the evolution of Arazzo. While it’s not possible to name everyone individually, we want to extend our sincere thanks to everyone who has suggested an idea, raised a constructive issue, opened or reviewed a pull request, or participated in our regular calls or discussions. Your efforts have been invaluable, and we deeply appreciate your support and commitment!
 
@@ -59,7 +59,7 @@ We’d like to give particular thanks to the Arazzo Specification editors, who h
 
 Thank you all for making Arazzo 1.0.1 a reality!
 
-### Getting involved
+## Getting involved
 
 There are many ways to get involved with Arazzo and the broader OpenAPI Initiative, and we’d like to hear from everyone who uses Arazzo (or wants to)!
 

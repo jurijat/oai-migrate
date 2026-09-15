@@ -14,11 +14,11 @@ generated: true
 
 Welcome to the OpenAPI Initiative (OAI) September 2025 newsletter! We’ve had a break over the vacation season in the northern hemisphere, but are back to bring you initiative news, information on events and educational resources, and this time round, news of our v3.2 OpenAPI release!
 
-### Initiative News
+## Initiative News
 
 It goes without saying that the big news – wait, **_enormous_** – news for this edition of the newsletter is two new releases of the OpenAPI Specification! We have a new minor release at [version 3.2.0](https://spec.openapis.org/oas/v3.2.0.html), which has helped us also deliver a patch version of 3.1 at [3.1.2](https://github.com/OAI/OpenAPI-Specification/releases/tag/3.1.2).
 
-#### Versions 3.2.0 Features
+### Versions 3.2.0 Features
 
 Version 3.2.0 brings together a feast of new features including:
 
@@ -32,13 +32,13 @@ You can read more about the enhancement in our [blog post](/blog/2025/09/23/anno
 
 Thanks go to the TSC and all contributors for this release, particularly [Henry Andrews](https://github.com/handrews) and [Lorna Mitchell](https://www.linkedin.com/in/lornajane/) for their significant contributions to getting this version over the line!
 
-#### Moonwalk Update
+### Moonwalk Update
 
 Back at the start of the year we gave a [status update](/blog/2025/02/05/moonwalk-2025-update) on the progress of Moonwalk: its goals, desired outcomes, and what this Special Interest Group aims to achieve. In that post we said: “_The timeline for Moonwalk reaching a 4.0.0 release remains open-ended_”, and with the release of v3.2.0 what you are actually seeing is the first incremental step of the larger Moonwalk project. Many of the features of v3.2.0 were ideated through Moonwalk, and our focus is now on delivering more backwards-compatible incremental steps in the 3.x line. We will also keep an eye out for problems that show us that we **need** to break compatibility and make a 4.0 release, but we would like to discover that need through community feedback.
 
 Key message is: **Don’t wait for Moonwalk**! Moonwalk is an ideas engine, and feeds the progress on the main development line of the OpenAPI Specification. It may come to pass that there is **never** a v4.0 of OpenAPI. If you were hanging on for v4.0, make the leap to v3.2 now.
 
-### Membership News
+## Membership News
 
 We are pleased to welcome new members to the OpenAPI Initiative!
 
@@ -48,7 +48,7 @@ We were also joined in September by [Apideck](https://www.apideck.com/). Apideck
 
 If you are interested in membership we have held two breakfasts at Apidays (New York and London), where we introduce what membership means and take a look at the revised member benefits we are looking to offer. If you want to find out more, please check out our recent post on [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7378728523152388096), which includes our presentation from this event.
 
-### Events News
+## Events News
 
 We have been busy with OAI Track since our last newsletter as event season has picked up again.
 
@@ -60,7 +60,7 @@ Last stop for this year will be [Apidays Paris](https://www.apidays.global/event
 
 Finally, we’ve started issuing digital badges for attendance at OAI events. Our first badges went to participants at our OSS Mini Summit events in Denver and Amsterdam. Be sure to lookout for events and workshops that issue badges in the future!
 
-### Ecosystem Spotlight
+## Ecosystem Spotlight
 
 The Ecosystem Spotlight for this edition comes from [Shane O’Connor](https://www.linkedin.com/in/shaneopenapi/), Go to Market Lead at OAI member [Scalar](https://scalar.com/).
 
@@ -74,7 +74,7 @@ _As OpenAPI documents grow in complexity and with OpenAPI 3.2 bringing new featu
 
 If you’d like to contribute to the Ecosystem Spotlight in our next newsletter, please get in touch on the [Outreach channel](https://open-api.slack.com/archives/C0KM0KXU6) on Slack.
 
-### Finally
+## Finally
 
 Thank you for reading our newsletter. As always, we welcome suggestions on how we can improve it or bring you information that can help make the most of how you use specifications published by the OpenAPI Initiative.
 

@@ -11,7 +11,7 @@ The Open API Initiative and Capital One are co-hosting a OpenAPI Spec Crash Cour
 
 [Register here](http://boston2016.apistrat.com/workshops/open-api-spec-workshop).
 
-### Part I: Introduction to the Open API Specification
+## Part I: Introduction to the Open API Specification
 
 This workshop will provide an introduction to the new Open API Format for specifying APIs. The format is the core specification of the Linux Foundation’s Open API Initiative and is the most widely used API definition formation. The workshop will include:
 
@@ -19,7 +19,7 @@ This workshop will provide an introduction to the new Open API Format for specif
 -   Details of when, where and how to use the OAI format with speakers covering live examples.
 -   A high level overview of where the format is headed.
 
-### Part II: Deep Dive into the Open API Specification
+## Part II: Deep Dive into the Open API Specification
 
 The second portion of this workshop provides a deep dive into the Open API format for users and those evaluating the format. The format is the core specification of the Linux Foundation’s Open API Initiative and is the most widely used API definition formation. Topics covered in this portion of the workshop include:
 

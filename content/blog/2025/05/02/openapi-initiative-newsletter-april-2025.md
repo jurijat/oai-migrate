@@ -13,7 +13,7 @@ generated: true
 
 Welcome to the OpenAPI Initiative (OAI) April 2025 newsletter! Our newsletter brings you initiative news, details of new versions of our specifications, and information on events and educational resources.
 
-#### Initiative News
+## Initiative News
 
 We’d like to take the opportunity to issue a call to action in our Initiative News section!
 
@@ -23,7 +23,7 @@ Think of especially important use cases, like presenting conditional objects in 
 
 In other initiative news, Arazzo Specification is currently planning a version 1.0.2 and v1.1.0 later this year. Arazzo adoption continues to grow with tools like [Symplr](https://arazzo-editor.symplr.io/) bringing great tools to the ecosystem, and the OAK Repository, which we cover in more detail in our Ecosystem Spotlight section.
 
-#### Events News
+## Events News
 
 Our conference agenda for the year is well underway! The next appearance of the OAI Track will be at [Apidays New York](/events/apidays-new-york-2025), where [Erik Wilde](https://www.linkedin.com/in/erikwilde/) will host insightful sessions on API governance, the role of OpenAPI with generative AI apps, bringing OpenAPI and AsyncAPI together, and a host of other sessions. The Apidays New York strapline is “No AI Without API Management” and will be covering the intersection between AI and APIs. Apidays New York will also feature the [Travel Tech API Conference](https://ticket.apidays.global/event/apidays-nyc-2025/207d2df0-83d4-4511-a6ae-3e1229e584b8/travel-tech-at-apidays-nyc-2025), where OAI Outreach Chair [Stu Waldron](https://www.linkedin.com/in/stu-waldron-b550a61/) will feature on an agenda dedicated to travel.
 
@@ -31,7 +31,7 @@ Erik and [Frank Kilcommins](https://www.linkedin.com/in/frank-kilcommins/) are a
 
 The event’s roster for 2025 is constantly updated, so please stay in touch with our [Events page](/events) to see where you can get together with OpenAPI community members for in-person and virtual events.
 
-#### Ecosystem Spotlight
+## Ecosystem Spotlight
 
 We are now welcoming highlights from community members who are making a contribution to the ecosystem beyond the core specifications.
 
@@ -43,7 +43,7 @@ We excitedly await the future development of OAK.
 
 _If you’d like your project covered in a future newsletter please let us know by getting in touch on Slack._
 
-#### Finally…
+## Finally…
 
 Thank you for reading our newsletter. As always, we welcome suggestions on how we can improve it or bring you information that can help make the most of how you use specifications published by the OpenAPI Initiative. Please get in touch on the [Outreach channel](https://open-api.slack.com/archives/C0KM0KXU6) on Slack if you would like to work with us to tell your story, to feature in the Ecosystem Spotlight section, or get involved with any of the initiatives described above.
 

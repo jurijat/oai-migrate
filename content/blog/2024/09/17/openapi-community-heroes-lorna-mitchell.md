@@ -18,30 +18,30 @@ Our next latest Community Hero who makes a huge contribution to OpenAPI is Lorna
 
 Lorna gave us her thoughts on all things OpenAPI and Arazzo.
 
-#### What drives your interest and involvement in the OpenAPI Specification?
+## What drives your interest and involvement in the OpenAPI Specification?
 
 My whole career has been around getting computers to talk nicely to one another! I’ve built APIs, taught APIs, written books on these subjects, advocated for APIs, now I work on API developer tools. APIs are important, interesting, and mostly under-celebrated.
 
-#### What do you consider to be your most significant personal contribution to the development of OpenAPI?
+## What do you consider to be your most significant personal contribution to the development of OpenAPI?
 
 That’s a hard question! I’ve made very tangible additions such as designing the webhooks support for 3.1, but I think being a regular at the TDC meetings and in the GitHub projects, enabling other people to be heard and have their contributions accepted has been really important. Now I’m a technical steering committee member myself, which is pretty significant!
 
-#### What do you see as the most exciting proposed features of version 4 of OpenAPI?
+## What do you see as the most exciting proposed features of version 4 of OpenAPI?
 
 It all looks promising.
 
-#### How will the Arazzo Specification benefit the development of the OpenAPI Specification?
+## How will the Arazzo Specification benefit the development of the OpenAPI Specification?
 
 Arazzo gives us a way to connect API calls in sequence, and it’s a good reflection of how APIs are actually built and used today. Building on the foundation of OpenAPI is brilliant for the ecosystem and we’ve needed something like Arazzo for quite a while.
 
-#### What do you see in the future for the OpenAPI Specification?
+## What do you see in the future for the OpenAPI Specification?
 
 As the project matures, we’re seeing more of an ecosystem around OpenAPI. Within the project itself, we’ve got Arazzo, Overlays, and more examples and learning resources. In the wider industry, lots of exciting new tools are springing up and people are starting to skill up more on what they can do with OpenAPI.
 
-#### What other standards developments do you consider particularly significant for the API economy?
+## What other standards developments do you consider particularly significant for the API economy?
 
 Seeing AsyncAPI release a new major version last year was exciting, there are lots of interesting use cases in that space. I’m also really interested in how we manage these large API landscapes so APIs.json is one to watch.
 
-#### Should more people get involved in developing the OpenAPI Initiative specifications and why?
+## Should more people get involved in developing the OpenAPI Initiative specifications and why?
 
 Yes please! More help is always welcome, but what I’d really like is to hear more voices. More questions in the GitHub discussions, more comments from more different people on the proposed changes. End users, tools makers – everyone should have their say, and I hope they will join in!

@@ -27,11 +27,11 @@ Attend Community FREE (one-day only) - With promo code \[CD1OPENAPI\]
 
 Register [here](https://www.ibm.com/events/wwe/indexconf/indexconf18.nsf/Registration.xsp?open)
 
-#### OpenAPI Community Leads
+## OpenAPI Community Leads
 
 ![](/img/uploads/2017/02/RonRatovsky_Photo.webp)
 
-#### Ron Ratovsky
+## Ron Ratovsky
 
 SmartBear
 
@@ -43,7 +43,7 @@ Ask me about ...
 
 ![](/img/uploads/2017/10/ErinMcKean_MUG.webp)
 
-#### Erin McKean
+## Erin McKean
 
 IBM
 
@@ -54,7 +54,7 @@ Ask me about ...
 
 ![](/img/uploads/2018/02/jstoiko.webp)
 
-#### Jonathan Stoikovitch
+## Jonathan Stoikovitch
 
 Mulesoft
 
@@ -65,7 +65,7 @@ Ask me about ...
 
 ![](/img/uploads/2018/02/MicheleTitolo.webp)
 
-#### Michele Titolo
+## Michele Titolo
 
 Capital One
 
@@ -80,7 +80,7 @@ Ask me about ...
 
 ![](/img/uploads/2018/02/NicolasGrenie_mug.webp)
 
-#### Nicolas Grenié
+## Nicolas Grenié
 
 RedHat
 
@@ -92,7 +92,7 @@ Ask me about ...
 
 ![](/img/uploads/2018/02/joyceface.webp)
 
-#### Joyce Lin
+## Joyce Lin
 
 Postman
 
@@ -104,7 +104,7 @@ Ask me about ...
 
 ![](/img/uploads/2018/02/erikvanzijst.webp)
 
-#### Erik van Zijst
+## Erik van Zijst
 
 Atlassian
 
@@ -116,7 +116,7 @@ Ask me about ...
 
 ![](/img/uploads/2017/02/MarshGardinerPhoto.webp)
 
-#### Marsh Gardiner
+## Marsh Gardiner
 
 Google
 
@@ -130,7 +130,7 @@ Ask me about ...
 
 ![](/img/uploads/2018/02/Chris_asscertible.webp)
 
-#### Christopher Reichert
+## Christopher Reichert
 
 Assertible
 

@@ -25,6 +25,6 @@ The lineup of early bird talks is also being announced and includes presentation
 
 [![](/img/uploads/2022/06/Early-bird-selected-.webp)](https://events.linuxfoundation.org/openapi-asc/register/)
 
-#### You won’t want to miss it! Learn more and register to attend.
+### You won’t want to miss it! Learn more and register to attend.
 
 [Register](https://events.linuxfoundation.org/openapi-asc/register/)

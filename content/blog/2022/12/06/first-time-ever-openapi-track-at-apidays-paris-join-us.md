@@ -23,6 +23,6 @@ If you are using the OpenAPI Specification in your company and have something to
 
 The day includes presentations from Isabelle Mauny, Co-Chair at OpenAPI Initiative, on The State of OpenAPI; from Steve Swartz, Principal Architect at Cisco, on The 12 Facets of the OpenAPI Specification; from Beppe Catanese, Developer Advocate at Adyen, covering From API Specifications to Code with OpenAPI; and from Mario Bodemann, Developer Evangelist at Deutsche Telekom, on OpenAPI: Building an Android Parser and Tester App… and many more!
 
-### 👋 Come join us! To register, see: [https://www.apidays.global/paris#agenda](https://www.apidays.global/paris#agenda)
+## 👋 Come join us! To register, see: [https://www.apidays.global/paris#agenda](https://www.apidays.global/paris#agenda)
 
 ![](https://lh6.googleusercontent.com/q4OnTqEqjvC3tlYqGXtsBv8r2aN23I8WIYIvtPrWKYZra0xjv4fhe518aSV7CXCdBUVZKRPEGxIhLVS7ziuT60FmepYtItZBSYXm9kmOdzsFKIfcdn3RXifHSBtCNt1FJnmQt3kcqY2p4DpB2qI3kpQ1y22bffWv_o4av-I_v4ipuK96eHCoufPC-bslXw)

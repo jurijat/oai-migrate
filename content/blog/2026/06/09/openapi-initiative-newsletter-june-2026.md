@@ -11,7 +11,7 @@ Welcome to the OpenAPI Initiative (OAI) June 2026 newsletter!
 
 We are excited to bring all the latest specification, events, and community news across the OpenAPI, Arazzo, and Overlay specifications and the wider community.
 
-### OpenAPI Specification
+## OpenAPI Specification
 
 The OpenAPI Specification (OAS) team is evaluating changes for v3.3, with a number of items in scope.
 
@@ -21,7 +21,7 @@ The SAF concept is therefore intended to help the specification community learn 
 
 Alongside and supported by the work on SAFs v3.3 promises to be one focused on API Security, with investigations already taking place on supporting the [FAPI 2.0 Security Profile](https://openid.net/specs/fapi-security-profile-2_0-final.html) and [Grant Negotiation and Authorization Protocol](https://datatracker.ietf.org/doc/html/rfc9635) (GNAP) available. Discussions have already [started](https://github.com/OAI/OpenAPI-Specification/discussions/5304) on what a Security Profile might look like, and the work on SAF will help shape how this is introduced.
 
-### Arazzo Specification
+## Arazzo Specification
 
 The Arazzo Specification v1.1.0 has also been [released](/blog/2026/05/19/announcing-arazzo-specification-1-1). This is a minor release built on the 1.0 foundation, with the headline addition being AsyncAPI support. For the first time, a single Arazzo document can describe workflows that span both synchronous HTTP operations and event-driven asynchronous APIs.
 
@@ -29,7 +29,7 @@ Other significant additions include fully supported chained workflow execution (
 
 Existing 1.0.x documents remain valid without structural changes, and the roadmap ahead targets gRPC, GraphQL, SOAP, MCP, and A2A step types, actor-in-loop support, transformer/function support, and loops.
 
-### Overlay Specification
+## Overlay Specification
 
 2026 has already seen the release of Overlay v1.1.0, which we covered in our February newsletter. A release v1.2.0 is currently in the works, which will implement **Reusable Actions**.
 
@@ -37,7 +37,7 @@ Reusable Actions are important because they vastly increase the means for creati
 
 The release date and final scope for v1.2.0 is yet to be fixed, but we’ll keep you up to date with news on the release.
 
-### Getting Involved
+## Getting Involved
 
 We want to acknowledge the efforts of our specification team members and community in bringing these releases together. Many hours are spent in ideation, drafting, and review, and the specifications are always on the lookout for help.
 
@@ -47,7 +47,7 @@ If you want to get involved – either by helping with the authoring, or bringin
 
 Finally, each specification is open to discussions on Github, so you can also raise ideas or contribute there. See the [OpenAPI](https://github.com/OAI/OpenAPI-Specification/discussions), [Arazzo](https://github.com/OAI/Arazzo-Specification/discussions), and [Overlay](https://github.com/OAI/Overlay-Specification/discussions) repository discussions for more details.
 
-### Events News
+## Events News
 
 The OAI Track – led by [Erik Wilde](https://www.linkedin.com/in/erikwilde/) – has continued to bring exciting and insightful sessions to conferences around the world, with DeveloperWeek San Jose, and Apidays Singapore and New York already complete.
 
@@ -59,7 +59,7 @@ Workflow orchestration has also emerged as a distinct concern, with multiple ses
 
 The busy conference season continues, with [Apidays Amsterdam](/events/apidays-amersterdam-2026) and [Apidays Munich](/events/apidays-munich-2026) in June and July respectively. We’ll be continuing with the themes above, so if you are interested in hearing more about the intersection between OpenAPI and AI, be sure to make it to the OAI Tracks!
 
-### Ecosystem Spotlight – Interledger Foundation and Open Payments API
+## Ecosystem Spotlight – Interledger Foundation and Open Payments API
 
 The Interledger Foundation SDK Grant program is funding work to improve the developer experience for the [Open Payments API](https://openpayments.dev/), which is an open standard for payment interoperability across different providers, rails, and ecosystems. The SDK Grant program is specifically interested in making GNAP available in the OpenAPI Specification as a key affordance to their developer experience goal.
 
@@ -75,7 +75,7 @@ The grantees are:
 
 These three work streams demonstrate how OAI specifications underpin real-world tooling investment and deliver benefits across the broader web API ecosystem.
 
-### Outreach
+## Outreach
 
 Telling and promoting success stories from the community is a big part of what outreach at OAI aims to achieve. We’d like to hear from you if you would like to work with us to tell your story, to feature in the Ecosystem Spotlight section, or get involved with any of the initiatives described above. We’d also really like to hear from organizations, tooling makers, or community members who have success stories to tell, so we can celebrate their successes on the blog.
 
@@ -89,7 +89,7 @@ You can in touch by:
 
 If you have something to share, be sure to get in touch!
 
-### Finally…
+## Finally…
 
 Thank you for reading our newsletter. As always, we welcome suggestions on how we can improve it or bring you information that can help make the most of how you use specifications published by OAI.
 

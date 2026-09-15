@@ -13,7 +13,7 @@ generated: true
 
 This year’s API Specifications Conference (ASC) organized by the OpenAPI initiative was held virtually from September 28 through 29, 2021. The conference continues to grow by leaps and bounds and is gaining the attention of people interested in API technology. It was a real thrill hearing from industry experts discussing topics such as OpenAPI Specifications, RAML, Blueprint, gRPC, OData, JSON, Schema, GraphQL, AsyncAPI and other formats. For example, the keynote presentation [Leading API efforts at scale by Mandy Whaley & Yina Arenas, Microsoft](https://youtu.be/CK6KC9P8z1c), [So you think you understand JSON Schema? By Ben Hutton, Postman/JSON Schema](https://youtu.be/vMG0NCDifI0). Or [AsyncAPI 2.0: Enabling the Event-Driven World by Someshekhar Banerjee, Ebay](https://youtu.be/XCccEYMNX5g).The discussions helped attendees get acquainted with the different formats and also learn how to practically use them.
 
-### The full Linux Foundation report on ASC 2021, “Transparency Report: API Specifications Conference (ASC) 2021” is available now (PDF).
+## The full Linux Foundation report on ASC 2021, “Transparency Report: API Specifications Conference (ASC) 2021” is available now (PDF).
 
 [2021 ASC Transparency Report\_Final](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)[Download](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)
 
@@ -27,6 +27,6 @@ The charge for the entire conference was $39 and 10 community scholarships were 
 
 Online events have created an opportunity for us to reach new audiences and expand our reach. For those that missed the conference or would like to watch the event again, the keynote and session recordings are available on [our YouTube Channel](https://youtube.com/playlist?list=PLcx_iGeB-Nxi54fIfinPnGfn6lPOLnLXQ). Speaker presentations are also available for download under each talk [here](https://events.linuxfoundation.org/openapi-asc/program/schedule/).
 
-### Download the full Linux Foundation report on ASC 2021, “Transparency Report: API Specifications Conference (ASC) 2021” (PDF).
+## Download the full Linux Foundation report on ASC 2021, “Transparency Report: API Specifications Conference (ASC) 2021” (PDF).
 
 [2021 ASC Transparency Report\_Final](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)[Download](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)

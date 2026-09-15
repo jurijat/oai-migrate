@@ -20,7 +20,7 @@ As always feedback is welcome. If you have any suggestions for improvement pleas
 
 * * *
 
-### OpenAPI Resources
+## OpenAPI Resources
 
 To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
 

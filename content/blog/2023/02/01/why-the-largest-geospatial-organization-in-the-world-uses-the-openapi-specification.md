@@ -58,7 +58,7 @@ I would also like to mention, the OGC runs several initiatives, we run [innovati
 
 * * *
 
-### OpenAPI Resources
+## OpenAPI Resources
 
 To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
 

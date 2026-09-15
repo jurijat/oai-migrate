@@ -18,7 +18,7 @@ Welcome to the OpenAPI Initiative (OAI) February 2026 newsletter!
 
 This is our first newsletter of 2026, and there is already plenty to share from the OAI community.
 
-### Initiative News
+## Initiative News
 
 We’ve made a great start to 2026 in the Overlay world with completion of version 1.1.0 of the [Overlay Specification](https://spec.openapis.org/overlay/v1.1.0.html). Version 1.1.0 brings several new features, including a new `copy` property for the Action Object, which can be used to copy or move an element in the OpenAPI document. This property is great for operations where you may already have a source-of-truth embedded in part of your API description, and want to use it across all operations. For example, you might implement a `default` Response Object and wish to copy it to all Operation responses to give more consistency for API consumers.
 
@@ -34,7 +34,7 @@ Building on the success of v3.2, and the continued great feedback we are getting
 
 2026 promises to be another exciting year for OAI, with the growing opportunity of specification updates, collaboration with industry verticals and software foundations who rely on OAI specifications, and the exploration into greater compatibility with AI and agentic tooling. We are always on the lookout for new members, so if you are thinking of getting involved, becoming a member is one way of contributing to the work OAI does if you are unable to contribute through specification maintenance or taking part in SIGs. Head over to the [membership page](/membershipjoin) on our website to find out more.
 
-### Events News
+## Events News
 
 The end of last year saw our final event of the year, the Future of Software Technologies (FOST) – forever known as Apidays – Paris conference. The event attracted a huge number of delegates, speakers, and exhibiters, with APIs still obviously the key theme, but the role of AI, standards such as MCP, AI and agentic security, and the intersection between agents and APIs being key talking points throughout.
 
@@ -46,7 +46,7 @@ This year we’ll be keeping our focus on our successful partnership with FOST w
 
 We also have Apidays Singapore, New York, and Munich – and of course Paris – already lined-up for this year. Stay tuned the newsletter and updated on our Events site and [LinkedIn page](https://www.linkedin.com/company/open-api-initiative) for details as they are finalized!
 
-### Ecosystem Spotlight: Jentic AI-Readiness Scorecard
+## Ecosystem Spotlight: Jentic AI-Readiness Scorecard
 
 Our Ecosystem Spotlight focuses on the work of OAI members and the OAI community in general in using OAI specifications in tooling, products, and experiences. The Ecosystem Spotlight in this newsletter is provided by [Jentic](https://jentic.com), an OAI member who leverages both OpenAPI and Arazzo to provide deterministic and reliable agentic workflows.
 
@@ -62,7 +62,7 @@ _“AI systems don’t just scan API descriptions; they must interpret, reason, 
 
 _You can learn more about the scoring framework, and/or try it for free with your own APIs at [https://jentic.com/scorecard](https://jentic.com/scorecard)._
 
-### Finally
+## Finally
 
 Thank you for reading our newsletter. As always, we welcome suggestions on how we can improve it or bring you information that can help make the most of how you use specifications published by OAI. Please get in touch on the [Outreach channel](https://open-api.slack.com/archives/C0KM0KXU6) on Slack if you would like to work with us to tell your story, to feature in the Ecosystem Spotlight section, or get involved with any of the initiatives described above. We’d really like to hear from organizations, tooling makers, or community members who have success stories to tell, so we can celebrate their successes on the blog.
 

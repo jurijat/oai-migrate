@@ -21,7 +21,7 @@ Today’s traveler is increasingly shopping for an experience, not just a seat o
 
 The reason the travel industry has lagged behind modern expectations is because it has lagged behind the latest technological trends. It’s that simple.
 
-### **Creating an End-to-End Journey is Hard**
+## **Creating an End-to-End Journey is Hard**
 
 The process and protocols largely used today between providers have their base in travel standards agreed to in the 1960s and modified over time. Initially created to address airline interlining, allowing a single ticket to include flights on multiple air carriers, they have been pressed into service across the travel verticals.
 
@@ -33,7 +33,7 @@ Creating an end-to-end journey implies a combined offer from multiple offers pro
 
 **Key Takeaway: Focusing on the experience as a new approach to travel retail requires a new level of interoperability among participants in the travel market.**
 
-### **Addressing Interoperability Will Open Up Broad Opportunities**
+## **Addressing Interoperability Will Open Up Broad Opportunities**
 
 Solving the issues to support experience based, total trip, retail at scale could unlock massive economic opportunities for many of the current distribution channels operating today or create new ones. Mainstream distribution channels focus mainly on air which in the US had a total operating revenue of $120[\[1\]](https://outlook.office.com/mail/deeplink?popoutv2=1&version=20210802002.04#x__ftn1) billion. However, the total US _travel_ revenue for 2019 was $1.1[\[2\]](https://outlook.office.com/mail/deeplink?popoutv2=1&version=20210802002.04#x__ftn2) trillion.
 
@@ -45,7 +45,7 @@ By unlocking interoperability, providers of travel products and services would h
 
 The travel industry cannot afford to allow API chaos to continue to be a barrier to more effective retailing.
 
-### **Getting Alignment on the Solution is Critical**
+## **Getting Alignment on the Solution is Critical**
 
 In response, the OpenTravel Alliance (OTA) and the OpenAPI Initiative (OAI) will work together to focus on API conventions and standards, not just messages. Within OAI, there is now a special interest group to focus on travel issues (#sig-travel).
 
@@ -55,7 +55,7 @@ What is needed for interoperability and to reduce API chaos and hence distributi
 
 The overriding goal will be to lower the cost of connectivity to publish, acquire, distribute, and market digital travel products.
 
-### **What Can I do?**
+## **What Can I do?**
 
 Join the conversation and help build a more modern and seamless travel industry! For more information on the OpenAPI Initiative and #sig-travel, join the conversation on Slack. [https://open-api.slack.com/archives/C0122NPKUR2](https://open-api.slack.com/archives/C0122NPKUR2)
 

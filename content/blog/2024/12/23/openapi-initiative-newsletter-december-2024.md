@@ -9,7 +9,7 @@ generated: true
 
 Welcome to our December 2024 newsletter, the final OpenAPI Initiative roundup of the year! Our newsletter brings you initiative news, details of new versions of our specifications, and information on events and educational resources.
 
-#### Initiative News
+## Initiative News
 
 In 2024 the OpenAPI Initiative (OAI) grew from one specification to three, with two new specifications added.
 
@@ -31,7 +31,7 @@ As for v4.0 itself, the Moonwalk effort motivated us to understand how the OAS i
 
 The work on new specifications and specification releases, the increased adoption of 3.1, and the significant interest in Arazzo and Overlay all bodes well for another busy year in 2025. You can read more about OAI moving from one to three specifications and plans for next year in our [blog post](/blog/2024/12/05/evolving-openapi-multi-specification-initative) covering the changes in the initiative and what will come next in our evolution.
 
-#### Events
+## Events
 
 2024 was another great year for events, with our continued partnership with apidays plus an appearance at the [JAX Mainz Conference](/events/jax-mainz-2024). The OAI track appeared at apidays [Singapore](/events/apidays-singapore-2024), [New York](/events/apidays-new-york-2024), [Helsinki](/events/apidays-helsinki-2024), [London](/events/apidays-london-2024), [Australia](/events/apidays-australia-2024), and finally [Paris](/events/apidays-paris-2024), with a huge array of different talks ranging from introductions to Arazzo, views on how OpenAPI helps with API governance, and the role of OpenAPI in the geospatial ecosystem. The range of talks, together with generally packed conference rooms, are indicators of both the health and interest in the OpenAPI ecosystem, and in the strategic value of openness and open standards in general.
 
@@ -41,7 +41,7 @@ Outside the OAI tracks we also have TSC member [Lorna Mitchell](https://www.link
 
 One other initiative we have started this year is our OpenAPI Hangouts, where members of the OAI community come together to discuss aspects of the specifications in a webinar style format, broadcast on LinkedIn and YouTube. We plan to expand these in 2025, covering more topics and engaging with more community members.
 
-#### Education and Training
+## Education and Training
 
 We’ve also taken steps in 2024 in education and training, with some improvements and new initiatives designed to help the understanding of our specifications in the community.
 
@@ -51,7 +51,7 @@ Alongside our learning site, in 2024 we also created our OpenAPI Fundamentals co
 
 We’ve also provided a number of in-person training courses, first at the Nordic APIs Platform Summit and then at apidays Paris. While participation in terms of number of attendees for these courses was mixed, they represented an important step in allowing us to investigate how we can better support the community for training and learning. We’ll continue to look for opportunities to support the community through in-person training in 2025, starting with a full-day workshop about “Practical API Management with OpenAPI” at DeveloperWeek in February 2025.
 
-#### Finally
+## Finally
 
 That’s it for this newsletter, and 2024! We’ve achieved so much this year, and that is down to our great teams of volunteers who support the development of our standards. Thank you so much to our community and all the contributors who bring our specifications to life. Happy holidays everyone!
 

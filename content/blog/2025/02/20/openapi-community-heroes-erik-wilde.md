@@ -17,7 +17,7 @@ Our next Community Hero is [Erik Wilde](https://www.linkedin.com/in/erikwilde/).
 
 Erik filled us in on why he is involved in the OAI and his views on the role of standards in the industry.
 
-#### What drives your interest and involvement in the OpenAPI Specification?
+## What drives your interest and involvement in the OpenAPI Specification?
 
 OpenAPI is one of the fundamental building blocks of today’s digital economy. It’s just a minor exaggeration to say that 100% of organizations today depend on OpenAPI in some place of their IT landscape to be able to do what they do.
 
@@ -25,7 +25,7 @@ Standards sometimes get a bad reputation as constraining things too much. And of
 
 OpenAPI has become the dominant standard for API descriptions and is effectively powering today’s global digital landscape. It’s thrilling to be part of that movement, and it is rewarding to try to help with improving the standard itself and improving the way how people learn about the standard and how to use it. We have ambitious goals for the OpenAPI Initiative to increase our visibility and make it easier for people to learn and adopt OpenAPI. I am optimistic that 2025 will change a fair bit how OAI is operating and how we engage with and help the global API community.
 
-#### What do you consider to be your most significant personal contribution to the development of OpenAPI?
+## What do you consider to be your most significant personal contribution to the development of OpenAPI?
 
 Right now it is probably the visibility and community around OpenAPI. I have been organizing OAI Tracks at various conferences for almost two years now. It’s always rewarding and interesting to see the many different contributions and ways how organizations are using OpenAPI.
 
@@ -37,7 +37,7 @@ But on the other hand we also need more and better feedback from the community. 
 
 I think we need a larger base and better visibility in the community as a necessary step to better plan how to evolve the specification in a way that’s most useful for its users.
 
-#### The OpenAPI Initiative is now a multi-specification organisation. How will the project change now that we are delivering more specifications to the API community?
+## The OpenAPI Initiative is now a multi-specification organisation. How will the project change now that we are delivering more specifications to the API community?
 
 Quite a bit of that is terminology and branding. We have a rather unfortunate name now that we’re not just managing the OpenAPI specification. We’ll be able to work with it, but we need to reassess our branding and things like our information architecture in general.
 
@@ -53,7 +53,7 @@ But we may also see that AI scenarios are requiring updates to OpenAPI, to other
 
 Personally, I think the current version has proven to provide enough value for us to invest more into explaining that value and making it easier to realize. It’s not OAI’s goal to turn into an API consulting firm, but given our unique position in the API landscape we can provide trainings, case studies, and reports with more authority than most other entities out there, and it would help our users if we did more of that.
 
-#### What other standards developments do you consider particularly significant for the API economy?
+## What other standards developments do you consider particularly significant for the API economy?
 
 First and foremost our “sister specifications” that are also part of the Linux Foundation have to be mentioned: AsyncAPI and GraphQL. And then there’s of course gRPC which is not part of the Linux Foundation but still can be considered an open standard. So these are the big ones complementing OpenAPI when it comes to providing open and established technologies for various API styles.
 
@@ -61,7 +61,7 @@ When it comes to OpenAPI itself then of course we have standards like JSON Schem
 
 What we may also see is some variant of a catalog format, where it is possible to advertise API catalogs and to describe APIs in those catalogs with machine-readable API descriptions and other metadata that may be helpful to work with the API. Since we do see more and more scenarios where scaling the API practices is one of the challenges, we may see such a catalog format emerging as a way to more easily share APIs.
 
-#### Should more people get involved in developing the OpenAPI Initiative specifications and why?
+## Should more people get involved in developing the OpenAPI Initiative specifications and why?
 
 Yes, it would be great to see more people getting involved with OAI. We want to play our part by creating more useful content going forward, in particular in terms of training, case studies, and reports. These things will help OpenAPI users, but the more we can create these based on feedback, the more likely we will create the ones that have the most impact.
 

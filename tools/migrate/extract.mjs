@@ -87,6 +87,26 @@ const INLINE_FORMAT = 'strong, b, em, i';
 const BLOCK_INSIDE =
   'p, div, ul, ol, li, table, h1, h2, h3, h4, h5, h6, blockquote, pre, figure, br, img';
 
+function normalizeHeadings($, root) {
+  if (!root.length) return;
+
+  const levels = root
+    .find('h1, h2, h3, h4, h5, h6')
+    .map((_, el) => Number(el.tagName.slice(1)))
+    .get();
+  if (!levels.length) return;
+
+  const shift = Math.min(...levels) - 2;
+  if (shift <= 0) return;
+
+  for (let level = 2; level <= 6; level += 1) {
+    root.find(`h${level + shift}`).each((_, el) => {
+      const node = $(el);
+      node.replaceWith($(`<h${level}>`).html(node.html() ?? ''));
+    });
+  }
+}
+
 function normalizeEmphasis($, root) {
   if (!root.length) return;
 
@@ -193,6 +213,7 @@ export function extractPost(html, entry) {
   const codeBlocks = normalizeCode($, body);
   normalizeTables($, body);
   normalizeEmphasis($, body);
+  normalizeHeadings($, body);
   const dropped = interactive($, body);
   stripPresentation($, body);
 
@@ -232,6 +253,7 @@ export function extractPage(html, entry) {
   const codeBlocks = normalizeCode($, body);
   normalizeTables($, body);
   normalizeEmphasis($, body);
+  normalizeHeadings($, body);
   const dropped = interactive($, body);
   stripPresentation($, body);
 

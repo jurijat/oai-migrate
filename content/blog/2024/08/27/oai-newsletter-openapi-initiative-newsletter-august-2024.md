@@ -14,7 +14,7 @@ generated: true
 
 Welcome to the OpenAPI Initiative August 2024 Newsletter, our regular round-up of the latest stories from across the OpenAPI landscape. It’s vacation season in the northern hemisphere, but there is plenty of news to share!
 
-### Initiative News
+## Initiative News
 
 Our Arazzo Specification was announced in our last newsletter which, in case you missed it, is a description language that allows API providers to describe sequences of API calls, both within one API or across various APIs. The arrival of Arazzo has created a significant buzz in the community, with a great deal of interest in how Arazzo can meet many use cases.
 
@@ -22,7 +22,7 @@ To help introduce Arazzo we’ve started another initiative, our OpenAPI Hangout
 
 We also took a detailed look at Arazzo through a real use case, namely for API consumers implementing a buy-now, pay-later (BNPL) solution in their e-commerce solution. While the BNPL API and platform in our use case are examples they accurately represent the complexity of such e-commerce orchestration and workflow requirements. You can discover more about the full BNPL example on our [blog](/blog/2024/07/19/buy-now-pay-later-arazzo).
 
-### Specification News
+## Specification News
 
 Our Specification [website](https://spec.openapis.org/) has recently undergone a revamp. All versions of the OpenAPI Specification are now provided through this page, together with v1.0.0 of Arazzo. We hope these changes will provide a focused, “one-stop” solution for readers of our Specifications.
 
@@ -36,32 +36,32 @@ Work on OpenAPI 4.0, codenamed Moonwalk, also continues apace under the auspices
 
 Our specification meetings are, of course, open to anyone. If you want to join to listen in or contribute, you’ll find the meetings in the [OAI calendar](/calendar).
 
-### Community News
+## Community News
 
 We recently announced our Community Heroes feature, which profiles an invaluable member of the OpenAPI community. Our second Community Hero is Frank Kilcommins, Principal API Technical Evangelist at SmartBear, who has been instrumental in creating the Arazzo Specification.
 
 Please read more about Frank on our [blog](/blog/2024/07/25/openapi-community-heroes-frank-kilcommins). Also let us know if you have any suggestions for a future Community Hero and we’ll do our best to feature them!
 
-### Events Round-up
+## Events Round-up
 
 Conference season is also about to ramp up again and we’ve got several OAI tracks and sessions in the pipeline.
 
-#### Apidays London – 18th – 19th September, 2024
+### Apidays London – 18th – 19th September, 2024
 
 Our next event will be [apidays London](/events/apidays-london-2024), where Erik Wilde will host our OAI track. The theme of apidays London is “APIs for Smarter Platforms and Business Processes”, and will focus on how AI and APIs act as enablers for businesses. Our OAI track will therefore look at standards and practices in the OpenAPI ecosystem that act as enablers for business. We’ll hear from Frank Kilcommins with an update on Arazzo, Lorna Mitchell on API governance, and Gobe Hobona on API standardization for geospatial ecosystems.
 
-#### Nordic APIs Platform Summit – 7th – 9th October, 2024
+### Nordic APIs Platform Summit – 7th – 9th October, 2024
 
 The [Nordic APIs Platform Summit](https://nordicapis.com/events/platform-summit-2024/) is held in Stockholm in October each year and offers a wealth of experiences and perspectives across the API economy. OAI is offering an OpenAPI Fundamentals workshop at the Summit, with the content based on our Linux Foundation course. The workshop will be led by Budha Bhattacharya and Chris Wood, and will be an “ask me anything” format to provide you with deep insights on your target topics. Please follow the [link](https://nordicapis.com/sessions/openapi-fundamentals/) to register.
 
-#### Event Outlook
+### Event Outlook
 
 We are planning OAI tracks at the following events:
 
 -   [apidays Australia](/events/apidays-australia-2024), 16th – 17th October, 2024
 -   [apidays Paris](/events/apidays-paris-2024), 3rd – 5th December, 2024
 
-### Finally…
+## Finally…
 
 That’s it for this newsletter. If you are in the northern hemisphere we hope you are having a great summer!
 

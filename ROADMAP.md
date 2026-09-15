@@ -133,6 +133,16 @@ rationale. Check off each task as it lands.
 - [ ] Add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets
 - [ ] Verify the preview comment on a throwaway PR (workflows cannot be tested before they are on `main`)
 
+### Accessibility fixes found by Lighthouse
+
+- [x] `--brand-muted` contrast raised (0.48 → 0.68 light, 0.62 dark)
+- [x] New `--brand-link` token: `#356d00` on light, `#76dd2a` on dark. Brand green `#65D100` is
+      1.66:1 on `#ececed` and unusable for body links, though fine for buttons
+- [x] Post headings promoted so bodies start at `h2` (the source jumped `h1` → `h3`)
+- [x] `<main>` landmark added
+- [x] HubSpot form styled to the design system, and loaded only when scrolled into view so its
+      third-party cookies are not set for every visitor
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)
@@ -144,7 +154,7 @@ rationale. Check off each task as it lands.
 
 - [x] Content parity diff across all migrated URLs (`npm run check:parity`, mean 99.93%)
 - [x] Render + internal link check (`npm run check:render`, 387 pages, 0 broken)
-- [ ] Lighthouse pass (perf, a11y, SEO)
+- [x] Lighthouse: 100 accessibility / best practices / SEO on desktop post and mobile home
 - [x] Playwright smoke suite green locally (7 tests)
 - [x] Playwright suite green on CI
 - [ ] Preview verified on a throwaway PR

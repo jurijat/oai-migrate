@@ -11,7 +11,7 @@ generated: true
 
 We wanted to bring you the top reasons why we think you should attend the event. AND if you register **today (September 14),** you will save an addition $200 off of the conference. Don’t wait![![](/img/uploads/2018/07/APIStrat_PromoGraphics_Twitter.webp)](https://events.linuxfoundation.org/events/apistrat-2018/)
 
-### Here are the top reasons you’ll want to be at this event:
+## Here are the top reasons you’ll want to be at this event:
 
 1.  [**New Trends and Innovation in the API Space and Beyond**](https://events.linuxfoundation.org/events/apistrat-2018/program/keynote_speakers/): Along with learning the latest trends in the API space, you will also hear from speakers providing an expanded perspective of the technology world we live in today, including keynotes Virginia Eubanks, Associate Professor of Political Science at the University at Albany, SUNY discussing _Automating Inequality: How High-Tech Tools Profile, Police and Punish the Poor_ and Kate O’Neill_,_ author of Pixels and Place and lead at KO Insights_,_ discussing _Tech Humanism: Integration, Automation, and the Future of the Human Experience._
 2.  [**Learn about best practices in the API space:**](https://events.linuxfoundation.org/events/apistrat-2018/program/schedule/) The conference will uncover best practices when it comes to APIs as products, API portals, API design, and API usability. A few keynotes and talks include transforming the enterprise to an API platform; microservicing like a unicorn with Envoy, Istio and Kubernetes; and Evolving API: designing while requirements are still in flux. Come to the event and take away ideas that you can use right away!

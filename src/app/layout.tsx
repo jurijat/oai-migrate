@@ -36,7 +36,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         <Providers>
           <LfBar />
           <Navbar nav={nav} />
-          <div className="flex-1">{children}</div>
+          <main className="flex-1">{children}</main>
           <Footer />
         </Providers>
         <Analytics enabled={isProduction} />

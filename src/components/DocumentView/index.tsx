@@ -25,7 +25,10 @@ export function DocumentView({ doc }: { doc: Post | Page }) {
       {archived ? (
         <p className="mb-10 rounded-4xl bg-brand-card px-6 py-4 text-brand-muted">
           This call for proposals has closed and is kept for reference. Current events are listed on{' '}
-          <a href="https://events.openapis.org" className="text-brand-green hover:underline">
+          <a
+            href="https://events.openapis.org"
+            className="text-[color:var(--brand-link)] hover:underline"
+          >
             events.openapis.org
           </a>
           .

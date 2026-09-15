@@ -13,7 +13,7 @@ Our latest minor version brings a host of new features across a number of areas 
 
 Here’s a quick rundown of the headline features.
 
-### Multipurpose Tags with Nesting
+## Multipurpose Tags with Nesting
 
 One of the most significant changes, particularly for rendering a graphical view of an OpenAPI description, is the change to the [Tags](https://spec.openapis.org/oas/v3.2.0.html#tag-object) object. The new Tag Object structure introduces `summary` for short descriptions, `parent` for nesting, and `kind` for classifying Tags, allow a taxonomy to be developed, supported by a [registry](https://spec.openapis.org/registry/tag-kind/index.html) of commonly supported values.
 
@@ -52,7 +52,7 @@ Tags can therefore be created for different purposes, making the structure of th
 
 As you migrate to v3.2.0, be sure to contribute to the Kind registry to share useful Tags across the community!
 
-### HTTP Method Changes
+## HTTP Method Changes
 
 v3.2.0 also includes a number of new features for more advanced HTTP method support.
 
@@ -71,7 +71,7 @@ paths:
 
 The other major enhancement is the introduction of `querystring`, which provides the means to define all query parameters as a Schema Object, allowing for greater control in defining how query parameters are defined and coexist in a given API operation.
 
-### Sequential and Streaming Data
+## Sequential and Streaming Data
 
 A welcome addition in this version of OpenAPI is increased support for streaming data, which is a critical enhancement to support creating well-described APIs across so many use cases, including chat, AI, IoT, and financial services.
 
@@ -84,7 +84,7 @@ OpenAPI now supports the following types:
 
 These types work in tandem with the `itemSchema` keyword, which defines what a streamed event looks like over the wire. The addition of this support is a significant enhancement for both understanding streaming APIs **and** for tooling makers who typically need to ingest many different data structures, represented by many Schema Objects, through a single Operation.
 
-### New Security Features
+## New Security Features
 
 There are also a number of new features in Security.
 
@@ -92,7 +92,7 @@ v3.2.0 introduces support for OAuth 2.0 Device Authorization Flow. [Device Autho
 
 The core OAuth Flow object has also been enhanced to include the `oauth2MetadataUrl` property, which defines a URL at which [OAuth 2.0 Server Metadata](https://datatracker.ietf.org/doc/html/rfc8414) can be retrieved, supporting OAuth flows. Providing links to metadata, in the same way as the OpenID property `openIdConnectUrl` allows an OpenAPI description to be a key reference point for API Consumers, providing both functional and security information. Such reference points are particularly important in sectors like open finance, which rely heavily on publishing OAuth and OpenID Connect metadata for automatic discovery of services.
 
-### Other Features
+## Other Features
 
 We’ve only covered some headline changes here, in an effort to bring together the most impactful changes in this release.
 

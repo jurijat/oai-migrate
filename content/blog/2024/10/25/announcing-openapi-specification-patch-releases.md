@@ -17,13 +17,13 @@ In patch releases, no changes are made to the way that APIs are described, but t
 
 Think of this release as the “Words Mean Things” edition!
 
-### Released versions
+## Released versions
 
 3.1.1 is the newest and recommended version of the OpenAPI Specification. If you are starting a new project today, or have the option to upgrade, this is your target version.
 
 3.0.4 is an additional release on the 3.0 branch to incorporate the improved wording to the 3.0 branch of the specification where the changes applied there. It is expected that 3.0.4 will be the final release in the 3.0.x line.
 
-### Summary of changes
+## Summary of changes
 
 The releases include as many explanations, clarifications and expanded sections as we could manage, driven mostly by the questions and comments we get from the users and tools creators of the OpenAPI Specification. The highlights include a lot of new content to expand on existing content and reduce ambiguity. The sections regarding parameters, encoding and schemas have had significant updates and have been expanded to cover more cases. You will also find some security clarifications and a whole new “Security Considerations” section has been added.
 
@@ -35,7 +35,7 @@ The updates also strayed into distinctly “meta” areas, so we’ve also got:
 -   Reference to a JSON Schema to represent the OpenAPI Specification schema.
 -   Definitions for when something was undefined or implementation dependent.
 
-### Beyond the specification
+## Beyond the specification
 
 In addition to the main specifications that you can always find at [spec.openapis.org](https://spec.openapis.org), there are a number of other resources that you may find helpful:
 
@@ -47,17 +47,17 @@ All of these resources are now linked from the relevant parts of the OpenAPI Spe
 
 We also updated the tooling that publishes the specification, changed the GitHub repository structure, cleaned up and reformatted all the Markdown content, and improved our workflow automation. These changes do not affect the specification but does make it a nicer place to be and hopefully makes the next release easier too.
 
-### Upgrade process
+## Upgrade process
 
 Most users and tool vendors should have no action to take, since the patch releases contain only wording changes or clarifications and no structure changes. That said, especially if you publish OpenAPI tools, take a look at the release notes on GitHub to check that there are no surprises!
 
-### Acknowledgements
+## Acknowledgements
 
 So many contributors have contributed to this release, it’s not possible to name them all. If you suggested an idea, joined our regular calls to discuss the changes, opened or reviewed a pull request, or participated in any of the discussions about the changes, then we thank you! We had a LOT of help, and the new releases are very much improved for it (also the previous release was quite some time ago, a lot of people added to the project in the meantime).
 
 Particular thanks goes to the Technical Steering Committee members who teamed up and shepherded the whole thing through, and to Henry Andrews whose counsel and hands-on help were a very welcome addition to the process.
 
-### Get involved
+## Get involved
 
 There are lots of ways to get involved with OpenAPI, and we like to hear from everyone who uses OpenAPI (or wants to)!
 

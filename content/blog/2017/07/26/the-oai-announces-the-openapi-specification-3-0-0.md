@@ -19,7 +19,7 @@ Major improvements in the new version 3 release include support for describing c
 
 APIs have been elevated from a development technique to a driver of business, necessary for technology innovation and modernization. According to ProgrammableWeb, nearly 18,000 public APIs have been published since 2005, up nearly 1,000 in the past quarter of 2017 alone. Founded in 2015, the Open API Initiative has swelled to 27 members in the last 18 months and continues to accelerate beyond API vendors to include leaders in banking, healthcare, and governments worldwide.
 
-### Industry Support for OAI
+## Industry Support for OAI
 
 **42Crunch**
 “42Crunch is honoured to be part of the Open API Initiative,” said Philippe Leothaud, Chief Innovation Officer at 42Crunch. “The OpenAPI Specification is open source, platform-agnostic, vendor-agnostic and extensible. Leveraging this de-facto standard will accelerate API adoption across all industry verticals and, in particular, help the automatic consumption of APIs from applications and devices.”
@@ -52,7 +52,7 @@ Current members of the OAI include: 42Crunch, Adobe Systems, Inc., API Evangelis
 
 OpenAPI is an evolution of the Swagger specification, which was donated by SmartBear to The Linux Foundation in 2015. To get more information about the OpenAPI Specification and learn about membership and contributions, please visit: [https://www.openapis.org/](/)
 
-### Resources:
+## Resources:
 
 [The OpenAPI Specification v3](https://github.com/OAI/OpenAPI-Specification/blob/master/README.md)
 Follow OAI on Twitter [@OpenApiSpec](https://twitter.com/OpenApiSpec) or join the conversation on [GitHub](https://github.com/OAI/OpenAPI-Specification/issues)

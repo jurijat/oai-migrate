@@ -11,13 +11,13 @@ APIs are essential in many scenarios today but are still just interfaces at the 
 
 The API Specifications Conference (ASC) is a place for API practitioners to come together and discuss the evolution of API technology. The ASC includes cutting edge technology keynotes and sessions that chart the future of APIs with in-depth specification and standards discussions. The event is designed to be highly interactive, with plenty of discussion time throughout the sessions.
 
-#### **Keynote Panel: What’s the Specification for API Products?**
+## **Keynote Panel: What’s the Specification for API Products?**
 
 Moderated by Erik Wilde (Axway), join keynote speakers Mike Amundsen (Amundsen.com, Inc.), Yina Arenas (Microsoft), Adam DuVander (EveryDeveloper), and Gail Frederick (Salesforce) on **Thursday, Sept 10 at 9 AM PST** as they discuss specification for API products. Learn how knowing why we are building these APIs should help us do a better job of identifying valuable specifications and delivering maximum value to customers.
 
 [**Register Here**](https://events.linuxfoundation.org/openapi-asc/register/)
 
-#### **Keynote Moderator + Speakers**
+## **Keynote Moderator + Speakers**
 
 ![](https://lh3.googleusercontent.com/kyNSSCnq3jq7uog0QrC4qHEFsNXhjcNwh7LekzSLxcDFllrAvqjzeRRkXdnhij3J6DrzlACQqMUy-n_dz2GcXH0y2WqxsFkglZU84itt0D4pGrCaKA61tHAdOtKD9TCMvSJLiNZj)
 
