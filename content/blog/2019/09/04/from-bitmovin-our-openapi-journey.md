@@ -67,13 +67,13 @@ We evaluated the existing generator and found it great for small to medium-sized
 
 After generating the Java SDK with the default generator we would be able to call this endpoint in the following way:
 
-**S3Input** **s3Input** **=** **client****.****getEncodingInputsS3ByInputId****(inputId);**
+**S3Inputs3Input=client.getEncodingInputsS3ByInputId(inputId);**
 
 As you can see the method gets generated as part of a client object. In fact, this single client object will contain all of our API methods – our [whole API surface](https://bitmovin.com/docs/encoding/api-reference/all).
 
 One key aspect of our philosophy is that our customers need to be able to configure every detail of their encoding jobs. This power and freedom we provide naturally leads to a larger API surface. Instead of having all these methods in one single API client object, we wanted our SDKs to be structured as similar to our API as possible. They should be easily explorable and make it clear to understand which endpoint would be called at any time:
 
-**S3Input** **s3Input** **=** **client****.****encoding****.****inputs****.****s3****.****get****(inputId);**
+**S3Inputs3Input=client.encoding.inputs.s3.get(inputId);**
 
 Because of this, we decided to write our own generator logic and templates on top of the generator project. Each slash (/) of the endpoints URL should also be a separator in our SDKs, which means that each resource’s methods are generated in their own small sub-API client object. This ensures that the users of our SDKs won’t get overwhelmed by the number of methods they need to choose from at any given time. It enables the exploratory approach of working with our API we aim for.
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { DocumentView } from '@/components/DocumentView';
-import { findByPermalink, getPages, getPosts } from '@/lib/content';
+import { decodedPermalink, findByPermalink, getPages, getPosts } from '@/lib/content';
 
 type Params = { slug: string[] };
 
@@ -9,7 +9,7 @@ export async function generateStaticParams(): Promise<Params[]> {
   const [posts, pages] = await Promise.all([getPosts(), getPages()]);
   return [...posts, ...pages]
     .filter((doc) => doc.permalink !== '/')
-    .map((doc) => ({ slug: doc.permalink.replace(/^\//, '').split('/') }));
+    .map((doc) => ({ slug: decodedPermalink(doc.permalink).replace(/^\//, '').split('/') }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {

@@ -11,7 +11,13 @@ function mechanical() {
     rules.push({ from: `/${slug}`, to: '/', reason });
   }
   for (const [slug, to] of Object.entries(MOVED)) {
-    rules.push({ from: `/${slug}`, to, reason: 'moved to events.openapis.org' });
+    rules.push({
+      from: `/${slug}`,
+      to,
+      reason: to.startsWith('http')
+        ? 'moved to events.openapis.org'
+        : 'placeholder page, superseded',
+    });
   }
   for (const [from, to] of Object.entries(LEGACY)) {
     rules.push({ from, to, reason: 'legacy url, 404 on WordPress' });

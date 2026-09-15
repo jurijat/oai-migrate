@@ -21,7 +21,7 @@ function heading(text) {
 async function main() {
   const urls = await readJson(URLS_FILE);
   const { entries, assets } = await readJson(MANIFEST_FILE);
-  const converted = entries.filter((e) => e.status === 'converted');
+  const converted = entries.filter((e) => e.status === 'converted' || e.status === 'hand-authored');
 
   heading('Coverage');
   console.log(`sitemap urls        ${urls.length}`);
@@ -39,25 +39,25 @@ async function main() {
     for (const m of missing) console.log(`  ${m.url}`);
   }
 
-  const warned = converted.filter((e) => e.warnings.length);
+  const warned = converted.filter((e) => (e.warnings ?? []).length);
   heading(`Extraction warnings (${warned.length})`);
   for (const e of warned) console.log(`  ${e.slug}: ${e.warnings.join('; ')}`);
 
   const leftovers = converted.filter(
-    (e) => e.leftoverHtml.filter((t) => !HTML_ALLOWLIST.has(t)).length,
+    (e) => (e.leftoverHtml ?? []).filter((t) => !HTML_ALLOWLIST.has(t)).length,
   );
   heading(`Files with residual HTML (${leftovers.length})`);
   for (const e of leftovers) {
-    const tags = e.leftoverHtml.filter((t) => !HTML_ALLOWLIST.has(t));
+    const tags = (e.leftoverHtml ?? []).filter((t) => !HTML_ALLOWLIST.has(t));
     const note = e.kind === 'composed' ? ' (composed draft, rewritten by hand)' : '';
     console.log(`  ${e.file} [${tags.join(', ')}]${note}`);
   }
 
-  const dropped = converted.filter((e) => e.dropped.length);
-  heading(`Interactive content removed, needs a component (${dropped.length})`);
+  const dropped = converted.filter((e) => (e.dropped ?? []).length);
+  heading(`Embedded content, preserved as links and upgraded at render (${dropped.length})`);
   for (const e of dropped) console.log(`  ${e.slug}\n      ${e.dropped.join('\n      ')}`);
 
-  const thin = converted.filter((e) => e.chars < 200);
+  const thin = converted.filter((e) => (e.chars ?? 999) < 200);
   heading(`Thin output, under 200 chars (${thin.length})`);
   for (const e of thin) console.log(`  ${e.file} (${e.chars})`);
 
@@ -80,10 +80,11 @@ async function main() {
 
   const broken = new Map();
   for (const entry of converted) {
-    for (const link of entry.internalLinks) {
+    for (const link of entry.internalLinks ?? []) {
       const path = link.split(/[?#]/)[0].replace(/\/+$/, '') || '/';
       if (covered(path)) continue;
       if (path.startsWith('/wp-content') || path.startsWith('/wp-json')) continue;
+      if (path.startsWith('/img/')) continue;
       if (!broken.has(path)) broken.set(path, new Set());
       broken.get(path).add(entry.slug);
     }

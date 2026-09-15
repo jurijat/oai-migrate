@@ -17,7 +17,7 @@ The OpenAPI Specification has had great success describing standard request/resp
 
 Webhooks leverage HTTP in an publish/subscribe pattern, and they have become a popular pattern among API providers, including Slack, GitHub, and many other popular services. Webhooks are simple to use and fit nicely into an existing HTTP-based style of API. However, one criticism of the OpenAPI spec was that it had no way to describe an outbound HTTP request and its expected response. The new callback object makes this possible. A [callback object](https://github.com/OAI/OpenAPI-Specification/pull/763) can be attached to a subscribe operation in order to describe an outbound operation that a subscriber may expect.
 
-### **![Path Item Out Going](/img/uploads/2016/11/image01.webp)**
+### ![Path Item Out Going](/img/uploads/2016/11/image01.webp)
 
 ### **Links**
 
@@ -37,6 +37,6 @@ With the improved support for non-JSON media types, the limitations of using onl
 
 _The next post will discuss some planned improvements to Documentation._
 
-**—
-![Darrell Miller](http://oapi.wpengine.com/wp-content/uploads/2016/10/oai_blogauthor_darrellmiller.jpg)About The Author**
+—
+![Darrell Miller](http://oapi.wpengine.com/wp-content/uploads/2016/10/oai_blogauthor_darrellmiller.jpg)About The Author
 Darrel Miller is a Senior Software Development Engineer on Azure API Management for Microsoft. Darrel is a member of the OpenAPI Specification Technical Developer Community. You can follow him on [Twitter](https://twitter.com/darrel_miller) or on his blog [Bizcoder](http://www.bizcoder.com/).

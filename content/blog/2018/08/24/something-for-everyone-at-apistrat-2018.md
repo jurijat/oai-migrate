@@ -18,8 +18,7 @@ generated: true
 
 As we all know, there is not an industry or vertical that does not consume APIs in some form or fashion. Because of the broad scope of APIs that means every company should want to be a part of the conversation of what is happening next in APIs. At APIStrat, you can learn directly from the people designing the next evolution of the OpenAPI Spec and the tooling ecosystem it supports.
 
-**Review the schedule by topic
-**
+Review the schedule by topic
 
 -   [All Microservices All the Time](https://apistrat18.sched.com/overview/type/All+Microservices+All+the+Time)
 -   [API as Products](https://apistrat18.sched.com/overview/type/API+as+Products)

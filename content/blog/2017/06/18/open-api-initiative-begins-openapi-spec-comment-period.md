@@ -14,7 +14,7 @@ As mentioned [last month](/blog/2017/05/25/the-open-api-initiative-is-sending-yo
 At its meeting on Friday, 16 June, the Technical Developer Community (TDC) confirmed the below dates:
 
 -   4 weeks from 22 May through 16 June: to resolve remaining pull requests
--   **2 weeks from 19 June through 30 June: Comment period** **← You are here**
+-   **2 weeks from 19 June through 30 June: Comment period← You are here**
 -   2 weeks from 3 July through 14 July: to resolve remaining comments and issues
 -   1 week from 17 July through 21 July: release window (tentative)
 
@@ -36,3 +36,5 @@ If you’re looking to generally learn more about the OpenAPI Spec v3, check-out
 -   Introduction to OpenAPI Spec v3 series: [https://www.openapis.org/specification/v3insights](/specification/v3insights)
 
 Now playing: [Closing Time by Semisonic](https://www.bing.com/search?q=semisonic+closing+time)
+
+[Watch the video](https://www.youtube.com/watch?v=xGytDsqkQY8)

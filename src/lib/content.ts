@@ -107,14 +107,34 @@ export async function getAuthorName(slug: string): Promise<string> {
   return authors.find((a) => a.slug === slug)?.name ?? slug;
 }
 
+function fullyDecode(path: string): string {
+  let current = path;
+  for (let i = 0; i < 3; i += 1) {
+    let next: string;
+    try {
+      next = decodeURIComponent(current);
+    } catch {
+      return current;
+    }
+    if (next === current) return current;
+    current = next;
+  }
+  return current;
+}
+
+export function decodedPermalink(path: string): string {
+  return fullyDecode(`/${path.replace(/^\/+|\/+$/g, '')}`);
+}
+
+export function normalizePermalink(path: string): string {
+  return decodedPermalink(path).toLowerCase();
+}
+
 export async function findByPermalink(path: string): Promise<Post | Page | null> {
-  const normalized = `/${path.replace(/^\/+|\/+$/g, '')}`;
+  const normalized = normalizePermalink(path);
   const [posts, pages] = await Promise.all([getPosts(), getPages()]);
-  return (
-    posts.find((p) => p.permalink === normalized) ??
-    pages.find((p) => p.permalink === normalized) ??
-    null
-  );
+  const match = (doc: Post | Page) => normalizePermalink(doc.permalink) === normalized;
+  return posts.find(match) ?? pages.find(match) ?? null;
 }
 
 export function isPost(doc: Post | Page): doc is Post {

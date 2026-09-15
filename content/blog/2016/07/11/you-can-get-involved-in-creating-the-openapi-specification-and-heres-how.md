@@ -31,8 +31,8 @@ Some of those topics are philosophical, such as [Is OpenAPI an Open World or Clo
 -   Part 4 – [Protocol and Payload](/blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4)
 -   Part 5 – [Documentation](/blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5)
 
-**—****
-![Marsh Gardiner](http://oapi.wpengine.com/wp-content/uploads/2016/10/image1326746890-150x150.jpg)About The Author**
+**—**
+![Marsh Gardiner](http://oapi.wpengine.com/wp-content/uploads/2016/10/image1326746890-150x150.jpg)About The Author
 Marsh Gardiner
 At least two of the following three statements are true about Marsh: No one loves APIs more. He is a developer trapped in the body of a product guy. He hates writing bios.
 

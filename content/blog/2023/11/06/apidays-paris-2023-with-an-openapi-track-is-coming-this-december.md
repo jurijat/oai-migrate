@@ -16,6 +16,8 @@ The OpenAPI Specification is an integral part of software development and delive
 
 [See our apidays Paris events page here](/events/apidays-paris-2023).
 
+[Watch the video](https://www.youtube.com/watch?v=xPIVONV5owY)
+
 ## What is the OAI Track?
 
 The OAI Track is a specialized forum at apidays Paris hosted by the OpenAPI Initiative (OAI). This focused track aims to provide a platform for API practitioners to share and exchange valuable insights, experiences, and best practices related to OpenAPI. At Paris, we will have 3 different sessions with a total of 12 speakers!

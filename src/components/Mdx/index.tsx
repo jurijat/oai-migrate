@@ -4,6 +4,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import type { AnchorHTMLAttributes, ImgHTMLAttributes } from 'react';
+import { rehypeEmbeds } from '@/lib/rehypeEmbeds';
 import { withBasePath } from '@/lib/site';
 import {
   GoogleForm,
@@ -76,7 +77,7 @@ export function Mdx({ source, format = 'md' }: { source: string; format?: 'md' |
         mdxOptions: {
           format,
           remarkPlugins: [remarkGfm],
-          rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: 'wrap' }]],
+          rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, { behavior: 'wrap' }], rehypeEmbeds],
         },
       }}
     />

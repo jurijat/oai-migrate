@@ -83,6 +83,23 @@ function stripPresentation($, root) {
   });
 }
 
+const INLINE_FORMAT = 'strong, b, em, i';
+const BLOCK_INSIDE =
+  'p, div, ul, ol, li, table, h1, h2, h3, h4, h5, h6, blockquote, pre, figure, br, img';
+
+function normalizeEmphasis($, root) {
+  if (!root.length) return;
+
+  root.find(INLINE_FORMAT).each((_, el) => {
+    const node = $(el);
+    if (node.find(BLOCK_INSIDE).length) {
+      node.replaceWith(node.contents());
+      return;
+    }
+    if (!clean(node.text())) node.replaceWith(node.contents());
+  });
+}
+
 function normalizeTables($, root) {
   if (!root.length) return;
 
@@ -175,6 +192,7 @@ export function extractPost(html, entry) {
   if (!body.length) warnings.push('no .content-inner');
   const codeBlocks = normalizeCode($, body);
   normalizeTables($, body);
+  normalizeEmphasis($, body);
   const dropped = interactive($, body);
   stripPresentation($, body);
 
@@ -210,6 +228,7 @@ export function extractPage(html, entry) {
 
   const codeBlocks = normalizeCode($, body);
   normalizeTables($, body);
+  normalizeEmphasis($, body);
   const dropped = interactive($, body);
   stripPresentation($, body);
 

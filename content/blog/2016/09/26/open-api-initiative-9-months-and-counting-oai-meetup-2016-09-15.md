@@ -13,9 +13,9 @@ At the OAI Meetup on Sept 15, Jeff Borek of IBM took the audience on the journey
 >
 > — OpenAPI Spec (@OpenApiSpec) [September 16, 2016](https://twitter.com/OpenApiSpec/status/776601587447771137)
 
-**[9 Months and Counting with Jeff Borek of IBM OpenAPI Meetup 2016 09 15](https://www.slideshare.net/OpenAPI/9-months-and-counting-with-jeff-borek-of-ibm-openapi-meetup-2016-09-15)** from **[The Open API Initiative (OAI)](https://www.slideshare.net/OpenAPI)**
+[View the presentation](https://www.slideshare.net/slideshow/embed_code/key/1PU2zAI4B9NYTK)
 
-**—**
+**[9 Months and Counting with Jeff Borek of IBM OpenAPI Meetup 2016 09 15](https://www.slideshare.net/OpenAPI/9-months-and-counting-with-jeff-borek-of-ibm-openapi-meetup-2016-09-15)** from **[The Open API Initiative (OAI)](https://www.slideshare.net/OpenAPI)—**
 
 ![Jeff Borek](http://oapi.wpengine.com/wp-content/uploads/2016/10/U5MfsNlS-150x150.jpg)**About The Author**
 Jeff Borek

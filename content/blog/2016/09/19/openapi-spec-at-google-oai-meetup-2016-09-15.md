@@ -19,9 +19,9 @@ After getting the details on why they joined, hear what they are doing with it. 
 
 Slides from Dan’s presentating can be found [here:](http://www.slideshare.net/OpenAPI/openapi-spec-at-google-20160915)
 
-**[OpenAPI Spec at Google (Open API Initiative Meetup on 2016-09-15)](https://www.slideshare.net/OpenAPI/openapi-spec-at-google-20160915)** from **[The Open API Initiative (OAI)](https://www.slideshare.net/OpenAPI)**
+[View the presentation](https://www.slideshare.net/slideshow/embed_code/key/sWLFHkJZHGDLNY)
 
-**—**
+**[OpenAPI Spec at Google (Open API Initiative Meetup on 2016-09-15)](https://www.slideshare.net/OpenAPI/openapi-spec-at-google-20160915)** from **[The Open API Initiative (OAI)](https://www.slideshare.net/OpenAPI)—**
 ![Dan Ciruli](http://oapi.wpengine.com/wp-content/uploads/2016/10/eT4VOo5a-150x150.jpg)**About The Author**
 Dan Ciruli
 Dan Ciruli is a product manager at Google who works on API infrastructure. He used to play a lot of ultimate when he had knees and write a lot of software when he had time. He’ll try to speak Spanish to you if you give him a chance. You can find him on Twitter at [@danciruli](https://twitter.com/DanCiruli).

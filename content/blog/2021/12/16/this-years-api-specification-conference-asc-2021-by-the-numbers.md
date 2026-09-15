@@ -15,7 +15,7 @@ This year’s API Specifications Conference (ASC) organized by the OpenAPI initi
 
 ### The full Linux Foundation report on ASC 2021, “Transparency Report: API Specifications Conference (ASC) 2021” is available now (PDF).
 
-[2021 ASC Transparency Report\_Final](/wp-content/uploads/sites/31/2021/12/2021-ASC-Transparency-Report_Final.pdf)[Download](/wp-content/uploads/sites/31/2021/12/2021-ASC-Transparency-Report_Final.pdf)
+[2021 ASC Transparency Report\_Final](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)[Download](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)
 
 We had attendance from 319 people from 37 countries—with a majority of them attending up to 10 sessions.
 
@@ -29,4 +29,4 @@ Online events have created an opportunity for us to reach new audiences and expa
 
 ### Download the full Linux Foundation report on ASC 2021, “Transparency Report: API Specifications Conference (ASC) 2021” (PDF).
 
-[2021 ASC Transparency Report\_Final](/wp-content/uploads/sites/31/2021/12/2021-ASC-Transparency-Report_Final.pdf)[Download](/wp-content/uploads/sites/31/2021/12/2021-ASC-Transparency-Report_Final.pdf)
+[2021 ASC Transparency Report\_Final](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)[Download](/img/uploads/2021/12/2021-ASC-Transparency-Report_Final.pdf)

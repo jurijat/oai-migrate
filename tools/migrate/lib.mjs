@@ -49,6 +49,13 @@ export function localAssetPath(src) {
   return `/img/uploads/${RASTER.test(rest) ? rest.replace(RASTER, '.webp') : rest}`;
 }
 
+export function localDocumentPath(href) {
+  const match = UPLOADS.exec(href.split('?')[0]);
+  if (!match) return null;
+  if (RASTER.test(match[1])) return null;
+  return `/img/uploads/${match[1]}`;
+}
+
 export async function ensureDir(file) {
   await mkdir(dirname(file), { recursive: true });
 }

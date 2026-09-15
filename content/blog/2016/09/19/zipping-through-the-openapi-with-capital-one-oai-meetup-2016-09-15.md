@@ -15,19 +15,18 @@ Note: Due to technical difficulties, we, more so the project’s PM, but we’ll
 
 **Part 1**
 
-> ****LIVE on [#Periscope](https://twitter.com/hashtag/Periscope?src=hash): Capital One and OAS [https://t.co/sYqhxHVFMq](https://t.co/sYqhxHVFMq)****
+> LIVE on [#Periscope](https://twitter.com/hashtag/Periscope?src=hash): Capital One and OAS [https://t.co/sYqhxHVFMq](https://t.co/sYqhxHVFMq)
 >
-> ****— OpenAPI Spec (@OpenApiSpec) [September 16, 2016](https://twitter.com/OpenApiSpec/status/776608331175596032)****
+> — OpenAPI Spec (@OpenApiSpec) [September 16, 2016](https://twitter.com/OpenApiSpec/status/776608331175596032)
 
-******Part 2******
+**Part 2**
 
-> ********LIVE on [#Periscope](https://twitter.com/hashtag/Periscope?src=hash): Capital One and OAS [https://t.co/1mDUN6Xlhq](https://t.co/1mDUN6Xlhq)********
+> LIVE on [#Periscope](https://twitter.com/hashtag/Periscope?src=hash): Capital One and OAS [https://t.co/1mDUN6Xlhq](https://t.co/1mDUN6Xlhq)
 >
-> ********— OpenAPI Spec (@OpenApiSpec) [September 16, 2016](https://twitter.com/OpenApiSpec/status/776609977800601600)********
+> — OpenAPI Spec (@OpenApiSpec) [September 16, 2016](https://twitter.com/OpenApiSpec/status/776609977800601600)
 
-**********[Zipping through the OpenAPI with Capital One](https://www.slideshare.net/OpenAPI/zipping-through-the-openapi-with-capital-one)** from **[The Open API Initiative (OAI)](https://www.slideshare.net/OpenAPI)**********
+[View the presentation](https://www.slideshare.net/slideshow/embed_code/key/k480SW7yBf9RAY)
 
-**—**
-**About The Author**
+**[Zipping through the OpenAPI with Capital One](https://www.slideshare.net/OpenAPI/zipping-through-the-openapi-with-capital-one)** from **[The Open API Initiative (OAI)](https://www.slideshare.net/OpenAPI)—About The Author**
 Leonhardt de Waal
 Leonhardt is a software engineer at Capital One.

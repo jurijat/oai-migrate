@@ -66,7 +66,7 @@ As you can see, this one meta-issue about the structural changes has a lot to di
 -   Part 4 – [Protocol and Payload](/blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4)
 -   Part 5 – [Documentation](/blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5)
 
-**—
-![Darrell Miller](http://oapi.wpengine.com/wp-content/uploads/2016/10/oai_blogauthor_darrellmiller.jpg)About The Author**
+—
+![Darrell Miller](http://oapi.wpengine.com/wp-content/uploads/2016/10/oai_blogauthor_darrellmiller.jpg)About The Author
 Darrel Miller
 Darrel Miller is a Senior Software Development Engineer on Azure API Management for Microsoft. Darrel is a member of the OpenAPI Specification Technical Developer Community. You can follow him on [Twitter](https://twitter.com/darrel_miller) or on his blog [Bizcoder](http://www.bizcoder.com/).

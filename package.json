@@ -26,7 +26,9 @@
     "migrate:redirects": "node tools/migrate/redirects.mjs",
     "postbuild": "node tools/postbuild.mjs",
     "check:basepath": "node tools/check-basepath.mjs",
-    "migrate:structured": "node tools/migrate/extract-structured.mjs"
+    "migrate:structured": "node tools/migrate/extract-structured.mjs",
+    "check:parity": "node tools/check-parity.mjs",
+    "check:render": "node tools/check-render.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -42,6 +44,7 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@tailwindcss/typography": "^0.5.15",
+    "@types/hast": "^3.0.5",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.0.0",
     "@types/react": "^19.2.18",
@@ -64,7 +67,8 @@
     "tailwindcss": "^3.4.19",
     "turndown": "^7.2.0",
     "turndown-plugin-gfm": "^1.0.2",
-    "typescript": "^5.6.0"
+    "typescript": "^5.6.0",
+    "unist-util-visit": "^5.1.0"
   },
   "engines": {
     "node": ">=20.9.0"

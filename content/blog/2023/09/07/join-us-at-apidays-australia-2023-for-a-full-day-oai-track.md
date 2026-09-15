@@ -39,6 +39,8 @@ The OAI Track is currently inviting contributions from interested individuals an
 
 Still wondering if the OAI Track is the right place for you? Listen to [Mehdi Medjaoui](https://www.linkedin.com/in/mehdimedjaoui/), the founder of apidays, discuss the essence and vision of the OAI Tracks at apidays events with [Erik Wilde](https://www.linkedin.com/in/erikwilde/).
 
+[Watch the video](https://www.youtube.com/watch?v=3ZIT-8w4twk)
+
 ## Join the Community!
 
 apidays Australia is not just another tech event; it’s a rich learning ground and a launchpad for ideas to advance the API ecosystem. Whether you’re a seasoned API developer or a business leader looking to harness the power of APIs, the OAI Track offers an unparalleled opportunity to engage with the API community.

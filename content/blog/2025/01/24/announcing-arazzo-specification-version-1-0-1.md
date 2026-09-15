@@ -39,7 +39,7 @@ Here’s a quick summary of the notable changes in Arazzo 1.0.1:
 
 For most users and tool vendors, no action is required—this patch release introduces only wording changes, clarifications, and corrections, with no structural changes to the specification.
 
-That said, if you publish Arazzo tools or maintain workflows that rely on the specification, we recommend reviewing the [_release notes on GitHub_](https://github.com/OAI/Arazzo-Specification/releases/tag/1.0.1) to ensure everything aligns with your expectations. While the update should be seamless, it’s always a good idea to double-check for any changes relevant to your implementation.
+That said, if you publish Arazzo tools or maintain workflows that rely on the specification, we recommend reviewing the [release notes on GitHub](https://github.com/OAI/Arazzo-Specification/releases/tag/1.0.1) to ensure everything aligns with your expectations. While the update should be seamless, it’s always a good idea to double-check for any changes relevant to your implementation.
 
 ### Looking ahead
 

@@ -1,4 +1,4 @@
-import { access, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import yaml from 'js-yaml';
 
@@ -52,6 +52,32 @@ async function exists(path) {
   }
 }
 
+async function walk(dir) {
+  const out = [];
+  for (const item of await readdir(dir, { withFileTypes: true })) {
+    const full = join(dir, item.name);
+    if (item.isDirectory()) out.push(...(await walk(full)));
+    else if (item.name.endsWith('.html')) out.push(full);
+  }
+  return out;
+}
+
+async function linkedUnder(prefixes) {
+  if (!prefixes.length) return new Map();
+  const found = new Map();
+
+  for (const file of await walk(OUT)) {
+    const html = await readFile(file, 'utf8');
+    for (const [, href] of html.matchAll(/href="(\/[^"#?][^"]*)"/g)) {
+      const path = href.replace(/\/+$/, '');
+      const rule = prefixes.find((r) => path.startsWith(r.from.slice(0, -1)));
+      if (rule && !found.has(path)) found.set(path, rule.to);
+    }
+  }
+
+  return found;
+}
+
 async function main() {
   const rules = yaml.load(await readFile(REDIRECTS, 'utf8')) ?? [];
   const exact = rules.filter((rule) => !rule.from.endsWith('*'));
@@ -63,6 +89,17 @@ async function main() {
     await writeFile(join(dir, 'index.html'), stub(deployed(rule.to), canonical(rule.to)));
   }
 
+  const expanded = await linkedUnder(prefixes);
+  let expandedCount = 0;
+  for (const [path, target] of expanded) {
+    const dir = join(OUT, path.replace(/^\//, ''));
+    if (await exists(join(dir, 'index.html'))) continue;
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, 'index.html'), stub(deployed(target), canonical(target)));
+    expandedCount += 1;
+  }
+  if (expandedCount) console.log(`prefix-rule stubs: ${expandedCount}`);
+
   const lines = rules.map((rule) => `${rule.from}  ${deployed(rule.to)}  301`);
   await writeFile(join(OUT, '_redirects'), `${lines.join('\n')}\n`);
   console.log(`redirect stubs: ${exact.length}, _redirects rules: ${rules.length}`);
@@ -70,7 +107,13 @@ async function main() {
   const urls = JSON.parse(await readFile(URLS, 'utf8'));
   const missing = [];
   for (const { url } of urls) {
-    const path = new URL(url).pathname.replace(/^\/+|\/+$/g, '');
+    const raw = new URL(url).pathname.replace(/^\/+|\/+$/g, '');
+    let path = raw;
+    try {
+      path = decodeURIComponent(raw);
+    } catch {
+      path = raw;
+    }
     const covered =
       (await exists(join(OUT, path, 'index.html'))) ||
       prefixes.some((rule) => `/${path}`.startsWith(rule.from.slice(0, -1)));

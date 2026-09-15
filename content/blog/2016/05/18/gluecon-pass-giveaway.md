@@ -20,8 +20,8 @@ _\*NOTE: This only applies to the specification that refers to Swagger Specifica
 
 Details: The giveaway is only for an entry pass to Gluecon, attendees are responsible for travel and accomodations.
 
-**—****
-![Marsh Gardiner](http://oapi.wpengine.com/wp-content/uploads/2016/10/image1326746890-150x150.jpg)About The Author**
+**—**
+![Marsh Gardiner](http://oapi.wpengine.com/wp-content/uploads/2016/10/image1326746890-150x150.jpg)About The Author
 Marsh Gardiner
 At least two of the following three statements are true about Marsh: No one loves APIs more. He is a developer trapped in the body of a product guy. He hates writing bios.
 

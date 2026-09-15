@@ -63,6 +63,6 @@ We’ve taken a look at how to use gRPC to bridge to the world of REST. If you w
 
 **—**
 
-**![Brandon Phillips](http://oapi.wpengine.com/wp-content/uploads/2016/10/brandon_phillips_of_coreos.jpeg)About The Author**
+![Brandon Phillips](http://oapi.wpengine.com/wp-content/uploads/2016/10/brandon_phillips_of_coreos.jpeg)About The Author
 Brandon Phillips (CoreOS)
 Brandon Philips is helping to build modern Linux server infrastructure at CoreOS as CTO. Prior to CoreOS, he worked at Rackspace hacking on cloud monitoring and was a Linux kernel developer at SUSE. As a graduate of Oregon State’s Open Source Lab he is passionate about open source technologies.

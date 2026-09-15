@@ -7,6 +7,7 @@ import { CFP, HTML_DIR, MANIFEST_FILE, URLS_FILE, classifyPage } from './config.
 import {
   ensureDir,
   localAssetPath,
+  localDocumentPath,
   readJson,
   stripSizeSuffix,
   toRelative,
@@ -23,12 +24,40 @@ function createTurndown(collected) {
   });
   service.use(gfm);
 
-  service.remove(['iframe', 'form', 'input', 'button', 'svg']);
+  service.remove(['form', 'input', 'button', 'svg']);
+
+  service.addRule('embed', {
+    filter: 'iframe',
+    replacement: (_content, node) => {
+      const src = (node.getAttribute('src') ?? '').replace(/^\/\//, 'https://');
+      if (!src) return '';
+
+      const youtube = /youtube(?:-nocookie)?\.com\/embed\/([\w-]+)/.exec(src);
+      if (youtube)
+        return `\n\n[Watch the video](https://www.youtube.com/watch?v=${youtube[1]})\n\n`;
+
+      const slideshare = /slideshare\.net\/slideshow\/embed_code\/key\/([\w-]+)/.exec(src);
+      if (slideshare) {
+        return `\n\n[View the presentation](https://www.slideshare.net/slideshow/embed_code/key/${slideshare[1]})\n\n`;
+      }
+
+      const form = /docs\.google\.com\/forms\/d\/e\/([\w-]+)/.exec(src);
+      if (form) {
+        return `\n\n[Open the form](https://docs.google.com/forms/d/e/${form[1]}/viewform)\n\n`;
+      }
+
+      collected.unhandledEmbeds.add(src);
+      return `\n\n[Open embedded content](${src})\n\n`;
+    },
+  });
 
   service.addRule('link', {
     filter: (node) => node.nodeName === 'A' && node.getAttribute('href'),
     replacement: (content, node) => {
-      const href = toRelative(node.getAttribute('href'));
+      const raw = node.getAttribute('href') ?? '';
+      const document = localDocumentPath(raw);
+      if (document) collected.assets.set(raw.split('?')[0], document);
+      const href = document ?? toRelative(raw);
       if (href.startsWith('/')) collected.internalLinks.add(href);
       const text = content.replace(/\s+/g, ' ').trim();
       if (!text) return '';
@@ -106,8 +135,29 @@ export function escapeStrayTags(markdown) {
   );
 }
 
+export function balanceEmphasis(markdown) {
+  let fenced = false;
+
+  return markdown
+    .split('\n')
+    .map((line) => {
+      if (line.trimStart().startsWith('```')) {
+        fenced = !fenced;
+        return line;
+      }
+      if (fenced) return line;
+
+      const marks = line.match(/\*\*/g);
+      if (!marks || marks.length % 2 === 0) return line;
+
+      const index = line.lastIndexOf('**');
+      return `${line.slice(0, index)}${line.slice(index + 2)}`;
+    })
+    .join('\n');
+}
+
 function tidy(markdown) {
-  return `${escapeStrayTags(markdown)
+  return `${balanceEmphasis(escapeStrayTags(markdown).replace(/\*\*\s*\*\*/g, ''))
     .replace(/ /g, ' ')
     .replace(/[ \t]+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
@@ -219,7 +269,11 @@ async function main() {
 
     const html = await readFile(join(HTML_DIR, `${entry.key}.html`), 'utf8');
     const record = extract(html, entry);
-    const collected = { assets: new Map(), internalLinks: new Set() };
+    const collected = {
+      assets: new Map(),
+      internalLinks: new Set(),
+      unhandledEmbeds: new Set(),
+    };
     const service = createTurndown(collected);
     const markdown = tidy(service.turndown(record.bodyHtml));
 
@@ -229,7 +283,15 @@ async function main() {
     const data = record.kind === 'post' ? postFrontmatter(record) : pageFrontmatter(record);
     const file = outputFor(record);
     if (protectedFiles.has(file)) {
-      manifest.push({ url: entry.url, slug: entry.slug, kind, status: 'hand-authored', file });
+      manifest.push({
+        url: entry.url,
+        slug: entry.slug,
+        kind,
+        status: 'hand-authored',
+        permalink: record.permalink,
+        title: record.title,
+        file,
+      });
       continue;
     }
     await ensureDir(file);
@@ -255,6 +317,7 @@ async function main() {
       ],
       warnings: record.warnings,
       internalLinks: [...collected.internalLinks],
+      unhandledEmbeds: [...collected.unhandledEmbeds],
       assets: [...collected.assets.keys()],
     });
   }

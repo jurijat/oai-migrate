@@ -16,6 +16,9 @@
 - from: /calendar
   to: https://events.openapis.org
   reason: legacy url, 404 on WordPress
+- from: /category/blog/presentation
+  to: /category/presentation
+  reason: legacy url, 404 on WordPress
 - from: /contact
   to: /
   reason: legacy url, 404 on WordPress
@@ -28,6 +31,9 @@
 - from: /eventscalendar
   to: https://events.openapis.org
   reason: moved to events.openapis.org
+- from: /get-involved
+  to: /participatehow-to-contribute
+  reason: placeholder page, superseded
 - from: /get-involved/about
   to: https://events.openapis.org
   reason: moved to events.openapis.org

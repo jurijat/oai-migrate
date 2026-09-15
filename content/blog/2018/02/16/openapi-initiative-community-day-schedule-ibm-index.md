@@ -27,7 +27,7 @@ generated: true
         -   Using Swagger for your OAS needs – Ron Ratovsky
         -   And more
 
-    ******PHASE III -11:30-12:45******
+    **PHASE III -11:30-12:45**
 
     -   Intro to specs
         -   **Jonathan Stoikovitch**
@@ -39,9 +39,7 @@ generated: true
         -   **Marsh Gardiner**
         -   **Ron Ratovsky**
     -   Implementation coaching
-        -   **Michele Titolo**
-
-    **PHASE IV – Wrap UP**
+        -   **Michele TitoloPHASE IV – Wrap UP**
 
     -   **Erin McKean**
         -   Be an OAS Evangelist

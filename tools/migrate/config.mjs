@@ -34,6 +34,7 @@ export const DROPPED = {
 export const GENERATED = new Set(['blog']);
 
 export const MOVED = {
+  'get-involved': '/participatehow-to-contribute',
   eventscalendar: 'https://events.openapis.org',
   events: 'https://events.openapis.org',
   'get-involved/about': 'https://events.openapis.org',
@@ -47,6 +48,7 @@ export const LEGACY = {
   '/governance': '/participatehow-to-contribute/governance',
   '/specification/v3implementations-form': '/specificationrepo/share-your-oas-implementations',
   '/calendar': 'https://events.openapis.org',
+  '/category/blog/presentation': '/category/presentation',
   '/contact': '/',
   '/membership/members': '/membershipmembers',
   '/specification/v3insights': '/specificationrepo',
