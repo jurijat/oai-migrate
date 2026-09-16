@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import { PostList } from '@/components/PostList';
 import { getPosts } from '@/lib/content';
+import { listingMetadata } from '@/lib/metadata';
 
-export const metadata: Metadata = {
-  title: 'Blog',
-  alternates: { canonical: '/blog' },
-};
+export const metadata: Metadata = listingMetadata(
+  'Blog',
+  'News, announcements and technical writing from the OpenAPI Initiative community.',
+  '/blog',
+);
 
 export default async function BlogIndex() {
   const posts = await getPosts();

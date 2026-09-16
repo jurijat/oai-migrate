@@ -162,6 +162,18 @@ rationale. Check off each task as it lands.
 - [x] `[iframe src=…]` preserved as a link rather than dropped (a Google Slides deck)
 - [x] `check:render` and an e2e test now fail on shortcode leakage
 
+### Favicon, OpenGraph and the mobile menu
+
+- [x] Favicon set generated from the official mark (32/180/192/512) and declared in metadata —
+      previously only an unreferenced `favicon.ico`, which browsers probe at the domain root and
+      so 404'd under a base path
+- [x] OpenGraph and Twitter card metadata site-wide and per page; the live WordPress site has
+      none, so shared links produce bare cards today
+- [x] 1200x630 OG image generated from the logo on the brand dark ground
+- [x] Canonical URL on the home page (content pages already had one)
+- [x] Mobile menu scrolls itself with the page locked behind it — it was `static` inside the
+      sticky header, so its ~40 links ran past the viewport with no way to reach them
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)

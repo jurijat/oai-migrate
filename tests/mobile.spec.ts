@@ -52,3 +52,32 @@ test('mobile navigation opens and closes', async ({ page }) => {
   await expect(nav).toBeVisible();
   await expect(nav.getByRole('link', { name: 'FAQ' })).toBeVisible();
 });
+
+test('open mobile menu scrolls itself and locks the page behind it', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Toggle navigation' }).click();
+
+  const state = await page.evaluate(() => {
+    const nav = document.querySelector('#mobile-nav') as HTMLElement;
+    const box = nav.getBoundingClientRect();
+    const pageBefore = window.scrollY;
+    nav.scrollTop = 250;
+    return {
+      fitsInViewport: box.bottom <= window.innerHeight + 1,
+      panelScrollable: nav.scrollHeight > nav.clientHeight,
+      panelScrolled: nav.scrollTop > 0,
+      bodyLocked: getComputedStyle(document.body).overflow === 'hidden',
+      pageStayedPut: window.scrollY === pageBefore,
+    };
+  });
+
+  expect(state.fitsInViewport).toBe(true);
+  expect(state.panelScrollable).toBe(true);
+  expect(state.panelScrolled).toBe(true);
+  expect(state.bodyLocked).toBe(true);
+  expect(state.pageStayedPut).toBe(true);
+
+  await page.getByRole('button', { name: 'Toggle navigation' }).click();
+  await expect(page.locator('#mobile-nav')).toBeHidden();
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).not.toBe('hidden');
+});

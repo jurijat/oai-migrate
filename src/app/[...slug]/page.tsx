@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { DocumentView } from '@/components/DocumentView';
 import { decodedPermalink, findByPermalink, getPages, getPosts } from '@/lib/content';
+import { documentMetadata } from '@/lib/metadata';
 
 type Params = { slug: string[] };
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params;
   const doc = await findByPermalink(slug.join('/'));
   if (!doc) return {};
-  return { title: doc.title, alternates: { canonical: doc.permalink } };
+  return documentMetadata(doc);
 }
 
 export default async function DocumentPage({ params }: { params: Promise<Params> }) {

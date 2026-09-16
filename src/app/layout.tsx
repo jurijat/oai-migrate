@@ -7,6 +7,7 @@ import { LfBar } from '@/components/LfBar';
 import { Navbar } from '@/components/Navbar';
 import { Providers } from '@/app/providers';
 import { getNav } from '@/lib/content';
+import { ICONS, OG_IMAGE, SITE_DESCRIPTION, SITE_NAME } from '@/lib/metadata';
 import { isProduction, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
 
@@ -20,11 +21,25 @@ const onest = Onest({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'OpenAPI Initiative',
-    template: '%s – OpenAPI Initiative',
+    default: SITE_NAME,
+    template: `%s – ${SITE_NAME}`,
   },
-  description:
-    'The OpenAPI Initiative provides an open source, technical community within which industry participants may easily contribute to building a vendor-neutral, portable and open specification for providing technical metadata for REST APIs.',
+  description: SITE_DESCRIPTION,
+  icons: ICONS,
+  openGraph: {
+    type: 'website',
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: `${siteUrl}/`,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
 };
 
 export default async function RootLayout({ children }: { children: ReactNode }) {

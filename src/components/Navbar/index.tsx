@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CloseIcon, MenuIcon } from '@/components/Icons';
 import { Search } from '@/components/Search';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -43,6 +43,16 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
   const [openedAt, setOpenedAt] = useState<string | null>(null);
   const open = openedAt === pathname;
   const close = () => setOpenedAt(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const body = document.body;
+    const previous = body.style.overflow;
+    body.style.overflow = 'hidden';
+    return () => {
+      body.style.overflow = previous;
+    };
+  }, [open]);
 
   return (
     <header className="bg-brand-bg/90 sticky top-0 z-50 border-b border-brand-separator backdrop-blur">
@@ -120,8 +130,12 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
         </div>
       </nav>
 
-      <div id="mobile-nav" hidden={!open} className="border-t border-brand-separator md:hidden">
-        <ul className="mx-auto max-w-content space-y-1 px-6 py-4">
+      <div
+        id="mobile-nav"
+        hidden={!open}
+        className="absolute inset-x-0 top-full max-h-[78dvh] overflow-y-auto overscroll-contain border-t border-brand-separator bg-brand-bg shadow-xl md:hidden"
+      >
+        <ul className="mx-auto max-w-content space-y-1 px-6 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4">
           {nav.map((item) => (
             <li key={item.label}>
               {item.href ? (

@@ -131,3 +131,25 @@ test('wordpress shortcodes do not reach the page', async ({ page }) => {
   expect(text).not.toMatch(/\[icon\b|\[tmm\b|\[gravityform\b/);
   await expect(page.getByText('Evolve the Spec', { exact: true })).toBeVisible();
 });
+
+test('pages carry opengraph, twitter and icon metadata', async ({ page }) => {
+  await page.goto('/blog/2026/05/19/announcing-arazzo-specification-1-1/');
+  const head = page.locator('head');
+  await expect(head.locator('meta[property="og:title"]')).toHaveAttribute(
+    'content',
+    'Announcing Arazzo Specification 1.1',
+  );
+  await expect(head.locator('meta[property="og:type"]')).toHaveAttribute('content', 'article');
+  await expect(head.locator('meta[name="twitter:card"]')).toHaveAttribute(
+    'content',
+    'summary_large_image',
+  );
+  await expect(head.locator('link[rel="canonical"]')).toHaveCount(1);
+  expect(await head.locator('link[rel="icon"]').count()).toBeGreaterThan(0);
+  expect(await head.locator('link[rel="apple-touch-icon"]').count()).toBeGreaterThan(0);
+
+  const ogImage = await head.locator('meta[property="og:image"]').first().getAttribute('content');
+  expect(ogImage).toMatch(/^https?:\/\//);
+  const response = await page.request.get(new URL(ogImage!).pathname);
+  expect(response.status()).toBe(200);
+});

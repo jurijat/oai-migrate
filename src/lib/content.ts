@@ -137,6 +137,23 @@ export async function findByPermalink(path: string): Promise<Post | Page | null>
   return posts.find(match) ?? pages.find(match) ?? null;
 }
 
+const EXCERPT_LENGTH = 200;
+
+export function excerpt(body: string, limit = EXCERPT_LENGTH): string {
+  const text = body
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/[#>*_`|]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (text.length <= limit) return text;
+  const cut = text.slice(0, limit);
+  return `${cut.slice(0, cut.lastIndexOf(' ')).trimEnd()}…`;
+}
+
 export function isPost(doc: Post | Page): doc is Post {
   return 'date' in doc;
 }

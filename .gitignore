@@ -13,3 +13,5 @@ public/img
 tests/**/error-context.md
 public/search-index.json
 public/brand/openapi-logo*.webp
+public/brand/icon-*.png
+public/brand/opengraph.png
