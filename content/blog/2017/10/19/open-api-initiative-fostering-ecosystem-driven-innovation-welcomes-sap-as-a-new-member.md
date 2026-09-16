@@ -17,7 +17,7 @@ The Open API Initiative (OAI) project is pleased to announce that SAP has joined
 
 OAI launched in 2015 to standardize how APIs are described. The recently released OpenAPI Specification v3 defines the interfaces for RESTful APIs, describing resources and operations in a format that is easily discoverable and understandable by both machines and humans. For more information about the project and specification, visit https://www.openapis.org/.
 
-\[embedyt\] https://www.youtube.com/watch?v=12YP6vNqA\_E\[/embedyt\]
+[Watch the video](https://www.youtube.com/watch?v=12YP6vNqA_E)
 
 “SAP is committed to openness and choice for our customers,” said Björn Goerke, CTO of SAP and president of SAP Cloud Platform at SAP. “SAP uses machine-readable Open API specifications for our enterprise APIs. We believe this fosters ecosystem-driven innovation on top of our SAP Cloud Platform.”
 

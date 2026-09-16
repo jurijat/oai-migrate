@@ -135,7 +135,9 @@ export function escapeStrayTags(markdown) {
   );
 }
 
-const SHORTCODE = /\\?\[(\/?[a-z][a-z0-9_]*)(?=[\s\]])([^\]\n]*?)\\?\](?!\()/g;
+const PAIRED_SHORTCODE = /\\?\[([a-z][a-z0-9_]*)(?:\s[^\]\n]*?)?\\?\]([\s\S]*?)\\?\[\/\1\\?\]/g;
+const SHORTCODE = /\\?\[(\/?[a-z][a-z0-9_]*)(?=[\s\\\]])([^\]\n]*?)\\?\](?!\()/g;
+const BARE_URL = /^<?(https?:\/\/[^\s<>]+)>?$/;
 
 function unescapeAttr(value) {
   return value
@@ -147,7 +149,18 @@ function unescapeAttr(value) {
 export function stripShortcodes(markdown) {
   const removed = [];
 
-  const cleaned = markdown.replace(SHORTCODE, (match, name, attrs) => {
+  const unpaired = markdown.replace(PAIRED_SHORTCODE, (_match, name, inner) => {
+    const body = unescapeAttr(inner).trim();
+    const url = BARE_URL.exec(body);
+    if (url) {
+      removed.push(`${name} -> ${url[1]}`);
+      return `\n\n[Watch the video](${url[1]})\n\n`;
+    }
+    removed.push(name);
+    return body;
+  });
+
+  const cleaned = unpaired.replace(SHORTCODE, (match, name, attrs) => {
     const source = /src=["']([^"']+)["']/.exec(unescapeAttr(attrs));
     if (source) {
       removed.push(`${name} -> ${source[1]}`);

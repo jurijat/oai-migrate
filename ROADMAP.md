@@ -176,6 +176,13 @@ rationale. Check off each task as it lands.
 - [x] Mobile menu scrolls itself with the page locked behind it — it was `static` inside the
       sticky header, so its ~40 links ran past the viewport with no way to reach them
 
+### Chrome and shortcode follow-ups
+
+- [x] Paired shortcodes handled — `[embedyt] url [/embedyt]` survived because turndown escapes the
+      closing bracket, which broke the lookahead; the URL is now kept as a video link
+- [x] Linux Foundation bar uses the official `lfprojects_banner_other.svg` rather than plain text
+- [x] Mobile menu fills from the header to the bottom of the viewport and scrolls
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)

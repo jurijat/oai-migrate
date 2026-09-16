@@ -62,8 +62,11 @@ test('open mobile menu scrolls itself and locks the page behind it', async ({ pa
     const box = nav.getBoundingClientRect();
     const pageBefore = window.scrollY;
     nav.scrollTop = 250;
+    const header = document.querySelector('header')!.getBoundingClientRect();
     return {
       fitsInViewport: box.bottom <= window.innerHeight + 1,
+      startsAtHeader: Math.abs(box.top - header.bottom) < 2,
+      fillsToBottom: Math.abs(box.bottom - window.innerHeight) < 2,
       panelScrollable: nav.scrollHeight > nav.clientHeight,
       panelScrolled: nav.scrollTop > 0,
       bodyLocked: getComputedStyle(document.body).overflow === 'hidden',
@@ -72,6 +75,8 @@ test('open mobile menu scrolls itself and locks the page behind it', async ({ pa
   });
 
   expect(state.fitsInViewport).toBe(true);
+  expect(state.startsAtHeader).toBe(true);
+  expect(state.fillsToBottom).toBe(true);
   expect(state.panelScrollable).toBe(true);
   expect(state.panelScrolled).toBe(true);
   expect(state.bodyLocked).toBe(true);

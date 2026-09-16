@@ -22,11 +22,16 @@ const STRIP = [
   '.meta-comment-count',
 ];
 
+const PAIRED_SHORTCODE = /\[([a-z][a-z0-9_]*)(?:\s[^\]\n]*)?\][\s\S]*?\[\/\1\]/g;
 const SHORTCODE = /\[\/?[a-z][a-z0-9_]*(?=[\s\]])[^\]\n]*\]/g;
 
 function textOf(node) {
   const spaced = (node.html() ?? '').replace(/<[^>]+>/g, ' ');
-  return cheerio.load(`<body>${spaced}</body>`)('body').text().replace(SHORTCODE, ' ');
+  return cheerio
+    .load(`<body>${spaced}</body>`)('body')
+    .text()
+    .replace(PAIRED_SHORTCODE, ' ')
+    .replace(SHORTCODE, ' ');
 }
 
 function words(text) {

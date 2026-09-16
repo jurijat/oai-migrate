@@ -153,3 +153,22 @@ test('pages carry opengraph, twitter and icon metadata', async ({ page }) => {
   const response = await page.request.get(new URL(ogImage!).pathname);
   expect(response.status()).toBe(200);
 });
+
+test('linux foundation bar uses the official banner', async ({ page }) => {
+  await page.goto('/');
+  const banner = page.getByRole('link', { name: 'The Linux Foundation Projects' }).locator('img');
+  await expect(banner).toBeVisible();
+  await expect(banner).toHaveAttribute('src', /lfprojects-banner\.svg$/);
+  const src = await banner.getAttribute('src');
+  const response = await page.request.get(new URL(src!, page.url()).pathname);
+  expect(response.status()).toBe(200);
+});
+
+test('paired wordpress shortcodes become links', async ({ page }) => {
+  await page.goto(
+    '/blog/presentation/2017/03/08/api-design-and-whats-new-with-open-api-google-cloud-next-17/',
+  );
+  const text = await page.locator('article').innerText();
+  expect(text).not.toContain('embedyt');
+  await expect(page.locator('iframe[src*="youtube-nocookie"]')).toBeVisible();
+});
