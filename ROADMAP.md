@@ -183,6 +183,14 @@ rationale. Check off each task as it lands.
 - [x] Linux Foundation bar uses the official `lfprojects_banner_other.svg` rather than plain text
 - [x] Mobile menu fills from the header to the bottom of the viewport and scrolls
 
+### Membership benefits layout
+
+- [x] Split into tonal sections rather than one flat prose column — the content was complete
+      (all 34 headings matched the source) but rendered as an undifferentiated wall
+- [x] `prose` inside `band-dark` / `band-brand` inherits the band's palette; it was rendering
+      near-black body text on the dark band
+- [x] Duplicated intro paragraph from the source dropped
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)

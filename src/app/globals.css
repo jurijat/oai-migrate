@@ -129,6 +129,48 @@ body {
     text-underline-offset: 0.2em;
   }
 
+  .band-dark .prose {
+    --tw-prose-body: var(--band-dark-fg);
+    --tw-prose-headings: var(--band-dark-fg);
+    --tw-prose-bold: var(--band-dark-fg);
+    --tw-prose-links: #76dd2a;
+    --tw-prose-counters: var(--band-dark-muted);
+    --tw-prose-bullets: var(--band-dark-muted);
+    --tw-prose-hr: rgba(255, 255, 255, 0.16);
+    --tw-prose-quotes: var(--band-dark-fg);
+    --tw-prose-quote-borders: #76dd2a;
+    --tw-prose-captions: var(--band-dark-muted);
+    --tw-prose-code: var(--band-dark-fg);
+    --tw-prose-pre-code: var(--band-dark-fg);
+    --tw-prose-pre-bg: rgba(255, 255, 255, 0.06);
+    --tw-prose-th-borders: rgba(255, 255, 255, 0.24);
+    --tw-prose-td-borders: rgba(255, 255, 255, 0.16);
+  }
+
+  .band-dark .prose code {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .band-brand .prose {
+    --tw-prose-body: var(--band-brand-fg);
+    --tw-prose-headings: var(--band-brand-fg);
+    --tw-prose-bold: var(--band-brand-fg);
+    --tw-prose-links: var(--band-dark-bg);
+    --tw-prose-counters: var(--band-brand-muted);
+    --tw-prose-bullets: var(--band-brand-muted);
+    --tw-prose-hr: rgba(21, 25, 28, 0.2);
+    --tw-prose-quotes: var(--band-brand-fg);
+    --tw-prose-quote-borders: var(--band-dark-bg);
+    --tw-prose-captions: var(--band-brand-muted);
+    --tw-prose-code: var(--band-brand-fg);
+    --tw-prose-th-borders: rgba(21, 25, 28, 0.28);
+    --tw-prose-td-borders: rgba(21, 25, 28, 0.2);
+  }
+
+  .band-brand .prose code {
+    background-color: rgba(21, 25, 28, 0.1);
+  }
+
   .band-dark .band-muted {
     color: var(--band-dark-muted);
   }

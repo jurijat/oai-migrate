@@ -172,3 +172,34 @@ test('paired wordpress shortcodes become links', async ({ page }) => {
   expect(text).not.toContain('embedyt');
   await expect(page.locator('iframe[src*="youtube-nocookie"]')).toBeVisible();
 });
+
+test('tonal bands keep prose readable', async ({ page }) => {
+  await page.goto('/membership-benefits/');
+
+  const readable = await page.evaluate(() => {
+    const luminance = (colour: string) => {
+      const [r, g, b] = colour
+        .match(/\d+/g)!
+        .slice(0, 3)
+        .map(Number)
+        .map((value) => {
+          const channel = value / 255;
+          return channel <= 0.03928 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4;
+        });
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    };
+
+    return [...document.querySelectorAll('section.band-dark, section.band-brand')]
+      .map((band) => {
+        const text = band.querySelector('.prose p, .prose li');
+        if (!text) return null;
+        const a = luminance(getComputedStyle(text).color);
+        const b = luminance(getComputedStyle(band).backgroundColor);
+        return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+      })
+      .filter((value): value is number => value !== null);
+  });
+
+  expect(readable.length).toBeGreaterThan(0);
+  for (const ratio of readable) expect(ratio).toBeGreaterThan(4.5);
+});
