@@ -84,8 +84,13 @@ Composed pages use sections rather than raw markup:
 
 `tone` is `default`, `dark` or `brand`. Pass `prose` to a `Section` whose children are Markdown.
 
-Pass props as children rather than arrays — `<Action>` elements inside `<Hero>`, not
-`actions={[…]}`. Multi-line array attributes are dropped when nested inside another component.
+**Use string and boolean attributes, never JSX expressions.** `columns="4"` works; `columns={4}`
+is silently dropped, as are `items={[…]}` and `actions={[…]}`. This has bitten three separate
+components. Where a component needs structured input, pass it as children — `<Action>` elements
+inside `<Hero>`, `<Card>` elements inside `<CardGrid>` — which is also easier to write.
+
+Available layout components: `Hero`, `Section` (with `tone`, `center`, `prose`, `split`),
+`CardGrid` + `Card`, `Quote`, `BenefitGrid` + `Benefit`, `CTA`, `Action`, `AnnouncementBar`.
 
 ## Code style
 

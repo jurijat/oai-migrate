@@ -71,6 +71,14 @@ body {
     -webkit-overflow-scrolling: touch;
   }
 
+  .card-body > :first-child {
+    margin-top: 0;
+  }
+
+  .card-body > :last-child {
+    margin-bottom: 0;
+  }
+
   .table-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;

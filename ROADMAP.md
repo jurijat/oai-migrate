@@ -191,6 +191,14 @@ rationale. Check off each task as it lands.
       near-black body text on the dark band
 - [x] Duplicated intro paragraph from the source dropped
 
+### Membership benefits: card layouts
+
+- [x] Benefit categories, personas, FAQ, testimonials and the join CTAs are card grids, matching
+      the live page's 2/3/4-column layouts rather than one stacked column
+- [x] Member landscape moved up under the hero, where the live page shows it
+- [x] `CardGrid` takes `columns` as a string — MDX silently drops JSX expression attributes, the
+      same fault that hit `items={[…]}` and `actions={[…]}`; documented in CONVENTIONS.md
+
 ### Phase 6 follow-ups
 
 - [x] Percent-encoded permalinks resolve on a static host (directories written decoded)

@@ -148,6 +148,43 @@ export function Benefit({
   );
 }
 
+const COLUMNS: Record<string, string> = {
+  '2': 'md:grid-cols-2',
+  '3': 'md:grid-cols-3',
+  '4': 'md:grid-cols-2 lg:grid-cols-4',
+};
+
+export function CardGrid({
+  columns = '3',
+  children,
+}: {
+  columns?: string | number;
+  children?: ReactNode;
+}) {
+  const track = COLUMNS[String(columns)] ?? COLUMNS['3'];
+  return <div className={`grid gap-6 ${track}`}>{children}</div>;
+}
+
+export function Card({ title, children }: { title?: string; children?: ReactNode }) {
+  return (
+    <div className="rounded-4xl bg-brand-card p-7">
+      {title ? <h3 className="mb-3 mt-0 text-lg font-semibold tracking-oai">{title}</h3> : null}
+      <div className="card-body">{children}</div>
+    </div>
+  );
+}
+
+export function Quote({ author, children }: { author?: string; children?: ReactNode }) {
+  return (
+    <figure className="m-0 flex h-full flex-col rounded-4xl bg-brand-card p-7">
+      <blockquote className="m-0 flex-1 border-0 p-0 not-italic">{children}</blockquote>
+      {author ? (
+        <figcaption className="mt-4 text-sm font-medium text-brand-muted">{author}</figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
 export function CTA({
   title,
   tone = 'default',
