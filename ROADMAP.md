@@ -171,6 +171,8 @@ rationale. Check off each task as it lands.
       none, so shared links produce bare cards today
 - [x] 1200x630 OG image generated from the logo on the brand dark ground
 - [x] Canonical URL on the home page (content pages already had one)
+- [x] `check:basepath` also fails when a reference repeats the base path — `og:image` shipped as
+      `/oai-migrate/oai-migrate/...` because `metadataBase` already carries it
 - [x] Mobile menu scrolls itself with the page locked behind it — it was `static` inside the
       sticky header, so its ~40 links ran past the viewport with no way to reach them
 

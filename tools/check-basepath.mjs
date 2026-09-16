@@ -24,15 +24,33 @@ async function main() {
 
   const files = await walk(OUT);
   const offenders = new Map();
+  const duplicated = new Map();
+  const doubled = `${BASE_PATH}${BASE_PATH}/`;
 
   for (const file of files) {
     const html = await readFile(file, 'utf8');
+
     for (const [, ref] of html.matchAll(ROOT_REF)) {
       if (ref.startsWith(`${BASE_PATH}/`) || ref === BASE_PATH) continue;
       const seen = offenders.get(ref) ?? { files: new Set() };
       seen.files.add(file);
       offenders.set(ref, seen);
     }
+
+    for (const [, ref] of html.matchAll(/(?:src|href|content)="([^"]*)"/g)) {
+      if (!ref.includes(doubled)) continue;
+      const seen = duplicated.get(ref) ?? { files: new Set() };
+      seen.files.add(file);
+      duplicated.set(ref, seen);
+    }
+  }
+
+  if (duplicated.size) {
+    console.error(`${duplicated.size} reference(s) repeat the base path ${BASE_PATH}:`);
+    for (const [ref, seen] of [...duplicated].slice(0, 15)) {
+      console.error(`  ${ref}   (e.g. ${[...seen.files][0]})`);
+    }
+    process.exit(1);
   }
 
   if (offenders.size) {

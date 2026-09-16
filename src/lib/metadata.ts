@@ -8,7 +8,7 @@ export const SITE_DESCRIPTION =
   'The OpenAPI Initiative provides an open source, technical community within which industry participants may easily contribute to building a vendor-neutral, portable and open specification for providing technical metadata for REST APIs.';
 
 export const OG_IMAGE = {
-  url: withBasePath('/brand/opengraph.png'),
+  url: '/brand/opengraph.png',
   width: 1200,
   height: 630,
   alt: SITE_NAME,
