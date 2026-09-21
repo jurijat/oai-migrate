@@ -3,10 +3,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { CloseIcon, MenuIcon } from '@/components/Icons';
+import { CloseIcon, GitHubIcon, LinkedInIcon, MenuIcon } from '@/components/Icons';
 import { Search } from '@/components/Search';
-import { ThemeToggle } from '@/components/ThemeToggle';
-import type { NavItem } from '@/lib/content';
+import type { NavItem, SocialLink } from '@/lib/content';
 import { withBasePath } from '@/lib/site';
 
 function isExternal(href: string) {
@@ -38,7 +37,9 @@ function ItemLink({
   );
 }
 
-export function Navbar({ nav }: { nav: NavItem[] }) {
+const SOCIAL_ICONS = { linkedin: LinkedInIcon, github: GitHubIcon };
+
+export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }) {
   const pathname = usePathname();
   const [openedAt, setOpenedAt] = useState<string | null>(null);
   const open = openedAt === pathname;
@@ -73,7 +74,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
     <>
       <header
         ref={header}
-        className="bg-brand-bg/90 sticky top-0 z-50 border-b border-brand-separator backdrop-blur"
+        className="sticky top-0 z-50 border-b border-brand-separator bg-brand-bg"
       >
         <nav
           aria-label="Main"
@@ -85,15 +86,7 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
               alt="OpenAPI Initiative"
               width={560}
               height={152}
-              className="h-9 w-auto dark:hidden"
-            />
-            <img
-              src={withBasePath('/brand/openapi-logo-dark.webp')}
-              alt=""
-              aria-hidden="true"
-              width={560}
-              height={152}
-              className="hidden h-9 w-auto dark:block"
+              className="h-9 w-auto"
             />
           </Link>
 
@@ -134,8 +127,25 @@ export function Navbar({ nav }: { nav: NavItem[] }) {
           </ul>
 
           <div className="flex items-center gap-2">
+            <ul className="hidden items-center gap-3 md:flex">
+              {social.map((item) => {
+                const Glyph = SOCIAL_ICONS[item.icon];
+                return (
+                  <li key={item.href}>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={item.label}
+                      className="block p-1 text-brand-muted transition-colors hover:text-[color:var(--brand-link)]"
+                    >
+                      <Glyph />
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
             <Search />
-            <ThemeToggle />
             <button
               type="button"
               onClick={() => setOpenedAt(open ? null : pathname)}

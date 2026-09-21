@@ -185,6 +185,20 @@ export async function getNav(): Promise<NavItem[]> {
   return navSchema.parse(yaml.load(await readFile('data/nav.yaml', 'utf8')));
 }
 
+const socialSchema = z.array(
+  z.object({
+    label: z.string(),
+    href: z.string(),
+    icon: z.enum(['linkedin', 'github']),
+  }),
+);
+
+export type SocialLink = z.infer<typeof socialSchema>[number];
+
+export async function getSocial(): Promise<SocialLink[]> {
+  return socialSchema.parse(yaml.load(await readFile('data/social.yaml', 'utf8')));
+}
+
 const testimonialSchema = z.array(
   z.object({
     slug: z.string(),

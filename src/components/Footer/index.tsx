@@ -1,65 +1,72 @@
-import Link from 'next/link';
-import { getNav } from '@/lib/content';
+import { GitHubIcon, LinkedInIcon } from '@/components/Icons';
+import { CookieSettingsLink } from '@/components/ConsentManager';
+import { getSocial } from '@/lib/content';
 
-const LEGAL = [
-  { label: 'Trademark Usage', href: 'https://www.linuxfoundation.org/trademark-usage' },
-  { label: 'Privacy Policy', href: 'https://www.linuxfoundation.org/privacy' },
-  { label: 'Terms of Use', href: 'https://www.linuxfoundation.org/terms' },
-];
+const SOCIAL_ICONS = { linkedin: LinkedInIcon, github: GitHubIcon };
 
-const SOCIAL = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/open-api-initiative/' },
-  { label: 'GitHub', href: 'https://github.com/oai' },
-];
-
-function NavLink({ href, label }: { href: string; label: string }) {
-  if (href.startsWith('/')) {
-    return (
-      <Link href={href} className="hover:text-brand-green">
-        {label}
-      </Link>
-    );
-  }
-  return (
-    <a href={href} target="_blank" rel="noreferrer" className="hover:text-brand-green">
-      {label}
-    </a>
-  );
-}
+const LEGAL = {
+  trademark: 'https://www.linuxfoundation.org/trademark-usage',
+  privacy: 'https://www.linuxfoundation.org/privacy',
+  terms: 'https://www.linuxfoundation.org/terms',
+};
 
 export async function Footer() {
-  const nav = await getNav();
-  const columns = nav.filter((item) => item.children?.length).slice(0, 4);
+  const social = await getSocial();
 
   return (
-    <footer className="band-dark mt-24">
-      <div className="mx-auto max-w-content px-6 py-16">
-        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
-          {columns.map((column) => (
-            <div key={column.label}>
-              <h2 className="mb-3 font-semibold tracking-oai">{column.label}</h2>
-              <ul className="band-muted space-y-2 text-sm">
-                {column.children?.map((child) => (
-                  <li key={`${child.label}-${child.href}`}>
-                    <NavLink href={child.href} label={child.label} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+    <footer className="bg-[#1c1c1c] text-[#777777]">
+      <div className="mx-auto flex max-w-content flex-col gap-6 px-6 py-10 text-xs leading-relaxed">
+        <p className="m-0 max-w-4xl">
+          Copyright &copy; The Linux Foundation&reg;. All rights reserved. The Linux Foundation has
+          registered trademarks and uses trademarks. For a list of trademarks of The Linux
+          Foundation, please see our{' '}
+          <a
+            href={LEGAL.trademark}
+            target="_blank"
+            rel="noreferrer"
+            className="underline hover:text-white"
+          >
+            Trademark Usage
+          </a>{' '}
+          page. Linux is a registered trademark of Linus Torvalds.{' '}
+          <a
+            href={LEGAL.privacy}
+            target="_blank"
+            rel="noreferrer"
+            className="underline hover:text-white"
+          >
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a
+            href={LEGAL.terms}
+            target="_blank"
+            rel="noreferrer"
+            className="underline hover:text-white"
+          >
+            Terms of Use
+          </a>
+        </p>
 
-        <div className="band-muted mt-12 flex flex-col gap-4 border-t border-white/15 pt-8 text-sm sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            Copyright &copy; {new Date().getFullYear()} the Linux Foundation. The OpenAPI Initiative
-            is a Linux Foundation project.
-          </p>
-          <ul className="flex flex-wrap gap-4">
-            {[...LEGAL, ...SOCIAL].map((item) => (
-              <li key={item.href}>
-                <NavLink href={item.href} label={item.label} />
-              </li>
-            ))}
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <CookieSettingsLink />
+          <ul className="flex items-center gap-4">
+            {social.map((item) => {
+              const Glyph = SOCIAL_ICONS[item.icon];
+              return (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={item.label}
+                    className="block transition-colors hover:text-white"
+                  >
+                    <Glyph />
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

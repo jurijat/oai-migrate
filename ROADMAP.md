@@ -216,6 +216,30 @@ rationale. Check off each task as it lands.
 
 ---
 
+## Fidelity pass against the live site
+
+- [x] Hero uses the real artwork (`OpenAPI-3.1.0-designs-04-scaled.jpg`, navy with dotted nodes)
+      instead of an approximated radial wash
+- [x] Buttons match live: `#94c73d`, white text, 200px radius, 18px/600
+- [x] LinkedIn and GitHub icon links in the navbar, from `data/social.yaml`
+- [x] Dark mode removed — the original never had one; `next-themes` uninstalled
+- [x] Navbar is opaque; it was `bg-brand-bg/90` + `backdrop-blur`, so scrolled content showed through
+- [x] Footer replaced with the LF copyright bar (`#1c1c1c`, the trademark paragraph, legal links,
+      social icons, cookie settings) — our 4-column nav footer was invented
+- [x] Members embed uses the live landscape parameters plus the companion `embed-item` frame
+- [x] Transcend consent manager wired up, gated to production
+- [x] Forms verified reachable; none submitted
+
+### Open decisions from this pass
+
+- [ ] **Button contrast.** White on `#94c73d` measures 2.0:1. Matching live exactly drops
+      accessibility from 100 to 96. Darkening the button to `#5f8f1f` or using dark text would
+      restore it.
+- [ ] **Footer contrast.** `#777` on `#1c1c1c` is 3.8:1, under the 4.5:1 needed at 12px. Same on
+      the live site.
+- [ ] Verify the consent dialog once DNS points at openapis.org — the Transcend bundle is
+      domain-locked and cannot run anywhere else.
+
 ## Blocked: needs your account or judgement
 
 Everything else is done. These cannot be completed from inside the repo.

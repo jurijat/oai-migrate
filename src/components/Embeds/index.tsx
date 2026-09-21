@@ -1,3 +1,5 @@
+import { MemberLandscapeFrame } from '@/components/Embeds/MemberLandscapeFrame';
+
 type FrameProps = {
   src: string;
   title: string;
@@ -51,13 +53,7 @@ export function GoogleForm({ id, title = 'Form' }: { id: string; title?: string 
 }
 
 export function MemberLandscape() {
-  return (
-    <Frame
-      src="https://landscape.openapis.org/embed/embed.html?key=openapi-initiative-members&headers=false&category-header=false&category-in-subcategory=false&title-uppercase=false&title-alignment=left&title-font-family=sans-serif&title-font-size=13&style=clean&bg-color=%23ffffff&fg-color=%2315191c&item-modal=true&item-name=false&size=lg&items-alignment=center"
-      title="OpenAPI Initiative members"
-      height={720}
-    />
-  );
+  return <MemberLandscapeFrame />;
 }
 
 export function MailingListSignup() {

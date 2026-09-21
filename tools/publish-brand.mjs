@@ -3,6 +3,7 @@ import sharp from 'sharp';
 
 const SOURCE = 'assets/brand/OpenAPI_Logo_Pantone-1.png';
 const MARK = 'assets/brand/favicon-source.png';
+const HERO = 'assets/brand/hero-background.jpg';
 const TARGET_DIR = 'public/brand';
 const WIDTH = 560;
 
@@ -56,6 +57,13 @@ async function icons() {
   return ICON_SIZES.length;
 }
 
+async function hero() {
+  const buffer = await sharp(HERO).webp({ quality: 82 }).toBuffer();
+  await writeFile(`${TARGET_DIR}/hero-background.webp`, buffer);
+  const meta = await sharp(buffer).metadata();
+  return `${meta.width}x${meta.height}`;
+}
+
 async function openGraph() {
   const logo = await sharp(SOURCE)
     .trim()
@@ -101,11 +109,12 @@ async function main() {
   await writeFile(`${TARGET_DIR}/openapi-logo-dark.webp`, onDark);
 
   const iconCount = await icons();
+  const heroSize = await hero();
   await openGraph();
 
   const meta = await sharp(onLight).metadata();
   console.log(
-    `brand: logo ${meta.width}x${meta.height} light+dark, ${iconCount} icons, opengraph ${OG.width}x${OG.height}`,
+    `brand: logo ${meta.width}x${meta.height} light+dark, ${iconCount} icons, hero ${heroSize}, opengraph ${OG.width}x${OG.height}`,
   );
 }
 

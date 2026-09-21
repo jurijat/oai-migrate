@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Social links",
+  "description": "Icon links shown in the navbar and the footer copyright bar.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["label", "href", "icon"],
+    "properties": {
+      "label": { "type": "string", "minLength": 1 },
+      "href": { "type": "string", "pattern": "^https?://" },
+      "icon": { "enum": ["linkedin", "github"] }
+    }
+  }
+}

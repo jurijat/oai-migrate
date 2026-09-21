@@ -1,7 +1,6 @@
 import typography from '@tailwindcss/typography';
 
 const config = {
-  darkMode: ['class', '[data-theme="dark"]'],
   content: ['./src/**/*.{js,ts,jsx,tsx}', './content/**/*.{md,mdx}'],
   theme: {
     screens: {
@@ -25,8 +24,6 @@ const config = {
           card: 'var(--brand-card)',
           separator: 'var(--brand-separator)',
           muted: 'var(--brand-muted)',
-          'card-dark': 'var(--brand-card-dark)',
-          'footer-bg': 'var(--brand-footer-bg)',
         },
       },
       borderRadius: {

@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import { Onest } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Analytics } from '@/components/Analytics';
+import { ConsentManager } from '@/components/ConsentManager';
 import { Footer } from '@/components/Footer';
 import { LfBar } from '@/components/LfBar';
 import { Navbar } from '@/components/Navbar';
-import { Providers } from '@/app/providers';
-import { getNav } from '@/lib/content';
+import { getNav, getSocial } from '@/lib/content';
 import { ICONS, OG_IMAGE, SITE_DESCRIPTION, SITE_NAME } from '@/lib/metadata';
 import { isProduction, siteUrl } from '@/lib/site';
 import '@/app/globals.css';
@@ -43,17 +43,16 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
-  const nav = await getNav();
+  const [nav, social] = await Promise.all([getNav(), getSocial()]);
 
   return (
-    <html lang="en" className={onest.variable} suppressHydrationWarning>
+    <html lang="en" className={onest.variable}>
       <body className="flex min-h-screen flex-col">
-        <Providers>
-          <LfBar />
-          <Navbar nav={nav} />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </Providers>
+        <LfBar />
+        <Navbar nav={nav} social={social} />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <ConsentManager enabled={isProduction} />
         <Analytics enabled={isProduction} />
       </body>
     </html>

@@ -41,7 +41,11 @@ export function AnnouncementBar({ href, children }: { href: string; children: Re
 
 export function Hero({ title, children }: { title: string; children?: ReactNode }) {
   return (
-    <section data-section="hero" className="band-dark hero-arcs">
+    <section
+      data-section="hero"
+      className="hero-artwork text-white"
+      style={{ ['--hero-image' as string]: `url(${withBasePath('/brand/hero-background.webp')})` }}
+    >
       <div className="mx-auto max-w-content px-6 py-20 text-center md:py-24">
         <h1 className="mx-auto max-w-4xl text-4xl font-semibold leading-[1.1] tracking-oai sm:text-5xl md:text-[3.5rem]">
           {title}

@@ -43,12 +43,10 @@ test('dropped WordPress page serves a redirect stub', async ({ page }) => {
   expect(html).toContain('http-equiv="refresh"');
 });
 
-test('theme toggle drives data-theme', async ({ page }) => {
+test('there is no dark mode', async ({ page }) => {
   await page.goto('/about/');
-  const html = page.locator('html');
-  await expect(html).toHaveAttribute('data-theme', 'light');
-  await page.getByRole('button', { name: 'Toggle colour theme' }).click();
-  await expect(html).toHaveAttribute('data-theme', 'dark');
+  await expect(page.getByRole('button', { name: 'Toggle colour theme' })).toHaveCount(0);
+  await expect(page.locator('html')).not.toHaveAttribute('data-theme', /.+/);
 });
 
 test('home page renders composed sections in the site rhythm', async ({ page }) => {
@@ -56,7 +54,7 @@ test('home page renders composed sections in the site rhythm', async ({ page }) 
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     "The world's most widely used API description standard",
   );
-  await expect(page.locator('[data-section="hero"].band-dark')).toBeVisible();
+  await expect(page.locator('[data-section="hero"].hero-artwork')).toBeVisible();
   await expect(page.locator('.band-brand')).toBeVisible();
   await expect(page.getByRole('heading', { name: '3 Benefits of OpenAPI' })).toBeVisible();
   expect(await page.locator('.btn-green, .btn-outline').count()).toBeGreaterThan(4);
@@ -114,15 +112,55 @@ test('an html comment in an mdx page does not break the build', async ({ page })
   expect(await page.content()).not.toContain('Editors: HTML comments are safe');
 });
 
-test('logo has a light and a dark variant', async ({ page }) => {
+test('navbar shows the official logo and the social links', async ({ page }) => {
   await page.goto('/');
-  const light = page.locator('img[src*="openapi-logo.webp"]');
-  const dark = page.locator('img[src*="openapi-logo-dark.webp"]');
-  await expect(light).toBeVisible();
-  await expect(dark).toBeHidden();
-  await page.getByRole('button', { name: 'Toggle colour theme' }).click();
-  await expect(dark).toBeVisible();
-  await expect(light).toBeHidden();
+  await expect(page.locator('header img[src*="openapi-logo.webp"]')).toBeVisible();
+  await expect(page.locator('header img[src*="openapi-logo-dark.webp"]')).toHaveCount(0);
+
+  const nav = page.getByRole('navigation', { name: 'Main' });
+  await expect(nav.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute(
+    'href',
+    'https://www.linkedin.com/company/open-api-initiative/',
+  );
+  await expect(nav.getByRole('link', { name: 'GitHub' })).toHaveAttribute(
+    'href',
+    'https://github.com/oai',
+  );
+});
+
+test('hero uses the real background artwork', async ({ page }) => {
+  await page.goto('/');
+  const hero = page.locator('[data-section="hero"]');
+  const image = await hero.evaluate((el) => getComputedStyle(el).backgroundImage);
+  expect(image).toContain('hero-background.webp');
+  const src = /url\("?([^")]+)"?\)/.exec(image)?.[1];
+  const response = await page.request.get(new URL(src!, page.url()).pathname);
+  expect(response.status()).toBe(200);
+});
+
+test('footer is the linux foundation copyright bar', async ({ page }) => {
+  await page.goto('/');
+  const footer = page.locator('footer');
+  await expect(footer).toContainText('Copyright © The Linux Foundation');
+  await expect(footer).toContainText('Linux is a registered trademark of Linus Torvalds');
+  for (const name of ['Trademark Usage', 'Privacy Policy', 'Terms of Use', 'LinkedIn', 'GitHub']) {
+    await expect(footer.getByRole('link', { name })).toBeVisible();
+  }
+  await expect(footer.getByRole('button', { name: 'Cookie settings' })).toBeVisible();
+  expect(await footer.evaluate((el) => getComputedStyle(el).backgroundColor)).toBe(
+    'rgb(28, 28, 28)',
+  );
+});
+
+test('members embed uses the live landscape parameters', async ({ page }) => {
+  await page.goto('/membershipmembers/');
+  const frame = page.locator('iframe[src*="embed.html"]');
+  const src = await frame.getAttribute('src');
+  const params = new URL(src!).searchParams;
+  expect(params.get('bg-color')).toBe('#016bcc');
+  expect(params.get('fg-color')).toBe('#ffffff');
+  expect(params.get('iframe-resizer')).toBe('true');
+  await expect(page.locator('iframe[src*="embed-item.html"]')).toHaveCount(1);
 });
 
 test('wordpress shortcodes do not reach the page', async ({ page }) => {
