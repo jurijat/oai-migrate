@@ -154,13 +154,41 @@ test('footer is the linux foundation copyright bar', async ({ page }) => {
 
 test('members embed uses the live landscape parameters', async ({ page }) => {
   await page.goto('/membershipmembers/');
-  const frame = page.locator('iframe[src*="embed.html"]');
+  const frame = page.locator('#iframe-landscape');
   const src = await frame.getAttribute('src');
   const params = new URL(src!).searchParams;
   expect(params.get('bg-color')).toBe('#016bcc');
   expect(params.get('fg-color')).toBe('#ffffff');
   expect(params.get('iframe-resizer')).toBe('true');
-  await expect(page.locator('iframe[src*="embed-item.html"]')).toHaveCount(1);
+});
+
+test('member detail modal is wired up', async ({ page }) => {
+  await page.goto('/membershipmembers/');
+
+  const modal = page.locator('#embed-item');
+  await expect(modal).toHaveCount(1);
+  expect(await modal.evaluate((el) => getComputedStyle(el).position)).toBe('fixed');
+
+  await expect(page.locator('script[src*="embed-item.js"]')).toHaveCount(1);
+  await expect(page.locator('script[src*="iframe-resizer"]')).toHaveCount(1);
+
+  await page.waitForFunction(() => typeof window.iFrameResize === 'function');
+
+  const states = await page.evaluate(async () => {
+    const el = document.getElementById('embed-item')!;
+    const read = () => getComputedStyle(el).display;
+    const before = read();
+    window.postMessage({ type: 'showItemDetails', itemId: 'google' }, '*');
+    await new Promise((r) => setTimeout(r, 400));
+    const shown = read();
+    window.postMessage({ type: 'hideItemDetails' }, '*');
+    await new Promise((r) => setTimeout(r, 400));
+    return { before, shown, after: read() };
+  });
+
+  expect(states.before).toBe('none');
+  expect(states.shown).toBe('block');
+  expect(states.after).toBe('none');
 });
 
 test('wordpress shortcodes do not reach the page', async ({ page }) => {
@@ -241,3 +269,9 @@ test('tonal bands keep prose readable', async ({ page }) => {
   expect(readable.length).toBeGreaterThan(0);
   for (const ratio of readable) expect(ratio).toBeGreaterThan(4.5);
 });
+
+declare global {
+  interface Window {
+    iFrameResize?: (options: Record<string, unknown>, target: string) => void;
+  }
+}

@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
+import { useCallback, useRef } from 'react';
 
 const PARAMS = new URLSearchParams({
   key: 'openapi-initiative-members',
@@ -23,43 +24,58 @@ const PARAMS = new URLSearchParams({
 
 const EMBED = `https://landscape.openapis.org/embed/embed.html?${PARAMS}`;
 const ITEM_EMBED = 'https://landscape.openapis.org/embed/embed-item.html';
-const MIN_HEIGHT = 640;
+const ITEM_SCRIPT = 'https://landscape.openapis.org/embed/embed-item.js';
+const RESIZER = 'https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.9/iframeResizer.min.js';
+
+declare global {
+  interface Window {
+    iFrameResize?: (options: Record<string, unknown>, target: string) => void;
+  }
+}
 
 export function MemberLandscapeFrame() {
-  const frame = useRef<HTMLIFrameElement>(null);
-  const [height, setHeight] = useState(MIN_HEIGHT);
+  const initialised = useRef(false);
 
-  useEffect(() => {
-    const onMessage = (event: MessageEvent) => {
-      if (!event.origin.includes('landscape.openapis.org')) return;
-
-      const raw = typeof event.data === 'string' ? event.data : '';
-      const match = /\[iFrameSizer\]\S*?:(\d+(?:\.\d+)?)/.exec(raw);
-      const reported = match
-        ? Number(match[1])
-        : typeof event.data === 'object' && event.data !== null
-          ? Number((event.data as { height?: number }).height)
-          : Number.NaN;
-
-      if (Number.isFinite(reported) && reported > 0) setHeight(Math.max(MIN_HEIGHT, reported));
-    };
-
-    window.addEventListener('message', onMessage);
-    return () => window.removeEventListener('message', onMessage);
+  const startResizer = useCallback(() => {
+    if (initialised.current || typeof window.iFrameResize !== 'function') return;
+    initialised.current = true;
+    window.iFrameResize({}, '#iframe-landscape');
   }, []);
 
   return (
     <>
       <iframe
-        ref={frame}
+        id="iframe-landscape"
         src={EMBED}
         title="OpenAPI Initiative members"
-        loading="lazy"
+        scrolling="no"
         referrerPolicy="strict-origin-when-cross-origin"
         className="w-full border-0"
-        style={{ height }}
+        style={{ minHeight: '40rem' }}
       />
-      <iframe src={ITEM_EMBED} title="Member details" className="hidden" aria-hidden="true" />
+
+      <iframe
+        id="embed-item"
+        src={ITEM_EMBED}
+        title="Member details"
+        style={{
+          display: 'none',
+          position: 'fixed',
+          inset: 0,
+          width: '100%',
+          height: '100%',
+          border: 'none',
+          zIndex: 2147483647,
+        }}
+      />
+
+      <Script
+        src={RESIZER}
+        strategy="afterInteractive"
+        onReady={startResizer}
+        onLoad={startResizer}
+      />
+      <Script src={ITEM_SCRIPT} strategy="afterInteractive" />
     </>
   );
 }

@@ -226,7 +226,8 @@ rationale. Check off each task as it lands.
 - [x] Navbar is opaque; it was `bg-brand-bg/90` + `backdrop-blur`, so scrolled content showed through
 - [x] Footer replaced with the LF copyright bar (`#1c1c1c`, the trademark paragraph, legal links,
       social icons, cookie settings) — our 4-column nav footer was invented
-- [x] Members embed uses the live landscape parameters plus the companion `embed-item` frame
+- [x] Members embed matches live: iframe-resizer for height, `embed-item.js` for the detail modal,
+      and the modal iframe carries the `embed-item` id the script looks for
 - [x] Transcend consent manager wired up, gated to production
 - [x] Forms verified reachable; none submitted
 
