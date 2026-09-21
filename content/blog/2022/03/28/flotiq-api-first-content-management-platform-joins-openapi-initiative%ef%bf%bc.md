@@ -1,5 +1,5 @@
 ---
-title: Flotiq, API-First Content Management Platform, Joins OpenAPI Initiative￼
+title: Flotiq, API-First Content Management Platform, Joins OpenAPI Initiative
 date: "2022-03-28"
 author: openapi
 category: blog

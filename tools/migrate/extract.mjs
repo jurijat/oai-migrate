@@ -53,13 +53,18 @@ function normalizeCode($, root) {
   return blocks;
 }
 
+const INVISIBLE = /[\ufffc\ufffd\ufeff\u200b\u00ad\u2028\u2029]/g;
+
+export function stripInvisible(value) {
+  return value.replace(INVISIBLE, '');
+}
+
 function clean(value) {
-  return value.replace(/\s+/g, ' ').trim();
+  return stripInvisible(value).replace(/\s+/g, ' ').trim();
 }
 
 function cleanTitle($) {
-  return $('title')
-    .text()
+  return stripInvisible($('title').text())
     .replace(/\s*[–-]\s*OpenAPI Initiative\s*$/, '')
     .replace(/\s+/g, ' ')
     .trim();
@@ -184,7 +189,7 @@ export function extractPost(html, entry) {
   const $ = prepare(html);
   const warnings = [];
 
-  const title = $('h1.entry-title').first().text().replace(/\s+/g, ' ').trim() || cleanTitle($);
+  const title = clean($('h1.entry-title').first().text()) || cleanTitle($);
 
   const authorLink = $('.meta-author .fn a[rel=author]').first();
   const authorHref = authorLink.attr('href') ?? '';

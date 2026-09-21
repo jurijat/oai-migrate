@@ -13,7 +13,7 @@ import {
   toRelative,
   writeJson,
 } from './lib.mjs';
-import { extract } from './extract.mjs';
+import { extract, stripInvisible } from './extract.mjs';
 
 function createTurndown(collected) {
   const service = new TurndownService({
@@ -205,9 +205,10 @@ export function balanceEmphasis(markdown) {
 }
 
 function tidy(markdown) {
-  return `${mergeAdjacentCode(
-    balanceEmphasis(escapeStrayTags(markdown).replace(/\*\*\s*\*\*/g, '')),
-  )
+  const cleaned = stripInvisible(escapeStrayTags(markdown).replace(/\*\*\s*\*\*/g, ''));
+  const merged = mergeAdjacentCode(balanceEmphasis(cleaned));
+
+  return `${merged
     .replace(/ /g, ' ')
     .replace(/^[ \t]*\\[ \t]*$/gm, '')
     .replace(/[ \t]+$/gm, '')

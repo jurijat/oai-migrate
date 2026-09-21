@@ -1,5 +1,5 @@
 ---
-title: JOIN US AT ASC 2022! ￼
+title: JOIN US AT ASC 2022!
 date: "2022-06-09"
 author: openapi
 category: announcement

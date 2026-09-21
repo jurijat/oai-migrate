@@ -19,6 +19,7 @@ const RAW_MARKDOWN = [
   { name: 'list-item', re: /^[-*]\s{3}\S/m },
   { name: 'frontmatter', re: /^---\s*$/m },
   { name: 'wordpress-shortcode', re: /\[\/?[a-z][a-z0-9_]*\s+[a-z_]+=["\u201c\u201d][^\]\n]*\]/ },
+  { name: 'invisible-character', re: /[\ufffc\ufffd\ufeff\u200b\u00ad\u2028\u2029]/ },
 ];
 
 async function walk(dir) {

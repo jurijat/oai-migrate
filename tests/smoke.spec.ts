@@ -275,3 +275,18 @@ declare global {
     iFrameResize?: (options: Record<string, unknown>, target: string) => void;
   }
 }
+
+test('titles carry no invisible wordpress artifacts', async ({ page }) => {
+  await page.goto(
+    '/blog/2022/05/24/karate-labs-testing-automation-framework-is-joining-the-openapi-initiative%ef%bf%bc/',
+  );
+
+  const heading = await page.getByRole('heading', { level: 1 }).innerText();
+  expect(heading).toBe(
+    'Karate Labs, Testing Automation Framework, is Joining the OpenAPI Initiative',
+  );
+  expect(heading).not.toMatch(/[￼�﻿​­]/);
+
+  const title = await page.title();
+  expect(title).not.toMatch(/[￼�﻿​­]/);
+});
