@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Onest } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Analytics } from '@/components/Analytics';
-import { ConsentManager } from '@/components/ConsentManager';
+import { CookieBanner } from '@/components/CookieBanner';
 import { Footer } from '@/components/Footer';
 import { LfBar } from '@/components/LfBar';
 import { Navbar } from '@/components/Navbar';
@@ -48,11 +48,11 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     <html lang="en" className={onest.variable}>
       <body className="flex min-h-screen flex-col">
+        <CookieBanner />
         <LfBar />
         <Navbar nav={nav} social={social} />
         <main className="flex-1">{children}</main>
         <Footer />
-        <ConsentManager enabled={isProduction} />
         <Analytics enabled={isProduction} />
       </body>
     </html>

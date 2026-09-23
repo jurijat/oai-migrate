@@ -1,5 +1,5 @@
 import { GitHubIcon, LinkedInIcon } from '@/components/Icons';
-import { CookieSettingsLink } from '@/components/ConsentManager';
+import { CookieSettingsLink } from '@/components/CookieBanner';
 import { getSocial } from '@/lib/content';
 
 const SOCIAL_ICONS = { linkedin: LinkedInIcon, github: GitHubIcon };

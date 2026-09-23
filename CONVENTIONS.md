@@ -62,6 +62,20 @@ upgraded to an embed at render time, so the Markdown stays readable:
 For pages (MDX), components are available directly: `<Newsletter />`, `<MemberLandscape />`,
 `<MailingListSignup />`, `<GoogleForm id="..." />`.
 
+## Cookie consent
+
+Anything that loads from a third party must wait for consent. Categories live in
+`src/lib/consent.ts`: `functional` (embedded media), `analytics` (LFX Segment) and `marketing`
+(HubSpot).
+
+- **Embeds are covered automatically.** Every `<iframe>` rendered from content goes through
+  `ConsentIframe`, which shows a placeholder until `functional` is granted. Hosts under
+  `openapis.org` are treated as first party and load directly.
+- **New third-party scripts** must read `useConsent()` and render nothing until their category is
+  granted — see `src/components/Analytics` and `src/components/Newsletter`.
+- Tests run with consent seeded by `tests/fixtures.ts`. Use `test.use({ consent: 'unset' })` to see
+  the banner, or `'none'` for a visitor who rejected.
+
 ## Page composition
 
 Composed pages use sections rather than raw markup:

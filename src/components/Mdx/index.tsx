@@ -13,6 +13,7 @@ import {
   SlideShare,
   YouTube,
 } from '@/components/Embeds';
+import { ConsentIframe } from '@/components/Embeds/ConsentIframe';
 import { Newsletter } from '@/components/Newsletter';
 import {
   Action,
@@ -54,6 +55,7 @@ function MdxImage({ src = '', alt = '', ...rest }: ImgHTMLAttributes<HTMLImageEl
 const components = {
   a: MdxLink,
   img: MdxImage,
+  iframe: ConsentIframe,
   GoogleForm,
   MailingListSignup,
   MemberLandscape,

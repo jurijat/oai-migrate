@@ -238,8 +238,37 @@ rationale. Check off each task as it lands.
       restore it.
 - [ ] **Footer contrast.** `#777` on `#1c1c1c` is 3.8:1, under the 4.5:1 needed at 12px. Same on
       the live site.
-- [ ] Verify the consent dialog once DNS points at openapis.org — the Transcend bundle is
-      domain-locked and cannot run anywhere else.
+- [x] ~~Verify the Transcend consent dialog~~ — superseded by our own banner, below
+
+## Cookie consent
+
+Replaced the Linux Foundation's Transcend consent manager with our own banner. Transcend's
+`airgap.js` was domain-locked to openapis.org, so it never ran on staging — and on a production
+build it was the only thing that would have stopped LFX Segment loading before consent.
+
+- [x] Banner mirrors the live layout: Accept all / Reject all / Customize, equal weight, privacy link
+- [x] Categories follow the live Transcend purposes — Functional, Analytics, Marketing — all off
+      until chosen; Essential always on
+- [x] LFX Segment loads only with Analytics consent (and only in production)
+- [x] HubSpot newsletter loads only with Marketing consent, with an in-place opt-in
+- [x] Every third-party iframe goes through `ConsentIframe`, including those `rehypeEmbeds`
+      generates, via the MDX `iframe` override; zero third-party iframes in the static HTML
+- [x] Placeholders offer load-once, always-allow, and open-on-provider
+- [x] Revoking a category reloads the page so already-loaded scripts unload
+- [x] "Cookie settings" in the footer reopens the preferences; Escape closes, focus returns
+- [x] Measured: a fresh visitor gets zero cookies and no requests to Segment, HubSpot, YouTube or
+      SlideShare
+- [x] Newsletter loads with `afterInteractive` once visible; `lazyOnload` waited on
+      `requestIdleCallback`, which was starved in 5 of 8 headless runs
+- [x] `brand-fg` registered as a Tailwind colour — `text-brand-fg` was silently a no-op
+- [x] 11 consent tests; the rest of the suite runs with consent seeded by a fixture
+
+### Open
+
+- [ ] Confirm with the Linux Foundation that a site-specific banner is acceptable in place of
+      their Transcend setup — it may be an LF-wide compliance requirement
+- [ ] 58 content images are hotlinked to other hosts (18 to a dead `oapi.wpengine.com`, 404);
+      they still reach third parties before consent and several are already broken
 
 ## Blocked: needs your account or judgement
 

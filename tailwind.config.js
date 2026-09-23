@@ -17,6 +17,7 @@ const config = {
       colors: {
         brand: {
           bg: 'var(--brand-bg)',
+          fg: 'var(--brand-fg)',
           green: '#65D100',
           'green-dark': '#50BD00',
           'green-light': '#76DD2A',

@@ -1,4 +1,5 @@
-import { devices, expect, test } from '@playwright/test';
+import { devices } from '@playwright/test';
+import { expect, test } from './fixtures';
 
 const PAGES = [
   ['home', '/'],

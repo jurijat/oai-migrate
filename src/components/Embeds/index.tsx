@@ -1,3 +1,4 @@
+import { ConsentIframe } from '@/components/Embeds/ConsentIframe';
 import { MemberLandscapeFrame } from '@/components/Embeds/MemberLandscapeFrame';
 
 type FrameProps = {
@@ -13,7 +14,7 @@ function Frame({ src, title, ratio, height }: FrameProps) {
       className="my-8 overflow-hidden rounded-2xl border border-brand-separator"
       style={ratio ? { aspectRatio: ratio } : undefined}
     >
-      <iframe
+      <ConsentIframe
         src={src}
         title={title}
         loading="lazy"
