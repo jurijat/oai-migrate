@@ -1,6 +1,7 @@
 ---
 title: JOIN US AT ASC 2022!
 date: "2022-06-09"
+wordpressId: 2225
 author: openapi
 category: announcement
 permalink: /blog/2022/06/09/join-us-at-asc-2022-%ef%bf%bc

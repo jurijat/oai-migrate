@@ -1,6 +1,7 @@
 ---
 title: IBM is a Platinum Sponsor at API Strategy & Practice Conference
 date: "2017-10-26"
+wordpressId: 559
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/10/26/meet-ibms-sai-vennam-at-apistrat-2017

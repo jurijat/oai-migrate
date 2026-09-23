@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – June 2024
 date: "2024-06-07"
+wordpressId: 3348
 author: abringaze
 category: blog
 tags:

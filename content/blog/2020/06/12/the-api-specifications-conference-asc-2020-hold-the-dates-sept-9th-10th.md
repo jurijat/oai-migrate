@@ -1,6 +1,7 @@
 ---
 title: "The API Specifications Conference (ASC 2020) – Hold the dates: Sept 9th-10th"
 date: "2020-06-12"
+wordpressId: 1514
 author: abringaze
 category: announcement
 tags:

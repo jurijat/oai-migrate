@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – February 2026
 date: "2026-02-10"
+wordpressId: 4159
 author: sensiblewood
 category: blog
 tags:

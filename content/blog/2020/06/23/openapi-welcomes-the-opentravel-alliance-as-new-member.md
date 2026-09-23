@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Welcomes the OpenTravel Alliance as New Member
 date: "2020-06-23"
+wordpressId: 1535
 author: openapi
 category: announcement
 tags:

@@ -25,7 +25,7 @@
 
 @media (min-width: 1024px) {
   :root {
-    --navbar-h: 7rem;
+    --navbar-h: 4.5rem;
   }
 }
 
@@ -94,6 +94,35 @@ body {
     color: inherit;
     text-decoration: underline;
     text-underline-offset: 0.2em;
+  }
+
+  .post-body {
+    --tw-prose-body: #676767;
+    --tw-prose-headings: #444444;
+    --tw-prose-bold: #444444;
+    letter-spacing: normal;
+  }
+
+  .prose.post-body :where(p) {
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+  .prose.post-body :where(h2) {
+    margin-top: 38px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .prose.post-body :where(ul, ol) {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .prose.post-body :where(li) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .band-dark .prose {

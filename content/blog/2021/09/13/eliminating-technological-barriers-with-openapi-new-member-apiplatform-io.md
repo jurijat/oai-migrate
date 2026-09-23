@@ -1,6 +1,7 @@
 ---
 title: Eliminating Technological Barriers with OpenAPI New Member apiplatform.io
 date: "2021-09-13"
+wordpressId: 2026
 author: openapi
 category: announcement
 tags:

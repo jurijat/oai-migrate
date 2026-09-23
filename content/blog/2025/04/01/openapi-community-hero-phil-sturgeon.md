@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Hero – Phil Sturgeon
 date: "2025-04-01"
+wordpressId: 3861
 author: openapi
 category: blog
 tags:

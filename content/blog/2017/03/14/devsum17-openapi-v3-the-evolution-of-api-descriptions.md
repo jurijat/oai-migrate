@@ -1,6 +1,7 @@
 ---
 title: "DevSum17: OpenAPI v3 – The Evolution of API Descriptions"
 date: "2017-03-14"
+wordpressId: 282
 author: jernstfriedman
 category: events
 permalink: /events/2017/03/14/devsum17-openapi-v3-the-evolution-of-api-descriptions

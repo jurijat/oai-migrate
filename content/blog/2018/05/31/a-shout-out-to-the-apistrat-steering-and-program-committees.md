@@ -1,6 +1,7 @@
 ---
 title: A Shout Out to the APIStrat Steering and Program Committees
 date: "2018-05-31"
+wordpressId: 833
 author: kinlane
 category: announcement
 tags:

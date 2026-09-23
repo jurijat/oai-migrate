@@ -1,6 +1,7 @@
 ---
 title: Competitors Join OAI to Lead Convergence of API Landscape
 date: "2017-05-02"
+wordpressId: 333
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/05/02/competitors-join-oai-to-lead-convergence-of-api-landscape

@@ -1,6 +1,7 @@
 ---
 title: Postman Joins the OAI to Support the OpenAPI Specification
 date: "2020-07-23"
+wordpressId: 1576
 author: kinlane
 category: announcement
 tags:

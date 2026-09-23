@@ -1,6 +1,7 @@
 ---
 title: Fostering Ecosystem-Driven Innovation, The OAI Welcomes SAP as a New Member
 date: "2017-10-19"
+wordpressId: 533
 author: jernstfriedman
 category: blog
 tags:

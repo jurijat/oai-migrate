@@ -1,6 +1,7 @@
 ---
 title: We Are Extending The APIStrat Call For Papers Until Sunday At Midnight
 date: "2018-06-08"
+wordpressId: 849
 author: kinlane
 category: blog
 tags:

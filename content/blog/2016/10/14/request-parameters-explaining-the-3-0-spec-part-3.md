@@ -1,6 +1,7 @@
 ---
 title: "Request Parameters: Explaining the 3.0 spec, part 3"
 date: "2016-10-14"
+wordpressId: 162
 author: jernstfriedman
 category: blog
 tags:

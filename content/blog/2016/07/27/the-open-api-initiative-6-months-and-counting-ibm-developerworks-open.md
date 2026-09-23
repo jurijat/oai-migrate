@@ -1,6 +1,7 @@
 ---
 title: "The Open API Initiative: 6 Months and Counting (IBM developerWorks Open)"
 date: "2016-07-27"
+wordpressId: 202
 author: jernstfriedman
 category: presentation
 permalink: >-

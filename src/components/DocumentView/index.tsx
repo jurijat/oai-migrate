@@ -13,15 +13,22 @@ export function DocumentView({ doc }: { doc: Post | Page }) {
     );
   }
 
-  const archived = !isPost(doc) && doc.layout === 'cfp';
+  if (isPost(doc)) {
+    return (
+      <article className="mx-auto max-w-content px-6 pb-20 pt-10">
+        <PostHeader post={doc} />
+        <div className="post-body prose mx-auto max-w-[1000px] md:prose-lg">
+          <Mdx source={doc.body} format={format} />
+        </div>
+      </article>
+    );
+  }
+
+  const archived = doc.layout === 'cfp';
 
   return (
     <article className="mx-auto max-w-prose px-6 py-16">
-      {isPost(doc) ? (
-        <PostHeader post={doc} />
-      ) : (
-        <h1 className="mb-8 text-4xl font-semibold tracking-oai">{doc.title}</h1>
-      )}
+      <h1 className="mb-8 text-4xl font-semibold tracking-oai">{doc.title}</h1>
       {archived ? (
         <p className="mb-10 rounded-4xl bg-brand-card px-6 py-4 text-brand-muted">
           This call for proposals has closed and is kept for reference. Current events are listed on{' '}

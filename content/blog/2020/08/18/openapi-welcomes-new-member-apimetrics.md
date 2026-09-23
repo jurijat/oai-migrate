@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Welcomes New Member APImetrics!
 date: "2020-08-18"
+wordpressId: 1596
 author: openapi
 category: announcement
 tags:

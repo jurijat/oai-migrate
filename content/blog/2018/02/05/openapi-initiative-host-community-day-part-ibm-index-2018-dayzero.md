@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative to Host Community Day as part of IBM INDEX 2018 DayZero
 date: "2018-02-05"
+wordpressId: 656
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/02/05/openapi-initiative-host-community-day-part-ibm-index-2018-dayzero

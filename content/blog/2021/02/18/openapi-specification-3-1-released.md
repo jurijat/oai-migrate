@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Specification 3.1.0 Released
 date: "2021-02-18"
+wordpressId: 1797
 author: openapi
 category: announcement
 tags:

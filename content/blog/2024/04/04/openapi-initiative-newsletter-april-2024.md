@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – April 2024
 date: "2024-04-04"
+wordpressId: 3250
 author: openapi
 category: blog
 tags:

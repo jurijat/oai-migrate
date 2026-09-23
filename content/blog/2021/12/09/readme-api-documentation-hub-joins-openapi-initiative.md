@@ -1,6 +1,7 @@
 ---
 title: ReadMe, API Documentation Hub, Joins OpenAPI Initiative
 date: "2021-12-09"
+wordpressId: 2089
 author: openapi
 category: blog
 tags:

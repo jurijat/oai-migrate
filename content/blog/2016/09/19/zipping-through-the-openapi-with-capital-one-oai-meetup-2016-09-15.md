@@ -1,6 +1,7 @@
 ---
 title: Zipping through the OpenAPI with Capital One – OAI Meetup 2016-09-15
 date: "2016-09-19"
+wordpressId: 138
 author: openapi
 category: blog
 permalink: /blog/2016/09/19/zipping-through-the-openapi-with-capital-one-oai-meetup-2016-09-15

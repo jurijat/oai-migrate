@@ -1,6 +1,7 @@
 ---
 title: The Open API Initiative and the Linux Foundation to Produce APIStrat 17
 date: "2017-04-13"
+wordpressId: 313
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/04/13/the-open-api-initiative-and-the-linux-foundation-to-produce-apistrat-17

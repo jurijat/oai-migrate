@@ -1,6 +1,7 @@
 ---
 title: "TDC: Structural Improvements: explaining the 3.0 spec, part 2"
 date: "2016-10-03"
+wordpressId: 131
 author: openapi
 category: blog
 permalink: /blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2

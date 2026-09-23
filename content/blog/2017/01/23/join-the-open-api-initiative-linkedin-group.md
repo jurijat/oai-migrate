@@ -1,6 +1,7 @@
 ---
 title: Join the Open API Initiative LinkedIn Group
 date: "2017-01-23"
+wordpressId: 229
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/01/23/join-the-open-api-initiative-linkedin-group

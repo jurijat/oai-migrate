@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – September 2025
 date: "2025-10-01"
+wordpressId: 4090
 author: sensiblewood
 category: blog
 tags:

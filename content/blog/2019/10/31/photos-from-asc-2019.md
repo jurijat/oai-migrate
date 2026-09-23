@@ -1,6 +1,7 @@
 ---
 title: Photos from ASC 2019
 date: "2019-10-31"
+wordpressId: 1229
 author: openapi
 category: blog
 tags:

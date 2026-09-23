@@ -36,6 +36,14 @@ resolving.
 
 `author` must exist in `data/authors.yaml`. `date` must match the date in the permalink.
 
+Migrated posts also carry `wordpressId`, the original WordPress post ID. It only breaks ties
+between posts published on the same day, so the blog index keeps the live site's order. Leave it
+off new posts; they sort ahead of migrated posts from the same day.
+
+The blog index lists the categories the live site listed: `blog`, `announcement`, `news` and
+`presentation`. Posts in `events` and `uncategorized` stay reachable by permalink and through
+their category archive.
+
 ## Writing style
 
 - Dates in prose: `May 19, 2026`. Ranges use an en dash, `July 8 – 9, 2026`.

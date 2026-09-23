@@ -1,6 +1,7 @@
 ---
 title: The Open API Initiative Launches OpenAPI Spec Ambassador Program
 date: "2017-05-05"
+wordpressId: 275
 author: jernstfriedman
 category: uncategorized
 permalink: /uncategorized/2017/05/05/the-open-api-initiative-launches-openapi-spec-ambassador-program

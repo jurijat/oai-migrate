@@ -1,6 +1,7 @@
 ---
 title: OpenAPI v3.1 Resources for Tooling Developers
 date: "2022-05-11"
+wordpressId: 2188
 author: openapi
 category: blog
 permalink: /blog/2022/05/11/openapi-v3-1-resources-for-tooling-developers

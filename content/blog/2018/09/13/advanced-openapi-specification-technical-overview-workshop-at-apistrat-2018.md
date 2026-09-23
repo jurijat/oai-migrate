@@ -1,6 +1,7 @@
 ---
 title: Advanced OpenAPI Specification Technical Overview/Workshop at APIStrat 2018
 date: "2018-09-13"
+wordpressId: 999
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/09/13/advanced-openapi-specification-technical-overview-workshop-at-apistrat-2018

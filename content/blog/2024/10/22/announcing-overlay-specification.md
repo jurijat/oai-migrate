@@ -1,6 +1,7 @@
 ---
 title: Announcing OpenAPI Overlay Specification 1.0.0
 date: "2024-10-22"
+wordpressId: 3563
 author: openapi
 category: blog
 tags:

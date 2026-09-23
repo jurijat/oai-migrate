@@ -1,6 +1,7 @@
 ---
 title: RepreZen Joins the Open API Initiative, Announces Early OAS 3.0 Tool Support
 date: "2017-06-07"
+wordpressId: 361
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/06/07/reprezen-joins-the-open-api-initiative-announces-early-oas-3-0-tool-support

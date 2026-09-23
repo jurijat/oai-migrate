@@ -1,6 +1,7 @@
 ---
 title: Leveraging the OpenAPI Specification in Financial Services – The Story of Plaid’s OpenAPI Journey
 date: "2021-04-13"
+wordpressId: 1873
 author: openapi
 category: blog
 permalink: >-

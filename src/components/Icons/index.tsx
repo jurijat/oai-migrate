@@ -49,6 +49,15 @@ export function ChevronDownIcon({ size = 12, ...rest }: IconProps) {
   );
 }
 
+export function ArrowRightIcon({ size = 12, ...rest }: IconProps) {
+  return (
+    <Icon size={size} strokeWidth={2.4} {...rest}>
+      <path d="M5 12h14" />
+      <path d="m13 6 6 6-6 6" />
+    </Icon>
+  );
+}
+
 export function LinkedInIcon({ size = 18, ...rest }: IconProps) {
   return (
     <svg

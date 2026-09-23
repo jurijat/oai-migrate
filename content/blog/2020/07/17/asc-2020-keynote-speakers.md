@@ -1,6 +1,7 @@
 ---
 title: ASC 2020 – Keynote Speakers
 date: "2020-07-17"
+wordpressId: 1562
 author: darrmi
 category: blog
 permalink: /blog/2020/07/17/asc-2020-keynote-speakers

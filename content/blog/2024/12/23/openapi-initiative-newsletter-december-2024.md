@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – December 2024
 date: "2024-12-23"
+wordpressId: 3709
 author: sensiblewood
 category: blog
 permalink: /blog/2024/12/23/openapi-initiative-newsletter-december-2024

@@ -3,6 +3,7 @@ title: >-
   New Collaborative Project to Extend Swagger Specification for Building Connected Applications and
   Services
 date: "2015-11-05"
+wordpressId: 129
 author: openapi
 category: news
 permalink: >-

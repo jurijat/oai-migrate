@@ -1,6 +1,7 @@
 ---
 title: OpenAPI 3.1 Confoo Pass Give-away
 date: "2021-02-17"
+wordpressId: 1820
 author: abringaze
 category: blog
 permalink: /blog/2021/02/17/openapi-3-1-confoo-pass-give-away

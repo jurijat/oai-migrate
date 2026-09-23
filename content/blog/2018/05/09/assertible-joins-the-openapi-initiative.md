@@ -1,6 +1,7 @@
 ---
 title: Assertible Joins the OpenAPI Initiative
 date: "2018-05-09"
+wordpressId: 810
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/05/09/assertible-joins-the-openapi-initiative

@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – February 2025
 date: "2025-02-28"
+wordpressId: 3796
 author: openapi
 category: blog
 tags:

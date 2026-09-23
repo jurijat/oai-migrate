@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Heroes – Erik Wilde
 date: "2025-02-20"
+wordpressId: 3790
 author: openapi
 category: blog
 tags:

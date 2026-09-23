@@ -1,6 +1,7 @@
 ---
 title: The Open API Initiative Is Sending You a Save the Date Card
 date: "2017-05-25"
+wordpressId: 351
 author: robdolin
 category: blog
 permalink: /blog/2017/05/25/the-open-api-initiative-is-sending-you-a-save-the-date-card

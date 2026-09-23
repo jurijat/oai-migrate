@@ -1,6 +1,7 @@
 ---
 title: Join Virginia Eubanks at APIStrat 2018
 date: "2018-08-03"
+wordpressId: 879
 author: jernstfriedman
 category: blog
 tags:

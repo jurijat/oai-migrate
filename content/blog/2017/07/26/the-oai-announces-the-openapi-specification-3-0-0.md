@@ -1,6 +1,7 @@
 ---
 title: The OAI Announces the OpenAPI Specification 3.0.0
 date: "2017-07-26"
+wordpressId: 413
 author: openapi
 category: blog
 permalink: /blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0

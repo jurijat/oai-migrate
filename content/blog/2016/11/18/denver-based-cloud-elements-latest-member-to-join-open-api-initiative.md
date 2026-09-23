@@ -1,6 +1,7 @@
 ---
 title: Denver-Based Cloud Elements Latest Member to Join Open API Initiative
 date: "2016-11-18"
+wordpressId: 187
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/18/denver-based-cloud-elements-latest-member-to-join-open-api-initiative

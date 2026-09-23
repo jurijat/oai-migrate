@@ -3,6 +3,7 @@ title: >-
   SmartBear Launches Open API Initiative with Key Industry Leaders including Google, IBM and
   Microsoft
 date: "2015-11-05"
+wordpressId: 128
 author: openapi
 category: news
 permalink: >-

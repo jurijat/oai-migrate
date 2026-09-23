@@ -1,6 +1,7 @@
 ---
 title: The Blue Button API Will Be At APIStrat In Nashville Next Week
 date: "2018-09-17"
+wordpressId: 1007
 author: kinlane
 category: announcement
 permalink: /blog/2018/09/17/the-blue-button-api-will-be-at-apistrat-in-nashville-next-week

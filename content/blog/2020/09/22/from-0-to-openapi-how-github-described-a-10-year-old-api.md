@@ -1,6 +1,7 @@
 ---
 title: "From 0 to OpenAPI: How GitHub Described a 10 year old API"
 date: "2020-09-22"
+wordpressId: 1621
 author: jesse
 category: blog
 permalink: /blog/2020/09/22/from-0-to-openapi-how-github-described-a-10-year-old-api

@@ -1,6 +1,7 @@
 ---
 title: GitBook joins the OpenAPI Initiative!
 date: "2025-03-20"
+wordpressId: 3822
 author: openapi
 category: blog
 tags:

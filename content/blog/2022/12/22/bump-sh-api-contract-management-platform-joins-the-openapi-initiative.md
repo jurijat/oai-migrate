@@ -1,6 +1,7 @@
 ---
 title: Bump.sh, API Contract Management Platform, Joins the OpenAPI Initiative
 date: "2022-12-22"
+wordpressId: 2366
 author: openapi
 category: blog
 permalink: /blog/2022/12/22/bump-sh-api-contract-management-platform-joins-the-openapi-initiative

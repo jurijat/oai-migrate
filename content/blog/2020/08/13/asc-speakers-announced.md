@@ -1,6 +1,7 @@
 ---
 title: ASC Speakers Announced!
 date: "2020-08-13"
+wordpressId: 1591
 author: abringaze
 category: blog
 permalink: /blog/2020/08/13/asc-speakers-announced

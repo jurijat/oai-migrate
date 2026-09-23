@@ -1,6 +1,7 @@
 ---
 title: API Specifications Conference (ASC) 2022 – Call for Proposals
 date: "2022-04-24"
+wordpressId: 2171
 author: openapi
 category: blog
 tags:

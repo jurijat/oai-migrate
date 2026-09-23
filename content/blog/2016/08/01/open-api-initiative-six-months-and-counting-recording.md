@@ -1,6 +1,7 @@
 ---
 title: "Open API Initiative: Six months and counting (Recording)"
 date: "2016-08-01"
+wordpressId: 140
 author: openapi
 category: blog
 permalink: /blog/2016/08/01/open-api-initiative-six-months-and-counting-recording

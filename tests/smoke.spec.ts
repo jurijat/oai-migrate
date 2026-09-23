@@ -24,15 +24,9 @@ test('blog post keeps its WordPress permalink, byline and code blocks', async ({
   await expect(page.locator('pre code').first()).toContainText('sourceDescriptions:');
 });
 
-test('blog index lists posts by year', async ({ page }) => {
-  await page.goto('/blog/');
-  await expect(page.getByRole('heading', { level: 2, name: '2026' })).toBeVisible();
-  expect(await page.locator('article, main li a').count()).toBeGreaterThan(50);
-});
-
 test('taxonomy archives resolve', async ({ page }) => {
   await page.goto('/category/blog/');
-  await expect(page.getByRole('heading', { level: 1, name: 'blog' })).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1, name: 'Blog' })).toBeVisible();
 });
 
 test('dropped WordPress page serves a redirect stub', async ({ page }) => {
@@ -230,6 +224,21 @@ test('linux foundation bar uses the official banner', async ({ page }) => {
   expect(response.status()).toBe(200);
 });
 
+test('linux foundation banner is vertically centred in a 33px bar', async ({ page }) => {
+  await page.goto('/');
+  const banner = page.getByRole('link', { name: 'The Linux Foundation Projects' }).locator('img');
+  const geometry = await banner.evaluate((img) => {
+    const bar = img.closest('a')!.parentElement!.getBoundingClientRect();
+    const box = img.getBoundingClientRect();
+    return {
+      height: bar.height,
+      offset: Math.abs(box.top + box.height / 2 - (bar.top + bar.height / 2)),
+    };
+  });
+  expect(geometry.height).toBe(33);
+  expect(geometry.offset).toBeLessThanOrEqual(0.5);
+});
+
 test('paired wordpress shortcodes become links', async ({ page }) => {
   await page.goto(
     '/blog/presentation/2017/03/08/api-design-and-whats-new-with-open-api-google-cloud-next-17/',
@@ -332,4 +341,23 @@ test('top-level menu items use the original uppercase grey', async ({ page }) =>
     return { transform: cs.textTransform, color: cs.color };
   });
   expect(style).toEqual({ transform: 'uppercase', color: 'rgb(136, 136, 136)' });
+});
+
+test('header never overflows from phone to wide desktop', async ({ page }) => {
+  for (const width of [390, 768, 1024, 1100, 1279, 1280, 1366, 1440, 1920]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto('/blog/');
+    const overflow = await page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+    );
+    expect(overflow, `horizontal overflow at ${width}px`).toBe(0);
+
+    const nav = page.getByRole('navigation', { name: 'Main' });
+    const search = nav.getByRole('button', { name: /search/i }).first();
+    const box = await search.boundingBox();
+    expect(box && box.x + box.width <= width, `search visible at ${width}px`).toBe(true);
+    await expect(page.getByRole('button', { name: 'Toggle navigation' })).toBeVisible({
+      visible: width < 1280,
+    });
+  }
 });

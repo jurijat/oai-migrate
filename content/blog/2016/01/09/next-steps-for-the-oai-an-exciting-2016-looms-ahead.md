@@ -1,6 +1,7 @@
 ---
 title: Next steps for the OAI – an exciting 2016 looms ahead!
 date: "2016-01-09"
+wordpressId: 150
 author: openapi
 category: blog
 permalink: /blog/2016/01/09/next-steps-for-the-oai-an-exciting-2016-looms-ahead

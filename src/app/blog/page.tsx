@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { PostList } from '@/components/PostList';
-import { getPosts } from '@/lib/content';
+import { getPosts, isOnBlogIndex } from '@/lib/content';
 import { listingMetadata } from '@/lib/metadata';
 
 export const metadata: Metadata = listingMetadata(
@@ -10,12 +10,12 @@ export const metadata: Metadata = listingMetadata(
 );
 
 export default async function BlogIndex() {
-  const posts = await getPosts();
+  const posts = (await getPosts()).filter(isOnBlogIndex);
 
   return (
-    <main className="mx-auto max-w-content px-6 py-16">
-      <h1 className="mb-10 text-4xl font-semibold tracking-oai">Blog</h1>
+    <div className="mx-auto max-w-content px-6 pb-20 pt-10">
+      <h1 className="sr-only">Blog</h1>
       <PostList posts={posts} />
-    </main>
+    </div>
   );
 }

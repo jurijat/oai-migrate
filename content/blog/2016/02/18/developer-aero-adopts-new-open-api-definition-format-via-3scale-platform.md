@@ -1,6 +1,7 @@
 ---
 title: Developer.aero adopts new Open API Definition Format via 3Scale Platform
 date: "2016-02-18"
+wordpressId: 125
 author: openapi
 category: news
 permalink: /news/2016/02/18/developer-aero-adopts-new-open-api-definition-format-via-3scale-platform

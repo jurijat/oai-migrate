@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Spec at APISTRAT 2016
 date: "2016-11-01"
+wordpressId: 164
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/01/openapi-spec-at-apistrat-2016

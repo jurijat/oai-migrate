@@ -1,6 +1,7 @@
 ---
 title: Announcing the API Specifications Conference (ASC) 2022 Early Bird Submission Deadline
 date: "2022-04-24"
+wordpressId: 2175
 author: openapi
 category: blog
 tags:

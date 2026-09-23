@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Heroes – Lorna Mitchell
 date: "2024-09-17"
+wordpressId: 3522
 author: sensiblewood
 category: blog
 tags:

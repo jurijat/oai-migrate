@@ -1,6 +1,7 @@
 ---
 title: OAI Update – new members, OpenAPI Spec 3.0 progress, and more!
 date: "2016-02-23"
+wordpressId: 149
 author: openapi
 category: blog
 permalink: /blog/2016/02/23/oai-update-new-members-openapi-spec-3-0-progress-and-more

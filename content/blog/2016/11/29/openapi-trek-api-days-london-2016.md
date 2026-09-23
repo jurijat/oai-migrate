@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Trek (API Days London 2016)
 date: "2016-11-29"
+wordpressId: 201
 author: jernstfriedman
 category: presentation
 permalink: /blog/presentation/2016/11/29/openapi-trek-api-days-london-2016

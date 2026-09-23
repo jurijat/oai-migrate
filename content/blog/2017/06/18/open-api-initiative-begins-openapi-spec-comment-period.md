@@ -1,6 +1,7 @@
 ---
 title: One Last Call for Comments, so Finish Your Issue or PR
 date: "2017-06-18"
+wordpressId: 387
 author: robdolin
 category: blog
 permalink: /blog/2017/06/18/open-api-initiative-begins-openapi-spec-comment-period

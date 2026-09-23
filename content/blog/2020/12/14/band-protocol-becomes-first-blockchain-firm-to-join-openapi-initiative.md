@@ -1,6 +1,7 @@
 ---
 title: Band Protocol Becomes First Blockchain Firm To Join OpenAPI Initiative
 date: "2020-12-14"
+wordpressId: 1714
 author: openapi
 category: announcement
 permalink: /blog/2020/12/14/band-protocol-becomes-first-blockchain-firm-to-join-openapi-initiative

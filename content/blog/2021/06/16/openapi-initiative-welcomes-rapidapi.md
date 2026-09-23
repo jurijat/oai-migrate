@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Welcomes RapidAPI
 date: "2021-06-16"
+wordpressId: 1957
 author: openapi
 category: announcement
 tags:

@@ -1,6 +1,7 @@
 ---
 title: "From Bitmovin: Our OpenAPI journey with Standardizing SDKs"
 date: "2019-09-04"
+wordpressId: 1194
 author: openapi
 category: blog
 tags:

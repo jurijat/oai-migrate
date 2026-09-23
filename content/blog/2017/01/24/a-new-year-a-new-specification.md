@@ -1,6 +1,7 @@
 ---
 title: A New Year, a New Specification
 date: "2017-01-24"
+wordpressId: 219
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/01/24/a-new-year-a-new-specification

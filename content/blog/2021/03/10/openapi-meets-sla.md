@@ -1,6 +1,7 @@
 ---
 title: OpenAPI meets SLA
 date: "2021-03-10"
+wordpressId: 1841
 author: abringaze
 category: blog
 permalink: /blog/2021/03/10/openapi-meets-sla

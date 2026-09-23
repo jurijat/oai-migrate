@@ -1,6 +1,7 @@
 ---
 title: Migrating from OpenAPI 3.0 to 3.1.0
 date: "2021-02-16"
+wordpressId: 1783
 author: openapi
 category: blog
 tags:

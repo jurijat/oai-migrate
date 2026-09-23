@@ -1,6 +1,7 @@
 ---
 title: Announcing Arazzo Specification 1.1
 date: "2026-05-19"
+wordpressId: 4473
 author: sensiblewood
 category: blog
 tags:

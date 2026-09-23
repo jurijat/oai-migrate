@@ -3,6 +3,7 @@ title: >-
   The State of API Development and the Upcoming ASC 2021 – A closeup with Mandy Whaley, Azure Dev
   Tools, Microsoft
 date: "2021-08-24"
+wordpressId: 2021
 author: openapi
 category: blog
 tags:

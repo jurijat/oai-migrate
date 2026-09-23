@@ -19,15 +19,33 @@ export function isExternal(href: string) {
   return /^https?:\/\//.test(href);
 }
 
+function trimSlash(path: string) {
+  return path.length > 1 ? path.replace(/\/+$/, '') : path;
+}
+
+function isCurrent(href: string | undefined, pathname: string) {
+  if (!href || isExternal(href)) return false;
+  return trimSlash(href) === trimSlash(pathname);
+}
+
+function isActive(item: NavItem, pathname: string) {
+  return (
+    isCurrent(item.href, pathname) ||
+    Boolean(item.children?.some((child) => isCurrent(child.href, pathname)))
+  );
+}
+
 function ItemLink({
   href,
   label,
   className,
+  current = false,
   onNavigate,
 }: {
   href: string;
   label: string;
   className?: string;
+  current?: boolean;
   onNavigate?: () => void;
 }) {
   if (isExternal(href)) {
@@ -46,7 +64,12 @@ function ItemLink({
     );
   }
   return (
-    <Link href={href} className={className} onClick={onNavigate}>
+    <Link
+      href={href}
+      className={className}
+      aria-current={current ? 'page' : undefined}
+      onClick={onNavigate}
+    >
       {label}
     </Link>
   );
@@ -55,7 +78,9 @@ function ItemLink({
 const SOCIAL_ICONS = { linkedin: LinkedInIcon, github: GitHubIcon };
 
 const TOP_LEVEL =
-  'inline-flex items-center gap-1 px-3 py-2 text-sm font-medium uppercase tracking-normal text-nav transition-colors hover:text-nav-active group-hover:text-nav-active group-focus-within:text-nav-active';
+  'inline-flex w-min items-center gap-1 px-2.5 py-2 text-sm font-medium uppercase tracking-normal transition-colors hover:text-nav-active group-hover:text-nav-active group-focus-within:text-nav-active';
+
+const topLevel = (active: boolean) => `${TOP_LEVEL} ${active ? 'text-nav-active' : 'text-nav'}`;
 
 const DROPDOWN_ITEM =
   'block px-1.5 py-1.5 text-sm leading-6 tracking-normal text-nav-sub transition-colors hover:bg-nav-highlight hover:text-nav-active focus-visible:bg-nav-highlight focus-visible:text-nav-active focus-visible:outline-none';
@@ -96,7 +121,7 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
       <header ref={header} className="sticky top-0 z-50 border-b border-brand-separator bg-white">
         <nav
           aria-label="Main"
-          className="mx-auto flex max-w-content items-center justify-between gap-6 px-6 py-4"
+          className="mx-auto flex max-w-content items-center justify-between gap-4 px-6 py-[7px]"
         >
           <Link href="/" className="shrink-0" aria-label="OpenAPI Initiative home">
             <img
@@ -104,17 +129,26 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
               alt="OpenAPI Initiative"
               width={560}
               height={152}
-              className="h-9 w-auto"
+              className="h-[45px] w-auto"
             />
           </Link>
 
-          <ul className="hidden items-center md:flex">
+          <ul className="hidden items-center xl:flex">
             {nav.map((item) => (
               <li key={item.label} className="group relative">
                 {item.href ? (
-                  <ItemLink href={item.href} label={item.label} className={TOP_LEVEL} />
+                  <ItemLink
+                    href={item.href}
+                    label={item.label}
+                    className={topLevel(isActive(item, pathname))}
+                    current={isCurrent(item.href, pathname)}
+                  />
                 ) : (
-                  <button type="button" className={TOP_LEVEL} aria-haspopup="true">
+                  <button
+                    type="button"
+                    className={topLevel(isActive(item, pathname))}
+                    aria-haspopup="true"
+                  >
                     {item.label}
                     <ChevronDownIcon />
                   </button>
@@ -124,7 +158,12 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
                   <ul className="invisible absolute left-0 top-full z-10 w-60 bg-white px-4 py-5 opacity-0 shadow-[0_6px_28px_rgba(0,0,0,0.08)] transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
                     {item.children.map((child) => (
                       <li key={`${child.label}-${child.href}`}>
-                        <ItemLink href={child.href} label={child.label} className={DROPDOWN_ITEM} />
+                        <ItemLink
+                          href={child.href}
+                          label={child.label}
+                          className={DROPDOWN_ITEM}
+                          current={isCurrent(child.href, pathname)}
+                        />
                       </li>
                     ))}
                   </ul>
@@ -134,7 +173,7 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
           </ul>
 
           <div className="flex items-center gap-2">
-            <ul className="hidden items-center gap-3 md:flex">
+            <ul className="hidden items-center gap-3 xl:flex">
               {social.map((item) => {
                 const Glyph = SOCIAL_ICONS[item.icon];
                 return (
@@ -159,7 +198,7 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
               aria-expanded={open}
               aria-controls="mobile-nav"
               aria-label="Toggle navigation"
-              className="grid h-10 w-10 place-items-center rounded-full border border-brand-separator text-nav md:hidden"
+              className="grid h-10 w-10 place-items-center rounded-full border border-brand-separator text-nav xl:hidden"
             >
               {open ? <CloseIcon /> : <MenuIcon />}
             </button>
@@ -170,7 +209,7 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
       <div
         id="mobile-nav"
         hidden={!open}
-        className="mobile-menu border-t border-brand-separator bg-white md:hidden"
+        className="mobile-menu border-t border-brand-separator bg-white xl:hidden"
       >
         <ul className="mx-auto max-w-content space-y-1 px-6 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4">
           {nav.map((item) => (
@@ -179,7 +218,8 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
                 <ItemLink
                   href={item.href}
                   label={item.label}
-                  className="block py-2 text-sm font-medium uppercase tracking-normal text-nav hover:text-nav-active"
+                  className={`block py-2 text-sm font-medium uppercase tracking-normal hover:text-nav-active ${isActive(item, pathname) ? 'text-nav-active' : 'text-nav'}`}
+                  current={isCurrent(item.href, pathname)}
                   onNavigate={close}
                 />
               ) : (
@@ -194,7 +234,8 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
                       <ItemLink
                         href={child.href}
                         label={child.label}
-                        className="block py-1.5 text-sm tracking-normal text-nav-sub hover:text-nav-active"
+                        className={`block py-1.5 text-sm tracking-normal hover:text-nav-active ${isCurrent(child.href, pathname) ? 'text-nav-active' : 'text-nav-sub'}`}
+                        current={isCurrent(child.href, pathname)}
                         onNavigate={close}
                       />
                     </li>

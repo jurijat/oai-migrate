@@ -1,6 +1,7 @@
 ---
 title: An OpenAPI Interview with Marc-André Giroux of Github
 date: "2021-07-15"
+wordpressId: 1971
 author: kinlane
 category: blog
 permalink: /blog/2021/07/15/an-openapi-interview-with-marc-andre-giroux-of-github

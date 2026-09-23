@@ -1,6 +1,7 @@
 ---
 title: State of the Project Update with Jeff Borek at the 2016 Collaboration Summit
 date: "2016-03-28"
+wordpressId: 148
 author: openapi
 category: blog
 permalink: /blog/2016/03/28/state-of-the-project-update-with-jeff-borek-at-the-2016-collaboration-summit

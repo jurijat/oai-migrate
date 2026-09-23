@@ -1,6 +1,7 @@
 ---
 title: You Can Get Involved in Creating the OpenAPI Specification, And Here’s How
 date: "2016-07-11"
+wordpressId: 141
 author: marshg
 category: blog
 permalink: /blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how

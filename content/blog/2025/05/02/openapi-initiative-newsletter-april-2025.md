@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – April 2025
 date: "2025-05-02"
+wordpressId: 3913
 author: openapi
 category: blog
 tags:

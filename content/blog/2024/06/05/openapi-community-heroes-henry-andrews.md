@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Heroes – Henry Andrews
 date: "2024-06-05"
+wordpressId: 3335
 author: swaldron
 category: blog
 tags:

@@ -1,6 +1,7 @@
 ---
 title: Enterprise Software Pioneer IFS Joins the OpenAPI Initiative
 date: "2019-10-08"
+wordpressId: 1218
 author: openapi
 category: blog
 tags:

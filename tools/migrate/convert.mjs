@@ -236,6 +236,7 @@ function postFrontmatter(record) {
   return {
     title: record.title,
     date: record.date,
+    ...(record.wordpressId ? { wordpressId: record.wordpressId } : {}),
     author: record.author,
     category: record.category,
     ...(record.tags.length ? { tags: record.tags } : {}),

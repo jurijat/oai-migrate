@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Welcomes Level 250 as Newest Member
 date: "2021-03-11"
+wordpressId: 1848
 author: openapi
 category: announcement
 tags:

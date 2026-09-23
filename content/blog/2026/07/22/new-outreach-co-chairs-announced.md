@@ -1,6 +1,7 @@
 ---
 title: New Outreach Co-Chairs Announced
 date: "2026-07-22"
+wordpressId: 4499
 author: sensiblewood
 category: blog
 tags:

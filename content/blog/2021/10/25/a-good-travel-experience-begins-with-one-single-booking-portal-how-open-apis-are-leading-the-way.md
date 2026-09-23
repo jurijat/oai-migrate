@@ -1,6 +1,7 @@
 ---
 title: A Good Travel Experience Begins with One Single Booking Portal – How Open APIs Are Leading the Way
 date: "2021-10-25"
+wordpressId: 2055
 author: openapi
 category: blog
 tags:

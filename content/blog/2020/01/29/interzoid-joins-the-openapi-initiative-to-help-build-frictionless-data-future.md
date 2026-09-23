@@ -1,6 +1,7 @@
 ---
 title: Interzoid Joins the OpenAPI Initiative to Help Build Frictionless Data Future
 date: "2020-01-29"
+wordpressId: 1294
 author: openapi
 category: announcement
 tags:

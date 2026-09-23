@@ -1,6 +1,7 @@
 ---
 title: Open Source Projects Further RESTful API-Based Development
 date: "2015-11-10"
+wordpressId: 127
 author: openapi
 category: news
 permalink: /news/2015/11/10/open-source-projects-further-restful-api-based-development

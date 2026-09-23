@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – June 2025
 date: "2025-06-25"
+wordpressId: 4019
 author: sensiblewood
 category: blog
 permalink: /blog/2025/06/25/openapi-initiative-newsletter-june-2025

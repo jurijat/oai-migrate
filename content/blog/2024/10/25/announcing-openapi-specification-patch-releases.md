@@ -1,6 +1,7 @@
 ---
 title: Announcing OpenAPI Specification versions 3.0.4 and 3.1.1
 date: "2024-10-25"
+wordpressId: 3546
 author: openapi
 category: blog
 tags:

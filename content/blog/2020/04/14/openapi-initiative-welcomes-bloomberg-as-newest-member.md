@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Welcomes Bloomberg as Newest Member
 date: "2020-04-14"
+wordpressId: 1455
 author: openapi
 category: announcement
 tags:

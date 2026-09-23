@@ -1,6 +1,7 @@
 ---
 title: Open API Initiative, 9 Months and Counting – OAI Meetup 2016-09-15
 date: "2016-09-26"
+wordpressId: 136
 author: openapi
 category: blog
 permalink: /blog/2016/09/26/open-api-initiative-9-months-and-counting-oai-meetup-2016-09-15

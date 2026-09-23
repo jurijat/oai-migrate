@@ -1,6 +1,7 @@
 ---
 title: Stoplight ❤️ the OpenAPI Initiative
 date: "2018-05-14"
+wordpressId: 812
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/05/14/stoplight-%e2%9d%a4%ef%b8%8f-the-openapi-initiative

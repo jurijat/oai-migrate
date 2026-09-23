@@ -1,6 +1,7 @@
 ---
 title: gRPC with REST and OpenAPI Specification
 date: "2016-05-11"
+wordpressId: 144
 author: openapi
 category: blog
 permalink: /blog/2016/05/11/grpc-with-rest-and-openapi-specification

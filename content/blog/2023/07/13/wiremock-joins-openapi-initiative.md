@@ -1,6 +1,7 @@
 ---
 title: WireMock, Venture Funded Open Source API Mock Platform, Joins OpenAPI Initiative as New Member
 date: "2023-07-13"
+wordpressId: 2626
 author: openapi
 category: announcement
 tags:

@@ -1,6 +1,7 @@
 ---
 title: aapi, API Management Provider, Joins the Open API Initiative
 date: "2017-11-30"
+wordpressId: 613
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/11/30/aapi-api-management-provider-joins-open-api-initiative

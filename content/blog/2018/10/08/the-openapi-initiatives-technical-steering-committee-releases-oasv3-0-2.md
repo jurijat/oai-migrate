@@ -1,6 +1,7 @@
 ---
 title: The OpenAPI Initiative’s Technical Steering Committee Releases OASv3.0.2
 date: "2018-10-08"
+wordpressId: 1018
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/10/08/the-openapi-initiatives-technical-steering-committee-releases-oasv3-0-2

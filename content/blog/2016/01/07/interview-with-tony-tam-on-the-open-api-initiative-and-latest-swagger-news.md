@@ -1,6 +1,7 @@
 ---
 title: Interview with Tony Tam on the Open API Initiative and Latest Swagger News
 date: "2016-01-07"
+wordpressId: 126
 author: openapi
 category: news
 permalink: /news/2016/01/07/interview-with-tony-tam-on-the-open-api-initiative-and-latest-swagger-news

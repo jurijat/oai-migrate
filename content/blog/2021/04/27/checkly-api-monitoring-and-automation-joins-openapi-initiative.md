@@ -1,6 +1,7 @@
 ---
 title: Checkly, API Monitoring and Automation, Joins OpenAPI Initiative
 date: "2021-04-27"
+wordpressId: 1894
 author: openapi
 category: announcement
 tags:

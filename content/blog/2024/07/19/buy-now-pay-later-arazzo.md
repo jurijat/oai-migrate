@@ -1,6 +1,7 @@
 ---
 title: A Buy-now, Pay-later Use Case for Arazzo
 date: "2024-07-19"
+wordpressId: 3431
 author: sensiblewood
 category: blog
 permalink: /blog/2024/07/19/buy-now-pay-later-arazzo

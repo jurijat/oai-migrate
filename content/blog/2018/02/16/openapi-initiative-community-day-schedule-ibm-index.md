@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Community Day Schedule at IBM INDEX
 date: "2018-02-16"
+wordpressId: 740
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/02/16/openapi-initiative-community-day-schedule-ibm-index

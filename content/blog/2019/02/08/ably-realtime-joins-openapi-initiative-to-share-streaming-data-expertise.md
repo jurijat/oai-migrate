@@ -1,6 +1,7 @@
 ---
 title: Ably Realtime joins OpenAPI Initiative to share streaming data expertise
 date: "2019-02-08"
+wordpressId: 1065
 author: openapi
 category: blog
 permalink: /blog/2019/02/08/ably-realtime-joins-openapi-initiative-to-share-streaming-data-expertise

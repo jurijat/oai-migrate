@@ -1,6 +1,7 @@
 ---
 title: Open API Initiative Announces Release of the OpenAPI Spec v3 Implementer’s Draft
 date: "2017-03-01"
+wordpressId: 270
 author: jernstfriedman
 category: blog
 permalink: >-

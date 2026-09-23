@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Welcomes Ambassador Labs as Newest Member
 date: "2021-02-16"
+wordpressId: 1776
 author: openapi
 category: announcement
 tags:

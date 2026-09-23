@@ -1,6 +1,7 @@
 ---
 title: Announcing Arazzo Specification version 1.0.1
 date: "2025-01-24"
+wordpressId: 3753
 author: openapi
 category: blog
 tags:

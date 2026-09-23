@@ -1,6 +1,7 @@
 ---
 title: Open API Initiative Welcomes API Testing and Monitoring Company API Fortress as its Newest Member
 date: "2017-11-07"
+wordpressId: 574
 author: jernstfriedman
 category: blog
 tags:

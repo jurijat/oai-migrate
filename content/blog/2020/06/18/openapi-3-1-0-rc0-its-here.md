@@ -1,6 +1,7 @@
 ---
 title: OpenAPI 3.1.0 RC0 – It’s here!
 date: "2020-06-18"
+wordpressId: 1525
 author: darrmi
 category: blog
 permalink: /blog/2020/06/18/openapi-3-1-0-rc0-its-here

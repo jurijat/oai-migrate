@@ -1,6 +1,7 @@
 ---
 title: ASC 2021 Call For Proposals!
 date: "2021-04-15"
+wordpressId: 1886
 author: abringaze
 category: blog
 permalink: /blog/2021/04/15/asc-2021-call-for-proposals

@@ -1,6 +1,7 @@
 ---
 title: Announcing the New OpenAPI Initiative Special Interest Group for Travel
 date: "2020-07-20"
+wordpressId: 1573
 author: openapi
 category: announcement
 tags:

@@ -1,6 +1,7 @@
 ---
 title: Open API Initiative to Present at the Open Source Summit Europe
 date: "2017-10-19"
+wordpressId: 539
 author: jernstfriedman
 category: announcement
 permalink: /uncategorized/2017/10/19/open-api-initiative-to-present-at-the-open-source-summit-europe

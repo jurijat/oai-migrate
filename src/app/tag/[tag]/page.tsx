@@ -21,10 +21,12 @@ export default async function TagPage({ params }: { params: Promise<Params> }) {
   if (!posts.length) notFound();
 
   return (
-    <main className="mx-auto max-w-content px-6 py-16">
-      <p className="text-brand-muted">Tag</p>
-      <h1 className="mb-10 text-4xl font-semibold tracking-oai">{tag}</h1>
+    <div className="mx-auto max-w-content px-6 pb-20 pt-10">
+      <header className="mb-6 border-b border-[#ddd] px-5 pb-[35px]">
+        <p className="m-0 text-base tracking-normal text-black/[0.45]">Tag</p>
+        <h1 className="m-0 text-3xl font-bold tracking-normal text-[#444] md:text-4xl">{tag}</h1>
+      </header>
       <PostList posts={posts} />
-    </main>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 ---
 title: "Gluecon Wrap up: Living Up to the Hype for a First-Timer"
 date: "2016-06-17"
+wordpressId: 142
 author: openapi
 category: blog
 permalink: /blog/2016/06/17/gluecon-wrap-up-living-up-to-the-hype-for-a-first-timer

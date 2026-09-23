@@ -1,6 +1,7 @@
 ---
 title: "TDC: Documentation, explaining the 3.0 spec part 5"
 date: "2016-11-17"
+wordpressId: 183
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5

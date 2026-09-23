@@ -1,6 +1,7 @@
 ---
 title: Scale an OpenAPI based web API with Google Cloud Endpoints
 date: "2017-09-06"
+wordpressId: 457
 author: glaforge
 category: blog
 permalink: /blog/2017/09/06/scale-an-openapi-based-web-api-with-google-cloud-endpoints

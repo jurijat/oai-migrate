@@ -1,6 +1,7 @@
 ---
 title: Arnaud Lauret, the API Handyman, Covers His Top 4 Must-Attend Sessions at ASC 2021
 date: "2021-09-22"
+wordpressId: 2040
 author: openapi
 category: blog
 tags:

@@ -1,6 +1,7 @@
 ---
 title: Noname Security, API Security Company, Joins the OpenAPI Initiative
 date: "2022-12-21"
+wordpressId: 2409
 author: openapi
 category: blog
 permalink: /blog/2022/12/21/noname-security-api-security-company-joins-the-openapi-initiative

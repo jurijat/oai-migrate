@@ -1,6 +1,7 @@
 ---
 title: Cisco Joins OpenAPI Initiative
 date: "2022-10-18"
+wordpressId: 2339
 author: openapi
 category: blog
 permalink: /blog/2022/10/18/cisco-joins-openapi-initiative

@@ -1,6 +1,7 @@
 ---
 title: Reasons to Register! ASC 2020 Keynote Panel Deep with Real-World API Experience
 date: "2020-09-01"
+wordpressId: 1603
 author: abringaze
 category: blog
 permalink: /blog/2020/09/01/reasons-to-register-asc-2020-keynote-panel-deep-with-real-world-api-experience

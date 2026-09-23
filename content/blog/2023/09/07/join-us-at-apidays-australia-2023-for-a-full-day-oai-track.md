@@ -1,6 +1,7 @@
 ---
 title: Join Us at apidays Australia 2023 for a Full-Day OAI Track
 date: "2023-09-07"
+wordpressId: 2911
 author: openapi
 category: blog
 tags:

@@ -1,6 +1,7 @@
 ---
 title: eBay Joins the Open API Initiative
 date: "2017-08-17"
+wordpressId: 448
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/08/17/ebay-joins-the-open-api-initiative

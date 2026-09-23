@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Welcomes New Member High School Technology Services
 date: "2021-02-11"
+wordpressId: 1773
 author: openapi
 category: announcement
 permalink: /blog/2021/02/11/openapi-welcomes-new-member-high-school-technology-services

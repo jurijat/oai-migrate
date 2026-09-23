@@ -41,7 +41,7 @@ const config = {
         oai: '-0.04em',
       },
       maxWidth: {
-        content: '1425px',
+        content: '1293px',
         prose: '72ch',
       },
       typography: {

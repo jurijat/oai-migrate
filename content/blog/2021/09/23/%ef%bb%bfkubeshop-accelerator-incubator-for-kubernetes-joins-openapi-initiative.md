@@ -1,6 +1,7 @@
 ---
 title: Kubeshop, Accelerator/Incubator for Kubernetes, Joins OpenAPI Initiative
 date: "2021-09-23"
+wordpressId: 2036
 author: openapi
 category: announcement
 tags:

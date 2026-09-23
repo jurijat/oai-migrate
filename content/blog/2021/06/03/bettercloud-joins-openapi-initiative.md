@@ -1,6 +1,7 @@
 ---
 title: BetterCloud Joins OpenAPI Initiative
 date: "2021-06-03"
+wordpressId: 1927
 author: openapi
 category: announcement
 tags:

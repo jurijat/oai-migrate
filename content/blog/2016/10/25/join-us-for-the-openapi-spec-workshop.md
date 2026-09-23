@@ -1,6 +1,7 @@
 ---
 title: Join us for the OpenAPI Spec Workshop
 date: "2016-10-25"
+wordpressId: 171
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/10/25/join-us-for-the-openapi-spec-workshop

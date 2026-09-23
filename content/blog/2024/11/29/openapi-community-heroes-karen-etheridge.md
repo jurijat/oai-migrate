@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Heroes – Karen Etheridge
 date: "2024-11-29"
+wordpressId: 3636
 author: openapi
 category: blog
 tags:

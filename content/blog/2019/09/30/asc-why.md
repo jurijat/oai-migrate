@@ -1,6 +1,7 @@
 ---
 title: ASC why!
 date: "2019-09-30"
+wordpressId: 1206
 author: abringaze
 category: blog
 permalink: /blog/2019/09/30/asc-why

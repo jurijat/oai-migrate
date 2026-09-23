@@ -1,6 +1,7 @@
 ---
 title: ASC 2020 Online – Don’t ASC, Still Learn
 date: "2020-11-04"
+wordpressId: 1686
 author: abringaze
 category: blog
 permalink: /blog/2020/11/04/asc-2020-online-dont-asc-still-learn

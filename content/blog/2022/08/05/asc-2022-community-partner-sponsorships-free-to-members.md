@@ -1,6 +1,7 @@
 ---
 title: ASC 2022 Community Partner Sponsorships Free to Members!
 date: "2022-08-05"
+wordpressId: 2253
 author: openapi
 category: blog
 permalink: /blog/2022/08/05/asc-2022-community-partner-sponsorships-free-to-members

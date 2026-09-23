@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Moonwalk 2024
 date: "2023-12-04"
+wordpressId: 3013
 author: marshg
 category: announcement
 tags:

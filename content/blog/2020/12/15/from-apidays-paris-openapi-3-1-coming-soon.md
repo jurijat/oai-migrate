@@ -1,6 +1,7 @@
 ---
 title: "From APIDays Paris: OpenAPI 3.1 Coming Soon"
 date: "2020-12-15"
+wordpressId: 1719
 author: openapi
 category: blog
 tags:

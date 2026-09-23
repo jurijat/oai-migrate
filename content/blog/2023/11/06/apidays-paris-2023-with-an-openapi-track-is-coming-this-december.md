@@ -1,6 +1,7 @@
 ---
 title: Apidays Paris 2023 – with an OpenAPI Track – is Coming This December!
 date: "2023-11-06"
+wordpressId: 2995
 author: openapi
 category: announcement
 tags:

@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – December 2025
 date: "2025-12-04"
+wordpressId: 4135
 author: sensiblewood
 category: blog
 tags:

@@ -1,6 +1,7 @@
 ---
 title: Gluecon Pass Giveaway!
 date: "2016-05-18"
+wordpressId: 143
 author: openapi
 category: blog
 permalink: /blog/2016/05/18/gluecon-pass-giveaway

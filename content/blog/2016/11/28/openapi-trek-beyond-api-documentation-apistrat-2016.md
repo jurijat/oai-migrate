@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Trek Beyond API Documentation (APISTRAT 2016)
 date: "2016-11-28"
+wordpressId: 200
 author: jernstfriedman
 category: presentation
 permalink: /blog/presentation/2016/11/28/openapi-trek-beyond-api-documentation-apistrat-2016

@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Heroes – Frank Kilcommins
 date: "2024-07-25"
+wordpressId: 3474
 author: sensiblewood
 category: blog
 tags:

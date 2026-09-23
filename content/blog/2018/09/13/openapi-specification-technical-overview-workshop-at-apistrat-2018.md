@@ -1,6 +1,7 @@
 ---
 title: Intro Level OpenAPI Specification Technical Overview/Workshop at APIStrat 2018
 date: "2018-09-13"
+wordpressId: 990
 author: jernstfriedman
 category: blog
 tags:

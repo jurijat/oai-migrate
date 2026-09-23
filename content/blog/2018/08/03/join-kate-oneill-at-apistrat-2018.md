@@ -1,6 +1,7 @@
 ---
 title: Join Kate O’Neill at APIStrat 2018
 date: "2018-08-03"
+wordpressId: 876
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/08/03/join-kate-oneill-at-apistrat-2018

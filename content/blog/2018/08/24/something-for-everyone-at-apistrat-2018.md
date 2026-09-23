@@ -1,6 +1,7 @@
 ---
 title: Something for Everyone at APIStrat 2018
 date: "2018-08-24"
+wordpressId: 947
 author: jernstfriedman
 category: blog
 tags:

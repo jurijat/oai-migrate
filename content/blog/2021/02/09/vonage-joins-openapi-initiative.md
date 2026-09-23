@@ -1,6 +1,7 @@
 ---
 title: Vonage Joins OpenAPI Initiative
 date: "2021-02-09"
+wordpressId: 1769
 author: openapi
 category: announcement
 permalink: /blog/2021/02/09/vonage-joins-openapi-initiative

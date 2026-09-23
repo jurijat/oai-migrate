@@ -1,6 +1,7 @@
 ---
 title: OAI Additional Leadership Job Posting
 date: "2021-07-21"
+wordpressId: 1975
 author: abringaze
 category: announcement
 permalink: /blog/2021/07/21/oai-additional-leadership-job-posting

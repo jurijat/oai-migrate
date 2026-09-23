@@ -1,6 +1,7 @@
 ---
 title: Join Cristiano Betts at APIStrat 2018
 date: "2018-08-03"
+wordpressId: 888
 author: jernstfriedman
 category: blog
 tags:

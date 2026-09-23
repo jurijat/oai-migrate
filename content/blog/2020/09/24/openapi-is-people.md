@@ -1,6 +1,7 @@
 ---
 title: OpenAPI is People!
 date: "2020-09-24"
+wordpressId: 1626
 author: jesse
 category: blog
 tags:

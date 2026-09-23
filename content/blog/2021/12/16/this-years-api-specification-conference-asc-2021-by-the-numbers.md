@@ -1,6 +1,7 @@
 ---
 title: This Year’s API Specification Conference (ASC 2021) by the Numbers
 date: "2021-12-16"
+wordpressId: 2102
 author: openapi
 category: blog
 tags:

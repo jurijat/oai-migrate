@@ -1,6 +1,7 @@
 ---
 title: Tony Tam recounts the history of Swagger and the Open API Initiative (developerWorks TV)
 date: "2016-03-07"
+wordpressId: 203
 author: jernstfriedman
 category: uncategorized
 permalink: >-

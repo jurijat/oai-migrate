@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Welcomes New Member Optic
 date: "2022-05-04"
+wordpressId: 2184
 author: openapi
 category: blog
 tags:

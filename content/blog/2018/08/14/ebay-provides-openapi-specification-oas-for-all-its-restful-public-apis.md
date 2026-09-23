@@ -1,6 +1,7 @@
 ---
 title: eBay Provides OpenAPI Specification (OAS) for All its RESTful Public APIs
 date: "2018-08-14"
+wordpressId: 929
 author: openapi
 category: blog
 permalink: /blog/2018/08/14/ebay-provides-openapi-specification-oas-for-all-its-restful-public-apis

@@ -1,6 +1,7 @@
 ---
 title: Liferay Joins OpenAPI Initiative
 date: "2020-02-26"
+wordpressId: 1317
 author: openapi
 category: blog
 tags:

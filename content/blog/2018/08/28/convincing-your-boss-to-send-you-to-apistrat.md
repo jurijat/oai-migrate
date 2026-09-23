@@ -1,6 +1,7 @@
 ---
 title: Convincing Your Boss to Send You to APIStrat
 date: "2018-08-28"
+wordpressId: 956
 author: jernstfriedman
 category: blog
 tags:

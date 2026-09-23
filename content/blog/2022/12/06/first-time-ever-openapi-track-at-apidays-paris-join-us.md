@@ -1,6 +1,7 @@
 ---
 title: First Time Ever! OpenAPI Track at APIDays Paris – Join us!
 date: "2022-12-06"
+wordpressId: 2369
 author: openapi
 category: blog
 permalink: /blog/2022/12/06/first-time-ever-openapi-track-at-apidays-paris-join-us

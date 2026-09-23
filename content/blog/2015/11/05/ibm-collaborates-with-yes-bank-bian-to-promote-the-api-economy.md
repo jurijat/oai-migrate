@@ -1,6 +1,7 @@
 ---
 title: IBM collaborates with Yes Bank, Bian to promote the API economy
 date: "2015-11-05"
+wordpressId: 130
 author: openapi
 category: news
 permalink: /news/2015/11/05/ibm-collaborates-with-yes-bank-bian-to-promote-the-api-economy

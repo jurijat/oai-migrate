@@ -1,6 +1,7 @@
 ---
 title: APIAddicts Joins OpenAPI Initiative
 date: "2021-07-22"
+wordpressId: 1978
 author: openapi
 category: announcement
 tags:

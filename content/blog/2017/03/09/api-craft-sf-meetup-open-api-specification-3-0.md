@@ -1,6 +1,7 @@
 ---
 title: "API Craft SF Meetup: Open API Specification 3.0"
 date: "2017-03-09"
+wordpressId: 291
 author: jernstfriedman
 category: blog
 permalink: /uncategorized/2017/03/09/api-craft-sf-meetup-open-api-specification-3-0

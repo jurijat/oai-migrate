@@ -1,6 +1,7 @@
 ---
 title: Implementer’s Draft (OAS 3.1 RC1) Available for Feedback – Please Respond by Nov 8!
 date: "2020-10-23"
+wordpressId: 1637
 author: openapi
 category: blog
 tags:

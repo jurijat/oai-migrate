@@ -1,6 +1,7 @@
 ---
 title: API Design and What’s new with Open API? (Google Cloud Next ’17)
 date: "2017-03-08"
+wordpressId: 281
 author: jernstfriedman
 category: presentation
 permalink: /blog/presentation/2017/03/08/api-design-and-whats-new-with-open-api-google-cloud-next-17

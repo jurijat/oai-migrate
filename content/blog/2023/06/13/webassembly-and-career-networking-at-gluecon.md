@@ -1,6 +1,7 @@
 ---
 title: WebAssembly and Career Networking at Gluecon
 date: "2023-06-13"
+wordpressId: 2597
 author: openapi
 category: blog
 permalink: /blog/2023/06/13/webassembly-and-career-networking-at-gluecon

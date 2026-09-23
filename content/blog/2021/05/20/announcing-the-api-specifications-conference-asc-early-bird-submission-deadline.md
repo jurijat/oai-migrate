@@ -1,6 +1,7 @@
 ---
 title: Announcing the API Specifications Conference (ASC) Early Bird Submission Deadline
 date: "2021-05-20"
+wordpressId: 1921
 author: abringaze
 category: blog
 permalink: /blog/2021/05/20/announcing-the-api-specifications-conference-asc-early-bird-submission-deadline

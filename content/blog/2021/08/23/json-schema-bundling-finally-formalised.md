@@ -1,6 +1,7 @@
 ---
 title: JSON Schema bundling finally formalised
 date: "2021-08-23"
+wordpressId: 1999
 author: openapi
 category: blog
 tags:

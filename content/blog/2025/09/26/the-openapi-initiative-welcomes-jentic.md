@@ -1,6 +1,7 @@
 ---
 title: The OpenAPI Initiative Welcomes Jentic!
 date: "2025-09-26"
+wordpressId: 4087
 author: sensiblewood
 category: blog
 permalink: /blog/2025/09/26/the-openapi-initiative-welcomes-jentic

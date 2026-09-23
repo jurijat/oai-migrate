@@ -1,6 +1,7 @@
 ---
 title: "OSCON: Contract-First API Development Using The OpenAPI Specification"
 date: "2016-11-29"
+wordpressId: 193
 author: jernstfriedman
 category: events
 permalink: /events/2016/11/29/oscon-contract-first-api-development-using-the-openapi-specification

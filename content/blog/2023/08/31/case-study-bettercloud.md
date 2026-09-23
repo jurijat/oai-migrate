@@ -3,6 +3,7 @@ title: >-
   Case Study: Using the OpenAPI Specification for Integrating SaaS Applications and Scaling Up to
   Hundreds of API Providers
 date: "2023-08-31"
+wordpressId: 2852
 author: openapi
 category: blog
 permalink: /blog/2023/08/31/case-study-bettercloud

@@ -1,6 +1,7 @@
 ---
 title: Tools That Support OpenAPI Specification
 date: "2023-03-08"
+wordpressId: 2477
 author: openapi
 category: blog
 permalink: /blog/2023/03/08/tools-that-support-openapi-specification

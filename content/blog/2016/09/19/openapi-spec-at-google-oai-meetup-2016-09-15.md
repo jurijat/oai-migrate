@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Spec at Google – OAI Meetup 2016-09-15
 date: "2016-09-19"
+wordpressId: 139
 author: openapi
 category: blog
 permalink: /blog/2016/09/19/openapi-spec-at-google-oai-meetup-2016-09-15

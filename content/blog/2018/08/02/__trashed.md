@@ -1,6 +1,7 @@
 ---
 title: The First Batch Of APIStrat 2018 Nashville Keynotes Are Up
 date: "2018-08-02"
+wordpressId: 866
 author: kinlane
 category: blog
 tags:

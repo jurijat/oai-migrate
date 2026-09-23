@@ -1,6 +1,7 @@
 ---
 title: ASC 2022 in San Francisco 🌉 by the Numbers
 date: "2022-12-20"
+wordpressId: 2411
 author: openapi
 category: blog
 permalink: /blog/2022/12/20/asc-2022-in-san-francisco

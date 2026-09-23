@@ -1,6 +1,7 @@
 ---
 title: Three common scenarios for leveraging the OpenAPI Specification
 date: "2017-09-26"
+wordpressId: 494
 author: pjmolina
 category: blog
 tags:

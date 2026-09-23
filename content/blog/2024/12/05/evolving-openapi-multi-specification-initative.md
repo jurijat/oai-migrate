@@ -1,6 +1,7 @@
 ---
 title: Evolving OpenAPI in a Multi-Specification Initiative
 date: "2024-12-05"
+wordpressId: 3548
 author: openapi
 category: blog
 permalink: /blog/2024/12/05/evolving-openapi-multi-specification-initative

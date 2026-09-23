@@ -198,6 +198,9 @@ export function extractPost(html, entry) {
   if (!authorSlug) warnings.push('missing author');
   if (authorSlug && !authorName) warnings.push(`author ${authorSlug} has no display name`);
 
+  const postId = /\bpostid-(\d+)\b/.exec($('body').attr('class') ?? '');
+  if (!postId) warnings.push('no WordPress post id');
+
   const urlDate = DATE_FROM_URL.exec(entry.url);
   if (!urlDate) warnings.push('no date in url');
   const date = urlDate ? `${urlDate[1]}-${urlDate[2]}-${urlDate[3]}` : '';
@@ -229,6 +232,7 @@ export function extractPost(html, entry) {
     permalink: toPath(entry.url),
     title,
     date,
+    wordpressId: postId ? Number(postId[1]) : undefined,
     author: authorSlug,
     authorName,
     category,

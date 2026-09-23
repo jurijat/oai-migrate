@@ -1,6 +1,7 @@
 ---
 title: APIIDA, Delivering Automated API Management Solutions, Joins the OpenAPI Initiative
 date: "2022-05-31"
+wordpressId: 2217
 author: openapi
 category: blog
 permalink: >-

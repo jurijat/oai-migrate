@@ -1,6 +1,7 @@
 ---
 title: Announcing OpenAPI v3.2
 date: "2025-09-23"
+wordpressId: 4078
 author: sensiblewood
 category: blog
 permalink: /blog/2025/09/23/announcing-openapi-v3-2

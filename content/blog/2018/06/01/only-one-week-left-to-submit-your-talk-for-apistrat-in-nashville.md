@@ -1,6 +1,7 @@
 ---
 title: Only One Week Left To Submit Your Talk For APIStrat In Nashville
 date: "2018-06-01"
+wordpressId: 831
 author: kinlane
 category: blog
 tags:

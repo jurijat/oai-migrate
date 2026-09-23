@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – June 2026
 date: "2026-06-09"
+wordpressId: 4485
 author: sensiblewood
 category: blog
 permalink: /blog/2026/06/09/openapi-initiative-newsletter-june-2026

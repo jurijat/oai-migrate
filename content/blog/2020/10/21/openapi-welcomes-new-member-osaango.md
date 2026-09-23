@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Welcomes New Member Osaango
 date: "2020-10-21"
+wordpressId: 1633
 author: openapi
 category: announcement
 tags:

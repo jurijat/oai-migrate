@@ -1,6 +1,7 @@
 ---
 title: The Top Reasons to Attend the API Conference of the Year
 date: "2018-09-14"
+wordpressId: 1003
 author: jernstfriedman
 category: blog
 permalink: /blog/2018/09/14/the-top-reasons-to-attend-the-api-conference-of-the-year

@@ -1,6 +1,7 @@
 ---
 title: "Open API Initiative Meetup: Atlassian | Microsoft | Google (Meetup)"
 date: "2016-11-18"
+wordpressId: 204
 author: jernstfriedman
 category: presentation
 permalink: /blog/presentation/2016/11/18/open-api-initiative-meetup-atlassian-microsoft-google-meetup

@@ -1,6 +1,7 @@
 ---
 title: Karate Labs, Testing Automation Framework, is Joining the OpenAPI Initiative
 date: "2022-05-24"
+wordpressId: 2204
 author: openapi
 category: blog
 tags:

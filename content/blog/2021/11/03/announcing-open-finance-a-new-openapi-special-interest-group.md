@@ -1,6 +1,7 @@
 ---
 title: Announcing Open Finance, a New OpenAPI Special Interest Group
 date: "2021-11-03"
+wordpressId: 2066
 author: openapi
 category: blog
 tags:

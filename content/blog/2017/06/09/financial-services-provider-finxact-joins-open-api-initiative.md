@@ -1,6 +1,7 @@
 ---
 title: Financial Services Provider Finxact Joins Open API Initiative
 date: "2017-06-09"
+wordpressId: 370
 author: jernstfriedman
 category: blog
 permalink: /blog/2017/06/09/financial-services-provider-finxact-joins-open-api-initiative

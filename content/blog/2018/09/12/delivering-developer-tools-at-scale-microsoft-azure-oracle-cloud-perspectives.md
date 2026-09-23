@@ -1,6 +1,7 @@
 ---
 title: "Delivering Developer Tools at Scale: Microsoft Azure & Oracle Cloud Perspectives"
 date: "2018-09-12"
+wordpressId: 981
 author: joelevy
 category: blog
 permalink: /blog/2018/09/12/delivering-developer-tools-at-scale-microsoft-azure-oracle-cloud-perspectives

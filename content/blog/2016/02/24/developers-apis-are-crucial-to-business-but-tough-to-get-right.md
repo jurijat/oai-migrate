@@ -1,6 +1,7 @@
 ---
 title: "Developers: APIs are crucial to business, but tough to get right"
 date: "2016-02-24"
+wordpressId: 124
 author: openapi
 category: news
 permalink: /news/2016/02/24/developers-apis-are-crucial-to-business-but-tough-to-get-right

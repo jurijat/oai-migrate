@@ -1,6 +1,7 @@
 ---
 title: Why the Largest Geospatial Organization in the World Uses the OpenAPI Specification
 date: "2023-02-01"
+wordpressId: 2464
 author: openapi
 category: blog
 permalink: >-

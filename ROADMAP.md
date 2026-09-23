@@ -287,6 +287,41 @@ build it was the only thing that would have stopped LFX Segment loading before c
 - [ ] 58 content images are hotlinked to other hosts (18 to a dead `oapi.wpengine.com`, 404);
       they still reach third parties before consent and several are already broken
 
+## Blog, matched to the original
+
+Measured against www.openapis.org at 1440px and 390px; every value below is taken from the live
+computed styles, not estimated.
+
+- [x] Blog index is one flat list of cards, as on live, not grouped by year
+- [x] Card: `date in Category` meta line, bold title, first 30 words of the post with `…`, green
+      `READ MORE →`; the whole card is clickable and the category link stays separately clickable
+- [x] Card geometry matches live exactly: 1245px wide, 234px tall, 259px apart, text at x=110
+- [x] Index lists the same 180 posts as live: `events` and `uncategorized` posts are left off, as on
+      live, but keep their permalinks and category archives
+- [x] Same-day posts keep the live order through `wordpressId` (original WordPress post ID),
+      backfilled into all 184 posts and emitted by the converter on re-runs
+- [x] Post header: 36/48 bold title, `By Author | Date | Category` with hairline separators, rule
+      beneath, 40px below the navbar
+- [x] Post body: 1000px column, live text colours, 28px paragraph rhythm, 24/36 section headings,
+      live list spacing
+- [x] Category display names (`presentation` → Presentations) on cards, headers and archives
+- [x] Archives no longer nest a second `<main>` inside the layout's
+- [x] BLOG is marked current (`aria-current`, green) on `/blog/` only, and a parent is highlighted
+      when one of its children is the current page
+- [x] Content container: 1245px wide and aligned with the logo at x=90 on wide screens, like live
+- [x] Header: live logo size (166px wide) and 70px height
+- [x] Linux Foundation banner vertically centred in a 33px bar, as on live
+- [x] Desktop menu no longer overflows between 1024px and 1400px: hamburger below 1280px, tighter
+      item spacing, and `What is OpenAPI?` wraps onto two lines as on live
+
+### Open
+
+- [ ] Page background: live content area is `#f8f8f8`, ours is `#ececed` everywhere (a token
+      carried over from the new design tokens). One-line change if wanted.
+- [ ] Body links: live uses `#94c73d` without underline, about 1.9:1 on the page background. Ours
+      keep the accessible `#356d00`.
+- [ ] Code blocks keep our boxed style; live renders them as plain bold monospace.
+
 ## Blocked: needs your account or judgement
 
 Everything else is done. These cannot be completed from inside the repo.
@@ -329,4 +364,4 @@ first PR after that.
 | `npm run check:basepath`                      | Root-absolute references under a base path                             |
 | `npm run check:parity`                        | Every page against the cached WordPress source (needs `migrate:fetch`) |
 | `npm run migrate:report`                      | Conversion coverage and unresolved links                               |
-| `npm run test:e2e`                            | 14 Playwright tests                                                    |
+| `npm run test:e2e`                            | 68 Playwright tests                                                    |

@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Initiative Newsletter – October 2024
 date: "2024-10-30"
+wordpressId: 3575
 author: openapi
 category: blog
 tags:

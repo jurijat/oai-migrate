@@ -13,6 +13,7 @@ const permalink = z.string().regex(/^\/(?:[\w%().-]+\/?)*$/);
 const postFrontmatter = z.object({
   title: z.string().min(1),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  wordpressId: z.number().int().positive().optional(),
   author: z.string().min(1),
   category: z.string().min(1),
   tags: z.array(z.string()).default([]),
@@ -78,7 +79,12 @@ export function getPosts(): Promise<Post[]> {
     postsCache = (async () => {
       const files = await walk(BLOG_DIR);
       const posts = await Promise.all(files.map((f) => parse(f, postFrontmatter)));
-      return posts.sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
+      return posts.sort(
+        (a, b) =>
+          b.date.localeCompare(a.date) ||
+          (b.wordpressId ?? Infinity) - (a.wordpressId ?? Infinity) ||
+          a.title.localeCompare(b.title),
+      );
     })();
   }
   return postsCache;
@@ -139,19 +145,54 @@ export async function findByPermalink(path: string): Promise<Post | Page | null>
 
 const EXCERPT_LENGTH = 200;
 
-export function excerpt(body: string, limit = EXCERPT_LENGTH): string {
-  const text = body
+const EXCERPT_WORDS = 30;
+
+const CATEGORY_NAMES: Record<string, string> = {
+  announcement: 'Announcement',
+  blog: 'Blog',
+  events: 'Events',
+  news: 'News',
+  presentation: 'Presentations',
+  uncategorized: 'Uncategorized',
+};
+
+const BLOG_INDEX_CATEGORIES = new Set(['blog', 'announcement', 'news', 'presentation']);
+
+export function isOnBlogIndex(post: Post): boolean {
+  return BLOG_INDEX_CATEGORIES.has(post.category);
+}
+
+export function categoryName(slug: string): string {
+  return CATEGORY_NAMES[slug] ?? slug.charAt(0).toUpperCase() + slug.slice(1);
+}
+
+function plainText(body: string): string {
+  return body
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/<[^>]+>/g, ' ')
     .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
     .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/\\([\\`*_{}[\]()#+\-.!|<>])/g, '$1')
+    .replace(/^\s*\|?\s*:?-{3,}.*$/gm, ' ')
     .replace(/[#>*_`|]+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
 
+export function excerpt(body: string, limit = EXCERPT_LENGTH): string {
+  const text = plainText(body);
   if (text.length <= limit) return text;
   const cut = text.slice(0, limit);
   return `${cut.slice(0, cut.lastIndexOf(' ')).trimEnd()}…`;
+}
+
+export function wordExcerpt(body: string, words = EXCERPT_WORDS): string {
+  const all = plainText(body).split(' ').filter(Boolean);
+  if (all.length <= words) return all.join(' ');
+  return `${all
+    .slice(0, words)
+    .join(' ')
+    .replace(/[,;:.–—-]+$/, '')}…`;
 }
 
 export function isPost(doc: Post | Page): doc is Post {

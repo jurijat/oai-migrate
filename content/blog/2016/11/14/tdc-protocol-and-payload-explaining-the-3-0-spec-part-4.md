@@ -1,6 +1,7 @@
 ---
 title: "TDC: Protocol and Payload, explaining the 3.0 spec part 4"
 date: "2016-11-14"
+wordpressId: 176
 author: jernstfriedman
 category: blog
 permalink: /blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4

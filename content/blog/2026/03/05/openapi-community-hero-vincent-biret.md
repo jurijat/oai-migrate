@@ -1,6 +1,7 @@
 ---
 title: OpenAPI Community Hero – Vincent Biret
 date: "2026-03-05"
+wordpressId: 4374
 author: sensiblewood
 category: blog
 permalink: /blog/2026/03/05/openapi-community-hero-vincent-biret
