@@ -183,9 +183,15 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
                       target="_blank"
                       rel="noreferrer"
                       aria-label={item.label}
-                      className="block p-1 text-nav transition-colors hover:text-nav-active"
+                      className="group/social block h-[18px] overflow-hidden text-nav focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[color:var(--brand-link)]"
                     >
-                      <Glyph />
+                      <span className="relative block transition-transform duration-[650ms] ease-[cubic-bezier(0.3,1,0.3,1)] group-hover/social:-translate-y-[120%] group-focus-visible/social:-translate-y-[120%] motion-reduce:transition-none">
+                        <Glyph className="block" />
+                        <Glyph
+                          data-social-hover
+                          className="absolute left-0 top-[120%] block text-nav-active"
+                        />
+                      </span>
                     </a>
                   </li>
                 );

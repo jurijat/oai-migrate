@@ -250,6 +250,10 @@ rationale. Check off each task as it lands.
 - [x] Top level uppercase `#888`, `#6da643` on hover or while its menu is open, with chevrons
 - [x] Dropdown items `#a8a8a8`; hovered item `#6da643` on a `#313233` bar; white square panel
 - [x] Header and mobile menu on white, as on the live site
+- [x] GitHub icon is the original glyph (Font Awesome 6.0.0 `github-alt`, credited in `NOTICE.md`)
+- [x] Social icons slide up on hover and a green copy slides in from below, as on the live site:
+      18px clip, 120% travel, 0.65s `cubic-bezier(0.3, 1, 0.3, 1)`; also on keyboard focus, and
+      an instant swap under reduced motion
 
 ### Open
 
@@ -279,6 +283,9 @@ build it was the only thing that would have stopped LFX Segment loading before c
       `requestIdleCallback`, which was starved in 5 of 8 headless runs
 - [x] `brand-fg` registered as a Tailwind colour — `text-brand-fg` was silently a no-op
 - [x] 11 consent tests; the rest of the suite runs with consent seeded by a fixture
+- [x] Cookie badge always visible in the bottom-left corner, as on the live site: the original
+      artwork, 40px, 20px from the edges; opens cookie settings and takes focus back on close; last
+      in tab order so it never precedes the navigation
 
 ### Open
 
@@ -364,4 +371,4 @@ first PR after that.
 | `npm run check:basepath`                      | Root-absolute references under a base path                             |
 | `npm run check:parity`                        | Every page against the cached WordPress source (needs `migrate:fetch`) |
 | `npm run migrate:report`                      | Conversion coverage and unresolved links                               |
-| `npm run test:e2e`                            | 68 Playwright tests                                                    |
+| `npm run test:e2e`                            | 71 Playwright tests                                                    |

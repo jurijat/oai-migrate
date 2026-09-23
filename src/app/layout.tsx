@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Onest } from 'next/font/google';
 import type { ReactNode } from 'react';
 import { Analytics } from '@/components/Analytics';
-import { CookieBanner } from '@/components/CookieBanner';
+import { CookieBadge, CookieBanner } from '@/components/CookieBanner';
 import { Footer } from '@/components/Footer';
 import { LfBar } from '@/components/LfBar';
 import { Navbar } from '@/components/Navbar';
@@ -53,6 +53,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         <Navbar nav={nav} social={social} />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieBadge />
         <Analytics enabled={isProduction} />
       </body>
     </html>

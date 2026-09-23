@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useId, useRef, useState, type KeyboardEvent } from 'react';
-import { CloseIcon } from '@/components/Icons';
+import { CloseIcon, CookieIcon } from '@/components/Icons';
 import {
   CONSENT_CATEGORIES,
   FULL_CONSENT,
@@ -221,6 +221,23 @@ function Preferences({
         </a>
       </div>
     </div>
+  );
+}
+
+export function CookieBadge() {
+  const consent = useConsent();
+  if (consent === undefined) return null;
+
+  return (
+    <button
+      type="button"
+      onClick={() => openConsentPreferences()}
+      aria-label="Cookie settings"
+      data-cookie-badge
+      className="fixed bottom-5 left-5 z-30 block h-10 w-10 rounded-full bg-transparent p-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[color:var(--brand-link)]"
+    >
+      <CookieIcon className="block h-full w-full" />
+    </button>
   );
 }
 

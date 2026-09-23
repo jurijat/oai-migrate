@@ -361,3 +361,24 @@ test('header never overflows from phone to wide desktop', async ({ page }) => {
     });
   }
 });
+
+test('social icons use the original glyphs and slide to green on hover', async ({ page }) => {
+  await page.goto('/');
+  const nav = page.getByRole('navigation', { name: 'Main' });
+  const github = nav.getByRole('link', { name: 'GitHub' });
+  await expect(github.locator('svg').first()).toHaveAttribute('viewBox', '0 0 480 512');
+
+  const track = github.locator('span').first();
+  await expect(track).toHaveCSS('transform', 'none');
+  await expect(github.locator('[data-social-hover]')).toHaveCSS('color', 'rgb(109, 166, 67)');
+  expect(await github.evaluate((el) => getComputedStyle(el).overflow)).toBe('hidden');
+
+  await github.hover();
+  await expect(track).toHaveCSS('transform', 'matrix(1, 0, 0, 1, 0, -21.6)');
+  const shown = await github.evaluate((el) => {
+    const frame = el.getBoundingClientRect();
+    const copy = el.querySelector('[data-social-hover]')!.getBoundingClientRect();
+    return Math.abs(copy.top - frame.top);
+  });
+  expect(shown).toBeLessThanOrEqual(0.5);
+});

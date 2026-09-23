@@ -87,6 +87,11 @@ test.describe('first visit', () => {
     });
   });
 
+  test('cookie badge is present before a choice is made', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('[data-cookie-badge]')).toBeVisible();
+  });
+
   test('banner fits a phone screen', async ({ browser }) => {
     const iPhone = { ...devices['iPhone 13'] };
     delete (iPhone as { defaultBrowserType?: string }).defaultBrowserType;
@@ -141,6 +146,27 @@ test.describe('after rejecting', () => {
     await expect(notice).toHaveCount(0);
     await expect(page.locator('script[src*="js.hsforms.net"]')).toHaveCount(1, { timeout: 15_000 });
     expect(await stored(page)).toMatchObject({ marketing: true, functional: false });
+  });
+
+  test('cookie badge stays in the bottom-left corner and reopens settings', async ({ page }) => {
+    await page.goto('/about/');
+    const badge = page.locator('[data-cookie-badge]');
+    await page.keyboard.press('Tab');
+    await expect(page.getByRole('link', { name: 'The Linux Foundation Projects' })).toBeFocused();
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight / 2));
+    await expect(badge).toBeVisible();
+    const box = await badge.boundingBox();
+    const viewport = page.viewportSize()!;
+    expect(box).toEqual({ x: 20, y: viewport.height - 60, width: 40, height: 40 });
+
+    await badge.click();
+    const heading = page.getByRole('heading', { name: 'Cookie settings' });
+    await expect(heading).toBeFocused();
+    await expect(badge).toBeVisible();
+
+    await page.keyboard.press('Escape');
+    await expect(heading).toHaveCount(0);
+    await expect(badge).toBeFocused();
   });
 
   test('cookie settings reopens preferences and returns focus on escape', async ({ page }) => {
