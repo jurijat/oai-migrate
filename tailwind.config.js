@@ -15,6 +15,12 @@ const config = {
         onest: ['var(--font-onest)', 'Onest', 'sans-serif'],
       },
       colors: {
+        nav: {
+          DEFAULT: '#888888',
+          sub: '#a8a8a8',
+          active: '#6da643',
+          highlight: '#313233',
+        },
         brand: {
           bg: 'var(--brand-bg)',
           fg: 'var(--brand-fg)',

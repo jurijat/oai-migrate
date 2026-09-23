@@ -31,6 +31,24 @@ export function SearchIcon(props: IconProps) {
   );
 }
 
+export function ExternalLinkIcon({ size = 10, ...rest }: IconProps) {
+  return (
+    <Icon size={size} strokeWidth={2.4} {...rest}>
+      <path d="M14 4h6v6" />
+      <path d="M20 4 11 13" />
+      <path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+    </Icon>
+  );
+}
+
+export function ChevronDownIcon({ size = 12, ...rest }: IconProps) {
+  return (
+    <Icon size={size} strokeWidth={2.2} {...rest}>
+      <path d="m6 9 6 6 6-6" />
+    </Icon>
+  );
+}
+
 export function LinkedInIcon({ size = 18, ...rest }: IconProps) {
   return (
     <svg

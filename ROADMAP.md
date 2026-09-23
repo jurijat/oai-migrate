@@ -240,6 +240,23 @@ rationale. Check off each task as it lands.
       the live site.
 - [x] ~~Verify the Transcend consent dialog~~ — superseded by our own banner, below
 
+## Navigation, matched to the original
+
+- [x] Off-site links carry the original external marker (a box with an arrow, as FontAwesome
+      `f08e` on the live site), plus screen-reader text "(opens in a new tab)"
+- [x] Same rule as the live site: any link to another host, including `*.openapis.org`
+      subdomains; 15 links in both the desktop and mobile menus, no internal ones
+- [x] The icon is bound to the last word, so it never wraps onto a line of its own
+- [x] Top level uppercase `#888`, `#6da643` on hover or while its menu is open, with chevrons
+- [x] Dropdown items `#a8a8a8`; hovered item `#6da643` on a `#313233` bar; white square panel
+- [x] Header and mobile menu on white, as on the live site
+
+### Open
+
+- [ ] **Menu contrast.** The original colours fail WCAG AA: top level 3.54:1, dropdown items
+      2.38:1, hover 4.40:1 and 2.92:1, against the 4.5:1 needed. Reproduced as asked; the same
+      decision as the button and footer colours.
+
 ## Cookie consent
 
 Replaced the Linux Foundation's Transcend consent manager with our own banner. Transcend's

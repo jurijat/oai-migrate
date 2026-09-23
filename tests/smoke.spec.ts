@@ -290,3 +290,46 @@ test('titles carry no invisible wordpress artifacts', async ({ page }) => {
   const title = await page.title();
   expect(title).not.toMatch(/[￼�﻿​­]/);
 });
+
+test('nav marks every off-site link and only those', async ({ page }) => {
+  await page.goto('/');
+  const report = await page.evaluate(() => {
+    const scopes = [
+      document.querySelector('nav[aria-label="Main"] ul'),
+      document.getElementById('mobile-nav'),
+    ];
+    return scopes.map((scope) => {
+      const links = [...scope!.querySelectorAll('a')];
+      const offSite = links.filter((a) => /^https?:\/\//.test(a.getAttribute('href') ?? ''));
+      const onSite = links.filter((a) => !offSite.includes(a));
+      return {
+        offSite: offSite.length,
+        offSiteMarked: offSite.filter(
+          (a) =>
+            a.querySelector('[data-external-icon]') &&
+            a.textContent?.includes('(opens in a new tab)') &&
+            a.target === '_blank',
+        ).length,
+        onSiteMarked: onSite.filter((a) => a.querySelector('[data-external-icon]')).length,
+      };
+    });
+  });
+
+  for (const scope of report) {
+    expect(scope.offSite).toBeGreaterThan(10);
+    expect(scope.offSiteMarked).toBe(scope.offSite);
+    expect(scope.onSiteMarked).toBe(0);
+  }
+});
+
+test('top-level menu items use the original uppercase grey', async ({ page }) => {
+  await page.goto('/');
+  const about = page
+    .getByRole('navigation', { name: 'Main' })
+    .getByRole('button', { name: 'About' });
+  const style = await about.evaluate((el) => {
+    const cs = getComputedStyle(el);
+    return { transform: cs.textTransform, color: cs.color };
+  });
+  expect(style).toEqual({ transform: 'uppercase', color: 'rgb(136, 136, 136)' });
+});
