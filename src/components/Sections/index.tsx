@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { getPeople, getTestimonials } from '@/lib/content';
+import { getTestimonials, getTscMembers } from '@/lib/content';
 import { withBasePath } from '@/lib/site';
 
 export function Action({
@@ -236,7 +236,7 @@ export async function TestimonialGrid() {
 }
 
 export async function PeopleGrid() {
-  const { current, former } = await getPeople();
+  const { current, former } = await getTscMembers();
 
   return (
     <div className="space-y-14">

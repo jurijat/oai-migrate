@@ -12,6 +12,7 @@ export const CACHE_DIR = '.cache';
 export const HTML_DIR = `${CACHE_DIR}/html`;
 export const URLS_FILE = 'data/source-urls.json';
 export const MANIFEST_FILE = `${CACHE_DIR}/manifest.json`;
+export const STRUCTURED_ASSETS_FILE = 'tools/migrate/structured-assets.json';
 
 export const CONCURRENCY = 5;
 export const DELAY_MS = 250;
@@ -37,7 +38,6 @@ export const MOVED = {
   'get-involved': '/participatehow-to-contribute',
   eventscalendar: 'https://events.openapis.org',
   events: 'https://events.openapis.org',
-  'get-involved/about': 'https://events.openapis.org',
 };
 
 export const LEGACY = {
@@ -47,7 +47,7 @@ export const LEGACY = {
   '/participate/how-to-contribute/governance': '/participatehow-to-contribute/governance',
   '/governance': '/participatehow-to-contribute/governance',
   '/specification/v3implementations-form': '/specificationrepo/share-your-oas-implementations',
-  '/calendar': 'https://events.openapis.org',
+  '/calendar': '/get-involved/about',
   '/category/blog/presentation': '/category/presentation',
   '/contact': '/',
   '/membership/members': '/membershipmembers',
@@ -80,6 +80,7 @@ export const COMPOSED = new Set([
   'testimonials',
   'about/technical-developer-community',
   'membershipjoin',
+  'get-involved/about',
 ]);
 
 export const CFP = {

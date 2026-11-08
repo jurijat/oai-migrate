@@ -13,6 +13,7 @@ const config = [
       'src/components/Navbar/**',
       'src/components/Sections/**',
       'src/components/LfBar/**',
+      'src/components/Calendar/**',
     ],
     rules: { '@next/next/no-img-element': 'off' },
   },

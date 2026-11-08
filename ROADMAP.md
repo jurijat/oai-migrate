@@ -85,12 +85,14 @@ rationale. Check off each task as it lands.
 - [x] Home page composed in MDX
 - [x] `membership-benefits` composed
 - [x] `testimonials` composed + `data/testimonials.yaml`
-- [x] `technical-developer-community` composed + `data/people.yaml`
+- [x] `technical-developer-community` composed + `data/tsc-members.yaml`
 - [x] `membershipjoin` composed
 - [x] `content/cfp/*.md` converted (10 files)
 - [x] Dedicated CFP template, currently rendered as prose
 - [x] `membershipmembers` page via `MemberLandscape`
 - [x] `/events` and `/eventscalendar` redirect to events.openapis.org
+- [x] Community calendar restored at `/get-involved/about`, synced from LFX Meetings into
+      `data/calendar.json` by `calendar.yml`; `/calendar` redirects there
 
 ### Phase 4 follow-ups
 
@@ -356,7 +358,9 @@ first PR after that.
 ### Needs a decision from OAI
 
 - [ ] `CNAME` for the production domain
-- [ ] Transfer the repository to the `OAI` organisation
+- [ ] Reconcile history with `OAI/openapis.org`: its `main` is a single upload commit without the
+      dotfiles (`.github/`, `.gitignore`, `.node-version`, Prettier config), unrelated to this
+      history
 - [ ] DNS cutover
 - [ ] `data/members.yaml`, only if the landscape.openapis.org embed is ever replaced by a local list
 
@@ -365,10 +369,10 @@ first PR after that.
 | Command                                       | What it guards                                                         |
 | --------------------------------------------- | ---------------------------------------------------------------------- |
 | `npm run lint` / `typecheck` / `format:check` | Code health                                                            |
-| `npm run validate`                            | `data/*.yaml` against `schemas/*.json`                                 |
+| `npm run validate`                            | `data/*` against `schemas/*.json`                                      |
 | `npm run build`                               | Static export, plus the URL parity gate                                |
 | `npm run check:render`                        | Empty pages, 404 stubs, raw markdown, broken links                     |
 | `npm run check:basepath`                      | Root-absolute references under a base path                             |
 | `npm run check:parity`                        | Every page against the cached WordPress source (needs `migrate:fetch`) |
 | `npm run migrate:report`                      | Conversion coverage and unresolved links                               |
-| `npm run test:e2e`                            | 71 Playwright tests                                                    |
+| `npm run test:e2e`                            | 90 Playwright tests                                                    |

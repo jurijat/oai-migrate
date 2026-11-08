@@ -14,7 +14,7 @@
   to: /blog/2023/12/04/openapi-moonwalk-2024
   reason: legacy url, 404 on WordPress
 - from: /calendar
-  to: https://events.openapis.org
+  to: /get-involved/about
   reason: legacy url, 404 on WordPress
 - from: /category/blog/presentation
   to: /category/presentation
@@ -34,9 +34,6 @@
 - from: /get-involved
   to: /participatehow-to-contribute
   reason: placeholder page, superseded
-- from: /get-involved/about
-  to: https://events.openapis.org
-  reason: moved to events.openapis.org
 - from: /get-involved/mailing-lists-2
   to: /
   reason: duplicate of get-involved/mailing-lists

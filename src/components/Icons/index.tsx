@@ -49,6 +49,22 @@ export function ChevronDownIcon({ size = 12, ...rest }: IconProps) {
   );
 }
 
+export function ChevronLeftIcon({ size = 16, ...rest }: IconProps) {
+  return (
+    <Icon size={size} strokeWidth={2.2} {...rest}>
+      <path d="m15 6-6 6 6 6" />
+    </Icon>
+  );
+}
+
+export function ChevronRightIcon({ size = 16, ...rest }: IconProps) {
+  return (
+    <Icon size={size} strokeWidth={2.2} {...rest}>
+      <path d="m9 6 6 6-6 6" />
+    </Icon>
+  );
+}
+
 export function ArrowRightIcon({ size = 12, ...rest }: IconProps) {
   return (
     <Icon size={size} strokeWidth={2.4} {...rest}>
@@ -111,6 +127,81 @@ export function CloseIcon(props: IconProps) {
   return (
     <Icon {...props}>
       <path d="M6 6l12 12M18 6L6 18" />
+    </Icon>
+  );
+}
+
+export function DocumentIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z" />
+      <path d="M14 3v5h5M9 13h6M9 17h6M9 9h2" />
+    </Icon>
+  );
+}
+
+export function MapPinIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </Icon>
+  );
+}
+
+export function IdCardIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <rect x="3" y="6" width="18" height="14" rx="2" />
+      <path d="M10 3h4v4h-4zM7 16c.6-1.5 1.7-2.2 3-2.2s2.4.7 3 2.2M15.5 12H18M15.5 15H18" />
+      <circle cx="10" cy="11" r="1.6" />
+    </Icon>
+  );
+}
+
+export function UsersIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="9" cy="8" r="3" />
+      <path d="M3.5 19c.7-3 2.8-4.6 5.5-4.6s4.8 1.6 5.5 4.6" />
+      <circle cx="17" cy="9" r="2.3" />
+      <path d="M16.5 13.6c2.2.1 3.6 1.5 4 4" />
+    </Icon>
+  );
+}
+
+export function LinkIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1" />
+      <path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" />
+    </Icon>
+  );
+}
+
+export function CircleCloseIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m9 9 6 6M15 9l-6 6" />
+    </Icon>
+  );
+}
+
+export function CircleMinusIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M8 12h8" />
+    </Icon>
+  );
+}
+
+export function CirclePlusIcon(props: IconProps) {
+  return (
+    <Icon {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M8 12h8M12 8v8" />
     </Icon>
   );
 }

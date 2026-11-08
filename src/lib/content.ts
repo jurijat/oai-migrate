@@ -249,7 +249,7 @@ const testimonialSchema = z.array(
   }),
 );
 
-const peopleSchema = z.object({
+const tscMembersSchema = z.object({
   current: z.array(
     z.object({
       slug: z.string(),
@@ -262,12 +262,45 @@ const peopleSchema = z.object({
 });
 
 export type Testimonial = z.infer<typeof testimonialSchema>[number];
-export type People = z.infer<typeof peopleSchema>;
+export type TscMembers = z.infer<typeof tscMembersSchema>;
 
 export async function getTestimonials(): Promise<Testimonial[]> {
   return testimonialSchema.parse(yaml.load(await readFile('data/testimonials.yaml', 'utf8')));
 }
 
-export async function getPeople(): Promise<People> {
-  return peopleSchema.parse(yaml.load(await readFile('data/people.yaml', 'utf8')));
+export async function getTscMembers(): Promise<TscMembers> {
+  return tscMembersSchema.parse(yaml.load(await readFile('data/tsc-members.yaml', 'utf8')));
+}
+
+const calendarProject = z.object({ slug: z.string(), name: z.string() });
+
+const calendarSchema = z.object({
+  source: z.string().url(),
+  window: z.object({ from: z.string(), until: z.string() }),
+  project: calendarProject.extend({ id: z.string(), subprojects: z.array(calendarProject) }),
+  meetings: z.array(
+    z.object({
+      id: z.string(),
+      title: z.string(),
+      project: z.string(),
+      url: z.string().url().nullable(),
+      recurrence: z.string().nullable(),
+    }),
+  ),
+  occurrences: z.array(
+    z.object({
+      meeting: z.string(),
+      start: z.string(),
+      end: z.string(),
+      participants: z.number().int().nonnegative().nullable(),
+    }),
+  ),
+});
+
+export type Calendar = z.infer<typeof calendarSchema>;
+export type CalendarMeeting = Calendar['meetings'][number];
+export type CalendarOccurrence = Calendar['occurrences'][number];
+
+export async function getCalendar(): Promise<Calendar> {
+  return calendarSchema.parse(JSON.parse(await readFile('data/calendar.json', 'utf8')));
 }

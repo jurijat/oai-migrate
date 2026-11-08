@@ -106,7 +106,7 @@ content/
   blog/<YYYY>/<MM>/<DD>/<slug>.md     184 posts, path mirrors the live URL
   cfp/<event>.md                      the 9 APIDAYS CFP pages
 data/
-  authors.yaml  members.yaml  testimonials.yaml  people.yaml
+  authors.yaml  members.yaml  testimonials.yaml  tsc-members.yaml
   nav.yaml      redirects.yaml
 public/img/                           generated, gitignored
 schemas/*.json                        JSON Schema for frontmatter + data files
@@ -187,8 +187,7 @@ Pages later would upgrade those to real 301s at no cost, since the preview infra
   human effort.
 - **Cloudflare access.** Needs an account and two org secrets. Fallback: publish previews to a
   `gh-pages` `/pr-N/` sub-path.
-- **Ownership.** Target repo is `jurijat/oai-migrate` (personal). Production must move to the `OAI`
-  org, as `events.openapis.org` did.
+- **Ownership.** The repository now lives at `OAI/openapis.org`, as `events.openapis.org` does.
 - **Needs an owner.** Member list and TSC roster are currently maintained in WordPress; they become
   `data/*.yaml` and need someone to keep them current.
 

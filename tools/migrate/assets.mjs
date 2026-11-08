@@ -1,6 +1,6 @@
 import { access, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { CONCURRENCY, MANIFEST_FILE, USER_AGENT } from './config.mjs';
+import { CONCURRENCY, MANIFEST_FILE, STRUCTURED_ASSETS_FILE, USER_AGENT } from './config.mjs';
 import { ensureDir, pool, readJson, sleep } from './lib.mjs';
 
 const SOURCE_DIR = 'assets/uploads';
@@ -44,7 +44,7 @@ async function download(url) {
 
 async function extraAssets() {
   try {
-    return await readJson('data/structured-assets.json');
+    return await readJson(STRUCTURED_ASSETS_FILE);
   } catch {
     return {};
   }

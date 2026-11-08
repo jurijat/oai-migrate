@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
 import yaml from 'js-yaml';
-import { HTML_DIR } from './config.mjs';
+import { HTML_DIR, STRUCTURED_ASSETS_FILE } from './config.mjs';
 import { ensureDir, localAssetPath, stripSizeSuffix } from './lib.mjs';
 
 function load(key) {
@@ -113,12 +113,12 @@ async function main() {
     yaml.dump(t.entries, { lineWidth: 120, quotingType: '"' }),
   );
   await writeFile(
-    'data/people.yaml',
+    'data/tsc-members.yaml',
     yaml.dump({ current: p.current, former: p.former }, { lineWidth: 120, quotingType: '"' }),
   );
 
   const extra = Object.fromEntries([...t.assets, ...p.assets]);
-  await writeFile('data/structured-assets.json', `${JSON.stringify(extra, null, 2)}\n`);
+  await writeFile(STRUCTURED_ASSETS_FILE, `${JSON.stringify(extra, null, 2)}\n`);
 
   console.log(`testimonials: ${t.entries.length}`);
   console.log(`tsc current: ${p.current.length}, former: ${p.former.length}`);

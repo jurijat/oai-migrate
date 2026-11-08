@@ -11,6 +11,7 @@ treat the document as living — if a rule no longer matches what we do, change 
 | Pages           | `content/pages/<slug>.mdx`                | MDX                                 |
 | Conference CFPs | `content/cfp/<event>.md`                  | CommonMark                          |
 | Structured data | `data/*.yaml`                             | YAML, validated by `schemas/*.json` |
+| Meetings        | `data/calendar.json`                      | Generated, never edit by hand       |
 
 Posts are **CommonMark, not MDX**. Converted prose contains braces and angle brackets that MDX
 would read as JSX, and a blog post has no reason to execute component code. Only `content/pages`
@@ -68,7 +69,20 @@ upgraded to an embed at render time, so the Markdown stays readable:
 ```
 
 For pages (MDX), components are available directly: `<Newsletter />`, `<MemberLandscape />`,
-`<MailingListSignup />`, `<GoogleForm id="..." />`.
+`<MailingListSignup />`, `<GoogleForm id="..." />`, `<CommunityCalendar />`.
+
+## Community calendar
+
+`/get-involved/about` lists the public meetings managed in LFX Meetings, rebuilt to look and work
+like the LFX widget it replaces (FullCalendar with Day, 4 Days, Week, Month and List views, a
+meeting popup with Register, the iCal links, a mini calendar and the project filter).
+`npm run calendar:sync` fetches the meetings from the public API behind the LFX widget and
+rewrites `data/calendar.json`; the `Calendar sync` workflow does this every six hours, commits
+only when something changed, and then starts a deploy. To change a meeting, change it in LFX,
+not in this repository.
+
+The LFX iCal subscription feed is not used as the source: it keeps repeating series that have
+ended in LFX, so it would list meetings that no longer take place.
 
 ## Cookie consent
 

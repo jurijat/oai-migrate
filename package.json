@@ -30,9 +30,15 @@
     "check:parity": "node tools/check-parity.mjs",
     "check:render": "node tools/check-render.mjs",
     "search:index": "node tools/build-search-index.mjs",
-    "brand": "node tools/publish-brand.mjs"
+    "brand": "node tools/publish-brand.mjs",
+    "calendar:sync": "node tools/sync-calendar.mjs"
   },
   "dependencies": {
+    "@fullcalendar/core": "6.1.22",
+    "@fullcalendar/daygrid": "6.1.22",
+    "@fullcalendar/list": "6.1.22",
+    "@fullcalendar/react": "6.1.22",
+    "@fullcalendar/timegrid": "6.1.22",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.1",

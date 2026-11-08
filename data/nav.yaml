@@ -31,7 +31,7 @@
     - label: Join Us on Slack
       href: https://join.slack.com/t/open-api/shared_invite/zt-45hwx39lu-L5kfOMIyFc4qt0v~FPGaXQ
     - label: Calendar
-      href: https://events.openapis.org
+      href: /get-involved/about
 - label: Governance
   children:
     - label: Project Charter

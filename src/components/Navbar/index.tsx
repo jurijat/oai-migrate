@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type FocusEvent, type MouseEvent } from 'react';
 import {
   ChevronDownIcon,
   CloseIcon,
@@ -91,6 +91,47 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
   const open = openedAt === pathname;
   const close = () => setOpenedAt(null);
   const header = useRef<HTMLElement>(null);
+  const menubar = useRef<HTMLUListElement>(null);
+  const [expanded, setExpanded] = useState<{ label: string; at: string } | null>(null);
+  const expandedLabel = expanded?.at === pathname ? expanded.label : null;
+  const collapse = () => setExpanded(null);
+  const toggle = (label: string) =>
+    setExpanded(expandedLabel === label ? null : { label, at: pathname });
+
+  useEffect(() => {
+    if (!expandedLabel) return;
+
+    const onPointerDown = (event: PointerEvent) => {
+      if (!menubar.current?.contains(event.target as Node)) setExpanded(null);
+    };
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return;
+      const item = menubar.current?.querySelector<HTMLElement>(
+        `[data-menu="${CSS.escape(expandedLabel)}"]`,
+      );
+      if (item?.contains(document.activeElement)) {
+        item.querySelector<HTMLButtonElement>('button[aria-expanded]')?.focus();
+      }
+      setExpanded(null);
+    };
+
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [expandedLabel]);
+
+  const collapseOnLeave = (label: string) => (event: MouseEvent<HTMLLIElement>) => {
+    if (event.nativeEvent.isTrusted && expandedLabel === label) collapse();
+  };
+
+  const collapseOnBlur = (label: string) => (event: FocusEvent<HTMLLIElement>) => {
+    if (expandedLabel !== label) return;
+    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) collapse();
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -133,43 +174,61 @@ export function Navbar({ nav, social }: { nav: NavItem[]; social: SocialLink[] }
             />
           </Link>
 
-          <ul className="hidden items-center xl:flex">
-            {nav.map((item) => (
-              <li key={item.label} className="group relative">
-                {item.href ? (
-                  <ItemLink
-                    href={item.href}
-                    label={item.label}
-                    className={topLevel(isActive(item, pathname))}
-                    current={isCurrent(item.href, pathname)}
-                  />
-                ) : (
-                  <button
-                    type="button"
-                    className={topLevel(isActive(item, pathname))}
-                    aria-haspopup="true"
-                  >
-                    {item.label}
-                    <ChevronDownIcon />
-                  </button>
-                )}
+          <ul ref={menubar} className="hidden items-center xl:flex">
+            {nav.map((item, index) => {
+              const menuId = `nav-menu-${index}`;
+              const isExpanded = expandedLabel === item.label;
+              return (
+                <li
+                  key={item.label}
+                  data-menu={item.label}
+                  className="group relative"
+                  onMouseLeave={collapseOnLeave(item.label)}
+                  onBlur={collapseOnBlur(item.label)}
+                >
+                  {item.href ? (
+                    <ItemLink
+                      href={item.href}
+                      label={item.label}
+                      className={topLevel(isActive(item, pathname))}
+                      current={isCurrent(item.href, pathname)}
+                    />
+                  ) : (
+                    <button
+                      type="button"
+                      className={topLevel(isActive(item, pathname) || isExpanded)}
+                      aria-expanded={isExpanded}
+                      aria-controls={menuId}
+                      onClick={() => toggle(item.label)}
+                    >
+                      {item.label}
+                      <ChevronDownIcon
+                        className={`transition-transform ${isExpanded ? 'rotate-180' : ''}`}
+                      />
+                    </button>
+                  )}
 
-                {item.children?.length ? (
-                  <ul className="invisible absolute left-0 top-full z-10 w-60 bg-white px-4 py-5 opacity-0 shadow-[0_6px_28px_rgba(0,0,0,0.08)] transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-                    {item.children.map((child) => (
-                      <li key={`${child.label}-${child.href}`}>
-                        <ItemLink
-                          href={child.href}
-                          label={child.label}
-                          className={DROPDOWN_ITEM}
-                          current={isCurrent(child.href, pathname)}
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
-              </li>
-            ))}
+                  {item.children?.length ? (
+                    <ul
+                      id={menuId}
+                      className={`absolute left-0 top-full z-10 w-60 bg-white px-4 py-5 shadow-[0_6px_28px_rgba(0,0,0,0.08)] transition ${isExpanded ? 'visible opacity-100' : 'invisible opacity-0 group-hover:visible group-hover:opacity-100'}`}
+                    >
+                      {item.children.map((child) => (
+                        <li key={`${child.label}-${child.href}`}>
+                          <ItemLink
+                            href={child.href}
+                            label={child.label}
+                            className={DROPDOWN_ITEM}
+                            current={isCurrent(child.href, pathname)}
+                            onNavigate={collapse}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </li>
+              );
+            })}
           </ul>
 
           <div className="flex items-center gap-2">

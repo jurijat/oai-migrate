@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import type { AnchorHTMLAttributes, ImgHTMLAttributes } from 'react';
 import { rehypeEmbeds, rehypeTableScroll } from '@/lib/rehypeEmbeds';
 import { withBasePath } from '@/lib/site';
+import { CommunityCalendar } from '@/components/Calendar';
 import {
   GoogleForm,
   MailingListSignup,
@@ -56,6 +57,7 @@ const components = {
   a: MdxLink,
   img: MdxImage,
   iframe: ConsentIframe,
+  CommunityCalendar,
   GoogleForm,
   MailingListSignup,
   MemberLandscape,
