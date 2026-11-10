@@ -38,6 +38,13 @@
       "recurrence": "Weekly meeting on Monday every 1 week(s)"
     },
     {
+      "id": "96383545001",
+      "title": "OpenAPI Initiative Outreach Committee meeting (weekly)",
+      "project": "openapi",
+      "url": null,
+      "recurrence": null
+    },
+    {
       "id": "97492805360",
       "title": "Industry Standards SIG Meeting [bw]",
       "project": "oai-industry-standards-sig",
@@ -173,7 +180,13 @@
       "meeting": "95736535430",
       "start": "2026-11-09T17:00:00Z",
       "end": "2026-11-09T17:30:00Z",
-      "participants": 20
+      "participants": 4
+    },
+    {
+      "meeting": "96383545001",
+      "start": "2026-11-09T17:00:00Z",
+      "end": "2026-11-09T17:30:00Z",
+      "participants": 1
     },
     {
       "meeting": "96886360767",
